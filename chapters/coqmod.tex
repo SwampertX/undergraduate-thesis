@@ -1,0 +1,7 @@
+\chapter{The Module System in Coq}
+Coq modules are not first class objects of the language. In fact, it is closer
+to a dictionary that stores each entries of a path into a canonical name, which
+is then refered to, or compared with when needed. 
+
+How do functors work? They are stored as-is in the global environment. Functor 
+applications are evaluated applicatively/generatively.
