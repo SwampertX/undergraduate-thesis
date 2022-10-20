@@ -1,8 +1,36 @@
 \chapter{The Untyped Lambda Calculus}
 
-Here, I present some properties of the untyped lambda calculus
+Here, I present some properties of the untyped lambda calculus, as part
+of the study of Type Systems with Professor Yang Yue. We follow the text
+"Proof and Types" by Girard. Here, I present some fundamental results.
 
 \section{The Church-Rosser Confluence}
-We study the paper by Takahashi's successors on a proof for Church-Rosser with
-a strong property: the target of confluence depends solely on the top of the diamond,
-independent of the other vertices and edges of the diamond.
+
+We study the paper by Takahashi's successors on a proof for Church-Rosser 
+theorem. It states that:
+\begin{theorem}[Church-Rosser]
+If $M\to_\beta M_1$, $M\to_\beta M_2$, then there exists a term $N$ such that
+$M_1\to_\beta N$ and $M_2\to_\beta N$.
+\end{theorem}
+
+This property asserts the uniqueness of a normal form of a rewriting system, if
+there exists one. This is especially important for systems that are known to
+normalize; in particular, the Simply Typed Lambda Calculus, the Martin Lof Type
+Theory, and Calculus of Constructions are all known to be strongly normalizing.
+Together with the decidability of conversion, we have a viable theory for 
+the implementation of proof assistants.
+
+The crucial step of the proof is to define a notion of parallel reduction, and
+the key lemma is
+
+\begin{lemma}
+If $M\to_{\beta n}N$, then $M\to_{\beta}M^{n*}$.
+\end{lemma}
+
+This provides a candidate of confluence just based on the original term $M$,
+instead of the intermediate steps during $M\to_\beta M_1,M_2$ or even $M_1, M_2$
+itself.
+
+(Hopefully I have a Coq proof.)
+
+\section{Cut elimination}
