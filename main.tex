@@ -4,6 +4,7 @@
 	twoside=true, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
 	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
 	secnumdepth=2, % How deep to number headings. Defaults to 1 (sections)
+% ]{kaohandt}
 ]{kaobook}
 
 % Choose the language
@@ -11,13 +12,13 @@
 \usepackage[english=british]{csquotes}	% English quotes
 
 % Load packages for testing
-\usepackage{blindtext}
+% \usepackage{blindtext}
 %\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
 %\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
 
 % Load the bibliography package
 \usepackage{kaobiblio}
-\addbibresource{minimal.bib} % Bibliography file
+\addbibresource{main.bib} % Bibliography file
 
 % Use Meven's PhD paper's style
 \usepackage{styles/layout}
@@ -42,21 +43,35 @@
 %----------------------------------------------------------------------------------------
 
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
-% \setchapterstyle{kao} % Choose the default chapter heading style
+\setchapterstyle{kao} % Choose the default chapter heading style
 
 \pagelayout{wide} % No margins
-\addpart{Part I\@: Formalization of Coq Modules}
+% \addpart{Part I\@: Formalization of Coq Modules}
 \pagelayout{margin} % Restore margins
 
-\include{chapters/proof-assistants-intro}
-\include{chapters/mc-intro}
-\include{chapters/coqmod}
+% remove inter-chapter blank pages
+\let\cleardoublepage\clearpage
 
-\pagelayout{wide} % No margins
-\addpart{Part II\@: Decidability of Conversion in MLTT}
-\pagelayout{margin} % Restore margins
+% generic intro
+\include{chapters/report-intro.tex}
 
-\include{chapters/untyped}
+% we start by explaining how type-theoretic proof assistants work
+\include{chapters/proof-assistants/ttpa.tex}
+
+% and the motivation for the metacoq project
+\include{chapters/coq-metacoq/metacoq.tex}
+
+% then we explain the structure of coq
+\include{chapters/coq-metacoq/coq.tex}
+% what is this project about? spotlight on modules in coq and how it works
+\include{chapters/coq-metacoq/coqmod.tex}
+
+% Finally: what is the plan for next semester
+\include{chapters/next-semester.tex}
+
+% \pagelayout{wide} % No margins
+% \addpart{Part II\@: Decidability of Conversion in MLTT}
+% \pagelayout{margin} % Restore margins
 
 \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
@@ -64,12 +79,13 @@
 \addpart{Appendix}
 \pagelayout{margin} % Restore margins
 
-\include{chapters/appendix-specs}
+\include{chapters/appendix/module-typing.tex}
+\include{chapters/appendix/untyped.tex}
 
 %----------------------------------------------------------------------------------------
 
-\backmatter % Denotes the end of the main document content
-\setchapterstyle{plain} % Output plain chapters from this point onwards
+% \backmatter % Denotes the end of the main document content
+% \setchapterstyle{plain} % Output plain chapters from this point onwards
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

@@ -1,6 +1,8 @@
 \chapter{Types and Proof Assistants}
+% \section{Types and Proof Assistants}
 
 \section{What are proof assistants?}
+% \subsection{What are proof assistants?}
 Proof assistants are a special kind of computer program whose job
 is to verify the correctness of a mathematical proof, that is,
 verify if a conclusion can be made by applying a fixed set
@@ -15,6 +17,7 @@ as a valid proof of a theorem. Fortunately, Type Theory gives a simple
 and direct relationship between Logic and Types.
 
 \section{Type Theory}
+% \subsection{Type Theory}
 
 Types were first invented by Bertrand Russell as a way to provide higher-order
 structures than sets to overcome his famous Russell's paradox. However, it was
@@ -26,6 +29,7 @@ useful theory for the implementation of proof assistants, lies in the
 Curry-Howard Correspondence.
 
 \section{The Curry-Howard Correspondence}
+% \subsection{The Curry-Howard Correspondence}
 
 The Curry-Howard Correspondence establishes an one-to-one correspondence between
 two distinct disciplines --- Logic and Types. It asserts that there is a
@@ -45,6 +49,7 @@ Proof & Term
 What are those exactly?
 
 \subsection{Intuitionistic Propositional Logic}
+% \subsubsection{Intuitionistic Propositional Logic}
 
 Propositional logic, also known as \emph{0-th order logic} is a logical system
 where propositions (sentences) are constructed with variables and logical
@@ -104,6 +109,7 @@ system where to prove something exists, it requires an algorithm for the
 explicit construction of such object.
 
 \subsection{Simply Typed Lambda Calculus}
+% \subsubsection{Simply Typed Lambda Calculus}
 
 The Simply Typed Lambda Calculus (STLC) is a simple construction:
 
@@ -121,9 +127,3 @@ Calculus of Constructions by Theiry Coquand, extend the Curry-Howard
 correspondence to higher-order logic, finally allowing the encoding of
 most mathematical truth and specifying proofs for theories in those 
 systems.
-
-\section{The Coq Proof Assistant}
-
-The Coq Proof Assistant (or Coq for short) is a proof assistant 
-based on the Calculus of Inductive Constructions, which added
-co-inductive types into the Calculus of Constructions.

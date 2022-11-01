@@ -1,0 +1,33 @@
+\chapter{The Coq Proof Assistant}
+% \section{The Coq Proof Assistant}
+
+The Coq Proof Assistant (or Coq for short) is a proof assistant 
+based on the Calculus of Inductive Constructions, which added
+co-inductive types into the Calculus of Constructions.
+
+\section{An example of a Coq program} This is a simple example featuring the
+definition of a type ``nat'', a definition of a term of type ``nat'', namely
+``zero'', and a function ``plus''  which takes two ``nat''s and returns its sum.
+
+\begin{listing}[!ht]
+\inputminted{coq}{code/example.v}
+\caption{A simple Coq program.}
+\end{listing}
+
+Finally, as explained before, a proposition is a type; and here a named
+proposition is postulated. A simple proof is also given, which constructs a term
+inhabiting that type, hence proving the correctness of this proposition.
+
+\section{Coq Modules}
+Modules in Coq not only allows the reuse of code, it also provides parametrized
+theories or data structures in the form of functors (or parametrized modules).
+
+In the following example, we show how one can package definitions into named modules
+for reuse; we also show how we can create parametrized generic data structures.
+
+\begin{listing}[!ht]
+\inputminted{coq}{code/module_example.v}
+\caption{An example of Modules.}
+\end{listing}
+
+In the final line, a new Magma was created by the functor ``DoubleMagma''.

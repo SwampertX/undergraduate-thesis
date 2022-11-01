@@ -1,0 +1,179 @@
+
+\section{A specification of Coq Modules}
+% \subsection{A specification of Coq Modules}
+Module systems are  a feature of the ML family of languages; it allows
+for massive abstraction and the reuse of code. In particular, Coq 
+also has a module system that is influenced by ML modules, first 
+implemented by Jacek Chrząszcz in 2003, then modified by Elie Soubrian
+in 2010.
+
+There are a few keywords when it comes to Coq Modules:
+\begin{itemize}
+\item A \textbf{structure} is a anynomous collection of definitions, and is the 
+    underlying construct of modules. They contain \textbf{structure elements},
+    which can be a
+    \begin{itemize}
+    \item constant definition
+    \begin{minted}{coq}
+        Definition a: bool := true.
+    \end{minted}
+    \item assumption
+    \begin{minted}{coq}
+        Axiom inconsistent: forall p: Prop, p.
+    \end{minted}
+    \item \textbf{module, module type, functors} recursively.
+    \end{itemize}
+
+\item A \textbf{module} is a structure given a name. It can be defined explicitly to be
+    of a certain \textbf{module type}, which a named structure with possibly
+    empty definitions.
+\item A \textbf{module alias} is the association of a short name to an existing
+    module.
+\item A \textbf{functor} is a module defined with a parameter with a binder and
+    a required type for the module supplied as an argument.
+\end{itemize}
+
+For a more precise definition of modules and related structures, please refer to
+\href{https://coq.inria.fr/refman/language/core/modules.html}{Coq: Modules}.
+
+\subsection{Conversion of Coq Terms}
+
+To understand Coq Modules, we need to first understand the basic structure of
+Coq. The core object in the language of Coq are terms. Terms of a type
+correspond to a proof for a theorem as in the Curry-Howard correspondence.  The
+syntax and semantics of Coq terms are as explained by the syntax,
+\sidenote{\href{https://coq.inria.fr/refman/language/core/basic.html\#essential-vocabulary}
+{Coq: Essential Vocabulary}} conversion (including reduction and expansion)
+\sidenote{\href{https://coq.inria.fr/refman/language/core/conversion.html} {Coq:
+Conversion}} and typing
+\sidenote{\href{https://coq.inria.fr/refman/language/cic.html} {Coq: Typing}}
+respectively. The evaluation of Coq terms are done under a Global Environment
+$\Sigma$ containing definitions, and a local context $\Gamma$ containing
+assumptions. Evaluation in Coq is known as conversion, the reflexive, transitive
+closure of the various reduction rules that is defined, including the famous
+$\beta$-reduction (function application).
+
+The conversion relation is then defined with these parameters, from which we can
+conclude nice properties on conversion, such as strong normalization, confluence
+and decidability.
+
+\subsection{Modules as second-class objects}
+% \subsubsection{Modules as second-class objects}
+However, Coq modules are not first class objects of the language and do not
+participate in conversion themselves; i.e. there is no notion to "reduce" a
+module. Plain modules in Coq can be treated as a named container of constant
+and inductive definitions, including possibly nested modules; namespaced by a 
+dot-separated string called a "path". This abstraction allows users to reuse
+definitions, essentially importing another "global environment" into the current
+one.
+
+To further expand this possibility, module functors exist to be interfaces which
+users can provide definitions for, by supplying a module definition. Functors
+are therefore opaque second-class objects which is only useful when a module is
+generated.
+
+In this chapter, we formalize the syntax and semantics of the current
+implementation of Coq and implement in the level of TemplateCoq. Section
+\ref{sec:plainmodules} describes the implementation of plain modules
+without functors.
+
+
+% \section{Related Works}
+\subsection{Related Works} Jacek Chrzaszcz's article in TPHOLs 2003
+\sidecite{jacek2003} explains the motivation and choices for the implementation
+of modules as a second class object and its interaction with terms as described
+above.  Elie Soubiran's PhD Thesis on Coq Modules \sidecite{soubiran} describes
+an extension of the Module system which only some features are implemented. The
+\href{https://github.com/coq/coq/wiki/ModuleSystem}{ModuleSystem Wiki Page} on
+Coq's official Github repository contains valuable information on the usage and
+design decision of the Module system of Coq, including a list of open issues 
+with Modules. In general, the issues do not compromise the correctness of the
+type system implemented by Coq; instead, they should be viewed as possible areas
+of improvements for Coq users.
+
+Other slightly useful references include papers that explain modules in the ML
+family of languages, specifically OCaml and to a certain extent, Standard ML.
+On this note, Derek Dreyer wrote his PhD thesis \sidecite{dreyerphd} on
+understanding and extending ML modules, and subsequently a on implementing ML
+modules in its most desirable form, applicative and first-order as a subset of a
+small type system, $F_\omega$\sidecite{f-ing}. Other notable implementations
+include that of CakeML \sidecite{cakeml}, a verified ML language and Standard ML
+modules by MacQueen\sidecite{macqueen1984modules}. However, since the type
+system of Coq is much stronger and sophisticated compared to ML languages, the
+implementations also vary wildly and one can only refer to them for
+inspirations.
+
+
+% \begin{enumerate}
+% \item Elie Soubrian's PhD Thesis on Coq Modules is the latest reference on 
+% Coq Modules specifically.
+% \item Since ML modules are the source of
+% inspiration for Coq's Modules, it is also worthwhile to study
+% Derek Dreyer's PhD Thesis on "Understanding and Evolving the ML Module 
+% System".
+% \item Recently, F-ing modules by Dreyer et. al. provides an 
+% implementation of the ML module system in plain $F_\omega$, a strict 
+% subset of CIC and hence PCUIC used in modern Coq.
+% \item Standard ML also have modules.
+% https://homepages.inf.ed.ac.uk/mfourman/teaching/mlCourse/notes/sml-modules.html
+% Michael Fourman has lecture notes.
+% \item David Macqueen (2002) wrote about implementint SML modules.
+% \item CakeML has modules, but not functors. YK Tan (2015).
+% \end{enumerate}
+
+\section{Semantic of Modules}
+\subsection{Plain Modules}
+\label{sec:plainmodules}
+
+Plain modules are just saving declarations and definitions in a structure, in the
+global context. Its contents are not modified during conversion/reduction.
+
+In Coq, modules are second-class objects; in other words, a module is not a
+term.  Its definition is stored and referred to by a canonical kername. We say
+the implementation of such a module is correct if the metatheory of the original
+system are unchanged and remains correct; that is the proofs go through when
+terms can be defined within modules. Since the MetaCoq project has proven
+various nice properties about conversion in Coq, our project on plain modules is
+two-fold:
+\begin{enumerate}
+\item Ensure the correctness of the static semantics of Coq Modules
+(well-typedness).
+\item Define the behaviour of access of definitions within Modules.
+\end{enumerate}
+
+Once these two are done, we can be sure that a Coq program with Modules
+has all its terms well-defined (by (1)) and enjoys the nice properties of
+conversion, since the additional terms defined in Modules fulfill (2).
+This follows as our definition of Modules on the TemplateCoq level, is
+eventually elaborated down into the PCUIC calculus the idea of modules and
+aliasing do not exist anymore, they are flattened into the corresponding global
+environment.
+
+Concretely, if a module as below is defined while the Global Environment, which
+stores definitions is denoted as $\Sigma$:
+\begin{minted}{coq}
+Module M.
+    Definition a: nat := 0.
+End M.
+\end{minted}
+Then the environment will have an new declaration added:
+\[\Sigma := \Sigma :: \text{ModuleDeclaration}(M,
+[\text{ConstantDeclaration}(M.a, nat, 0)])\]
+
+So when $M.a$ is called, it refers to the definition in the 
+
+\subsection{Aliased Modules}
+Aliased modules are just a renaming of existing modules, which can be seen as
+syntactic sugar for modules. Therefore, the correctness depends only on
+implementing this internal referencing correctly. Suppose we have
+
+\begin{minted}{coq}
+Module N := M.
+\end{minted}
+
+Aliasing $N$ to $M$, then any access path $N.X$ should be resolved similarly to
+$M.X$ (note that since $M$ is possibly an alias as well, we do not require $N.X$
+to resolve \emph{to} $M.X$). In the OCaml implementation, this is implemented 
+by an internal kernel name, conceptually similar to a lookup table; formally,
+the kernel name is a pair of a \emph{name} and a \emph{label}, with label being
+the internal reference used by both $N$ and $M$.
