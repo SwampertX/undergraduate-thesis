@@ -14,6 +14,8 @@ Module Type Magma.
     Parameter op: T -> T -> T.
 End Magma.
 
+Module Type M := Magma.
+
 (* Natural numbers with plus form a magma. *)
 Module Nat: Magma.
     Definition T := nat.

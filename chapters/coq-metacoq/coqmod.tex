@@ -1,7 +1,7 @@
+\section{Towards Specifying the Meaning of Coq Modules}
 
-\section{A specification of Coq Modules}
 % \subsection{A specification of Coq Modules}
-Module systems are  a feature of the ML family of languages; it allows
+Module systems are a feature of the ML family of languages; it allows
 for massive abstraction and the reuse of code. In particular, Coq 
 also has a module system that is influenced by ML modules, first 
 implemented by Jacek Chrząszcz in 2003, then modified by Elie Soubrian
@@ -9,7 +9,7 @@ in 2010.
 
 There are a few keywords when it comes to Coq Modules:
 \begin{itemize}
-\item A \textbf{structure} is a anynomous collection of definitions, and is the 
+\item A \textbf{structure} is an anynomous collection of definitions, and is the 
     underlying construct of modules. They contain \textbf{structure elements},
     which can be a
     \begin{itemize}
@@ -72,10 +72,10 @@ users can provide definitions for, by supplying a module definition. Functors
 are therefore opaque second-class objects which is only useful when a module is
 generated.
 
-In this chapter, we formalize the syntax and semantics of the current
-implementation of Coq and implement in the level of TemplateCoq. Section
-\ref{sec:plainmodules} describes the implementation of plain modules
-without functors.
+In this chapter, we formalize the semantics of the current implementation of Coq
+Modules and formalize them at the level of TemplateCoq. Section
+\ref{sec:semantics-of-modules} describes the semantics behind plain modules and
+aliased modules, without functors.
 
 
 % \section{Related Works}
@@ -94,7 +94,7 @@ of improvements for Coq users.
 Other slightly useful references include papers that explain modules in the ML
 family of languages, specifically OCaml and to a certain extent, Standard ML.
 On this note, Derek Dreyer wrote his PhD thesis \sidecite{dreyerphd} on
-understanding and extending ML modules, and subsequently a on implementing ML
+understanding and extending ML modules, and subsequently on implementing ML
 modules in its most desirable form, applicative and first-order as a subset of a
 small type system, $F_\omega$\sidecite{f-ing}. Other notable implementations
 include that of CakeML \sidecite{cakeml}, a verified ML language and Standard ML
@@ -121,23 +121,71 @@ inspirations.
 % \item CakeML has modules, but not functors. YK Tan (2015).
 % \end{enumerate}
 
-\section{Semantic of Modules}
+\section{Semantics of Modules}
+\label{sec:semantics-of-modules}
+From now onwards, we consider only non-parametrized modules.
+
+There are two operations involving modules: how to define a module and how to
+use a module. We will specify the behaviour, implementation and proof
+obligations below.
+
+Modules are containers for definitions that allow reuse. Definitions in Coq are
+stored in a Global Environment. We first look at the structure of Global Environment:
+
+\subsection{Global Environment}
+The Global Environment in Coq can be understood as a table or a map. There are
+three columns in the map: first is a canonical kername, second a pathname, and
+finally, the definition object. Canonical kernames can be though of as unique
+labels, and for the ease of understanding, as natural numbers 1, 2, 3 etc.
+The pathname is a name which the user gives to the definition; it is of the form
+of a dot-separated string, such as $M.N.a$. Finally, the definition object can
+be:
+\begin{itemize}
+
+\item A \textbf{constant definition} to a Coq term, such as a lambda term,
+application term, etc..
+
+\item An \textbf{inductive definition} of a type.
+
+\item A \textbf{module definition}. We consider a module to be inductively
+defined as a list of constant, inductive, module or module signature
+definitions. Alternatively, it can also be an alias to a previously defined
+module (which may be an alias).
+
+\item A \textbf{module signature definition} has the same structure as a module
+definition, but instead of concrete definitions, it only specifies a name and a
+type for each entry. It can be also an alias to a previously defined module
+signature (which may be an alias).
+
+\end{itemize}
+The terms ``module type'' and ``module signature'' are used interchangeably.
+
 \subsection{Plain Modules}
 \label{sec:plainmodules}
 
-Plain modules are just saving declarations and definitions in a structure, in the
-global context. Its contents are not modified during conversion/reduction.
+\subsubsection{Behaviour and Implementation}
 
-In Coq, modules are second-class objects; in other words, a module is not a
-term.  Its definition is stored and referred to by a canonical kername. We say
-the implementation of such a module is correct if the metatheory of the original
-system are unchanged and remains correct; that is the proofs go through when
-terms can be defined within modules. Since the MetaCoq project has proven
+Modules can be thought of as a named global environment where the definitions
+within it are namespaced by the module name. Therefore, its contents are not
+modified during conversion/reduction.  In Coq, modules are second-class objects;
+in other words, a module is not a term.  Its definition is stored and referred
+to by a pathname and a kername.
+
+Therefore, implementation wise, one need to ensure the correctness of "referring
+to definition"; that is, when a definition within a module is referred to by its
+pathname $M.N.a$, it will be fetched correctly from the table.
+
+\subsubsection{Proof obligation}
+
+We say the implementation of such a module is correct if the meta-theory of the
+original system are unchanged and remains correct; that is the proofs go through
+when terms can be defined within modules. Since the MetaCoq project has proven
 various nice properties about conversion in Coq, our project on plain modules is
 two-fold:
+
 \begin{enumerate}
 \item Ensure the correctness of the static semantics of Coq Modules
-(well-typedness).
+(well-typedness) during its definition.
 \item Define the behaviour of access of definitions within Modules.
 \end{enumerate}
 
@@ -147,7 +195,7 @@ conversion, since the additional terms defined in Modules fulfill (2).
 This follows as our definition of Modules on the TemplateCoq level, is
 eventually elaborated down into the PCUIC calculus the idea of modules and
 aliasing do not exist anymore, they are flattened into the corresponding global
-environment.
+environment. The details of (2) are described in Section \ref{sec:using-modules}.
 
 Concretely, if a module as below is defined while the Global Environment, which
 stores definitions is denoted as $\Sigma$:
@@ -156,24 +204,53 @@ Module M.
     Definition a: nat := 0.
 End M.
 \end{minted}
-Then the environment will have an new declaration added:
+Then the environment must have a new declaration added:
 \[\Sigma := \Sigma :: \text{ModuleDeclaration}(M,
 [\text{ConstantDeclaration}(M.a, nat, 0)])\]
 
-So when $M.a$ is called, it refers to the definition in the 
+So when $M.a$ is called, it must refer to the definition in the Global
+Environment correctly.
 
 \subsection{Aliased Modules}
 Aliased modules are just a renaming of existing modules, which can be seen as
 syntactic sugar for modules. Therefore, the correctness depends only on
-implementing this internal referencing correctly. Suppose we have
+implementing this internal referencing correctly.
+
+\subsubsection{Behaviour and Implementation}
+Suppose we have
 
 \begin{minted}{coq}
 Module N := M.
 \end{minted}
 
-Aliasing $N$ to $M$, then any access path $N.X$ should be resolved similarly to
+Aliasing $N$ to $M$ and $M$ is a previously defined module (or an alias),
+then any access path $N.X$ should be resolved similarly to
 $M.X$ (note that since $M$ is possibly an alias as well, we do not require $N.X$
-to resolve \emph{to} $M.X$). In the OCaml implementation, this is implemented 
-by an internal kernel name, conceptually similar to a lookup table; formally,
-the kernel name is a pair of a \emph{name} and a \emph{label}, with label being
-the internal reference used by both $N$ and $M$.
+to resolve \emph{to} $M.X$). In the OCaml implementation, all definitions in $M$
+can now be referred to by the pathnames $N.X$ in addition to $M.X$, while still
+having the same kername.
+
+\subsubsection{Proof Obligations}
+\begin{enumerate}
+\item Well-definedness: aliasing can only occur for well-defined modules. There
+    cannot be self-alias and forward aliasing (aliasing something not yet defined).
+\item The resolution of aliased modules is done at definition. If $N$ is aliased
+    to $M$, then $N$ will immediately inherit the same kername as $M$. We will
+    show this resolution is decidable and results in correct aliasing.
+\end{enumerate}
+
+\subsection{Using Modules}
+\label{sec:using-modules}
+As mentioned, the only way modules are used is during reduction or conversion
+of a Coq term. In Coq, reduction and conversion are made up of smaller reduction
+rules, such as $\beta, \delta,\zeta,\eta,\iota$ reductions. In particular, 
+Modules are related only to $\delta$ reductions, which "replaces a defined
+variable with its definition" 
+\sidenote{\href{https://coq.inria.fr/refman/language/core/conversion.html} {Coq:
+Conversion}}.
+
+The correctness of $\delta$-reduction and conversion is a meta-theoretic
+property, which is already shown to be correct and have properties such as 
+normalization, confluence etc. in PCUIC \sidecite{coqcoqcorrect}. I will
+contribute by expanding the definition of delta-conversion and expand the
+existing proofs in the MetaCoq project that such properties continue to hold.
