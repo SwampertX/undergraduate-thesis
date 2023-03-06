@@ -1,0 +1,157 @@
+\chapter{Types and Proof Assistants}
+% \section{Types and Proof Assistants}
+
+\section{What are proof assistants?}
+% \subsection{What are proof assistants?}
+Proof assistants are a special kind of computer program whose job is to verify
+the correctness of a mathematical proof. Informally, it has to verify if a
+conclusion can be made by applying a fixed set of logical deduction steps on a
+set of fixed assumptions. There are several ways to implement this; modern
+implementations of proof assistants usually utilizes theories such as Higher
+Order Logic (e.g. Isabelle, HOL Light), or some form of Type Theory.
+
+In order to have a computer program that can do such powerful logical
+reasoning to contain sophisticated mathematical results, the first 
+question that arises is how to represent a theorem and what qualifies
+as a valid proof of a theorem. Fortunately, Type Theory gives a simple
+and direct relationship between Logic and Types.
+
+\section{Type Theory}
+% \subsection{Type Theory}
+
+Types were first invented by Bertrand Russell as a way to provide higher-order
+structures than sets to overcome his famous Russell's paradox. However, it was
+Alonzo Church's Lambda Calculus which when used with types (Simply Typed Lambda
+Calculus, or STLC) exhibited many desirable properties. STLC turned out to be a
+consistent formal system, and a rewriting system that exhibits strong
+normalization, which means the simplification of STLC terms will always
+terminate, and always tends towards a unique normal form.
+
+Most importantly, type systems such as STLC exhibits the Curry-Howard Correspondence,
+which is the crucial observation that allows Type Theories to be useful for
+
+\section{The Curry-Howard Correspondence}
+% \subsection{The Curry-Howard Correspondence}
+
+The Curry-Howard Correspondence establishes a one-to-one correspondence between
+two distinct disciplines --- Logic and Types. It asserts that there is a
+one-to-one correspondence between Types and Propositions, and between Terms and
+Proofs. More precisely, it states that every proposition in intuitionistic
+propositional logic (constructive 0-th order logic) can be expressed as a Type
+in Simply Typed Lambda Calculus, and correspondingly, a term of a specific type
+is viewed as a proof for the proposition represented by the type.
+
+\begin{tabular}{c|c}
+Intuitionistic Propositional Logic & Type Theory\\
+\hline
+Proposition & Type\\
+Proof & Term
+\end{tabular}
+
+What are those exactly?
+
+\subsection{Intuitionistic Propositional Logic}
+% \subsubsection{Intuitionistic Propositional Logic}
+There are two parts: Intuitionistic, and Propositional Logic. Let us start with
+Propositional Logic.
+
+\subsubsection{Propositional Logic} Propositional logic, (sometimes \emph{0-th
+order logic}) is a logical system where propositions are constructed with
+variables and logical connectors, such as $\to$ (implication), $\vee$
+(disjunction), $\neg$ (negation), $\wedge$ (conjunction) and more, but not
+including quantification ($\exists$ (exists), $\forall$ (for all)). For example,
+propositions in Propositional Logic might look like the following:
+
+\begin{enumerate}
+    \item $p\vee q$
+    \item $p\wedge \neg p$
+    \item $(p\to q)\to (\neg q\to\neg p)$
+\end{enumerate}
+
+In \textbf{Classical} Propositional Logic, one can assign a valuation to each variable,
+either $1$ or $0$, which represents "True" or "False" informally, and extend the
+definition of valuation to propositions in a ``natural'' fashion: 
+
+\begin{align*}
+\tilde{v}(p)&=v(p)&&\text{if $p$ is a variable}\\
+\tilde{v}(p\wedge q)&=1&&\text{iff }\tilde{v}(p) = 1 \text{ and } \tilde{v}(q) = 1\\
+\tilde{v}(p\vee q)&=1&&\text{iff }\tilde{v}(p) = 1 \text{ or } \tilde{v}(q) = 1
+\end{align*}
+
+And so on. If there is some valuation that result in the proposition result in
+$1$, then we say the proposition is \emph{satisfiable}; if there is none, i.e.
+all valuations will result in the proposition being $0$, we say the proposition
+is a \emph{contradiction}; on the other hand, if any valuation will result in
+$1$, the proposition is a \emph{tautology}.
+
+In particular, in the above example, 
+
+\begin{enumerate}
+    \item $p\vee q$ is satisfiable by $v(p)=1, v(q)=0$,
+    \item $p\wedge \neg p$ is a contradiction, and 
+    \item $(p\to q)\to (\neg q\to\neg p)$ is a tautology.
+\end{enumerate}
+
+\subsubsection{Classical Logic} Logical systems can be either intuitionistic or
+classical, based on one fact: whether they accept the \emph{Law of Excluded
+Middle} as an axiom. Precisely, it says
+
+\newtheorem{axiom}{Axiom}[section]
+\begin{axiom}[Law of Excluded Middle]
+    For any proposition $p$, either $p$ or $\neg p$ holds.
+\end{axiom}
+
+Much of modern mathematics is built on classical logic, which asserts the axiom
+of excluded middle. This leads to the existence of multitude of non-constructive 
+proofs, which shows existence without giving a witness. A classical example of a
+non-constructive proof using the law of excluded middle is given as follows:
+
+\begin{theorem}
+There exists irrational numbers $a, b$ where $a^b$ is rational.
+\end{theorem}
+\begin{proof}
+By the law of excluded middle, $\sqrt{2}^{\sqrt{2}}$ is either rational or
+irrational. 
+    
+Suppose it is rational, then take $a=b=\sqrt{2}$. We have found such $a,b$.
+
+Suppose it is irrational, then take $a=\sqrt{2}^{\sqrt{2}}$, $b=\sqrt{2}$. Then
+\[a^b={\left(\sqrt{2}^{\sqrt{2}}\right)}^{\sqrt{2}}=\sqrt{2}^{\sqrt{2}\times\sqrt{2}}=2\]
+is rational.
+\end{proof}
+
+Even with the proof, we still don't have a concrete pair of irrational numbers
+$(a,b)$ fulfilling the property, but the conclusion is declared to be logically
+sound in classical logic. Intuitionistic logic, on the other hand, rejects this
+rule, leading to a logical system where to prove something exists, it requires
+an algorithm for the explicit construction of such object.
+
+\subsection{The Correspondence}
+The Curry-Howard correspondence is two-way: in particular, we can encode
+a proposition as a type, and to write a proof is equivalent to 
+finding a term that inhabit that particular type. This reduced the
+problem of proof-checking to the problem of finding the type of a term,
+or under the Curry-Howard correspondence, whether a proof truly proves
+a given proposition.
+
+This fundamental correspondence is elegant, but only limited to 
+propositional logic. More complex type systems, such as the
+Calculus of Constructions by Thierry Coquand, extend the Curry-Howard
+correspondence to higher-order logic, finally allowing the encoding of
+most mathematical truth and specifying proofs for theories in those 
+systems.
+
+\subsection{From STLC to PCUIC}
+% \subsubsection{Simply Typed Lambda Calculus}
+
+The Simply Typed Lambda Calculus (STLC) is a simple construction; we do not
+define it here but refer to many classical textbooks such as
+\sidecite{barendregt1992lambda} and \sidecite{girard1989proofs}. It is shown to
+be equivalent to Intuitionistic Propositional Logic under the Curry-Howard
+Correspondence. Furthermore, stronger type systems such as the Calculus of Constructions (CoC)
+\sidecite{coquand1986calculus} extend the Curry-Howard correspondence to proofs 
+in the full intuitionistic predicate logic (or \emph{1-st order logic}), allowing
+proofs of quantified statements. The Polymorphic Cumulative Calculus of co-Inductive
+Constructions (PCUIC) is a further extension of the CoC to include co-inductive
+types, polymorphic universes and cumulativity, which we will not explain in this
+paper and instead refer interested readers to the paper \sidecite{pcuic2017timany}.

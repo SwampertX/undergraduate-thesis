@@ -1,0 +1,78 @@
+\section{Coq Modules}
+
+\begin{frame}
+    \frametitle{Example - Definitions}
+    Modules as ``collections of definitions''.
+    \inputminted[firstline=1,lastline=10]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Example - Modules}
+    ``Packaging'' definitions into a Module (Type).
+    \inputminted[firstline=11,lastline=16]{coq}{code/module_example.v}
+    \inputminted[firstline=19,lastline=23]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Example - Aliasing}
+    Modules can be aliased for ease of reference.
+    \inputminted[firstline=24,lastline=25]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Example - Functors}
+    Higher-order modules - Functors.
+    \inputminted[firstline=27]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Towards a Specification of Plain Modules}
+    \begin{itemize}
+    \item There are many contention/issues regarding the semantics of functors:
+    \underline{\href{https://github.com/coq/coq/wiki/OpenIssuesWithModules}{OpenIssuesWithModules}}
+    \pause
+    \item I only work on \textbf{plain} (non-parametrized) modules and module types, aliasing.
+    \pause
+    \item 2nd class object; cannot pass around as a term
+    \item Restricted range of operations
+    \begin{enumerate}
+    \item Declaration/Definition (including aliasing)
+    \item Using modules: access definitions in it using path names
+    \item Refining a module: create new module by replacing entries of existing
+    \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Representation of Global Environment and Modules}
+    \begin{itemize}
+    \item Before: global environment is a list of name-definition pairs for 
+        constants and inductive types.\pause
+    \item After: Modules are tree-like structures: they contain definitions of
+    constants, inductives, modules, and module types. \pause
+    \item Global environment is just a special case of a Module.
+    \item Items in modules are referred to using pathnames (e.g. $M.a$)
+    instead of defined names (e.g. $a$). The resolution of path name to its definition
+    extends the $\delta$-reduction\footnote{Slightly different from named function
+    application for lambda calculus with constants: plus 2 3$\to_\delta$ 5} in Coq.
+    \item \textbf{Goal: Formalize the above in TemplateCoq.}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Some Properties to Verify}
+    \begin{enumerate}
+    \item Definition: well-definedness of this structure: follow the Typing
+    (Formation) Rules.
+    \item Definition-Alias: well-definedness of aliasing: no cycles.
+    \item Path: path points to the correct definition.
+    \item Path-Alias: aliased path points to the correct definition.
+    \item Related theorems about environment, typing, translation etc.
+
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Example: TemplateToPCUICCorrectness.v}
+    \inputminted{coq}{code/lemma.v}
+\end{frame}

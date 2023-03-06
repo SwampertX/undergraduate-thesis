@@ -1,0 +1,66 @@
+\section{Motivation}
+\label{sec:motivation}
+
+\begin{frame}
+    \frametitle{Motivation}
+    \begin{itemize}
+    \item Coq is a proof assistant based on Type Theory. In particular, the
+        \textbf{P}olymorphic, \textbf{Cu}mulative Calculus of
+        (co-)\textbf{I}nductive \textbf{C}onstructions (PCUIC).
+    \item We trust the theory to be correct: PCUIC is proven strongly
+        normalizing, reduction and conversion  are shown to be
+        decidable\dots\pause
+    \item But when we use Coq, we use the OCaml implementation. \pause
+    \item Is this implementation also reliable? Correct?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bugs}
+\begin{itemize}
+\item On average, one critical bug a year!
+\item Critical meaning possibly threatening the correctness of proved theorems -
+    proving False in Coq!\pause
+\item MetaCoq project in 2018 as a metaprogramming platform for Coq,
+    building on existing systems such as TemplateCoq (2014).
+\item Bonus: formalize the theory of Coq, PCUIC, using MetaCoq.\pause
+\item Slogan: the Coq implementation you run every week/month.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{What is the theory of Coq?}
+
+    The type theory behind the Coq proof assistant is PCUIC:
+    \begin{itemize}
+    \item (Universe) \textbf{P}olymorphic 
+    \item \textbf{Cu}mulative
+    \item Calculus of (co-)\textbf{I}nductive \textbf{C}onstructions (CoC with Inductive Types)
+    \item Calculus of Constructions (Coquand and Huet, 1988)
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MetaCoq - An Overview}
+
+    \begin{itemize}
+    \item From high level to low level:
+    \item Coq - PCUIC - Machine Code \pause
+    \item Coq - \textbf{TemplateCoq} - PCUIC - Machine Code \pause
+    \item Coq - TemplateCoq - PCUIC - \textbf{Checker \& Erasure} - Machine Code\pause
+    \item Coq Coq Correct! Verification of Type Checking and Erasure
+        for Coq, in Coq (2020)\pause
+    \item Caveats:\pause
+    \begin{enumerate}
+    \item Eta-expansion
+    \item Template Polymorphism
+    \item SProps (Proof-irrelevant Propositions)
+    \item \textbf{Modules}
+    \end{enumerate}
+    
+    \end{itemize}
+\end{frame}
+
+
+    

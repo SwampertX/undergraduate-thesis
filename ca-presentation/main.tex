@@ -1,0 +1,65 @@
+\documentclass{beamer}
+% Choose the language
+\usepackage[english]{babel} % Load characters and hyphenation
+\usepackage[english=british]{csquotes}	% English quotes
+
+% Load packages for testing
+% \usepackage{blindtext}
+%\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
+%\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
+
+% % Load the bibliography package
+% \usepackage{kaobiblio}
+% \addbibresource{main.bib} % Bibliography file
+
+% Use Meven's PhD paper's style
+\usepackage{styles/layout}
+
+% % Load mathematical packages for theorems and related environments
+% \usepackage{kaotheorems}
+
+% % Load the package for hyperreferences
+% \usepackage{kaorefs}
+
+\graphicspath{{images/}{./}} % Paths where images are looked for
+
+\begin{document}
+
+\include{chapters/header}
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+\begin{frame}
+    \frametitle{Contents}
+
+    \tableofcontents
+
+\end{frame}
+\include{sections/0-background.tex}
+\include{sections/1-motivation.tex}
+\include{sections/2-modules.tex}
+\include{sections/3-plan-ahead.tex}
+%----------------------------------------------------------------------------------------
+
+% \backmatter % Denotes the end of the main document content
+% \setchapterstyle{plain} % Output plain chapters from this point onwards
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+% The bibliography needs to be compiled with biber using your LaTeX editor, or on the command line with 'biber main' from the template directory
+
+% \defbibnote{bibnote}{Here are the references in citation order.\par\bigskip} % Prepend this text to the bibliography
+% \printbibliography[heading=bibintoc, title=Bibliography, prenote=bibnote] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+% The index needs to be compiled on the command line with 'makeindex main' from the template directory
+
+% \printindex % Output the index
+
+\end{document}

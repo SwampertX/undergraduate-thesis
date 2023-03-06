@@ -1,0 +1,182 @@
+@article{jacek2003,
+author = {Chrzszcz, Jacek},
+year = {2003},
+month = {12},
+pages = {},
+title = {Implementing Modules in the Coq System}
+}
+
+@phdthesis{soubiran,
+  TITLE = {{D{\'e}veloppement modulaire de th{\'e}ories et gestion de l'espace de nom pour l'assistant de preuve Coq.}},
+  AUTHOR = {Soubiran, Elie},
+  URL = {https://tel.archives-ouvertes.fr/tel-00679201},
+  SCHOOL = {{Ecole Polytechnique X}},
+  YEAR = {2010},
+  MONTH = Sep,
+  KEYWORDS = {Module system ; namespace ; Coq},
+  TYPE = {Theses},
+  PDF = {https://tel.archives-ouvertes.fr/tel-00679201/file/these.pdf},
+  HAL_ID = {tel-00679201},
+  HAL_VERSION = {v1},
+}
+
+ @misc{coqwikimodulesystem,
+  title   = {ModuleSystem · coq/Coq wiki},
+  url     = {https://github.com/coq/coq/wiki/ModuleSystem},
+  journal = {GitHub},
+  year    = {2018},
+  month   = {Apr}
+} 
+
+@phdthesis{dreyerphd,
+author = {Dreyer, Derek and Harper, Robert and Crary, Karl},
+title = {Understanding and Evolving the Ml Module System},
+year = {2005},
+isbn = {0542015501},
+publisher = {Carnegie Mellon University},
+address = {USA},
+abstract = {The ML module system stands as a high-water mark of programming language support for data abstraction. Nevertheless, it is not in a fully evolved state. One prominent weakness is that module interdependencies in ML are restricted to be acyclic, which means that mutually recursive functions and data types must be written in the same module even if they belong conceptually in different modules. Existing efforts to remedy this limitation either involve drastic changes to the notion of what a module is, or fail to allow mutually recursive modules to hide type information from one another. Another issue is that there are several dialects of ML, and the module systems of these dialects differ in subtle yet semantically significant ways that have been difficult to account for in any rigorous way. It is important to come to a clear assessment of the existing design space and consolidate what is meant by “the ML module system” before embarking on such a major extension as recursive modules. In this dissertation I contribute to the understanding and evolution of the ML module system by: (1)&nbsp;developing a unifying account of the ML module system in which existing variants may be understood as subsystems that pick and choose different features, (2)&nbsp;exploring how to extend ML with recursive modules in a way that does not inhibit data abstraction, and (3)&nbsp;incorporating the understanding gained from (1) and (2) into the design of a new, evolved dialect of ML. I formalize the language of part (3) using the framework of Harper and Stone, in which the meanings of “external” ML programs are interpreted by translation into an “internal” type system. In my exploration of the recursive module problem, I also propose a type system for statically detecting whether or not recursive module definitions are “safe”—that is, whether they can be evaluated without referring to one another prematurely—thus enabling more efficient compilation of recursive modules. Future work remains, however, with regard to type inference and type system complexity, before my proposal can be feasibly incorporated into ML.},
+note = {AAI3166274}
+}
+
+@inproceedings{f-ing,
+author = {Rossberg, Andreas and Russo, Claudio V. and Dreyer, Derek},
+title = {F-Ing Modules},
+year = {2010},
+isbn = {9781605588919},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1708016.1708028},
+doi = {10.1145/1708016.1708028},
+abstract = {ML modules are a powerful language mechanism for decomposing programs into reusable components. Unfortunately, they also have a reputation for being "complex" and requiring fancy type theory that is mostly opaque to non-experts. While this reputation is certainly understandable, given the many non-standard methodologies that have been developed in the process of studying modules, we aim here to demonstrate that it is undeserved. To do so, we give a very simple elaboration semantics for a full-featured, higher-order ML-like module language. Our elaboration defines the meaning of module expressions by a straightforward, compositional translation into vanilla System F-ω (the higher-order polymorphic λ-calculus), under plain F-ω typing environments. We thereby show that ML modules are merely a particular mode of use of System F-ω.Our module language supports the usual second-class modules with Standard ML-style generative functors and local module definitions. To demonstrate the versatility of our approach, we further extend the language with the ability to package modules as first-class values---a very simple extension, as it turns out. Our approach also scales to handle OCaml-style applicative functor semantics, but the details are significantly more subtle, so we leave their presentation to a future, expanded version of this paper.Lastly, we report on our experience using the "locally nameless" approach in order to mechanize the soundness of our elaboration semantics in Coq.},
+booktitle = {Proceedings of the 5th ACM SIGPLAN Workshop on Types in Language Design and Implementation},
+pages = {89–102},
+numpages = {14},
+keywords = {elaboration, ml modules, type systems, system f, first-class modules, existential types, abstract data types},
+location = {Madrid, Spain},
+series = {TLDI '10}
+}
+
+@inproceedings{cakeml,
+author = {Tan, Yong Kiam and Owens, Scott and Kumar, Ramana},
+title = {A Verified Type System for CakeML},
+year = {2015},
+isbn = {9781450342735},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2897336.2897344},
+doi = {10.1145/2897336.2897344},
+abstract = {CakeML is a dialect of the (strongly typed) ML family of programming languages, designed to play a central role in high-assurance software systems. To date, the main artefact supporting this is a verified compiler from CakeML source code to x86-64 machine code. The verification effort addresses each phase of compilation from parsing through to code generation and garbage collection.In this paper, we focus on the type system: its declarative specification, type soundness theorem, and the soundness and completeness of an implementation of type inference -- all formally verified in the HOL4 proof assistant. Each of these aspects of a type system is important in any design and implementation of a typed functional programming language. They allow the programmer to soundly employ (informal) type-based reasoning, and the compiler to apply optimisations that assume type-correctness. So naturally, their verification is a critical part of a verified compiler.},
+booktitle = {Proceedings of the 27th Symposium on the Implementation and Application of Functional Programming Languages},
+articleno = {7},
+numpages = {12},
+keywords = {type inference, compiler verification, ML},
+location = {Koblenz, Germany},
+series = {IFL '15}
+}
+
+@inproceedings{macqueen1984modules,
+  title={Modules for standard ML},
+  author={MacQueen, David},
+  booktitle={Proceedings of the 1984 ACM Symposium on LISP and Functional Programming},
+  pages={198--207},
+  year={1984}
+}
+
+@article{coqcoqcorrect,
+author = {Sozeau, Matthieu and Boulier, Simon and Forster, Yannick and Tabareau, Nicolas and Winterhalter, Th\'{e}o},
+title = {Coq Coq Correct! Verification of Type Checking and Erasure for Coq, in Coq},
+year = {2019},
+issue_date = {January 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {4},
+number = {POPL},
+url = {https://doi.org/10.1145/3371076},
+doi = {10.1145/3371076},
+abstract = {Coq is built around a well-delimited kernel that perfoms typechecking for definitions in a variant of the Calculus of Inductive Constructions (CIC). Although the metatheory of CIC is very stable and reliable, the correctness of its implementation in Coq is less clear. Indeed, implementing an efficient type checker for CIC is a rather complex task, and many parts of the code rely on implicit invariants which can easily be broken by further evolution of the code. Therefore, on average, one critical bug has been found every year in Coq. This paper presents the first implementation of a type checker for the kernel of Coq (without the module system and template polymorphism), which is proven correct in Coq with respect to its formal specification and axiomatisation of part of its metatheory. Note that because of G\"{o}del's incompleteness theorem, there is no hope to prove completely the correctness of the specification of Coq inside Coq (in particular strong normalisation or canonicity), but it is possible to prove the correctness of the implementation assuming the correctness of the specification, thus moving from a trusted code base (TCB) to a trusted theory base (TTB) paradigm. Our work is based on the MetaCoq project which provides metaprogramming facilities to work with terms and declarations at the level of this kernel. Our type checker is based on the specification of the typing relation of the Polymorphic, Cumulative Calculus of Inductive Constructions (PCUIC) at the basis of Coq and the verification of a relatively efficient and sound type-checker for it. In addition to the kernel implementation, an essential feature of Coq is the so-called extraction: the production of executable code in functional languages from Coq definitions. We present a verified version of this subtle type-and-proof erasure step, therefore enabling the verified extraction of a safe type-checker for Coq.},
+journal = {Proc. ACM Program. Lang.},
+month = {dec},
+articleno = {8},
+numpages = {28},
+keywords = {type checker, certification, proof assistants}
+}
+
+@article{DBLP:journals/corr/BauerGLSSS16,
+  author    = {Andrej Bauer and
+               Jason Gross and
+               Peter LeFanu Lumsdaine and
+               Michael Shulman and
+               Matthieu Sozeau and
+               Bas Spitters},
+  title     = {The HoTT Library: {A} formalization of homotopy type theory in Coq},
+  journal   = {CoRR},
+  volume    = {abs/1610.04591},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1610.04591},
+  eprinttype = {arXiv},
+  eprint    = {1610.04591},
+  timestamp = {Mon, 13 Aug 2018 16:48:11 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/BauerGLSSS16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{jung2018iris,
+  title={Iris from the ground up: A modular foundation for higher-order concurrent separation logic},
+  author={Jung, Ralf and Krebbers, Robbert and Jourdan, Jacques-Henri and Bizjak, Ale{\v{s}} and Birkedal, Lars and Dreyer, Derek},
+  journal={Journal of Functional Programming},
+  volume={28},
+  year={2018},
+  publisher={Cambridge University Press}
+}
+
+@article{barendregt1992lambda,
+  title={Lambda calculi with types},
+  author={Barendregt, Henk P},
+  year={1992},
+  publisher={Oxford: Clarendon Press}
+}
+
+@book{girard1989proofs,
+  title={Proofs and types},
+  author={Girard, Jean-Yves and Taylor, Paul and Lafont, Yves},
+  volume={7},
+  year={1989},
+  publisher={Cambridge university press Cambridge}
+}
+
+@phdthesis{coquand1986calculus,
+  title={The calculus of constructions},
+  author={Coquand, Thierry and Huet, G{\'e}rard},
+  year={1986},
+  school={INRIA}
+}
+
+@misc{pcuic2017timany,
+  doi = {10.48550/ARXIV.1710.03912},
+  
+  url = {https://arxiv.org/abs/1710.03912},
+  
+  author = {Timany, Amin and Sozeau, Matthieu},
+  
+  keywords = {Programming Languages (cs.PL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Consistency of the Predicative Calculus of Cumulative Inductive Constructions (pCuIC)},
+  
+  publisher = {arXiv},
+  
+  year = {2017},
+  
+  copyright = {Creative Commons Attribution Share Alike 4.0 International}
+}
+
+@article{sozeau2020metacoq,
+  title={The metacoq project},
+  author={Sozeau, Matthieu and Anand, Abhishek and Boulier, Simon and Cohen, Cyril and Forster, Yannick and Kunze, Fabian and Malecha, Gregory and Tabareau, Nicolas and Winterhalter, Th{\'e}o},
+  journal={Journal of automated reasoning},
+  volume={64},
+  number={5},
+  pages={947--999},
+  year={2020},
+  publisher={Springer}
+}

@@ -1,0 +1,55 @@
+%% Taken from https://github.com/MevenBertrand/Phd-Thesis.git
+%% Fonts
+
+% \RequirePackage{fontspec} % To allow easy font selection
+% % \RequirePackage{lmodern} % For the Latin Modern Font, but is this even useful?
+
+
+% \setromanfont[BoldFont={Libertinus Serif Semibold}, BoldItalicFont={Libertinus Serif Semibold Italic}]{Libertinus Serif}
+% \setsansfont{Libertinus Sans}
+% \setmonofont{Libertinus Mono}
+% \renewcommand{\familydefault}{\sfdefault}
+
+% \newfontfamily\checksymbol{DejaVu Sans} % because the checkmark is missing is Libertinus
+
+% \setmathfont{Libertinus Math}[Scale=MatchLowercase]
+% % % Reset the mathcal and blackboard bold to the ones from computer modern
+% \DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+% \setmathfont{Latin Modern Math}[Scale=MatchUppercase,ScaleAgain=1.07,range=bb]
+% \usepackage{libertinus}
+\usepackage[T1]{fontenc}
+\usetheme{metropolis}
+
+%% Colors
+
+\definecolor{LightOrange}{HTML}{F48C06}
+\definecolor{DarkGreen}{HTML}{228833}
+\definecolor{LightGreen}{HTML}{3e8914}
+\definecolor{DarkBlue}{HTML}{0077BB}
+\definecolor{LightBlue}{HTML}{33BBEE}
+\definecolor{Teal}{HTML}{009988}
+\definecolor{DarkOrange}{HTML}{EE7733}
+\definecolor{DarkRed}{HTML}{CC3311}
+\definecolor{Purple}{HTML}{AD216E}
+
+\hypersetup{
+  citecolor=DarkGreen,
+	filecolor=DarkGreen,
+	linkcolor=DarkGreen,
+	urlcolor=DarkBlue}
+% To avoid colored links in math mode, see https://tex.stackexchange.com/questions/641422/knowledge-package-coloring
+\everydisplay{\hypersetup{allcolors=.}}
+\everymath{\hypersetup{allcolors=.}}
+
+% \addtokomafont{title}{\color{LightGreen}}
+% \addtokomafont{part}{\color{LightGreen}}
+% \addtokomafont{chapter}{\color{LightGreen}}
+% \addtokomafont{section}{\color{LightGreen}}
+% \addtokomafont{subsection}{\color{LightGreen}}
+% \addtokomafont{subsubsection}{\color{LightGreen}}
+
+% Misc
+
+\usepackage{comment}
+\usepackage{minted}
+\usepackage{mathpartir}
