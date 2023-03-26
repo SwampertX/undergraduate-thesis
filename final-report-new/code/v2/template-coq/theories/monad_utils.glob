@@ -1,0 +1,861 @@
+DIGEST dba285c4c3f52f4aa095d837999bbc49
+FMetaCoq.Template.monad_utils
+R15:19 Coq.Arith.Arith <> <> lib
+R21:24 Coq.Lists.List <> <> lib
+R64:73 MetaCoq.Template.utils.All_Forall <> <> lib
+R75:82 MetaCoq.Template.utils.MCSquash <> <> lib
+R115:123 Equations.Prop.Equations <> <> lib
+R126:162 Coq.Init.Datatypes <> is_true def
+R173:185 Coq.Lists.List ListNotations <> mod
+rec 223:227 <> Monad
+proj 274:276 <> ret
+proj 314:317 <> bind
+R248:251 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 236:236 <> m:1
+binder 288:288 <> t:3
+R304:307 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R303:303 MetaCoq.Template.monad_utils <> t:3 var
+R308:308 MetaCoq.Template.monad_utils <> m:1 var
+R310:310 MetaCoq.Template.monad_utils <> t:3 var
+binder 329:329 <> t:5
+binder 331:331 <> u:6
+R349:352 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R346:346 MetaCoq.Template.monad_utils <> m:1 var
+R348:348 MetaCoq.Template.monad_utils <> t:5 var
+R353:353 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R362:366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R355:358 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R354:354 MetaCoq.Template.monad_utils <> t:5 var
+R359:359 MetaCoq.Template.monad_utils <> m:1 var
+R361:361 MetaCoq.Template.monad_utils <> u:6 var
+R367:367 MetaCoq.Template.monad_utils <> m:1 var
+R369:369 MetaCoq.Template.monad_utils <> u:6 var
+rec 381:388 <> MonadExc
+proj 423:427 <> raise
+proj 454:458 <> catch
+binder 390:390 <> E:8
+R401:404 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 393:393 <> m:9
+binder 439:439 <> T:11
+R444:447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R443:443 MetaCoq.Template.monad_utils <> E:8 var
+R448:448 MetaCoq.Template.monad_utils <> m:9 var
+R450:450 MetaCoq.Template.monad_utils <> T:11 var
+binder 470:470 <> T:13
+R477:480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R474:474 MetaCoq.Template.monad_utils <> m:9 var
+R476:476 MetaCoq.Template.monad_utils <> T:13 var
+R481:481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R490:494 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R483:486 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R482:482 MetaCoq.Template.monad_utils <> E:8 var
+R487:487 MetaCoq.Template.monad_utils <> m:9 var
+R489:489 MetaCoq.Template.monad_utils <> T:13 var
+R495:495 MetaCoq.Template.monad_utils <> m:9 var
+R497:497 MetaCoq.Template.monad_utils <> T:13 var
+mod 511:525 <> MCMonadNotation
+R624:627 MetaCoq.Template.monad_utils <> bind meth
+not 609:609 MCMonadNotation ::monad_scope:x_'>>='_x
+R717:720 MetaCoq.Template.monad_utils <> bind meth
+not 702:702 MCMonadNotation ::monad_scope:x_'=<<'_x
+R825:828 MetaCoq.Template.monad_utils <> bind meth
+binder 846:846 <> x:15
+not 797:797 MCMonadNotation ::monad_scope:'mlet'_x_'<-'_x_';;'_x
+R984:987 MetaCoq.Template.monad_utils <> bind meth
+binder 1005:1005 <> x:16
+R1016:1016 MetaCoq.Template.monad_utils <> x:16 var
+not 952:952 MCMonadNotation ::monad_scope:'mlet'_''''_x_'<-'_x_';;'_x
+R1158:1161 MetaCoq.Template.monad_utils <> bind meth
+binder 1179:1179 <> x:18
+not 1137:1137 MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x
+R1299:1302 MetaCoq.Template.monad_utils <> bind meth
+binder 1320:1320 <> x:19
+R1331:1331 MetaCoq.Template.monad_utils <> x:19 var
+not 1274:1274 MCMonadNotation ::monad_scope:''''_x_'<-'_x_';;'_x
+R1468:1471 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R1480:1483 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+not 1452:1452 MCMonadNotation ::monad_scope:x_';;'_x
+R1559:1573 MetaCoq.Template.monad_utils MCMonadNotation <> mod
+R1584:1598 MetaCoq.Template.monad_utils MCMonadNotation <> mod
+inst 1621:1632 <> option_monad
+R1636:1640 MetaCoq.Template.monad_utils <> Monad class
+R1642:1647 Coq.Init.Datatypes <> option ind
+R1657:1659 MetaCoq.Template.monad_utils <> ret meth
+R1657:1659 MetaCoq.Template.monad_utils <> ret meth
+R1657:1659 MetaCoq.Template.monad_utils <> ret meth
+R1682:1685 MetaCoq.Template.monad_utils <> bind meth
+R1682:1685 MetaCoq.Template.monad_utils <> bind meth
+binder 1661:1661 <> A:21
+binder 1663:1663 <> a:22
+R1668:1671 Coq.Init.Datatypes <> Some constr
+R1673:1673 MetaCoq.Template.monad_utils <> a:22 var
+binder 1687:1687 <> A:23
+binder 1689:1689 <> B:24
+binder 1691:1691 <> m:25
+binder 1693:1693 <> f:26
+R1711:1711 MetaCoq.Template.monad_utils <> m:25 var
+R1727:1730 Coq.Init.Datatypes <> Some constr
+R1737:1737 MetaCoq.Template.monad_utils <> f:26 var
+R1750:1753 Coq.Init.Datatypes <> None constr
+R1758:1761 Coq.Init.Datatypes <> None constr
+inst 1800:1815 <> option_monad_exc
+R1819:1826 MetaCoq.Template.monad_utils <> MonadExc class
+R1828:1831 Coq.Init.Datatypes <> unit ind
+R1833:1838 Coq.Init.Datatypes <> option ind
+R1846:1850 MetaCoq.Template.monad_utils <> raise meth
+R1846:1850 MetaCoq.Template.monad_utils <> raise meth
+R1846:1850 MetaCoq.Template.monad_utils <> raise meth
+R1870:1874 MetaCoq.Template.monad_utils <> catch meth
+R1870:1874 MetaCoq.Template.monad_utils <> catch meth
+binder 1852:1852 <> T:28
+R1859:1862 Coq.Init.Datatypes <> None constr
+binder 1876:1876 <> T:29
+binder 1878:1878 <> m:30
+binder 1880:1880 <> f:31
+R1897:1897 MetaCoq.Template.monad_utils <> m:30 var
+R1912:1915 Coq.Init.Datatypes <> Some constr
+R1922:1925 Coq.Init.Datatypes <> Some constr
+R1937:1940 Coq.Init.Datatypes <> None constr
+R1945:1945 MetaCoq.Template.monad_utils <> f:31 var
+R1947:1948 Coq.Init.Datatypes <> tt constr
+sec 1992:1997 <> MapOpt
+binder 2011:2011 <> A:33
+R2020:2023 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2019:2019 MetaCoq.Template.monad_utils <> A:33 var
+R2024:2029 Coq.Init.Datatypes <> option ind
+R2031:2031 MetaCoq.Template.monad_utils <> A:33 var
+binder 2015:2015 <> f:34
+def 2047:2052 <> mapopt
+R2059:2062 Coq.Init.Datatypes <> list ind
+R2064:2064 MetaCoq.Template.monad_utils <> MapOpt.A var
+binder 2055:2055 <> l:35
+R2069:2074 Coq.Init.Datatypes <> option ind
+R2077:2080 Coq.Init.Datatypes <> list ind
+R2082:2082 MetaCoq.Template.monad_utils <> MapOpt.A var
+R2098:2098 MetaCoq.Template.monad_utils <> l:35 var
+R2111:2113 Coq.Init.Datatypes <> nil constr
+R2118:2120 MetaCoq.Template.monad_utils <> ret meth
+R2122:2124 Coq.Init.Datatypes <> nil constr
+R2133:2136 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2145:2148 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2152:2171 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2149:2149 MetaCoq.Template.monad_utils <> MapOpt.f var
+binder 2143:2144 <> x':38
+R2175:2178 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2188:2207 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2179:2184 MetaCoq.Template.monad_utils <> mapopt:36 def
+binder 2172:2174 <> xs':39
+R2208:2210 MetaCoq.Template.monad_utils <> ret meth
+R2215:2218 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2213:2214 MetaCoq.Template.monad_utils <> x':38 var
+R2219:2221 MetaCoq.Template.monad_utils <> xs':39 var
+R2237:2242 MetaCoq.Template.monad_utils MapOpt <> sec
+sec 2254:2268 <> MonadOperations
+R2290:2293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2282:2282 <> T:40
+R2305:2309 MetaCoq.Template.monad_utils <> Monad class
+R2311:2311 MetaCoq.Template.monad_utils <> T:40 var
+binder 2301:2301 <> M:41
+binder 2326:2326 <> A:42
+binder 2328:2328 <> B:43
+R2337:2340 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2336:2336 MetaCoq.Template.monad_utils <> A:42 var
+R2341:2341 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R2343:2343 MetaCoq.Template.monad_utils <> B:43 var
+binder 2332:2332 <> f:44
+def 2358:2366 <> monad_map
+R2373:2376 Coq.Init.Datatypes <> list ind
+R2378:2378 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 2369:2369 <> l:45
+R2387:2387 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R2390:2393 Coq.Init.Datatypes <> list ind
+R2395:2395 MetaCoq.Template.monad_utils <> MonadOperations.B var
+R2411:2411 MetaCoq.Template.monad_utils <> l:45 var
+R2427:2429 Coq.Init.Datatypes <> nil constr
+R2434:2436 MetaCoq.Template.monad_utils <> ret meth
+R2438:2440 Coq.Init.Datatypes <> nil constr
+R2452:2455 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2463:2466 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2470:2491 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2467:2467 MetaCoq.Template.monad_utils <> MonadOperations.f var
+binder 2461:2462 <> x':48
+R2494:2497 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2509:2530 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2498:2506 MetaCoq.Template.monad_utils <> monad_map:46 def
+R2508:2508 MetaCoq.Template.monad_utils <> l:45 var
+binder 2492:2493 <> l':49
+R2531:2533 MetaCoq.Template.monad_utils <> ret meth
+R2538:2541 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2536:2537 MetaCoq.Template.monad_utils <> x':48 var
+R2542:2543 MetaCoq.Template.monad_utils <> l':49 var
+def 2572:2587 <> monad_option_map
+R2594:2599 Coq.Init.Datatypes <> option ind
+R2601:2601 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 2590:2590 <> l:50
+R2610:2610 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R2613:2618 Coq.Init.Datatypes <> option ind
+R2620:2620 MetaCoq.Template.monad_utils <> MonadOperations.B var
+R2636:2636 MetaCoq.Template.monad_utils <> l:50 var
+R2652:2655 Coq.Init.Datatypes <> None constr
+R2660:2662 MetaCoq.Template.monad_utils <> ret meth
+R2664:2667 Coq.Init.Datatypes <> None constr
+R2678:2681 Coq.Init.Datatypes <> Some constr
+R2690:2693 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2697:2719 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2694:2694 MetaCoq.Template.monad_utils <> MonadOperations.f var
+binder 2688:2689 <> x':52
+R2720:2722 MetaCoq.Template.monad_utils <> ret meth
+R2725:2728 Coq.Init.Datatypes <> Some constr
+R2730:2731 MetaCoq.Template.monad_utils <> x':52 var
+R2763:2766 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2762:2762 MetaCoq.Template.monad_utils <> MonadOperations.A var
+R2768:2771 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2767:2767 MetaCoq.Template.monad_utils <> MonadOperations.B var
+R2772:2772 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R2774:2774 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 2758:2758 <> g:53
+def 2789:2803 <> monad_fold_left
+R2810:2813 Coq.Init.Datatypes <> list ind
+R2815:2815 MetaCoq.Template.monad_utils <> MonadOperations.B var
+binder 2806:2806 <> l:54
+R2823:2823 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 2819:2819 <> x:55
+R2828:2828 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R2830:2830 MetaCoq.Template.monad_utils <> MonadOperations.A var
+R2845:2845 MetaCoq.Template.monad_utils <> l:54 var
+R2861:2863 Coq.Init.Datatypes <> nil constr
+R2868:2870 MetaCoq.Template.monad_utils <> ret meth
+R2872:2872 MetaCoq.Template.monad_utils <> x:55 var
+R2884:2887 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2895:2898 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2904:2926 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R2899:2899 MetaCoq.Template.monad_utils <> MonadOperations.g var
+R2901:2901 MetaCoq.Template.monad_utils <> x:55 var
+binder 2893:2894 <> x':58
+R2927:2941 MetaCoq.Template.monad_utils <> monad_fold_left:56 def
+R2945:2946 MetaCoq.Template.monad_utils <> x':58 var
+R2943:2943 MetaCoq.Template.monad_utils <> l:54 var
+def 2972:2987 <> monad_fold_right
+R2994:2997 Coq.Init.Datatypes <> list ind
+R2999:2999 MetaCoq.Template.monad_utils <> MonadOperations.B var
+binder 2990:2990 <> l:59
+R3007:3007 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 3003:3003 <> x:60
+R3012:3012 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R3014:3014 MetaCoq.Template.monad_utils <> MonadOperations.A var
+R3032:3032 MetaCoq.Template.monad_utils <> l:59 var
+R3051:3053 Coq.Init.Datatypes <> nil constr
+R3058:3060 MetaCoq.Template.monad_utils <> ret meth
+R3062:3062 MetaCoq.Template.monad_utils <> x:60 var
+R3077:3080 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3088:3091 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3112:3137 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3092:3107 MetaCoq.Template.monad_utils <> monad_fold_right:61 def
+R3111:3111 MetaCoq.Template.monad_utils <> x:60 var
+R3109:3109 MetaCoq.Template.monad_utils <> l:59 var
+binder 3086:3087 <> l':63
+R3138:3138 MetaCoq.Template.monad_utils <> MonadOperations.g var
+R3140:3141 MetaCoq.Template.monad_utils <> l':63 var
+R3179:3182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3176:3178 Coq.Init.Datatypes <> nat ind
+R3184:3187 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3183:3183 MetaCoq.Template.monad_utils <> MonadOperations.A var
+R3188:3188 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R3190:3190 MetaCoq.Template.monad_utils <> MonadOperations.B var
+binder 3172:3172 <> h:64
+def 3205:3219 <> monad_map_i_aux
+R3227:3229 Coq.Init.Datatypes <> nat ind
+binder 3222:3223 <> n0:65
+R3237:3240 Coq.Init.Datatypes <> list ind
+R3242:3242 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 3233:3233 <> l:66
+R3247:3247 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R3250:3253 Coq.Init.Datatypes <> list ind
+R3255:3255 MetaCoq.Template.monad_utils <> MonadOperations.B var
+R3271:3271 MetaCoq.Template.monad_utils <> l:66 var
+R3287:3289 Coq.Init.Datatypes <> nil constr
+R3294:3296 MetaCoq.Template.monad_utils <> ret meth
+R3298:3300 Coq.Init.Datatypes <> nil constr
+R3312:3315 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3323:3327 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3334:3357 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3328:3328 MetaCoq.Template.monad_utils <> MonadOperations.h var
+R3330:3331 MetaCoq.Template.monad_utils <> n0:65 var
+binder 3321:3322 <> x':69
+R3360:3364 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3389:3412 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3365:3379 MetaCoq.Template.monad_utils <> monad_map_i_aux:67 def
+R3388:3388 MetaCoq.Template.monad_utils <> l:66 var
+R3382:3382 Coq.Init.Datatypes <> S constr
+R3384:3385 MetaCoq.Template.monad_utils <> n0:65 var
+binder 3358:3359 <> l':70
+R3413:3415 MetaCoq.Template.monad_utils <> ret meth
+R3420:3423 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3418:3419 MetaCoq.Template.monad_utils <> x':69 var
+R3424:3425 MetaCoq.Template.monad_utils <> l':70 var
+def 3454:3464 <> monad_map_i
+R3470:3484 MetaCoq.Template.monad_utils <> monad_map_i_aux def
+R3493:3507 MetaCoq.Template.monad_utils MonadOperations <> sec
+sec 3519:3533 <> MonadOperations
+binder 3547:3547 <> T:71
+R3555:3559 MetaCoq.Template.monad_utils <> Monad class
+R3561:3561 MetaCoq.Template.monad_utils <> T:71 var
+binder 3551:3551 <> M:72
+binder 3565:3565 <> E:73
+R3574:3581 MetaCoq.Template.monad_utils <> MonadExc class
+R3583:3583 MetaCoq.Template.monad_utils <> E:73 var
+R3585:3585 MetaCoq.Template.monad_utils <> T:71 var
+binder 3569:3570 <> ME:74
+binder 3600:3600 <> A:75
+binder 3602:3602 <> B:76
+binder 3604:3604 <> C:77
+R3613:3616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3612:3612 MetaCoq.Template.monad_utils <> A:75 var
+R3618:3621 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3617:3617 MetaCoq.Template.monad_utils <> B:76 var
+R3622:3622 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R3624:3624 MetaCoq.Template.monad_utils <> C:77 var
+binder 3608:3608 <> f:78
+R3632:3632 MetaCoq.Template.monad_utils <> MonadOperations.E var
+binder 3628:3628 <> e:79
+def 3647:3656 <> monad_map2
+R3663:3666 Coq.Init.Datatypes <> list ind
+R3668:3668 MetaCoq.Template.monad_utils <> MonadOperations.A var
+binder 3659:3659 <> l:80
+R3677:3680 Coq.Init.Datatypes <> list ind
+R3682:3682 MetaCoq.Template.monad_utils <> MonadOperations.B var
+binder 3672:3673 <> l':81
+R3687:3687 MetaCoq.Template.monad_utils <> MonadOperations.T var
+R3690:3693 Coq.Init.Datatypes <> list ind
+R3695:3695 MetaCoq.Template.monad_utils <> MonadOperations.C var
+R3714:3715 MetaCoq.Template.monad_utils <> l':81 var
+R3711:3711 MetaCoq.Template.monad_utils <> l:80 var
+R3728:3730 Coq.Init.Datatypes <> nil constr
+R3733:3735 Coq.Init.Datatypes <> nil constr
+R3740:3742 MetaCoq.Template.monad_utils <> ret meth
+R3744:3746 Coq.Init.Datatypes <> nil constr
+R3755:3758 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3763:3766 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3781:3784 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3790:3799 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3785:3785 MetaCoq.Template.monad_utils <> MonadOperations.f var
+binder 3779:3780 <> x':85
+R3803:3806 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3822:3831 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R3807:3816 MetaCoq.Template.monad_utils <> monad_map2:82 def
+R3820:3821 MetaCoq.Template.monad_utils <> l':81 var
+R3818:3818 MetaCoq.Template.monad_utils <> l:80 var
+binder 3800:3802 <> xs':86
+R3832:3834 MetaCoq.Template.monad_utils <> ret meth
+R3839:3842 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3837:3838 MetaCoq.Template.monad_utils <> x':85 var
+R3843:3845 MetaCoq.Template.monad_utils <> xs':86 var
+R3862:3866 MetaCoq.Template.monad_utils <> raise meth
+R3868:3868 MetaCoq.Template.monad_utils <> MonadOperations.e var
+R3883:3897 MetaCoq.Template.monad_utils MonadOperations <> sec
+def 3912:3921 <> monad_iter
+R3932:3935 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3924:3924 <> T:87
+binder 3943:3943 <> M:88
+binder 3945:3945 <> A:89
+R3954:3957 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3953:3953 MetaCoq.Template.monad_utils <> A:89 var
+R3958:3958 MetaCoq.Template.monad_utils <> T:87 var
+R3960:3963 Coq.Init.Datatypes <> unit ind
+binder 3949:3949 <> f:90
+R3971:3974 Coq.Init.Datatypes <> list ind
+R3976:3976 MetaCoq.Template.monad_utils <> A:89 var
+binder 3967:3967 <> l:91
+R3981:3981 MetaCoq.Template.monad_utils <> T:87 var
+R3983:3986 Coq.Init.Datatypes <> unit ind
+R3994:4008 MetaCoq.Template.monad_utils <> monad_fold_left def
+R4010:4010 MetaCoq.Template.monad_utils <> T:87 var
+R4012:4012 MetaCoq.Template.monad_utils <> M:88 var
+R4028:4028 MetaCoq.Template.monad_utils <> f:90 var
+R4031:4031 MetaCoq.Template.monad_utils <> l:91 var
+R4033:4034 Coq.Init.Datatypes <> tt constr
+def 4047:4055 <> monad_All
+R4066:4069 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4058:4058 <> T:92
+R4081:4085 MetaCoq.Template.monad_utils <> Monad class
+R4087:4087 MetaCoq.Template.monad_utils <> T:92 var
+binder 4077:4077 <> M:93
+binder 4091:4091 <> A:94
+binder 4095:4095 <> P:95
+binder 4110:4110 <> x:96
+R4113:4113 MetaCoq.Template.monad_utils <> T:92 var
+R4116:4116 MetaCoq.Template.monad_utils <> P:95 var
+R4118:4118 MetaCoq.Template.monad_utils <> x:96 var
+binder 4099:4099 <> f:97
+binder 4122:4122 <> l:98
+R4126:4126 MetaCoq.Template.monad_utils <> T:92 var
+R4130:4132 MetaCoq.Template.utils.All_Forall <> All ind
+R4134:4134 MetaCoq.Template.monad_utils <> A:94 var
+R4136:4136 MetaCoq.Template.monad_utils <> P:95 var
+R4138:4138 MetaCoq.Template.monad_utils <> l:98 var
+R4150:4150 MetaCoq.Template.monad_utils <> l:98 var
+R4162:4163 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4168:4170 MetaCoq.Template.monad_utils <> ret meth
+R4172:4178 MetaCoq.Template.utils.All_Forall <> All_nil constr
+R4186:4189 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4196:4199 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4203:4220 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4200:4200 MetaCoq.Template.monad_utils <> f:97 var
+binder 4195:4195 <> X:101
+R4222:4225 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4239:4256 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4226:4234 MetaCoq.Template.monad_utils <> monad_All:99 def
+R4238:4238 MetaCoq.Template.monad_utils <> l:98 var
+R4236:4236 MetaCoq.Template.monad_utils <> f:97 var
+binder 4221:4221 <> Y:102
+R4257:4259 MetaCoq.Template.monad_utils <> ret meth
+R4262:4269 MetaCoq.Template.utils.All_Forall <> All_cons constr
+R4273:4273 MetaCoq.Template.monad_utils <> Y:102 var
+R4271:4271 MetaCoq.Template.monad_utils <> X:101 var
+def 4294:4303 <> monad_All2
+R4314:4317 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4306:4306 <> T:103
+binder 4325:4325 <> E:104
+R4333:4337 MetaCoq.Template.monad_utils <> Monad class
+R4339:4339 MetaCoq.Template.monad_utils <> T:103 var
+binder 4329:4329 <> M:105
+R4348:4355 MetaCoq.Template.monad_utils <> MonadExc class
+R4357:4357 MetaCoq.Template.monad_utils <> E:104 var
+R4359:4359 MetaCoq.Template.monad_utils <> T:103 var
+binder 4343:4344 <> M':106
+binder 4362:4372 <> wrong_sizes:107
+binder 4377:4377 <> A:108
+binder 4379:4379 <> B:109
+binder 4381:4381 <> R:110
+binder 4396:4396 <> x:111
+binder 4398:4398 <> y:112
+R4401:4401 MetaCoq.Template.monad_utils <> T:103 var
+R4404:4404 MetaCoq.Template.monad_utils <> R:110 var
+R4406:4406 MetaCoq.Template.monad_utils <> x:111 var
+R4408:4408 MetaCoq.Template.monad_utils <> y:112 var
+binder 4385:4385 <> f:113
+binder 4412:4413 <> l1:114
+binder 4415:4416 <> l2:115
+R4420:4420 MetaCoq.Template.monad_utils <> T:103 var
+R4424:4427 MetaCoq.Template.utils.All_Forall <> All2 ind
+R4429:4429 MetaCoq.Template.monad_utils <> A:108 var
+R4431:4431 MetaCoq.Template.monad_utils <> B:109 var
+R4433:4433 MetaCoq.Template.monad_utils <> R:110 var
+R4435:4436 MetaCoq.Template.monad_utils <> l1:114 var
+R4438:4439 MetaCoq.Template.monad_utils <> l2:115 var
+R4457:4458 MetaCoq.Template.monad_utils <> l2:115 var
+R4453:4454 MetaCoq.Template.monad_utils <> l1:114 var
+R4470:4471 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4474:4475 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4480:4482 MetaCoq.Template.monad_utils <> ret meth
+R4484:4491 MetaCoq.Template.utils.All_Forall <> All2_nil constr
+R4499:4502 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4508:4511 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4519:4522 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4528:4555 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4523:4523 MetaCoq.Template.monad_utils <> f:113 var
+binder 4518:4518 <> X:119
+R4557:4560 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4591:4618 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4561:4570 MetaCoq.Template.monad_utils <> monad_All2:116 def
+R4589:4590 MetaCoq.Template.monad_utils <> l2:115 var
+R4586:4587 MetaCoq.Template.monad_utils <> l1:114 var
+R4584:4584 MetaCoq.Template.monad_utils <> f:113 var
+R4572:4582 MetaCoq.Template.monad_utils <> wrong_sizes:107 var
+binder 4556:4556 <> Y:120
+R4619:4621 MetaCoq.Template.monad_utils <> ret meth
+R4624:4632 MetaCoq.Template.utils.All_Forall <> All2_cons constr
+R4636:4636 MetaCoq.Template.monad_utils <> Y:120 var
+R4634:4634 MetaCoq.Template.monad_utils <> X:119 var
+R4652:4656 MetaCoq.Template.monad_utils <> raise meth
+R4658:4668 MetaCoq.Template.monad_utils <> wrong_sizes:107 var
+def 4690:4699 <> monad_prod
+binder 4702:4702 <> T:121
+R4710:4714 MetaCoq.Template.monad_utils <> Monad class
+R4716:4716 MetaCoq.Template.monad_utils <> T:121 var
+binder 4706:4706 <> M:122
+binder 4720:4720 <> A:123
+binder 4722:4722 <> B:124
+R4730:4730 MetaCoq.Template.monad_utils <> T:121 var
+R4732:4732 MetaCoq.Template.monad_utils <> A:123 var
+binder 4726:4726 <> x:125
+R4740:4740 MetaCoq.Template.monad_utils <> T:121 var
+R4742:4742 MetaCoq.Template.monad_utils <> B:124 var
+binder 4736:4736 <> y:126
+R4746:4746 MetaCoq.Template.monad_utils <> T:121 var
+R4750:4752 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4749:4749 MetaCoq.Template.monad_utils <> A:123 var
+R4753:4753 MetaCoq.Template.monad_utils <> B:124 var
+R4767:4770 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4772:4775 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4771:4771 MetaCoq.Template.monad_utils <> x:125 var
+binder 4766:4766 <> X:127
+R4777:4780 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4782:4785 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R4781:4781 MetaCoq.Template.monad_utils <> y:126 var
+binder 4776:4776 <> Y:128
+R4786:4788 MetaCoq.Template.monad_utils <> ret meth
+R4790:4790 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4792:4793 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4795:4795 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4791:4791 MetaCoq.Template.monad_utils <> X:127 var
+R4794:4794 MetaCoq.Template.monad_utils <> Y:128 var
+def 4832:4840 <> check_dec
+R4851:4854 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4843:4843 <> T:129
+binder 4862:4862 <> E:130
+R4877:4881 MetaCoq.Template.monad_utils <> Monad class
+R4883:4883 MetaCoq.Template.monad_utils <> T:129 var
+binder 4873:4873 <> M:131
+R4892:4899 MetaCoq.Template.monad_utils <> MonadExc class
+R4901:4901 MetaCoq.Template.monad_utils <> E:130 var
+R4903:4903 MetaCoq.Template.monad_utils <> T:129 var
+binder 4887:4888 <> M':132
+R4911:4911 MetaCoq.Template.monad_utils <> E:130 var
+binder 4907:4907 <> e:133
+binder 4915:4915 <> P:134
+R4925:4925 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R4927:4931 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R4935:4935 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R4926:4926 MetaCoq.Template.monad_utils <> P:134 var
+R4932:4933 Coq.Init.Logic <> ::type_scope:'~'_x not
+R4934:4934 MetaCoq.Template.monad_utils <> P:134 var
+binder 4921:4921 <> H:135
+R4940:4940 MetaCoq.Template.monad_utils <> T:129 var
+R4942:4942 MetaCoq.Template.monad_utils <> P:134 var
+R4955:4955 MetaCoq.Template.monad_utils <> H:135 var
+R4966:4969 Coq.Init.Specif <> left constr
+R4976:4978 MetaCoq.Template.monad_utils <> ret meth
+R4986:4990 Coq.Init.Specif <> right constr
+R4997:5001 MetaCoq.Template.monad_utils <> raise meth
+R5003:5003 MetaCoq.Template.monad_utils <> e:133 var
+def 5024:5036 <> check_eq_true
+R5047:5050 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5039:5039 <> T:137
+binder 5058:5058 <> E:138
+R5073:5077 MetaCoq.Template.monad_utils <> Monad class
+R5079:5079 MetaCoq.Template.monad_utils <> T:137 var
+binder 5069:5069 <> M:139
+R5088:5095 MetaCoq.Template.monad_utils <> MonadExc class
+R5097:5097 MetaCoq.Template.monad_utils <> E:138 var
+R5099:5099 MetaCoq.Template.monad_utils <> T:137 var
+binder 5083:5084 <> M':140
+R5107:5110 Coq.Init.Datatypes <> bool ind
+binder 5103:5103 <> b:141
+R5118:5118 MetaCoq.Template.monad_utils <> E:138 var
+binder 5114:5114 <> e:142
+R5123:5123 MetaCoq.Template.monad_utils <> T:137 var
+R5125:5125 MetaCoq.Template.monad_utils <> b:141 var
+R5135:5135 MetaCoq.Template.monad_utils <> b:141 var
+R5144:5144 MetaCoq.Template.monad_utils <> T:137 var
+R5146:5146 MetaCoq.Template.monad_utils <> b:143 var
+R5170:5174 MetaCoq.Template.monad_utils <> raise meth
+R5176:5176 MetaCoq.Template.monad_utils <> e:142 var
+R5153:5155 MetaCoq.Template.monad_utils <> ret meth
+R5157:5163 Coq.Init.Logic <> eq_refl constr
+def 5191:5202 <> check_eq_nat
+R5213:5216 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5205:5205 <> T:144
+binder 5224:5224 <> E:145
+R5239:5243 MetaCoq.Template.monad_utils <> Monad class
+R5245:5245 MetaCoq.Template.monad_utils <> T:144 var
+binder 5235:5235 <> M:146
+R5254:5261 MetaCoq.Template.monad_utils <> MonadExc class
+R5263:5263 MetaCoq.Template.monad_utils <> E:145 var
+R5265:5265 MetaCoq.Template.monad_utils <> T:144 var
+binder 5249:5250 <> M':147
+binder 5268:5268 <> n:148
+binder 5270:5270 <> m:149
+R5277:5277 MetaCoq.Template.monad_utils <> E:145 var
+binder 5273:5273 <> e:150
+R5282:5282 MetaCoq.Template.monad_utils <> T:144 var
+R5286:5288 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5285:5285 MetaCoq.Template.monad_utils <> n:148 var
+R5289:5289 MetaCoq.Template.monad_utils <> m:149 var
+R5303:5321 Coq.Arith.PeanoNat Nat eq_dec thm
+R5323:5323 MetaCoq.Template.monad_utils <> n:148 var
+R5325:5325 MetaCoq.Template.monad_utils <> m:149 var
+R5336:5339 Coq.Init.Specif <> left constr
+R5346:5348 MetaCoq.Template.monad_utils <> ret meth
+R5356:5360 Coq.Init.Specif <> right constr
+R5367:5371 MetaCoq.Template.monad_utils <> raise meth
+R5373:5373 MetaCoq.Template.monad_utils <> e:150 var
+def 5400:5409 <> monad_Alli
+R5420:5423 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5412:5412 <> T:151
+R5435:5439 MetaCoq.Template.monad_utils <> Monad class
+R5441:5441 MetaCoq.Template.monad_utils <> T:151 var
+binder 5431:5431 <> M:152
+binder 5445:5445 <> A:153
+binder 5449:5449 <> P:154
+binder 5464:5464 <> n:155
+binder 5466:5466 <> x:156
+R5469:5469 MetaCoq.Template.monad_utils <> T:151 var
+R5472:5475 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5481:5484 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5476:5476 MetaCoq.Template.monad_utils <> P:154 var
+R5478:5478 MetaCoq.Template.monad_utils <> n:155 var
+R5480:5480 MetaCoq.Template.monad_utils <> x:156 var
+binder 5453:5453 <> f:157
+binder 5488:5488 <> l:158
+binder 5490:5490 <> n:159
+R5496:5496 MetaCoq.Template.monad_utils <> T:151 var
+R5499:5502 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5516:5519 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5504:5507 MetaCoq.Template.utils.All_Forall <> Alli ind
+R5509:5509 MetaCoq.Template.monad_utils <> A:153 var
+R5511:5511 MetaCoq.Template.monad_utils <> P:154 var
+R5513:5513 MetaCoq.Template.monad_utils <> n:159 var
+R5515:5515 MetaCoq.Template.monad_utils <> l:158 var
+R5533:5533 MetaCoq.Template.monad_utils <> l:158 var
+R5548:5549 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5554:5556 MetaCoq.Template.monad_utils <> ret meth
+R5559:5560 MetaCoq.Template.utils.MCSquash <> sq constr
+R5562:5569 MetaCoq.Template.utils.All_Forall <> Alli_nil constr
+R5581:5584 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5591:5594 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R5600:5621 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R5595:5595 MetaCoq.Template.monad_utils <> f:157 var
+R5597:5597 MetaCoq.Template.monad_utils <> n:159 var
+binder 5590:5590 <> X:162
+R5623:5626 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R5647:5668 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R5627:5636 MetaCoq.Template.monad_utils <> monad_Alli:160 def
+R5643:5643 Coq.Init.Datatypes <> S constr
+R5645:5645 MetaCoq.Template.monad_utils <> n:159 var
+R5640:5640 MetaCoq.Template.monad_utils <> l:158 var
+R5638:5638 MetaCoq.Template.monad_utils <> f:157 var
+binder 5622:5622 <> Y:163
+R5669:5671 MetaCoq.Template.monad_utils <> ret meth
+def 5761:5774 <> monad_Alli_All
+R5785:5788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5777:5777 <> T:164
+R5800:5804 MetaCoq.Template.monad_utils <> Monad class
+R5806:5806 MetaCoq.Template.monad_utils <> T:164 var
+binder 5796:5796 <> M:165
+binder 5810:5810 <> A:166
+binder 5814:5814 <> P:167
+binder 5818:5818 <> Q:168
+binder 5833:5833 <> n:169
+binder 5835:5835 <> x:170
+R5849:5852 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5838:5841 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5845:5848 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5842:5842 MetaCoq.Template.monad_utils <> Q:168 var
+R5844:5844 MetaCoq.Template.monad_utils <> x:170 var
+R5853:5853 MetaCoq.Template.monad_utils <> T:164 var
+R5856:5859 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5865:5868 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5860:5860 MetaCoq.Template.monad_utils <> P:167 var
+R5862:5862 MetaCoq.Template.monad_utils <> n:169 var
+R5864:5864 MetaCoq.Template.monad_utils <> x:170 var
+binder 5822:5822 <> f:171
+binder 5872:5872 <> l:172
+binder 5874:5874 <> n:173
+R5895:5898 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5880:5883 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5891:5894 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5884:5886 MetaCoq.Template.utils.All_Forall <> All ind
+R5890:5890 MetaCoq.Template.monad_utils <> l:172 var
+R5888:5888 MetaCoq.Template.monad_utils <> Q:168 var
+R5899:5899 MetaCoq.Template.monad_utils <> T:164 var
+R5902:5905 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5919:5922 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R5907:5910 MetaCoq.Template.utils.All_Forall <> Alli ind
+R5912:5912 MetaCoq.Template.monad_utils <> A:166 var
+R5914:5914 MetaCoq.Template.monad_utils <> P:167 var
+R5916:5916 MetaCoq.Template.monad_utils <> n:173 var
+R5918:5918 MetaCoq.Template.monad_utils <> l:172 var
+R5936:5936 MetaCoq.Template.monad_utils <> l:172 var
+R5951:5952 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5966:5968 MetaCoq.Template.monad_utils <> ret meth
+R5971:5972 MetaCoq.Template.utils.MCSquash <> sq constr
+R5974:5981 MetaCoq.Template.utils.All_Forall <> Alli_nil constr
+R5993:5996 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+binder 6006:6009 <> allq:176
+R6015:6018 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6026:6047 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6019:6019 MetaCoq.Template.monad_utils <> f:171 var
+R6021:6021 MetaCoq.Template.monad_utils <> n:173 var
+binder 6014:6014 <> X:177
+R6049:6052 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6079:6100 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6053:6066 MetaCoq.Template.monad_utils <> monad_Alli_All:174 def
+R6073:6073 Coq.Init.Datatypes <> S constr
+R6075:6075 MetaCoq.Template.monad_utils <> n:173 var
+R6070:6070 MetaCoq.Template.monad_utils <> l:172 var
+R6068:6068 MetaCoq.Template.monad_utils <> f:171 var
+binder 6048:6048 <> Y:178
+R6101:6103 MetaCoq.Template.monad_utils <> ret meth
+sec 6276:6289 <> monad_Alli_nth
+binder 6303:6303 <> T:179
+R6311:6315 MetaCoq.Template.monad_utils <> Monad class
+R6317:6317 MetaCoq.Template.monad_utils <> T:179 var
+binder 6307:6307 <> M:180
+binder 6321:6321 <> A:181
+R6332:6335 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6329:6331 Coq.Init.Datatypes <> nat ind
+R6337:6340 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6336:6336 MetaCoq.Template.monad_utils <> A:181 var
+binder 6325:6325 <> P:182
+def 6367:6384 <> monad_Alli_nth_gen
+binder 6386:6386 <> l:183
+binder 6388:6388 <> k:184
+binder 6406:6406 <> n:185
+binder 6408:6408 <> x:186
+R6433:6436 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6424:6426 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6411:6419 Coq.Lists.List <> nth_error def
+R6423:6423 MetaCoq.Template.monad_utils <> n:185 var
+R6421:6421 MetaCoq.Template.monad_utils <> l:183 var
+R6427:6430 Coq.Init.Datatypes <> Some constr
+R6432:6432 MetaCoq.Template.monad_utils <> x:186 var
+R6437:6437 MetaCoq.Template.monad_utils <> monad_Alli_nth.T var
+R6440:6443 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6455:6458 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6444:6444 MetaCoq.Template.monad_utils <> monad_Alli_nth.P var
+R6448:6450 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6447:6447 MetaCoq.Template.monad_utils <> k:184 var
+R6451:6451 MetaCoq.Template.monad_utils <> n:185 var
+R6454:6454 MetaCoq.Template.monad_utils <> x:186 var
+binder 6395:6395 <> f:187
+R6468:6468 MetaCoq.Template.monad_utils <> monad_Alli_nth.T var
+R6471:6474 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6488:6491 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6476:6479 MetaCoq.Template.utils.All_Forall <> Alli ind
+R6481:6481 MetaCoq.Template.monad_utils <> monad_Alli_nth.A var
+R6483:6483 MetaCoq.Template.monad_utils <> monad_Alli_nth.P var
+R6485:6485 MetaCoq.Template.monad_utils <> k:184 var
+R6487:6487 MetaCoq.Template.monad_utils <> l:183 var
+R6507:6507 MetaCoq.Template.monad_utils <> l:183 var
+R6522:6523 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6528:6530 MetaCoq.Template.monad_utils <> ret meth
+R6533:6534 MetaCoq.Template.utils.MCSquash <> sq constr
+R6536:6543 MetaCoq.Template.utils.All_Forall <> Alli_nil constr
+R6555:6558 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6565:6568 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6576:6597 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6569:6569 MetaCoq.Template.monad_utils <> f:187 var
+binder 6564:6564 <> X:190
+R6599:6602 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6676:6697 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6603:6620 MetaCoq.Template.monad_utils <> monad_Alli_nth_gen:188 def
+binder 6635:6635 <> n:191
+binder 6637:6637 <> x:192
+binder 6639:6642 <> hnth:193
+R6649:6652 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6667:6669 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R6653:6653 MetaCoq.Template.monad_utils <> f:187 var
+R6663:6666 MetaCoq.Template.monad_utils <> hnth:193 var
+R6661:6661 MetaCoq.Template.monad_utils <> x:192 var
+R6656:6656 Coq.Init.Datatypes <> S constr
+R6658:6658 MetaCoq.Template.monad_utils <> n:191 var
+binder 6647:6648 <> px:194
+R6670:6672 MetaCoq.Template.monad_utils <> ret meth
+R6625:6625 Coq.Init.Datatypes <> S constr
+R6627:6627 MetaCoq.Template.monad_utils <> k:184 var
+R6622:6622 MetaCoq.Template.monad_utils <> l:183 var
+binder 6598:6598 <> Y:195
+R6698:6700 MetaCoq.Template.monad_utils <> ret meth
+R6758:6771 Coq.Arith.PeanoNat Nat add_succ_r thm
+R6758:6771 Coq.Arith.PeanoNat Nat add_succ_r thm
+R6758:6771 Coq.Arith.PeanoNat Nat add_succ_r thm
+R6828:6838 Coq.Arith.PeanoNat Nat add_0_r thm
+R6828:6838 Coq.Arith.PeanoNat Nat add_0_r thm
+R6828:6838 Coq.Arith.PeanoNat Nat add_0_r thm
+def 6888:6901 <> monad_Alli_nth
+binder 6903:6903 <> l:196
+binder 6917:6917 <> n:197
+binder 6919:6919 <> x:198
+R6944:6947 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6935:6937 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6922:6930 Coq.Lists.List <> nth_error def
+R6934:6934 MetaCoq.Template.monad_utils <> n:197 var
+R6932:6932 MetaCoq.Template.monad_utils <> l:196 var
+R6938:6941 Coq.Init.Datatypes <> Some constr
+R6943:6943 MetaCoq.Template.monad_utils <> x:198 var
+R6948:6948 MetaCoq.Template.monad_utils <> monad_Alli_nth.T var
+R6951:6954 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6960:6963 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6955:6955 MetaCoq.Template.monad_utils <> monad_Alli_nth.P var
+R6957:6957 MetaCoq.Template.monad_utils <> n:197 var
+R6959:6959 MetaCoq.Template.monad_utils <> x:198 var
+binder 6906:6906 <> f:199
+R6969:6969 MetaCoq.Template.monad_utils <> monad_Alli_nth.T var
+R6972:6975 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6989:6992 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R6977:6980 MetaCoq.Template.utils.All_Forall <> Alli ind
+R6982:6982 MetaCoq.Template.monad_utils <> monad_Alli_nth.A var
+R6984:6984 MetaCoq.Template.monad_utils <> monad_Alli_nth.P var
+R6988:6988 MetaCoq.Template.monad_utils <> l:196 var
+R7002:7019 MetaCoq.Template.monad_utils <> monad_Alli_nth_gen def
+R7021:7021 MetaCoq.Template.monad_utils <> l:196 var
+R7025:7025 MetaCoq.Template.monad_utils <> f:199 var
+R7033:7046 MetaCoq.Template.monad_utils monad_Alli_nth <> sec
+sec 7058:7068 <> MonadAllAll
+R7090:7093 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7082:7082 <> T:200
+R7105:7109 MetaCoq.Template.monad_utils <> Monad class
+R7111:7111 MetaCoq.Template.monad_utils <> T:200 var
+binder 7101:7101 <> M:201
+binder 7115:7115 <> A:202
+R7124:7127 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7123:7123 MetaCoq.Template.monad_utils <> A:202 var
+binder 7119:7119 <> P:203
+binder 7135:7135 <> Q:204
+binder 7150:7150 <> x:205
+R7164:7167 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7153:7156 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7160:7163 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7157:7157 MetaCoq.Template.monad_utils <> Q:204 var
+R7159:7159 MetaCoq.Template.monad_utils <> x:205 var
+R7168:7168 MetaCoq.Template.monad_utils <> T:200 var
+R7171:7174 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7178:7181 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7175:7175 MetaCoq.Template.monad_utils <> P:203 var
+R7177:7177 MetaCoq.Template.monad_utils <> x:205 var
+binder 7139:7139 <> f:206
+def 7205:7217 <> monad_All_All
+binder 7219:7219 <> l:207
+R7238:7241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7223:7226 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7234:7237 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7227:7229 MetaCoq.Template.utils.All_Forall <> All ind
+R7233:7233 MetaCoq.Template.monad_utils <> l:207 var
+R7231:7231 MetaCoq.Template.monad_utils <> MonadAllAll.Q var
+R7242:7242 MetaCoq.Template.monad_utils <> MonadAllAll.T var
+R7245:7248 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7256:7259 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7249:7251 MetaCoq.Template.utils.All_Forall <> All ind
+R7255:7255 MetaCoq.Template.monad_utils <> l:207 var
+R7253:7253 MetaCoq.Template.monad_utils <> MonadAllAll.P var
+R7275:7275 MetaCoq.Template.monad_utils <> l:207 var
+R7299:7302 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7284:7287 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7295:7298 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7288:7290 MetaCoq.Template.utils.All_Forall <> All ind
+R7294:7294 MetaCoq.Template.monad_utils <> l:209 var
+R7292:7292 MetaCoq.Template.monad_utils <> MonadAllAll.Q var
+R7303:7303 MetaCoq.Template.monad_utils <> MonadAllAll.T var
+R7306:7309 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7317:7320 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R7310:7312 MetaCoq.Template.utils.All_Forall <> All ind
+R7316:7316 MetaCoq.Template.monad_utils <> l:209 var
+R7314:7314 MetaCoq.Template.monad_utils <> MonadAllAll.P var
+R7336:7337 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7351:7353 MetaCoq.Template.monad_utils <> ret meth
+R7356:7357 MetaCoq.Template.utils.MCSquash <> sq constr
+R7359:7365 MetaCoq.Template.utils.All_Forall <> All_nil constr
+R7377:7380 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+binder 7390:7393 <> allq:210
+R7405:7408 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R7414:7423 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R7409:7409 MetaCoq.Template.monad_utils <> MonadAllAll.f var
+binder 7404:7404 <> X:211
+R7425:7428 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R7446:7455 MetaCoq.Template.monad_utils MCMonadNotation ::monad_scope:x_'<-'_x_';;'_x not
+R7429:7441 MetaCoq.Template.monad_utils <> monad_All_All:208 def
+R7443:7443 MetaCoq.Template.monad_utils <> l:207 var
+binder 7424:7424 <> Y:212
+R7456:7458 MetaCoq.Template.monad_utils <> ret meth
+R7644:7654 MetaCoq.Template.monad_utils MonadAllAll <> sec

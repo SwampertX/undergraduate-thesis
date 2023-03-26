@@ -1,0 +1,91 @@
+\chapter{Previous Works}
+
+Since Coq is influenced by the ML family of languages, the specification for
+modules in Coq is very similar to that of OCaml, and Standard ML (SML). in this
+chapter, we review previous implementation of Coq modules, as well as relevant
+module systems in other ML languages that this project can refer to.
+
+% To implement modules, we can study previous implementation of modules in both
+% Coq and related languages from the ML Family, such as Standard ML (SML) and
+% OCaml.
+
+% Things to explain: type system, mod sig fun, anonymous second class obj
+% conservative ext
+
+\section{Coq Module Implementations}
+The earliest exploration of adding a module system to Pure Type System (PTS)
+\sidenote{PTS can be seen as a generalization of Barendregt's Lambda Cube,
+by defining type systems using a triple $(\mathscr{S},\mathscr{A},\mathscr{R})$
+represnting sorts, axioms and rules of the type system respectively.},
+a generalized type system, was done by Judicaël Courant. He designed the $MC$
+Module Calculus system that includes modules, signatures, and functors for PTS
+and proved that it is a conservative extension.
+\sidenote{In proof theory, a conservative extension of a formal language is one
+that cannot prove statements that are not already provable in the base language.}
+ Modules in $MC$ are 
+anonymous, second-class objects with a specific set of reduction rules, and
+Courant has proven the resulting system to have decidable type inference and 
+the principal type property.
+
+Building on the idea of Courant, Jacek Chrąszcz designed the
+earliest implementation of a module system in Coq in his PhD thesis, and was
+released with Coq version $7.4$. The module system by Chrąszcz was a subset of
+that of Courant with some changes. Similar to $MC$, modules, signatures and
+functors are implemented together with specialized reduction rules,
+but he argued that an anonymous module system does not work well with the
+definition and rewriting system of Coq. Therefore, all modules are named in
+Chraszcz's implementation, and the expression of modules
+in Coq is restricted only to module paths. The core of Chrąszcz's PhD thesis is
+the conservativity proof about the module system extension over Coq, together
+with the syntax, typing rules, and rewriting rules of the module system in Coq.
+
+The most recent work on Coq's module system is Elie Soubrian's PhD thesis. He
+proposed many improvements on the system, among which,
+a unified notion of structure for modules and signatures, and the availability of
+higher-order functors are already in today's OCaml implementation of Coq.
+However, other features mentioned in the thesis, such as applicative functors,
+and a notion of namespace that allow a separate, dynamic naming scope for modules,
+are not yet implemented in the module system in Coq today.
+
+\section{Modules in ML Dialects}
+The two main dialects ML today, OCaml and Standard ML have interestingly
+different semantics for modules. Modules are by default applicative (generative
+functors are possible) in OCaml while generative in Standard ML.
+
+The module system of SML has evolved over the years, from the earliest account
+by MacQueen\sidecite{macqueen1984modules} and Harper et. al. in terms of "strong sum"
+types, to the "transparent" approach by Lillibridge. Harper and Lillibridge also
+developed first-order modules in SML eventually using standard notions from type
+theory. Meanwhile, Leroy made progress on applicative functors, modular module
+systems, and mutually recursive modules in SML, then OCaml.
+
+On this note, Derek Dreyer wrote his PhD thesis \sidecite{dreyerphd} on
+understanding and extending ML modules, and subsequently on implementing ML
+modules in its most desirable form, applicative and first-order as a subset of a
+small type system, $F_\omega$\sidecite{f-ing}. Another related project is 
+CakeML \sidecite{cakeml}, a verified subset of the SML language, but
+unfortunately does not include the verification of the module system.
+
+However, since the type system of Coq
+is much stronger and sophisticated compared to ML languages, the
+implementations also vary wildly and one can only refer to them for
+inspirations.
+
+\section{Knowledge Management in Proof Assistants}
+
+% \begin{enumerate}
+% \item Elie Soubrian's PhD Thesis on Coq Modules is the latest reference on 
+% Coq Modules specifically.
+% \item Since ML modules are the source of
+% inspiration for Coq's Modules, it is also worthwhile to study
+% Derek Dreyer's PhD Thesis on "Understanding and Evolving the ML Module 
+% System".
+% \item Recently, F-ing modules by Dreyer et. al. provides an 
+% implementation of the ML module system in plain $F_\omega$, a strict 
+% subset of CIC and hence PCUIC used in modern Coq.
+% \item Standard ML also have modules.
+% https://homepages.inf.ed.ac.uk/mfourman/teaching/mlCourse/notes/sml-modules.html
+% Michael Fourman has lecture notes.
+% \item David Macqueen (2002) wrote about implementint SML modules.
+% \item CakeML has modules, but not functors. YK Tan (2015).
+% \end{enumerate}

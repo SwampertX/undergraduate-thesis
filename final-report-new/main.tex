@@ -1,0 +1,34 @@
+% \documentclass{kaobook}
+\documentclass{report}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage[style=numeric,backend=biber]{biblatex}
+\addbibresource{main.bib}
+\usepackage{minted}
+\usepackage{hyperref}
+
+\usepackage{lmodern}
+\usepackage{fontspec}
+\setmonofont{Iosevka Term}
+
+\author{Tan Yee Jian}
+\title{My Document}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+  This is an abstract.
+\end{abstract}
+\tableofcontents
+
+\include{01-introduction.tex}
+\include{02-previous-works.tex}
+\include{03-coq-modules.tex}
+\include{04-implementation.tex}
+\include{05-modular.tex}
+
+\printbibliography
+\end{document}

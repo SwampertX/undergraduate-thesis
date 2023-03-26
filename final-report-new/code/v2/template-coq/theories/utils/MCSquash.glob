@@ -1,0 +1,28 @@
+DIGEST 1d1c36cd66b29bb1995ed721fb04f4a7
+FMetaCoq.Template.utils.MCSquash
+rec 8:13 <> squash
+binder 16:16 <> A:1
+R45:45 MetaCoq.Template.utils.MCSquash <> A:1 var
+R76:81 MetaCoq.Template.utils.MCSquash <> squash rec
+not 60:60 <> :::'∥'_x_'∥'
+R111:112 MetaCoq.Template.utils.MCSquash <> sq constr
+R111:112 MetaCoq.Template.utils.MCSquash <> sq constr
+prf 128:137 <> map_squash
+binder 140:140 <> A:3
+binder 142:142 <> B:4
+R151:154 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R150:150 MetaCoq.Template.utils.MCSquash <> A:3 var
+R155:155 MetaCoq.Template.utils.MCSquash <> B:4 var
+binder 146:146 <> f:5
+R169:172 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R160:163 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R165:168 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R164:164 MetaCoq.Template.utils.MCSquash <> A:3 var
+R173:176 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R178:181 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R177:177 MetaCoq.Template.utils.MCSquash <> B:4 var
+R273:276 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R278:281 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R273:276 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R278:281 MetaCoq.Template.utils.MCSquash <> :::'∥'_x_'∥' not
+R334:335 MetaCoq.Template.utils.MCSquash <> sq constr

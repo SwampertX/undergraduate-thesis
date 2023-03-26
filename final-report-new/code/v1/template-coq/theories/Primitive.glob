@@ -1,0 +1,44 @@
+DIGEST 716510dabf52497e419debc285cab299
+FMetaCoq.Template.Primitive
+R47:52 Coq.Numbers.Cyclic.Int63.Uint63 <> <> lib
+R54:62 Coq.Floats.PrimFloat <> <> lib
+R64:72 Coq.Floats.SpecFloat <> <> lib
+R74:81 Coq.Floats.FloatOps <> <> lib
+R83:88 Coq.ZArith.ZArith <> <> lib
+R90:106 Coq.Numbers.HexadecimalString <> <> lib
+R146:155 MetaCoq.Template.utils.bytestring <> <> lib
+R157:164 MetaCoq.Template.utils.MCString <> <> lib
+ind 197:204 <> prim_tag
+constr 213:219 <> primInt
+constr 225:233 <> primFloat
+R286:293 MetaCoq.Template.Primitive <> prim_tag variant
+def 308:325 <> string_of_prim_int
+R330:339 Coq.Numbers.Cyclic.Int63.Uint63 <> int abbrev
+binder 328:328 <> i:3
+R344:349 MetaCoq.Template.utils.MCString <> string abbrev
+R462:472 MetaCoq.Template.utils.MCString <> string_of_Z def
+R475:485 Coq.Numbers.Cyclic.Int63.Uint63 <> to_Z def
+R487:487 MetaCoq.Template.Primitive <> i:3 var
+def 503:517 <> string_of_float
+R524:538 Coq.Floats.PrimFloat <> float prim
+binder 520:520 <> f:4
+R543:548 MetaCoq.Template.utils.MCString <> string abbrev
+R561:567 Coq.Floats.FloatOps <> Prim2SF def
+R569:569 MetaCoq.Template.Primitive <> f:4 var
+R580:588 Coq.Floats.SpecFloat <> S754_zero constr
+R629:641 Coq.Floats.SpecFloat <> S754_infinity constr
+R696:703 Coq.Floats.SpecFloat <> S754_nan constr
+R718:728 Coq.Floats.SpecFloat <> S754_finite constr
+R761:764 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R863:866 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R765:791 MetaCoq.Template.utils.bytestring String of_string def
+R794:841 Coq.Numbers.HexadecimalString NilZero string_of_uint def
+R844:858 Coq.PArith.BinPos Pos to_hex_uint def
+R870:879 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R880:906 MetaCoq.Template.utils.bytestring String of_string def
+R909:951 Coq.Numbers.DecimalString NilZero string_of_int def
+R954:961 Coq.ZArith.BinInt Z to_int def
+binder 750:752 <> abs:5
+R1003:1005 MetaCoq.Template.Primitive <> abs:5 var
+R990:993 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R994:996 MetaCoq.Template.Primitive <> abs:5 var

@@ -1,0 +1,111 @@
+DIGEST 4fca40e76f0056ab00d524d16e05e870
+FMetaCoq.Template.utils.MCPred
+R24:27 Coq.Lists.List <> <> lib
+R29:32 Coq.Bool.Bool <> <> lib
+R34:38 Coq.Arith.Arith <> <> lib
+R40:48 Coq.ssr.ssreflect <> <> lib
+R50:56 Coq.ssr.ssrbool <> <> lib
+R58:66 Coq.Classes.Morphisms <> <> lib
+R68:70 Coq.micromega.Lia <> <> lib
+R110:118 MetaCoq.Template.utils.MCPrelude <> <> lib
+R120:128 MetaCoq.Template.utils.MCReflect <> <> lib
+R130:135 MetaCoq.Template.utils.MCList <> <> lib
+R137:147 MetaCoq.Template.utils.MCRelations <> <> lib
+R149:154 MetaCoq.Template.utils.MCProd <> <> lib
+R156:163 MetaCoq.Template.utils.MCOption <> <> lib
+R196:204 Equations.Prop.Equations <> <> lib
+def 219:223 <> predA
+binder 226:226 <> A:1
+R236:239 Coq.ssr.ssrbool <> pred def
+R241:241 MetaCoq.Template.utils.MCPred <> A:1 var
+binder 230:230 <> p:2
+binder 232:232 <> q:3
+R246:249 Coq.ssr.ssrbool <> pred def
+R251:251 MetaCoq.Template.utils.MCPred <> A:1 var
+binder 261:261 <> i:4
+R269:273 Coq.ssr.ssrbool <> ::bool_scope:x_'==>'_x not
+R266:266 MetaCoq.Template.utils.MCPred <> p:2 var
+R268:268 MetaCoq.Template.utils.MCPred <> i:4 var
+R274:274 MetaCoq.Template.utils.MCPred <> q:3 var
+R276:276 MetaCoq.Template.utils.MCPred <> i:4 var
+inst 521:530 <> orP_Proper
+binder 533:533 <> A:5
+R538:543 Coq.Classes.Morphisms <> Proper class
+R572:576 Coq.ssr.ssrbool <> predU def
+R578:578 MetaCoq.Template.utils.MCPred <> A:5 var
+R550:554 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R546:549 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R559:563 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R555:558 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R564:567 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R629:633 Coq.ssr.ssrbool <> predU def
+R629:633 Coq.ssr.ssrbool <> predU def
+R629:633 Coq.ssr.ssrbool <> predU def
+inst 688:698 <> andP_Proper
+binder 700:700 <> A:6
+R704:709 Coq.Classes.Morphisms <> Proper class
+R738:742 Coq.ssr.ssrbool <> predI def
+R744:744 MetaCoq.Template.utils.MCPred <> A:6 var
+R716:720 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R712:715 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R725:729 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R721:724 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R730:733 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R795:799 Coq.ssr.ssrbool <> predI def
+R795:799 Coq.ssr.ssrbool <> predI def
+R795:799 Coq.ssr.ssrbool <> predI def
+inst 854:865 <> implP_Proper
+binder 868:868 <> A:7
+R873:878 Coq.Classes.Morphisms <> Proper class
+R907:911 MetaCoq.Template.utils.MCPred <> predA def
+R913:913 MetaCoq.Template.utils.MCPred <> A:7 var
+R885:889 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R881:884 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R894:898 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R890:893 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R899:902 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R964:968 MetaCoq.Template.utils.MCPred <> predA def
+R964:968 MetaCoq.Template.utils.MCPred <> predA def
+R964:968 MetaCoq.Template.utils.MCPred <> predA def
+prf 1010:1013 <> orPL
+R1025:1028 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1022:1024 Coq.Init.Datatypes <> nat ind
+R1029:1032 Coq.Init.Datatypes <> bool ind
+binder 1016:1016 <> p:8
+binder 1018:1018 <> q:9
+R1056:1059 MetaCoq.Template.utils.MCPrelude <> :::x_'=1'_x not
+R1037:1041 MetaCoq.Template.utils.MCPred <> predA def
+R1046:1050 Coq.ssr.ssrbool <> predU def
+R1054:1054 MetaCoq.Template.utils.MCPred <> q:9 var
+R1052:1052 MetaCoq.Template.utils.MCPred <> p:8 var
+R1043:1043 MetaCoq.Template.utils.MCPred <> p:8 var
+R1060:1065 Coq.ssr.ssrbool <> xpredT abbrev
+R1096:1100 MetaCoq.Template.utils.MCPred <> predA def
+R1103:1107 Coq.ssr.ssrbool <> predU def
+R1096:1100 MetaCoq.Template.utils.MCPred <> predA def
+R1096:1100 MetaCoq.Template.utils.MCPred <> predA def
+R1103:1107 Coq.ssr.ssrbool <> predU def
+R1103:1107 Coq.ssr.ssrbool <> predU def
+R1124:1138 Coq.ssr.ssrbool <> implybE thm
+R1124:1138 Coq.ssr.ssrbool <> implybE thm
+R1124:1138 Coq.ssr.ssrbool <> implybE thm
+prf 1184:1187 <> orPR
+R1199:1202 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1196:1198 Coq.Init.Datatypes <> nat ind
+R1203:1206 Coq.Init.Datatypes <> bool ind
+binder 1190:1190 <> p:10
+binder 1192:1192 <> q:11
+binder 1209:1209 <> i:12
+R1216:1219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1213:1213 MetaCoq.Template.utils.MCPred <> q:11 var
+R1215:1215 MetaCoq.Template.utils.MCPred <> i:12 var
+R1221:1225 Coq.ssr.ssrbool <> predU def
+R1229:1229 MetaCoq.Template.utils.MCPred <> q:11 var
+R1227:1227 MetaCoq.Template.utils.MCPred <> p:10 var
+R1232:1232 MetaCoq.Template.utils.MCPred <> i:12 var
+R1253:1257 Coq.ssr.ssrbool <> predU def
+R1277:1286 Coq.Bool.Bool <> orb_true_r thm
+R1253:1257 Coq.ssr.ssrbool <> predU def
+R1253:1257 Coq.ssr.ssrbool <> predU def
+R1277:1286 Coq.Bool.Bool <> orb_true_r thm
+R1277:1286 Coq.Bool.Bool <> orb_true_r thm

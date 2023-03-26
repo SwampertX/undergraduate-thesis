@@ -1,0 +1,54 @@
+\chapter{Project Plan for The Next Semester}
+% \section{Project Plan for The Next Semester}
+
+There are a few steps to this formalization of Coq Modules that I can foresee:
+\begin{enumerate}
+\item Study the structure and conventions of the MetaCoq project. Since this is 
+    a huge project, many common theorems have been abstracted into multiple
+    functors which can generate a theorem given a corresponding object, which
+    I can make use of in my formalization.
+\item Add the data structure of Plain Modules into the global environment which
+    is quoted by TemplateCoq. This requires the modification of the current Global
+    Environment data structure containing declarations (minus modules). 
+\item Ensure the Global Environment remains well-defined with the current typing rules
+    and correctness assertions. The modification in the previous step would require
+    modifications to the existing 
+    proofs on the Global Environment (well-formedness, well-typedness) and its 
+    related properties.
+\item Extend the TemplateCoq plugin (in OCaml) which transforms a Coq term into 
+    a TemplateCoq representation, to translate a Coq module into the internal
+    representation of Modules I implemented above. This requires OCaml knowledge
+    specifically in the framework of Coq plugins.
+\item Now that syntactical transformation from Coq to TemplateCoq is complete, I
+    need to define how these modules that live in the Global Environment will 
+    be used. In particular, I need to implement the "canonical kername" model as
+    implemented in the Coq kernel to deal with module aliasing and usage of definitions.
+\item The modification to the semantics in the previous step will again induce 
+    changes to the theorems related to $\delta$-reductions (as explained in \ref{sec:using-modules}),
+    so I have to extend the proofs to fit the new definitions. This should 
+    ensure the TemplateCoq formalization of modules is sound.
+\item Translate Coq Modules from TemplateCoq to PCUIC by elaboration. In PCUIC,
+    modules will cease to exist and references to definitions in modules will be
+    treated as direct references to plain definitions outside modules. This is
+    done by referring module paths to their canonical paths.
+\item The last step in this project is to verify that the translation from
+    TemplateCoq to PCUIC is correct; that is, a PCUIC term is 
+    well-formed and well-typed if and only if its translation is well-formed and well-typed
+    in TemplateCoq.
+\end{enumerate}
+
+% \section{Study Type Theoretic Results}
+
+% The modern field of Type Theory and Proof Assistants grows very quickly, with
+% many new fields of logic (modal logic, linear logic, seperation logic) etc and
+% their corresponding Type Theory being studied and made into proof assistants to 
+% verify results in these fields. Since there were not many relevant courses in my 
+% undergraduate curriculum, I decide to continue to study some classical results
+% alongside with the formalization project above.
+
+% The direction which I have chosen is towards a result important for the
+% implementation of proof assistants: the decidability of conversion
+% (correspondingly proof-checking) in a simpler type system, such as the Martin-Lof
+% Type Theory. So far, I have covered results from Simply Typed Lambda Calculus
+% including confluence and weak normalization, and its counterparts in proof theory,
+% namely sequent calculus, natural deduction as a normal form, and cut-elimination.

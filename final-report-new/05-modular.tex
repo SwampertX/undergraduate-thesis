@@ -1,0 +1,102 @@
+\chapter{A Modular Environment}
+
+After the completion of my implementation in the previous chapter, the process
+of verification the only remaining part, the TemplateCoq to PCUIC translation
+proved to be time consuming, resulting me in spending weeks without writing any
+\verb|QED|s. This is because in the process of verifying those properties, I
+faced many technical challenges in constructing their proofs. Fortunately, two
+beneficial events ensued:
+\begin{enumerate}
+  \item After identifying the pain points in the proofs, I found out the
+  decision that led to this situation and in tackling it, gave rise to this more
+  natural solution which requires a complete rewrite. Although incomplete, I
+  have designed this rewrite and implemented a part of it as far as writing out
+  the environment typing rules. I will discuss this implementation in the firs
+  section.
+  \item In the process of rewrite, due to the design choices and its complexity,
+  some non-trivial proof machineries such as nested mutual inductive types with
+  their induction hypotheses, well-founded recursion, strengthening induction
+  hypothesis were required. Since a number of them are direct consequence of
+  this modular environment rewrite, I will include them as a section at the end
+  of this chapter as a summary.
+\end{enumerate}
+
+
+\section{Difficulties on the Global Declaration List}
+
+The proof for (TODO: link \verb|trans_lookup_env|) proved to be tedious due to
+the double fold. In each fold, one adds definitions to the environment using an
+(rightfully) opaque \verb|add_global_decl| function, which changes the
+accumulator $\Sigma$ during each fold. A nested fold makes this even more
+tedious with proof levels going up to four or five levels.
+
+\pcuic{238}{243}{TemplateToPCUICCorrectness.v}
+...
+\pcuic{307}{309}{TemplateToPCUICCorrectness.v}
+...
+\pcuic{316}{319}{TemplateToPCUICCorrectness.v}
+...
+\pcuic{326}{328}{TemplateToPCUICCorrectness.v}
+
+After spending weeks trying different methods to make this work, including an
+elaborate argument defining a strict partial order on kernames (such as the
+result used on line 319), I decided to venture for a new solution. The
+source of the problem here is the double-fold, which obscures the meaning of
+expressions after repeated applications of \verb|add_global_decl| changing the
+accumulator environment. To break down the two folds:
+
+\begin{itemize}
+  \item The first fold is done over the \emph{list} of global declarations,
+  while
+  \item the second fold is done over the \emph{module} structure.
+\end{itemize}
+
+and the definition for structure fields is identical to that of global
+declarations: 
+
+\tc{324}{328}{Environment.v}
+\tc{347}{351}{Environment.v}
+
+it is thus natural to link both of them together.
+
+\section{The Modular Environment}
+\newcommand{\tcc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
+  code/v2/template-coq/theories/#3}}
+\newcommand{\pcuicc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
+  code/v2/pcuic/theories/#3}}
+
+It would be beneficial to unify these two with the same structure: modules. The
+list of global declarations itself can be seen as an anonymous, ambient,
+top-level module, thus just a special case of a module. Under this
+generalization, any well-formedness properties or well-typedness properties
+about environments should be subsumed under that of modules, and thus giving us
+a good sense in defining the typing rules for modules.
+
+Let us begin by defining modules, then specialize into global declarations:
+
+\tcc{325}{336}{Environment.v}
+
+Structure field now subsumes global declaration, and we note that structure body
+is just a convenient name for the list of structure fields indexed by its name -
+an identifier. The possible nested structure body inside structure fields are
+what gives the tree structure of modules.
+
+\tcc{405}{408}{Environment.v}
+
+Similarly, we define module types to be structure bodies, and a module to be a
+module type with an implementation. Since global environments are anonymous
+modules, they do not have a possibility of reuse and thus signature is
+insignificant here - it is of the same structure of a structure body.
+
+
+
+
+\section{Tactics and Proof Machineries}
+\begin{itemize}
+  \item nested induction, mutual induction, (can always reduce to the case of a
+  simple inductive type, but...)
+  \item well-founded recursion and measures.
+  \item definition of a strict partial order and strengthening of induction
+  hypotheses 
+  \item tactics, reflection, proof management.
+\end{itemize}

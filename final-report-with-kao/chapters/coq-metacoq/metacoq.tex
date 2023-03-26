@@ -1,0 +1,84 @@
+\chapter{Introduction to the MetaCoq Project}
+% \section{Introduction to the MetaCoq Project}
+
+\section{The MetaCoq Project}
+% \subsection{The MetaCoq Project}
+MetaCoq is a project to formalize the core calculus, PCUIC, in Coq, and become a
+platform to write tools that can manipulate Coq terms
+\sidecite{sozeau2020metacoq}. The effort was complete for a large part of the
+core language of Coq \sidecite{coqcoqcorrect}, with a few missing pieces :
+
+\begin{itemize}
+    \item Eta-conversion
+    \item Template Polymorphism
+    \item SProps
+    \item Modules
+\end{itemize}
+
+I will be tackling the last.
+
+\section{Structure of the MetaCoq Project} The MetaCoq project is an ambitious
+project aiming to provide a verified implementation of Coq, and for its size, it
+is reasonably split into a few main components. From the layer closest to the
+Coq language to layer closest to machine code, we have: TemplateCoq (Section
+\ref{sec:mc-template}), PCUIC (Section \ref{sec:mc-pcuic}), followed by Safe
+Checker, Erasure and beyond(Section \ref{sec:mc-beyond}).
+
+Let us remind ourselves of the task of MetaCoq: we would like to see that the
+OCaml representation of Coq is indeed correct and preserves the desired
+properties of the underlying theory. Since Coq has added many ``bells and
+whistles'' for its users, the terms of Coq definitely is much more complex than
+its underlying, Platonic type theoretical form. Therefore, MetaCoq has several
+stages for a Coq term to go through, stripping down to the bare minimum through
+the following few stages.
+
+\subsection{TemplateCoq}
+\label{sec:mc-template}
+
+TemplateCoq is a quoting library for Coq: a Coq program that takes a Coq term,
+and constructs an inductive data type that correspond to its kernel
+representation in the OCaml implementation. This is the first layer of the
+stripping of a Coq term, where the structures associated with a term, such as
+the Global Environment under which it is defined, are preserved properly as in
+the kernel.
+
+% TODO: Insert example
+
+This allows one to turn a Coq program into a Coq internal representation along
+with its associated environment structures, such as the definitions and
+declarations in the environment.
+
+\subsection{PCUIC}
+\label{sec:mc-pcuic}
+
+PCUIC is the Polymorphic Cumulative Calculus of Inductive Constructions. It is a
+"cleaned up version of the term language of Coq and its associated type system,
+shown equivalent to the one in Coq." \sidenote{from
+\url{https://metacoq.github.io}}.  In other words, it is a type theory that is
+as powerful as Coq can express, having the good properties such as weakening,
+confluence, principality (that every term has a principal type) etc.
+\sidecite{coqcoqcorrect}.
+
+A term generated in TemplateCoq can be converted into a PCUIC term via a
+verified process. Since the theory of PCUIC is then proven to have all the
+``nice'' properties in Coq, by the equivalence, the verified translation of
+TemplateCoq terms into PCUIC terms propagates these properties to the language
+of Coq.
+
+
+\subsection{Safe Checker, Erasure and Beyond}
+\label{sec:mc-beyond}
+
+The core semantic operation of type theories are the reductions. The safechecker
+is a verified "reduction machine, conversion checker and type checker" for PCUIC
+terms. At this point, we already have the tools to start with a Coq term, first
+quoting into TemplateCoq, then converted into a PCUIC term, and eventually has
+its type checked in the Safe Checker via a fully verified process. As far as
+correctness is concerned, this has already formed a verified end-to-end process
+of Coq's correctness.
+
+The MetaCoq has further provided a verified Type and Proof erasure process from
+PCUIC to untyped Lambda Calculus. This erased language is can be evaluated in
+\emph{C-light} semantics, the subset of C accepted by the CompCert verified
+compiler, which completes a maximally safe evaluation toolchain for the language
+of Coq, all the way to machine code \sidecite{coqcoqcorrect}.

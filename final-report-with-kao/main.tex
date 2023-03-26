@@ -1,0 +1,58 @@
+
+\include{preamble.tex}
+
+%----------------------------------------------------------------------------------------
+%	HEADER: Dedication, Acknowledgements, TOC
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\include{chapters/header.tex}
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
+\setchapterstyle{kao} % Choose the default chapter heading style
+
+% remove inter-chapter blank pages
+\let\cleardoublepage\clearpage
+
+\include{chapters/01-intro.tex}
+\include{chapters/02-previous-works.tex}
+\include{chapters/03-modules.tex}
+\include{chapters/04-environment.tex}
+\include{chapters/05-results-takeaways.tex}
+
+\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+
+%----------------------------------------------------------------------------------------
+%	APPENDIX
+%----------------------------------------------------------------------------------------
+
+\pagelayout{wide} % No margins
+\addpart{Appendix}
+\pagelayout{margin} % Restore margins
+
+\include{chapters/appendix/module-typing.tex}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\pagelayout{wide} % No margins
+
+% The bibliography needs to be compiled with biber using your LaTeX editor, or on the command line with 'biber main' from the template directory
+
+\defbibnote{bibnote}{Here are the references in citation order.\par\bigskip} % Prepend this text to the bibliography
+\printbibliography[heading=bibintoc, title=Bibliography, prenote=bibnote] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+% The index needs to be compiled on the command line with 'makeindex main' from the template directory
+
+% \printindex % Output the index
+
+\end{document}

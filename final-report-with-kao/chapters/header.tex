@@ -1,0 +1,129 @@
+%----------------------------------------------------------------------------------------
+%	BOOK INFORMATION
+%----------------------------------------------------------------------------------------
+
+% \titlehead{Document Template}
+\title[Formalizing Coq Modules in the MetaCoq project]{Formalizing Coq Modules in the MetaCoq project}
+\subtitle{XFC4101 Final Report}
+\author[YJ Tan]{Yee-Jian Tan}
+\date{\today}
+% \publishers{An Awesome Publisher}
+
+%----------------------------------------------------------------------------------------
+
+\frontmatter % Denotes the start of the pre-document content, uses roman numerals
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+\uppertitleback{\@titlehead} % Header
+
+\lowertitleback{
+	% \textbf{Disclaimer} \\
+	% You can edit this page to suit your needs. For instance, here we have a no copyright statement, a colophon and some other information. This page is based on the corresponding page of Ken Arroyo Ohori's thesis, with minimal changes.
+	
+	% \medskip
+	
+	% \textbf{No copyright} \\
+	% \cczero\ This book is released into the public domain using the CC0 code. To the extent possible under law, I waive all copyright and related or neighbouring rights to this work.
+	
+	% To view a copy of the CC0 code, visit: \\\url{http://creativecommons.org/publicdomain/zero/1.0/}
+	
+	% \medskip
+	
+	% \textbf{Colophon} \\
+	% This document was typeset with the help of \href{https://sourceforge.net/projects/koma-script/}{\KOMAScript} and \href{https://www.latex-project.org/}{\LaTeX} using the \href{https://github.com/fmarotta/kaobook/}{kaobook} class.
+	
+	% \medskip
+	
+	% \textbf{Publisher} \\
+	% First printed in May 2019 by \@publishers
+}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\dedication{For Rodolphe and Nicolas, who changed my life}
+
+% \dedication{ Try not to focus on the logical details, instead, try to focus on
+% the simplicity behind the details.  \flushright--- Leung Man Chun }
+
+%----------------------------------------------------------------------------------------
+%	OUTPUT TITLE PAGE AND PREVIOUS
+%----------------------------------------------------------------------------------------
+
+% Note that \maketitle outputs the pages before here
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	PREFACE
+%----------------------------------------------------------------------------------------
+\begingroup
+  %in the header, chapters start on any page to avoid too many blank pages
+  \let\cleardoublepage\clearpage
+\chapter*{Abstract}
+
+This is an abstract. I am formalizing Coq modules in MetaCoq, it is a missing
+piece of the already established MetaCoq project. In the second part, as a
+requirement for the mathematics requirement, I study some basic properties of
+lambda calculus, hopefully culminating in the decidability for conversion in
+real-world type systems such as the Martin-Lof Type Theory (MLTT).
+
+\chapter*{Acknowledgements}
+
+I wouldn't come this far with the help of many people along the way. I would
+like to thank especially Nicolas Tabareau for having me in Nantes for the summer
+of 2022, which changed my life. Thank you professors Yang Yue and Martin Henz of
+the National University of Singapore for being my advisors for this project,
+even though it a rare one --- externally proposed, cross-faculty, joint final
+year project.
+
+I would also like to thank the people who inadvertently made this possible ---
+Thomas Tan Chee Kun who gave me a foray into the field of Type Theory, then
+Rodolphe Lepigre who was an amazing mentor landing me into a summer of internship.
+Not forgetting the valuable friendship and advice I received in Gallinette team,
+for the people whom I interacted with: Pierre, Tomas, Yann, Arthur, Iwan, Kenji,
+Meven, Assia, Pierre-Marie, Hamza, Enzo, Yannick and everyone else that appeared
+during my stay in Gallinette. I truly loved the time there and can't wait to be
+back again.
+
+% \chapter*{Reading this paper}
+
+% This paper is written with screen readers in mind. I will add links and
+% references wherever possible, especially in any upcoming definitions. Click on 
+% symbols to jump to its definition, if I figure out how to make it work.
+
+% \endgroup
+  \pagelayout{margin}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LIST OF FIGURES/TABLES
+%----------------------------------------------------------------------------------------
+
+\begingroup % Local scope for the following commands
+
+% Define the style for the TOC, LOF, and LOT
+%\setstretch{1} % Uncomment to modify line spacing in the ToC
+\hypersetup{linkcolor=.} % Uncomment to set the colour of links in the ToC
+\setlength{\textheight}{230\vscale} % Manually adjust the height of the ToC pages
+
+% Turn on compatibility mode for the etoc package
+\etocstandarddisplaystyle % "toc display" as if etoc was not loaded
+\etocstandardlines % "toc lines as if etoc was not loaded
+\setcounter{tocdepth}{\subsectiontocdepth}
+
+\tableofcontents % Output the table of contents
+
+% \listoffigures % Output the list of figures
+
+% Comment both of the following lines to have the LOF and the LOT on different pages
+\let\cleardoublepage\bigskip
+\let\clearpage\bigskip
+
+% \listoftables % Output the list of tables
+
+\endgroup

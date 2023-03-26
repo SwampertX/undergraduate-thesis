@@ -1,0 +1,56 @@
+DIGEST 40dedab57043fc00abd097d9dc8cc37b
+FMetaCoq.Template.config
+rec 62:74 <> checker_flags
+proj 162:172 <> check_univs
+proj 218:230 <> prop_sub_type
+proj 324:337 <> indices_matter
+proj 408:432 <> lets_in_constructor_types
+R176:179 Coq.Init.Datatypes <> bool ind
+R234:237 Coq.Init.Datatypes <> bool ind
+R341:344 Coq.Init.Datatypes <> bool ind
+R436:439 Coq.Init.Datatypes <> bool ind
+inst 492:512 <> default_checker_flags
+R516:528 MetaCoq.Template.config <> checker_flags class
+R538:548 MetaCoq.Template.config <> check_univs meth
+R538:548 MetaCoq.Template.config <> check_univs meth
+R538:548 MetaCoq.Template.config <> check_univs meth
+R562:574 MetaCoq.Template.config <> prop_sub_type meth
+R562:574 MetaCoq.Template.config <> prop_sub_type meth
+R587:600 MetaCoq.Template.config <> indices_matter meth
+R587:600 MetaCoq.Template.config <> indices_matter meth
+R614:638 MetaCoq.Template.config <> lets_in_constructor_types meth
+R614:638 MetaCoq.Template.config <> lets_in_constructor_types meth
+R553:556 Coq.Init.Datatypes <> true constr
+R579:582 Coq.Init.Datatypes <> true constr
+R605:609 Coq.Init.Datatypes <> false constr
+R643:646 Coq.Init.Datatypes <> true constr
+inst 668:679 <> type_in_type
+R683:695 MetaCoq.Template.config <> checker_flags class
+R705:715 MetaCoq.Template.config <> check_univs meth
+R705:715 MetaCoq.Template.config <> check_univs meth
+R705:715 MetaCoq.Template.config <> check_univs meth
+R730:742 MetaCoq.Template.config <> prop_sub_type meth
+R730:742 MetaCoq.Template.config <> prop_sub_type meth
+R755:768 MetaCoq.Template.config <> indices_matter meth
+R755:768 MetaCoq.Template.config <> indices_matter meth
+R782:806 MetaCoq.Template.config <> lets_in_constructor_types meth
+R782:806 MetaCoq.Template.config <> lets_in_constructor_types meth
+R720:724 Coq.Init.Datatypes <> false constr
+R747:750 Coq.Init.Datatypes <> true constr
+R773:777 Coq.Init.Datatypes <> false constr
+R811:814 Coq.Init.Datatypes <> true constr
+inst 836:859 <> extraction_checker_flags
+R863:875 MetaCoq.Template.config <> checker_flags class
+R885:895 MetaCoq.Template.config <> check_univs meth
+R885:895 MetaCoq.Template.config <> check_univs meth
+R885:895 MetaCoq.Template.config <> check_univs meth
+R909:921 MetaCoq.Template.config <> prop_sub_type meth
+R909:921 MetaCoq.Template.config <> prop_sub_type meth
+R935:948 MetaCoq.Template.config <> indices_matter meth
+R935:948 MetaCoq.Template.config <> indices_matter meth
+R962:986 MetaCoq.Template.config <> lets_in_constructor_types meth
+R962:986 MetaCoq.Template.config <> lets_in_constructor_types meth
+R900:903 Coq.Init.Datatypes <> true constr
+R926:930 Coq.Init.Datatypes <> false constr
+R953:957 Coq.Init.Datatypes <> false constr
+R991:995 Coq.Init.Datatypes <> false constr

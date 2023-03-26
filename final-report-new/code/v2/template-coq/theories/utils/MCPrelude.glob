@@ -1,0 +1,159 @@
+DIGEST 544d0ca642d15cccd5bfc4178c066592
+FMetaCoq.Template.utils.MCPrelude
+R15:19 Coq.Strings.Ascii <> <> lib
+R21:26 Coq.Strings.String <> <> lib
+R28:33 Coq.ZArith.ZArith <> <> lib
+R35:37 Coq.micromega.Lia <> <> lib
+R39:47 Coq.Classes.Morphisms <> <> lib
+R80:88 Equations.Prop.Equations <> <> lib
+inst 212:222 <> ascii_eqdec
+R226:230 Equations.Prop.Classes <> EqDec class
+R232:236 Coq.Strings.Ascii <> ascii ind
+R241:249 Coq.Strings.Ascii <> ascii_dec def
+inst 268:279 <> string_eqdec
+R283:287 Equations.Prop.Classes <> EqDec class
+R289:294 Coq.Strings.String <> string ind
+R299:308 Coq.Strings.String <> string_dec def
+R335:339 Coq.Strings.Ascii <> ascii ind
+R341:346 Coq.Strings.String <> string ind
+R378:385 Coq.Numbers.BinNums <> positive ind
+R387:387 Coq.Numbers.BinNums <> Z ind
+R485:521 Coq.Init.Datatypes <> is_true def
+binder 558:558 <> g:1
+binder 560:560 <> f:2
+binder 562:562 <> x:3
+R567:567 MetaCoq.Template.utils.MCPrelude <> g:1 var
+R570:570 MetaCoq.Template.utils.MCPrelude <> f:2 var
+R572:572 MetaCoq.Template.utils.MCPrelude <> x:3 var
+not 534:534 <> :::'eta_compose'
+R613:627 MetaCoq.Template.utils.MCPrelude <> :::'eta_compose' not
+not 599:599 <> :::x_'∘'_x
+R686:695 Coq.Init.Logic <> False_rect scheme
+not 675:675 <> ::metacoq_scope:'!'
+R819:822 Coq.Init.Specif <> sigT ind
+binder 829:829 <> x:4
+R838:841 Coq.Init.Specif <> sigT ind
+binder 848:848 <> y:5
+not 796:796 <> ::type_scope:'∑'_x_'..'_x_','_x
+R1012:1017 Coq.Init.Specif <> existT constr
+not 995:995 <> :::'('_x_';'_x_')'
+R1057:1057 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1059:1061 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1070:1070 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1062:1063 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1065:1067 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1069:1069 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+not 1038:1038 <> :::'('_x_';'_x_';'_x_')'
+R1105:1105 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1107:1109 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1124:1124 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1110:1111 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1113:1115 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1123:1123 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1116:1116 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1118:1120 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1122:1122 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+not 1082:1082 <> :::'('_x_';'_x_';'_x_';'_x_')'
+R1163:1163 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1165:1167 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1188:1188 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1168:1169 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1171:1173 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1187:1187 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1174:1174 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1176:1178 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1186:1186 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1179:1179 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1181:1183 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1185:1185 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+not 1136:1136 <> :::'('_x_';'_x_';'_x_';'_x_';'_x_')'
+R1231:1231 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1233:1235 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1262:1262 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1236:1237 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1239:1241 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1261:1261 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1242:1242 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1244:1246 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1260:1260 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1247:1247 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1249:1251 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1259:1259 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1252:1252 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1254:1256 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+R1258:1258 MetaCoq.Template.utils.MCPrelude <> :::'('_x_';'_x_')' not
+not 1200:1200 <> :::'('_x_';'_x_';'_x_';'_x_';'_x_';'_x_')'
+R1288:1293 Coq.Init.Specif <> projT1 def
+not 1274:1274 <> :::x_'.π1'
+R1358:1363 Coq.Init.Specif <> projT2 def
+not 1344:1344 <> :::x_'.π2'
+R1496:1513 Coq.Classes.Morphisms <> pointwise_relation def
+R1517:1524 Coq.Init.Logic <> eq ind
+not 1485:1485 <> :::'`=1`'
+R1557:1574 Coq.Classes.Morphisms <> pointwise_relation def
+R1578:1585 Coq.Init.Logic <> eq ind
+not 1548:1548 <> :::x_'=1'_x
+R1623:1640 Coq.Classes.Morphisms <> pointwise_relation def
+R1645:1662 Coq.Classes.Morphisms <> pointwise_relation def
+R1666:1673 Coq.Init.Logic <> eq ind
+not 1612:1612 <> :::'`=2`'
+R1707:1724 Coq.Classes.Morphisms <> pointwise_relation def
+R1729:1746 Coq.Classes.Morphisms <> pointwise_relation def
+R1750:1757 Coq.Init.Logic <> eq ind
+not 1698:1698 <> :::x_'=2'_x
+inst 1849:1861 <> proper_ext_eq
+binder 1864:1864 <> A:6
+binder 1866:1866 <> B:7
+R1871:1876 Coq.Classes.Morphisms <> Proper class
+R1904:1921 Coq.Classes.Morphisms <> pointwise_relation def
+R1923:1923 MetaCoq.Template.utils.MCPrelude <> A:6 var
+R1929:1936 Coq.Init.Logic <> eq ind
+R1938:1938 MetaCoq.Template.utils.MCPrelude <> B:7 var
+R1883:1887 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R1879:1882 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R1892:1896 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R1888:1891 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R1897:1899 Coq.Init.Logic <> iff def
+inst 2102:2116 <> id_proper_proxy
+binder 2119:2119 <> A:8
+R2124:2134 Coq.Classes.Morphisms <> ProperProxy class
+R2145:2146 Coq.Init.Datatypes <> id def
+R2148:2148 MetaCoq.Template.utils.MCPrelude <> A:8 var
+R2137:2140 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+inst 2209:2229 <> pointwise_subrelation
+binder 2232:2232 <> A:9
+binder 2234:2234 <> B:10
+R2239:2249 Coq.Classes.RelationClasses <> subrelation class
+R2270:2274 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R2260:2267 Coq.Init.Logic <> eq ind
+R2269:2269 MetaCoq.Template.utils.MCPrelude <> A:9 var
+R2276:2283 Coq.Init.Logic <> eq ind
+R2285:2285 MetaCoq.Template.utils.MCPrelude <> B:10 var
+R2252:2255 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+inst 2373:2394 <> pointwise_subrelation2
+binder 2397:2397 <> A:11
+binder 2399:2399 <> B:12
+binder 2401:2401 <> C:13
+R2406:2416 Coq.Classes.RelationClasses <> subrelation class
+R2437:2441 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R2427:2434 Coq.Init.Logic <> eq ind
+R2436:2436 MetaCoq.Template.utils.MCPrelude <> A:11 var
+R2453:2457 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R2443:2450 Coq.Init.Logic <> eq ind
+R2452:2452 MetaCoq.Template.utils.MCPrelude <> B:12 var
+R2459:2466 Coq.Init.Logic <> eq ind
+R2468:2468 MetaCoq.Template.utils.MCPrelude <> C:13 var
+R2419:2422 MetaCoq.Template.utils.MCPrelude <> :::'`=2`' not
+R2949:2959 Coq.Arith.PeanoNat Nat add_0_r thm
+R3140:3143 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3140:3143 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3182:3184 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R3182:3184 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R3461:3464 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3461:3464 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3522:3524 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3522:3524 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R3975:3977 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4028:4031 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R4082:4083 Coq.Init.Logic <> eq ind
+R4085:4087 Coq.Init.Datatypes <> nat ind

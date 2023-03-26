@@ -1,0 +1,557 @@
+DIGEST 34962f5f324889a73715e86c151f48bb
+FMetaCoq.Template.utils.MCRelations
+R69:77 Coq.ssr.ssreflect <> <> lib
+R95:117 Equations.Type.Relation <> <> lib
+R119:152 Equations.Type.Relation_Properties <> <> lib
+R170:185 Coq.Classes.CRelationClasses <> <> lib
+R209:217 Coq.Classes.CRelationClasses <> Reflexive class
+R262:265 Coq.Classes.CRelationClasses <> iffT def
+not 253:253 <> :::x_'<~>'_x
+def 294:299 <> iffT_l
+binder 302:302 <> P:1
+binder 304:304 <> Q:2
+R316:319 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R310:314 MetaCoq.Template.utils.MCRelations <> :::x_'<~>'_x not
+R309:309 MetaCoq.Template.utils.MCRelations <> P:1 var
+R315:315 MetaCoq.Template.utils.MCRelations <> Q:2 var
+R321:324 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R320:320 MetaCoq.Template.utils.MCRelations <> P:1 var
+R325:325 MetaCoq.Template.utils.MCRelations <> Q:2 var
+R344:346 Coq.Init.Datatypes <> fst def
+R344:346 Coq.Init.Datatypes <> fst def
+R354:405 MetaCoq.Template.utils.MCRelations <> iffT_l def
+R501:503 Coq.Init.Datatypes <> fst def
+R528:530 Coq.Init.Datatypes <> snd def
+binder 568:568 <> R:3
+binder 570:570 <> f:4
+binder 572:572 <> x:5
+binder 574:574 <> y:6
+R579:579 MetaCoq.Template.utils.MCRelations <> R:3 var
+R582:582 MetaCoq.Template.utils.MCRelations <> f:4 var
+R584:584 MetaCoq.Template.utils.MCRelations <> x:5 var
+R588:588 MetaCoq.Template.utils.MCRelations <> f:4 var
+R590:590 MetaCoq.Template.utils.MCRelations <> y:6 var
+not 545:545 <> :::'precompose'
+def 622:627 <> on_rel
+binder 630:630 <> A:7
+binder 632:632 <> B:8
+R641:644 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R640:640 MetaCoq.Template.utils.MCRelations <> A:7 var
+R646:649 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R645:645 MetaCoq.Template.utils.MCRelations <> A:7 var
+binder 636:636 <> R:9
+R662:665 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R661:661 MetaCoq.Template.utils.MCRelations <> B:8 var
+R666:666 MetaCoq.Template.utils.MCRelations <> A:7 var
+binder 657:657 <> f:10
+R672:675 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R671:671 MetaCoq.Template.utils.MCRelations <> B:8 var
+R677:680 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R676:676 MetaCoq.Template.utils.MCRelations <> B:8 var
+binder 695:695 <> x:11
+binder 697:697 <> y:12
+R702:702 MetaCoq.Template.utils.MCRelations <> R:9 var
+R711:711 MetaCoq.Template.utils.MCRelations <> f:10 var
+R713:713 MetaCoq.Template.utils.MCRelations <> y:12 var
+R705:705 MetaCoq.Template.utils.MCRelations <> f:10 var
+R707:707 MetaCoq.Template.utils.MCRelations <> x:11 var
+def 729:735 <> on_Trel
+binder 738:738 <> A:13
+binder 740:740 <> B:14
+R749:752 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R748:748 MetaCoq.Template.utils.MCRelations <> A:13 var
+R754:757 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R753:753 MetaCoq.Template.utils.MCRelations <> A:13 var
+binder 744:744 <> R:15
+R770:773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R769:769 MetaCoq.Template.utils.MCRelations <> B:14 var
+R774:774 MetaCoq.Template.utils.MCRelations <> A:13 var
+binder 765:765 <> f:16
+R780:783 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R779:779 MetaCoq.Template.utils.MCRelations <> B:14 var
+R785:788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R784:784 MetaCoq.Template.utils.MCRelations <> B:14 var
+binder 803:803 <> x:17
+binder 805:805 <> y:18
+R810:810 MetaCoq.Template.utils.MCRelations <> R:15 var
+R819:819 MetaCoq.Template.utils.MCRelations <> f:16 var
+R821:821 MetaCoq.Template.utils.MCRelations <> y:18 var
+R813:813 MetaCoq.Template.utils.MCRelations <> f:16 var
+R815:815 MetaCoq.Template.utils.MCRelations <> x:17 var
+abbrev 835:843 <> Trel_conj
+binder 859:859 <> x:19
+binder 861:861 <> y:20
+R871:873 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R868:868 MetaCoq.Template.utils.MCRelations <> x:19 var
+R870:870 MetaCoq.Template.utils.MCRelations <> y:20 var
+R876:876 MetaCoq.Template.utils.MCRelations <> x:19 var
+R878:878 MetaCoq.Template.utils.MCRelations <> y:20 var
+abbrev 897:906 <> on_Trel_eq
+binder 924:924 <> x:21
+binder 926:926 <> y:22
+R945:948 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R958:958 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R937:937 MetaCoq.Template.utils.MCRelations <> x:21 var
+R943:943 MetaCoq.Template.utils.MCRelations <> y:22 var
+R952:954 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R951:951 MetaCoq.Template.utils.MCRelations <> x:21 var
+R957:957 MetaCoq.Template.utils.MCRelations <> y:22 var
+sec 977:980 <> Flip
+binder 1029:1029 <> A:23
+R1044:1052 Coq.Classes.CRelationClasses <> crelation def
+R1054:1054 MetaCoq.Template.utils.MCRelations <> A:23 var
+binder 1040:1040 <> R:24
+prf 1067:1080 <> flip_Reflexive
+R1095:1098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1084:1092 Coq.Classes.CRelationClasses <> Reflexive class
+R1094:1094 MetaCoq.Template.utils.MCRelations <> Flip.R var
+R1099:1107 Coq.Classes.CRelationClasses <> Reflexive class
+R1110:1113 Coq.Classes.CRelationClasses <> flip def
+R1115:1115 MetaCoq.Template.utils.MCRelations <> Flip.R var
+R1163:1166 Coq.Classes.CRelationClasses <> flip def
+R1175:1185 Coq.Classes.CRelationClasses <> reflexivity def
+R1175:1185 Coq.Classes.CRelationClasses <> reflexivity def
+prf 1204:1217 <> flip_Symmetric
+R1232:1235 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1221:1229 Coq.Classes.CRelationClasses <> Symmetric class
+R1231:1231 MetaCoq.Template.utils.MCRelations <> Flip.R var
+R1236:1244 Coq.Classes.CRelationClasses <> Symmetric class
+R1247:1250 Coq.Classes.CRelationClasses <> flip def
+R1252:1252 MetaCoq.Template.utils.MCRelations <> Flip.R var
+R1302:1305 Coq.Classes.CRelationClasses <> flip def
+R1314:1321 Coq.Classes.CRelationClasses <> symmetry def
+R1314:1321 Coq.Classes.CRelationClasses <> symmetry def
+prf 1340:1354 <> flip_Transitive
+R1370:1373 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1358:1367 Coq.Classes.CRelationClasses <> Transitive class
+R1369:1369 MetaCoq.Template.utils.MCRelations <> Flip.R var
+R1374:1383 Coq.Classes.CRelationClasses <> Transitive class
+R1386:1389 Coq.Classes.CRelationClasses <> flip def
+R1391:1391 MetaCoq.Template.utils.MCRelations <> Flip.R var
+R1453:1456 Coq.Classes.CRelationClasses <> flip def
+R1500:1503 MetaCoq.Template.utils.MCRelations Flip <> sec
+def 1518:1525 <> commutes
+binder 1528:1528 <> A:25
+R1538:1545 Equations.Type.Relation <> relation def
+R1547:1547 MetaCoq.Template.utils.MCRelations <> A:25 var
+binder 1532:1532 <> R:26
+binder 1534:1534 <> S:27
+binder 1562:1562 <> x:28
+binder 1564:1564 <> y:29
+binder 1566:1566 <> z:30
+R1574:1577 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1569:1569 MetaCoq.Template.utils.MCRelations <> R:26 var
+R1571:1571 MetaCoq.Template.utils.MCRelations <> x:28 var
+R1573:1573 MetaCoq.Template.utils.MCRelations <> y:29 var
+R1583:1586 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1578:1578 MetaCoq.Template.utils.MCRelations <> S:27 var
+R1580:1580 MetaCoq.Template.utils.MCRelations <> x:28 var
+R1582:1582 MetaCoq.Template.utils.MCRelations <> z:30 var
+R1587:1588 Coq.Init.Specif <> ::type_scope:'{'_x_'&'_x_'}' not
+R1590:1592 Coq.Init.Specif <> ::type_scope:'{'_x_'&'_x_'}' not
+R1606:1606 Coq.Init.Specif <> ::type_scope:'{'_x_'&'_x_'}' not
+binder 1589:1589 <> w:31
+R1598:1600 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1593:1593 MetaCoq.Template.utils.MCRelations <> S:27 var
+R1595:1595 MetaCoq.Template.utils.MCRelations <> y:29 var
+R1597:1597 MetaCoq.Template.utils.MCRelations <> w:31 var
+R1601:1601 MetaCoq.Template.utils.MCRelations <> R:26 var
+R1603:1603 MetaCoq.Template.utils.MCRelations <> z:30 var
+R1605:1605 MetaCoq.Template.utils.MCRelations <> w:31 var
+prf 1621:1629 <> clos_t_rt
+binder 1632:1632 <> A:32
+R1641:1644 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1640:1640 MetaCoq.Template.utils.MCRelations <> A:32 var
+R1646:1649 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1645:1645 MetaCoq.Template.utils.MCRelations <> A:32 var
+binder 1636:1636 <> R:33
+binder 1656:1656 <> x:34
+binder 1658:1658 <> y:35
+R1678:1681 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1662:1671 Equations.Type.Relation <> trans_clos ind
+R1675:1675 MetaCoq.Template.utils.MCRelations <> x:34 var
+R1677:1677 MetaCoq.Template.utils.MCRelations <> y:35 var
+R1673:1673 MetaCoq.Template.utils.MCRelations <> R:33 var
+R1682:1696 Equations.Type.Relation <> clos_refl_trans ind
+R1700:1700 MetaCoq.Template.utils.MCRelations <> x:34 var
+R1702:1702 MetaCoq.Template.utils.MCRelations <> y:35 var
+R1698:1698 MetaCoq.Template.utils.MCRelations <> R:33 var
+R1777:1783 Equations.Type.Relation <> rt_step constr
+R1777:1783 Equations.Type.Relation <> rt_step constr
+def 1872:1887 <> clos_rt_monotone
+binder 1890:1890 <> A:36
+R1900:1907 Equations.Type.Relation <> relation def
+R1909:1909 MetaCoq.Template.utils.MCRelations <> A:36 var
+binder 1894:1894 <> R:37
+binder 1896:1896 <> S:38
+R1929:1932 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1916:1924 Equations.Type.Relation_Properties <> inclusion abbrev
+R1926:1926 MetaCoq.Template.utils.MCRelations <> R:37 var
+R1928:1928 MetaCoq.Template.utils.MCRelations <> S:38 var
+R1933:1941 Equations.Type.Relation_Properties <> inclusion abbrev
+R1944:1958 Equations.Type.Relation <> clos_refl_trans ind
+R1960:1960 MetaCoq.Template.utils.MCRelations <> R:37 var
+R1964:1978 Equations.Type.Relation <> clos_refl_trans ind
+R1980:1980 MetaCoq.Template.utils.MCRelations <> S:38 var
+prf 2068:2097 <> relation_equivalence_inclusion
+binder 2100:2100 <> A:39
+R2110:2117 Equations.Type.Relation <> relation def
+R2119:2119 MetaCoq.Template.utils.MCRelations <> A:39 var
+binder 2104:2104 <> R:40
+binder 2106:2106 <> S:41
+R2139:2142 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2126:2134 Equations.Type.Relation_Properties <> inclusion abbrev
+R2136:2136 MetaCoq.Template.utils.MCRelations <> R:40 var
+R2138:2138 MetaCoq.Template.utils.MCRelations <> S:41 var
+R2156:2159 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2143:2151 Equations.Type.Relation_Properties <> inclusion abbrev
+R2153:2153 MetaCoq.Template.utils.MCRelations <> S:41 var
+R2155:2155 MetaCoq.Template.utils.MCRelations <> R:40 var
+R2160:2179 Coq.Classes.CRelationClasses <> relation_equivalence def
+R2181:2181 MetaCoq.Template.utils.MCRelations <> R:40 var
+R2183:2183 MetaCoq.Template.utils.MCRelations <> S:41 var
+prf 2217:2240 <> clos_rt_disjunction_left
+binder 2243:2243 <> A:42
+R2253:2260 Equations.Type.Relation <> relation def
+R2262:2262 MetaCoq.Template.utils.MCRelations <> A:42 var
+binder 2247:2247 <> R:43
+binder 2249:2249 <> S:44
+R2269:2277 Equations.Type.Relation_Properties <> inclusion abbrev
+R2280:2294 Equations.Type.Relation <> clos_refl_trans ind
+R2296:2296 MetaCoq.Template.utils.MCRelations <> R:43 var
+R2312:2326 Equations.Type.Relation <> clos_refl_trans ind
+R2329:2348 Coq.Classes.CRelationClasses <> relation_disjunction def
+R2350:2350 MetaCoq.Template.utils.MCRelations <> R:43 var
+R2352:2352 MetaCoq.Template.utils.MCRelations <> S:44 var
+R2372:2387 MetaCoq.Template.utils.MCRelations <> clos_rt_monotone def
+R2372:2387 MetaCoq.Template.utils.MCRelations <> clos_rt_monotone def
+prf 2433:2457 <> clos_rt_disjunction_right
+binder 2460:2460 <> A:45
+R2470:2477 Equations.Type.Relation <> relation def
+R2479:2479 MetaCoq.Template.utils.MCRelations <> A:45 var
+binder 2464:2464 <> R:46
+binder 2466:2466 <> S:47
+R2486:2494 Equations.Type.Relation_Properties <> inclusion abbrev
+R2497:2511 Equations.Type.Relation <> clos_refl_trans ind
+R2513:2513 MetaCoq.Template.utils.MCRelations <> S:47 var
+R2529:2543 Equations.Type.Relation <> clos_refl_trans ind
+R2546:2565 Coq.Classes.CRelationClasses <> relation_disjunction def
+R2567:2567 MetaCoq.Template.utils.MCRelations <> R:46 var
+R2569:2569 MetaCoq.Template.utils.MCRelations <> S:47 var
+R2589:2604 MetaCoq.Template.utils.MCRelations <> clos_rt_monotone def
+R2589:2604 MetaCoq.Template.utils.MCRelations <> clos_rt_monotone def
+inst 2661:2673 <> clos_rt_trans
+binder 2675:2675 <> A:48
+binder 2677:2677 <> R:49
+R2681:2690 Coq.Classes.CRelationClasses <> Transitive class
+R2694:2708 Equations.Type.Relation <> clos_refl_trans ind
+R2710:2710 MetaCoq.Template.utils.MCRelations <> A:48 var
+R2712:2712 MetaCoq.Template.utils.MCRelations <> R:49 var
+inst 2789:2800 <> clos_rt_refl
+binder 2802:2802 <> A:50
+binder 2804:2804 <> R:51
+R2808:2816 Coq.Classes.CRelationClasses <> Reflexive class
+R2820:2834 Equations.Type.Relation <> clos_refl_trans ind
+R2836:2836 MetaCoq.Template.utils.MCRelations <> A:50 var
+R2838:2838 MetaCoq.Template.utils.MCRelations <> R:51 var
+prf 2886:2907 <> clos_refl_trans_prod_l
+binder 2910:2910 <> A:52
+binder 2912:2912 <> B:53
+R2920:2927 Equations.Type.Relation <> relation def
+R2929:2929 MetaCoq.Template.utils.MCRelations <> A:52 var
+binder 2916:2916 <> R:54
+R2937:2944 Equations.Type.Relation <> relation def
+R2948:2950 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2947:2947 MetaCoq.Template.utils.MCRelations <> A:52 var
+R2951:2951 MetaCoq.Template.utils.MCRelations <> B:53 var
+binder 2933:2933 <> S:55
+R2959:2959 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2998:3004 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2967:2967 <> x:56
+binder 2969:2969 <> y:57
+binder 2971:2971 <> b:58
+R2979:2982 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2974:2974 MetaCoq.Template.utils.MCRelations <> R:54 var
+R2976:2976 MetaCoq.Template.utils.MCRelations <> x:56 var
+R2978:2978 MetaCoq.Template.utils.MCRelations <> y:57 var
+R2983:2983 MetaCoq.Template.utils.MCRelations <> S:55 var
+R2985:2985 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2987:2988 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2990:2990 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2986:2986 MetaCoq.Template.utils.MCRelations <> x:56 var
+R2989:2989 MetaCoq.Template.utils.MCRelations <> b:58 var
+R2992:2992 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2994:2995 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2997:2997 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2993:2993 MetaCoq.Template.utils.MCRelations <> y:57 var
+R2996:2996 MetaCoq.Template.utils.MCRelations <> b:58 var
+R3019:3019 MetaCoq.Template.utils.MCRelations <> A:52 var
+binder 3013:3013 <> x:59
+binder 3015:3015 <> y:60
+binder 3022:3022 <> b:61
+R3050:3057 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3029:3043 Equations.Type.Relation <> clos_refl_trans ind
+R3047:3047 MetaCoq.Template.utils.MCRelations <> x:59 var
+R3049:3049 MetaCoq.Template.utils.MCRelations <> y:60 var
+R3045:3045 MetaCoq.Template.utils.MCRelations <> R:54 var
+R3058:3072 Equations.Type.Relation <> clos_refl_trans ind
+R3076:3076 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3078:3079 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3081:3081 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3077:3077 MetaCoq.Template.utils.MCRelations <> x:59 var
+R3080:3080 MetaCoq.Template.utils.MCRelations <> b:61 var
+R3083:3083 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3085:3086 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3088:3088 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3084:3084 MetaCoq.Template.utils.MCRelations <> y:60 var
+R3087:3087 MetaCoq.Template.utils.MCRelations <> b:61 var
+R3074:3074 MetaCoq.Template.utils.MCRelations <> S:55 var
+prf 3167:3188 <> clos_refl_trans_prod_r
+binder 3191:3191 <> A:62
+binder 3193:3193 <> B:63
+R3201:3208 Equations.Type.Relation <> relation def
+R3210:3210 MetaCoq.Template.utils.MCRelations <> B:63 var
+binder 3197:3197 <> R:64
+R3218:3225 Equations.Type.Relation <> relation def
+R3229:3231 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3228:3228 MetaCoq.Template.utils.MCRelations <> A:62 var
+R3232:3232 MetaCoq.Template.utils.MCRelations <> B:63 var
+binder 3214:3214 <> S:65
+binder 3236:3236 <> a:66
+R3242:3242 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3279:3285 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3250:3250 <> x:67
+binder 3252:3252 <> y:68
+R3260:3263 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3255:3255 MetaCoq.Template.utils.MCRelations <> R:64 var
+R3257:3257 MetaCoq.Template.utils.MCRelations <> x:67 var
+R3259:3259 MetaCoq.Template.utils.MCRelations <> y:68 var
+R3264:3264 MetaCoq.Template.utils.MCRelations <> S:65 var
+R3266:3266 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3268:3269 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3271:3271 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3267:3267 MetaCoq.Template.utils.MCRelations <> a:66 var
+R3270:3270 MetaCoq.Template.utils.MCRelations <> x:67 var
+R3273:3273 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3275:3276 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3278:3278 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3274:3274 MetaCoq.Template.utils.MCRelations <> a:66 var
+R3277:3277 MetaCoq.Template.utils.MCRelations <> y:68 var
+R3300:3300 MetaCoq.Template.utils.MCRelations <> B:63 var
+binder 3294:3294 <> x:69
+binder 3296:3296 <> y:70
+R3329:3336 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3308:3322 Equations.Type.Relation <> clos_refl_trans ind
+R3326:3326 MetaCoq.Template.utils.MCRelations <> x:69 var
+R3328:3328 MetaCoq.Template.utils.MCRelations <> y:70 var
+R3324:3324 MetaCoq.Template.utils.MCRelations <> R:64 var
+R3337:3351 Equations.Type.Relation <> clos_refl_trans ind
+R3355:3355 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3357:3358 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3360:3360 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3356:3356 MetaCoq.Template.utils.MCRelations <> a:66 var
+R3359:3359 MetaCoq.Template.utils.MCRelations <> x:69 var
+R3362:3362 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3364:3365 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3367:3367 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3363:3363 MetaCoq.Template.utils.MCRelations <> a:66 var
+R3366:3366 MetaCoq.Template.utils.MCRelations <> y:70 var
+R3353:3353 MetaCoq.Template.utils.MCRelations <> S:65 var
+prf 3446:3459 <> clos_rt_t_incl
+binder 3462:3462 <> A:71
+R3470:3477 Equations.Type.Relation <> relation def
+R3479:3479 MetaCoq.Template.utils.MCRelations <> A:71 var
+binder 3466:3466 <> R:72
+R3484:3492 Coq.Classes.CRelationClasses <> Reflexive class
+R3494:3494 MetaCoq.Template.utils.MCRelations <> A:71 var
+R3496:3496 MetaCoq.Template.utils.MCRelations <> R:72 var
+binder 3484:3496 <> H:73
+R3503:3511 Equations.Type.Relation_Properties <> inclusion abbrev
+R3514:3528 Equations.Type.Relation <> clos_refl_trans ind
+R3530:3530 MetaCoq.Template.utils.MCRelations <> R:72 var
+R3534:3543 Equations.Type.Relation <> trans_clos ind
+R3545:3545 MetaCoq.Template.utils.MCRelations <> R:72 var
+prf 3628:3641 <> clos_t_rt_incl
+binder 3644:3644 <> A:74
+R3652:3659 Equations.Type.Relation <> relation def
+R3661:3661 MetaCoq.Template.utils.MCRelations <> A:74 var
+binder 3648:3648 <> R:75
+R3666:3674 Coq.Classes.CRelationClasses <> Reflexive class
+R3676:3676 MetaCoq.Template.utils.MCRelations <> A:74 var
+R3678:3678 MetaCoq.Template.utils.MCRelations <> R:75 var
+binder 3666:3678 <> H:76
+R3685:3693 Equations.Type.Relation_Properties <> inclusion abbrev
+R3696:3705 Equations.Type.Relation <> trans_clos ind
+R3707:3707 MetaCoq.Template.utils.MCRelations <> R:75 var
+R3711:3725 Equations.Type.Relation <> clos_refl_trans ind
+R3727:3727 MetaCoq.Template.utils.MCRelations <> R:75 var
+prf 3810:3824 <> clos_t_rt_equiv
+binder 3827:3827 <> A:77
+binder 3831:3831 <> R:78
+R3836:3844 Coq.Classes.CRelationClasses <> Reflexive class
+R3846:3846 MetaCoq.Template.utils.MCRelations <> A:77 var
+R3848:3848 MetaCoq.Template.utils.MCRelations <> R:78 var
+binder 3836:3848 <> H:79
+R3855:3874 Coq.Classes.CRelationClasses <> relation_equivalence def
+R3877:3886 Equations.Type.Relation <> trans_clos ind
+R3888:3888 MetaCoq.Template.utils.MCRelations <> R:78 var
+R3892:3906 Equations.Type.Relation <> clos_refl_trans ind
+R3908:3908 MetaCoq.Template.utils.MCRelations <> R:78 var
+R3927:3956 MetaCoq.Template.utils.MCRelations <> relation_equivalence_inclusion thm
+R3927:3956 MetaCoq.Template.utils.MCRelations <> relation_equivalence_inclusion thm
+R3967:3980 MetaCoq.Template.utils.MCRelations <> clos_t_rt_incl thm
+R3967:3980 MetaCoq.Template.utils.MCRelations <> clos_t_rt_incl thm
+R3991:4004 MetaCoq.Template.utils.MCRelations <> clos_rt_t_incl thm
+R3991:4004 MetaCoq.Template.utils.MCRelations <> clos_rt_t_incl thm
+inst 4029:4055 <> relation_disjunction_refl_l
+binder 4058:4058 <> A:80
+R4068:4075 Equations.Type.Relation <> relation def
+R4077:4077 MetaCoq.Template.utils.MCRelations <> A:80 var
+binder 4062:4062 <> R:81
+binder 4064:4064 <> S:82
+R4095:4098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4084:4092 Coq.Classes.CRelationClasses <> Reflexive class
+R4094:4094 MetaCoq.Template.utils.MCRelations <> R:81 var
+R4099:4107 Coq.Classes.CRelationClasses <> Reflexive class
+R4110:4129 Coq.Classes.CRelationClasses <> relation_disjunction def
+R4131:4131 MetaCoq.Template.utils.MCRelations <> R:81 var
+R4133:4133 MetaCoq.Template.utils.MCRelations <> S:82 var
+inst 4193:4219 <> relation_disjunction_refl_r
+binder 4222:4222 <> A:83
+R4232:4239 Equations.Type.Relation <> relation def
+R4241:4241 MetaCoq.Template.utils.MCRelations <> A:83 var
+binder 4226:4226 <> R:84
+binder 4228:4228 <> S:85
+R4259:4262 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4248:4256 Coq.Classes.CRelationClasses <> Reflexive class
+R4258:4258 MetaCoq.Template.utils.MCRelations <> S:85 var
+R4263:4271 Coq.Classes.CRelationClasses <> Reflexive class
+R4274:4293 Coq.Classes.CRelationClasses <> relation_disjunction def
+R4295:4295 MetaCoq.Template.utils.MCRelations <> R:84 var
+R4297:4297 MetaCoq.Template.utils.MCRelations <> S:85 var
+inst 4358:4380 <> clos_rt_trans_Symmetric
+binder 4382:4382 <> A:86
+binder 4384:4384 <> R:87
+R4401:4404 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4390:4398 Coq.Classes.CRelationClasses <> Symmetric class
+R4400:4400 MetaCoq.Template.utils.MCRelations <> R:87 var
+R4405:4413 Coq.Classes.CRelationClasses <> Symmetric class
+R4417:4431 Equations.Type.Relation <> clos_refl_trans ind
+R4433:4433 MetaCoq.Template.utils.MCRelations <> A:86 var
+R4435:4435 MetaCoq.Template.utils.MCRelations <> R:87 var
+R4493:4505 MetaCoq.Template.utils.MCRelations <> clos_rt_trans inst
+R4493:4505 MetaCoq.Template.utils.MCRelations <> clos_rt_trans inst
+def 4538:4545 <> clos_sym
+binder 4548:4548 <> A:88
+R4556:4563 Equations.Type.Relation <> relation def
+R4565:4565 MetaCoq.Template.utils.MCRelations <> A:88 var
+binder 4552:4552 <> R:89
+R4571:4590 Coq.Classes.CRelationClasses <> relation_disjunction def
+R4592:4592 MetaCoq.Template.utils.MCRelations <> R:89 var
+R4595:4598 Coq.Classes.CRelationClasses <> flip def
+R4600:4600 MetaCoq.Template.utils.MCRelations <> R:89 var
+inst 4621:4638 <> clos_sym_Symmetric
+binder 4640:4640 <> A:90
+binder 4642:4642 <> R:91
+R4648:4656 Coq.Classes.CRelationClasses <> Symmetric class
+R4660:4667 MetaCoq.Template.utils.MCRelations <> clos_sym def
+R4669:4669 MetaCoq.Template.utils.MCRelations <> A:90 var
+R4671:4671 MetaCoq.Template.utils.MCRelations <> R:91 var
+inst 4747:4775 <> clos_refl_sym_trans_Symmetric
+binder 4777:4777 <> A:92
+binder 4779:4779 <> R:93
+R4785:4793 Coq.Classes.CRelationClasses <> Symmetric class
+R4797:4815 Equations.Type.Relation <> clos_refl_sym_trans ind
+R4817:4817 MetaCoq.Template.utils.MCRelations <> A:92 var
+R4819:4819 MetaCoq.Template.utils.MCRelations <> R:93 var
+R4827:4833 Equations.Type.Relation <> rst_sym constr
+inst 4855:4883 <> clos_refl_sym_trans_Reflexive
+binder 4885:4885 <> A:94
+binder 4887:4887 <> R:95
+R4893:4901 Coq.Classes.CRelationClasses <> Reflexive class
+R4905:4923 Equations.Type.Relation <> clos_refl_sym_trans ind
+R4925:4925 MetaCoq.Template.utils.MCRelations <> A:94 var
+R4927:4927 MetaCoq.Template.utils.MCRelations <> R:95 var
+R4935:4942 Equations.Type.Relation <> rst_refl constr
+inst 4964:4993 <> clos_refl_sym_trans_Transitive
+binder 4995:4995 <> A:96
+binder 4997:4997 <> R:97
+R5003:5012 Coq.Classes.CRelationClasses <> Transitive class
+R5016:5034 Equations.Type.Relation <> clos_refl_sym_trans ind
+R5036:5036 MetaCoq.Template.utils.MCRelations <> A:96 var
+R5038:5038 MetaCoq.Template.utils.MCRelations <> R:97 var
+R5046:5054 Equations.Type.Relation <> rst_trans constr
+inst 5076:5105 <> relation_disjunction_Symmetric
+binder 5108:5108 <> A:98
+R5118:5125 Equations.Type.Relation <> relation def
+R5127:5127 MetaCoq.Template.utils.MCRelations <> A:98 var
+binder 5112:5112 <> R:99
+binder 5114:5114 <> S:100
+R5145:5148 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5134:5142 Coq.Classes.CRelationClasses <> Symmetric class
+R5144:5144 MetaCoq.Template.utils.MCRelations <> R:99 var
+R5160:5163 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5149:5157 Coq.Classes.CRelationClasses <> Symmetric class
+R5159:5159 MetaCoq.Template.utils.MCRelations <> S:100 var
+R5164:5172 Coq.Classes.CRelationClasses <> Symmetric class
+R5175:5194 Coq.Classes.CRelationClasses <> relation_disjunction def
+R5196:5196 MetaCoq.Template.utils.MCRelations <> R:99 var
+R5198:5198 MetaCoq.Template.utils.MCRelations <> S:100 var
+prf 5480:5492 <> wf_precompose
+binder 5495:5495 <> T:101
+binder 5497:5497 <> M:102
+R5506:5509 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5505:5505 MetaCoq.Template.utils.MCRelations <> M:102 var
+R5511:5514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5510:5510 MetaCoq.Template.utils.MCRelations <> M:102 var
+binder 5501:5501 <> R:103
+R5527:5530 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5526:5526 MetaCoq.Template.utils.MCRelations <> T:101 var
+R5531:5531 MetaCoq.Template.utils.MCRelations <> M:102 var
+binder 5522:5522 <> m:104
+R5552:5555 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5538:5549 Coq.Init.Wf <> well_founded def
+R5551:5551 MetaCoq.Template.utils.MCRelations <> R:103 var
+R5556:5567 Coq.Init.Wf <> well_founded def
+R5570:5583 MetaCoq.Template.utils.MCRelations <> :::'precompose' not
+R5581:5581 MetaCoq.Template.utils.MCRelations <> R:103 var
+R5583:5583 MetaCoq.Template.utils.MCRelations <> m:104 var
+R5613:5624 Coq.Init.Wf <> well_founded def
+binder 5652:5652 <> a:105
+binder 5659:5660 <> a0:106
+R5675:5678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5671:5673 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5669:5670 MetaCoq.Template.utils.MCRelations <> a0:106 var
+R5674:5674 MetaCoq.Template.utils.MCRelations <> a:105 var
+R5679:5681 Coq.Init.Wf <> Acc ind
+R5700:5701 MetaCoq.Template.utils.MCRelations <> a0:106 var
+R5684:5697 MetaCoq.Template.utils.MCRelations <> :::'precompose' not
+binder 5652:5652 <> a:107
+binder 5659:5660 <> a0:108
+R5675:5678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5671:5673 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5669:5670 MetaCoq.Template.utils.MCRelations <> a0:108 var
+R5674:5674 MetaCoq.Template.utils.MCRelations <> a:107 var
+R5679:5681 Coq.Init.Wf <> Acc ind
+R5700:5701 MetaCoq.Template.utils.MCRelations <> a0:108 var
+R5684:5697 MetaCoq.Template.utils.MCRelations <> :::'precompose' not
+R5752:5767 Coq.Init.Wf <> well_founded_ind thm
+binder 5781:5782 <> mm:109
+binder 5794:5794 <> a:110
+R5805:5808 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5800:5802 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5799:5799 MetaCoq.Template.utils.MCRelations <> a:110 var
+R5803:5804 MetaCoq.Template.utils.MCRelations <> mm:109 var
+R5809:5811 Coq.Init.Wf <> Acc ind
+R5815:5815 MetaCoq.Template.utils.MCRelations <> a:110 var
+R5752:5767 Coq.Init.Wf <> well_founded_ind thm
+binder 5781:5782 <> mm:111
+binder 5794:5794 <> a:112
+R5805:5808 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5800:5802 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5799:5799 MetaCoq.Template.utils.MCRelations <> a:112 var
+R5803:5804 MetaCoq.Template.utils.MCRelations <> mm:111 var
+R5809:5811 Coq.Init.Wf <> Acc ind
+R5815:5815 MetaCoq.Template.utils.MCRelations <> a:112 var
+R5838:5846 Coq.Init.Wf <> Acc_intro constr
+R5838:5846 Coq.Init.Wf <> Acc_intro constr

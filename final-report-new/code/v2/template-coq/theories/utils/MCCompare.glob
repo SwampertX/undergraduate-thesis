@@ -1,0 +1,573 @@
+DIGEST 2f263fbdec0a062303f6d5232ca13e11
+FMetaCoq.Template.utils.MCCompare
+R24:32 Coq.ssr.ssreflect <> <> lib
+R34:43 Coq.extraction.Extraction <> <> lib
+R45:55 Coq.Structures.OrderedType <> <> lib
+R57:62 Coq.Structures.Orders <> <> lib
+R95:103 Equations.Prop.Equations <> <> lib
+prf 113:130 <> CompareSpec_Proper
+R134:139 Coq.Classes.Morphisms <> Proper class
+R184:194 Coq.Init.Datatypes <> CompareSpec ind
+R145:149 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R142:144 Coq.Init.Logic <> iff def
+R153:157 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R150:152 Coq.Init.Logic <> iff def
+R161:165 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R158:160 Coq.Init.Logic <> iff def
+R174:178 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R166:173 Coq.Init.Logic <> eq ind
+R179:181 Coq.Init.Logic <> iff def
+def 321:332 <> compare_cont
+R339:348 Coq.Init.Datatypes <> comparison ind
+binder 335:335 <> c:1
+R356:365 Coq.Init.Datatypes <> comparison ind
+binder 352:352 <> d:2
+R370:379 Coq.Init.Datatypes <> comparison ind
+R392:392 MetaCoq.Template.utils.MCCompare <> c:1 var
+R403:414 Coq.Init.Datatypes <> Lt constr
+R419:430 Coq.Init.Datatypes <> Lt constr
+R436:447 Coq.Init.Datatypes <> Eq constr
+R452:452 MetaCoq.Template.utils.MCCompare <> d:2 var
+R458:469 Coq.Init.Datatypes <> Gt constr
+R474:485 Coq.Init.Datatypes <> Gt constr
+R557:568 MetaCoq.Template.utils.MCCompare <> compare_cont def
+not 542:542 <> :::x_'??'_x
+prf 598:617 <> compare_cont_CompOpp
+binder 619:619 <> p:4
+binder 621:621 <> q:5
+R651:653 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R625:631 Coq.Init.Datatypes <> CompOpp def
+R634:645 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R647:647 MetaCoq.Template.utils.MCCompare <> p:4 var
+R649:649 MetaCoq.Template.utils.MCCompare <> q:5 var
+R654:665 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R668:674 Coq.Init.Datatypes <> CompOpp def
+R676:676 MetaCoq.Template.utils.MCCompare <> p:4 var
+R680:686 Coq.Init.Datatypes <> CompOpp def
+R688:688 MetaCoq.Template.utils.MCCompare <> q:5 var
+def 744:759 <> comparison_trans
+binder 761:761 <> p:6
+binder 763:763 <> q:7
+R779:779 MetaCoq.Template.utils.MCCompare <> q:7 var
+R776:776 MetaCoq.Template.utils.MCCompare <> p:6 var
+R790:801 Coq.Init.Datatypes <> Eq constr
+R809:812 Coq.Init.Datatypes <> Some constr
+R823:834 Coq.Init.Datatypes <> Eq constr
+R839:842 Coq.Init.Datatypes <> Some constr
+R850:861 Coq.Init.Datatypes <> Lt constr
+R864:875 Coq.Init.Datatypes <> Gt constr
+R880:883 Coq.Init.Datatypes <> None constr
+R889:900 Coq.Init.Datatypes <> Gt constr
+R903:914 Coq.Init.Datatypes <> Lt constr
+R919:922 Coq.Init.Datatypes <> None constr
+R936:939 Coq.Init.Datatypes <> Some constr
+prf 957:974 <> compare_cont_trans
+binder 977:977 <> A:10
+R988:991 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R987:987 MetaCoq.Template.utils.MCCompare <> A:10 var
+R993:996 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R992:992 MetaCoq.Template.utils.MCCompare <> A:10 var
+R997:1006 Coq.Init.Datatypes <> comparison ind
+binder 981:983 <> cmp:11
+R1013:1013 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1071:1077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1021:1021 <> c:12
+binder 1023:1023 <> x:13
+binder 1025:1025 <> y:14
+binder 1027:1027 <> z:15
+R1041:1044 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1037:1039 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1030:1032 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1036:1036 MetaCoq.Template.utils.MCCompare <> y:14 var
+R1034:1034 MetaCoq.Template.utils.MCCompare <> x:13 var
+R1040:1040 MetaCoq.Template.utils.MCCompare <> c:12 var
+R1056:1059 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1052:1054 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1045:1047 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1051:1051 MetaCoq.Template.utils.MCCompare <> z:15 var
+R1049:1049 MetaCoq.Template.utils.MCCompare <> y:14 var
+R1055:1055 MetaCoq.Template.utils.MCCompare <> c:12 var
+R1067:1069 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1060:1062 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1066:1066 MetaCoq.Template.utils.MCCompare <> z:15 var
+R1064:1064 MetaCoq.Template.utils.MCCompare <> x:13 var
+R1070:1070 MetaCoq.Template.utils.MCCompare <> c:12 var
+R1078:1078 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1122:1128 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1086:1086 <> x:16
+binder 1088:1088 <> y:17
+R1113:1116 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1098:1100 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1091:1093 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1097:1097 MetaCoq.Template.utils.MCCompare <> y:17 var
+R1095:1095 MetaCoq.Template.utils.MCCompare <> x:16 var
+R1101:1112 Coq.Init.Datatypes <> Eq constr
+R1118:1120 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1117:1117 MetaCoq.Template.utils.MCCompare <> x:16 var
+R1121:1121 MetaCoq.Template.utils.MCCompare <> y:17 var
+binder 1136:1136 <> c:18
+binder 1138:1138 <> x:19
+binder 1140:1140 <> y:20
+binder 1142:1142 <> z:21
+binder 1144:1144 <> q:22
+binder 1146:1147 <> q':23
+binder 1149:1151 <> q'':24
+R1156:1156 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1193:1199 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1164:1164 <> c:25
+R1172:1175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1168:1170 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1167:1167 MetaCoq.Template.utils.MCCompare <> q:22 var
+R1171:1171 MetaCoq.Template.utils.MCCompare <> c:25 var
+R1182:1185 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1178:1180 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1176:1177 MetaCoq.Template.utils.MCCompare <> q':23 var
+R1181:1181 MetaCoq.Template.utils.MCCompare <> c:25 var
+R1189:1191 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1186:1188 MetaCoq.Template.utils.MCCompare <> q'':24 var
+R1192:1192 MetaCoq.Template.utils.MCCompare <> c:25 var
+R1228:1231 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1224:1226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1200:1211 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R1214:1216 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1220:1220 MetaCoq.Template.utils.MCCompare <> y:20 var
+R1218:1218 MetaCoq.Template.utils.MCCompare <> x:19 var
+R1223:1223 MetaCoq.Template.utils.MCCompare <> q:22 var
+R1227:1227 MetaCoq.Template.utils.MCCompare <> c:18 var
+R1261:1264 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1257:1259 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1232:1243 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R1246:1248 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1252:1252 MetaCoq.Template.utils.MCCompare <> z:21 var
+R1250:1250 MetaCoq.Template.utils.MCCompare <> y:20 var
+R1255:1256 MetaCoq.Template.utils.MCCompare <> q':23 var
+R1260:1260 MetaCoq.Template.utils.MCCompare <> c:18 var
+R1291:1293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1265:1276 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R1279:1281 MetaCoq.Template.utils.MCCompare <> cmp:11 var
+R1285:1285 MetaCoq.Template.utils.MCCompare <> z:21 var
+R1283:1283 MetaCoq.Template.utils.MCCompare <> x:19 var
+R1288:1290 MetaCoq.Template.utils.MCCompare <> q'':24 var
+R1294:1294 MetaCoq.Template.utils.MCCompare <> c:18 var
+R1884:1899 Coq.Structures.Orders UsualOrderedType <> mod
+mod 1874:1879 <> BoolOT
+def 1915:1915 BoolOT t
+R1920:1923 Coq.Init.Datatypes <> bool ind
+def 1940:1946 BoolOT compare
+R1955:1958 Coq.Init.Datatypes <> bool ind
+binder 1949:1949 <> x:26
+binder 1951:1951 <> y:27
+R1963:1972 Coq.Init.Datatypes <> comparison ind
+R1981:1983 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R1985:1990 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2011:2016 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R1984:1984 MetaCoq.Template.utils.MCCompare <> x:26 var
+R1991:1993 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R1995:2000 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2003:2008 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R1994:1994 MetaCoq.Template.utils.MCCompare <> y:27 var
+R2001:2002 Coq.Init.Datatypes <> Eq constr
+R2009:2010 Coq.Init.Datatypes <> Gt constr
+R2017:2019 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2021:2026 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2029:2034 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2020:2020 MetaCoq.Template.utils.MCCompare <> y:27 var
+R2027:2028 Coq.Init.Datatypes <> Lt constr
+R2035:2036 Coq.Init.Datatypes <> Eq constr
+def 2053:2054 BoolOT lt
+R2063:2066 Coq.Init.Datatypes <> bool ind
+binder 2057:2057 <> x:28
+binder 2059:2059 <> y:29
+R2076:2078 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2080:2085 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2091:2096 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R2079:2079 MetaCoq.Template.utils.MCCompare <> x:28 var
+R2086:2090 Coq.Init.Logic <> False ind
+R2098:2100 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2097:2097 MetaCoq.Template.utils.MCCompare <> y:29 var
+R2101:2104 Coq.Init.Datatypes <> true constr
+def 2121:2132 BoolOT compare_spec
+R2141:2144 Coq.Init.Datatypes <> bool ind
+binder 2135:2135 <> x:30
+binder 2137:2137 <> y:31
+R2149:2159 Coq.Init.Datatypes <> CompareSpec ind
+R2188:2194 MetaCoq.Template.utils.MCCompare BoolOT compare def
+R2196:2196 MetaCoq.Template.utils.MCCompare <> x:30 var
+R2198:2198 MetaCoq.Template.utils.MCCompare <> y:31 var
+R2179:2180 MetaCoq.Template.utils.MCCompare BoolOT lt def
+R2182:2182 MetaCoq.Template.utils.MCCompare <> y:31 var
+R2184:2184 MetaCoq.Template.utils.MCCompare <> x:30 var
+R2170:2171 MetaCoq.Template.utils.MCCompare BoolOT lt def
+R2173:2173 MetaCoq.Template.utils.MCCompare <> x:30 var
+R2175:2175 MetaCoq.Template.utils.MCCompare <> y:31 var
+R2163:2165 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2162:2162 MetaCoq.Template.utils.MCCompare <> x:30 var
+R2166:2166 MetaCoq.Template.utils.MCCompare <> y:31 var
+def 2391:2392 BoolOT eq
+R2397:2400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2396:2396 MetaCoq.Template.utils.MCCompare BoolOT t def
+R2402:2405 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2401:2401 MetaCoq.Template.utils.MCCompare BoolOT t def
+R2414:2415 Coq.Init.Logic <> eq ind
+def 2431:2438 BoolOT eq_equiv
+R2442:2452 Coq.Classes.RelationClasses <> Equivalence class
+R2454:2455 MetaCoq.Template.utils.MCCompare BoolOT eq def
+def 2477:2482 BoolOT eq_dec
+R2493:2493 MetaCoq.Template.utils.MCCompare BoolOT t def
+binder 2485:2486 <> l1:32
+binder 2488:2489 <> l2:33
+R2498:2498 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R2506:2508 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R2517:2517 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R2501:2503 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2499:2500 MetaCoq.Template.utils.MCCompare <> l1:32 var
+R2504:2505 MetaCoq.Template.utils.MCCompare <> l2:33 var
+R2511:2514 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2509:2510 MetaCoq.Template.utils.MCCompare <> l1:32 var
+R2515:2516 MetaCoq.Template.utils.MCCompare <> l2:33 var
+def 2575:2585 BoolOT lt_strorder
+R2589:2599 Coq.Classes.RelationClasses <> StrictOrder class
+R2601:2602 MetaCoq.Template.utils.MCCompare BoolOT lt def
+R2660:2661 MetaCoq.Template.utils.MCCompare BoolOT lt def
+R2664:2673 Coq.Classes.RelationClasses <> complement def
+def 2780:2788 BoolOT lt_compat
+R2792:2797 Coq.Classes.Morphisms <> Proper class
+R2819:2820 MetaCoq.Template.utils.MCCompare BoolOT lt def
+R2802:2806 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R2800:2801 MetaCoq.Template.utils.MCCompare BoolOT eq def
+R2809:2813 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R2807:2808 MetaCoq.Template.utils.MCCompare BoolOT eq def
+R2814:2816 Coq.Init.Logic <> iff def
+R2864:2865 MetaCoq.Template.utils.MCCompare BoolOT eq def
+def 2928:2930 BoolOT eqb
+R2941:2941 MetaCoq.Template.utils.MCCompare BoolOT t def
+binder 2933:2934 <> l1:34
+binder 2936:2937 <> l2:35
+R2946:2949 Coq.Init.Datatypes <> bool ind
+R2964:2970 MetaCoq.Template.utils.MCCompare BoolOT compare def
+R2972:2973 MetaCoq.Template.utils.MCCompare <> l1:34 var
+R2975:2976 MetaCoq.Template.utils.MCCompare <> l2:35 var
+R2983:2984 Coq.Init.Datatypes <> Eq constr
+R2989:2992 Coq.Init.Datatypes <> true constr
+R3001:3005 Coq.Init.Datatypes <> false constr
+def 3026:3035 BoolOT eq_leibniz
+R3044:3044 MetaCoq.Template.utils.MCCompare BoolOT t def
+binder 3038:3038 <> x:36
+binder 3040:3040 <> y:37
+R3055:3058 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3049:3050 MetaCoq.Template.utils.MCCompare BoolOT eq def
+R3052:3052 MetaCoq.Template.utils.MCCompare <> x:36 var
+R3054:3054 MetaCoq.Template.utils.MCCompare <> y:37 var
+R3060:3062 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3059:3059 MetaCoq.Template.utils.MCCompare <> x:36 var
+R3063:3063 MetaCoq.Template.utils.MCCompare <> y:37 var
+R3068:3069 Coq.Init.Datatypes <> id def
+R3077:3082 MetaCoq.Template.utils.MCCompare BoolOT <> mod
+abbrev 3095:3106 <> bool_compare
+R3111:3124 MetaCoq.Template.utils.MCCompare <> compare def
+R3220:3235 Coq.Structures.Orders UsualOrderedType <> mod
+R3241:3256 Coq.Structures.Orders UsualOrderedType <> mod
+mod 3199:3213 <> ListOrderedType
+def 3272:3272 ListOrderedType t
+R3277:3280 Coq.Init.Datatypes <> list ind
+R3282:3284 MetaCoq.Template.utils.MCCompare A t defax
+R3296:3299 Coq.Lists.List <> <> mod
+R3309:3321 Coq.Lists.List ListNotations <> mod
+def 3336:3342 ListOrderedType compare
+R3353:3353 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+binder 3345:3346 <> l1:38
+binder 3348:3349 <> l2:39
+R3358:3367 Coq.Init.Datatypes <> comparison ind
+R3386:3387 MetaCoq.Template.utils.MCCompare <> l2:39 var
+R3382:3383 MetaCoq.Template.utils.MCCompare <> l1:38 var
+R3400:3401 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3404:3405 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3410:3411 Coq.Init.Datatypes <> Eq constr
+R3421:3424 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3419:3420 Coq.Lists.List <> hd def
+R3425:3426 Coq.Lists.List <> tl def
+R3432:3435 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3443:3454 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R3457:3465 MetaCoq.Template.utils.MCCompare A compare defax
+R3476:3482 MetaCoq.Template.utils.MCCompare <> compare:40 def
+R3498:3499 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3503:3506 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3512:3513 Coq.Init.Datatypes <> Lt constr
+R3524:3525 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3530:3531 Coq.Init.Datatypes <> Gt constr
+def 3556:3557 ListOrderedType eq
+R3562:3565 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3561:3561 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+R3567:3570 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3566:3566 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+R3579:3580 Coq.Init.Logic <> eq ind
+def 3596:3603 ListOrderedType eq_equiv
+R3607:3617 Coq.Classes.RelationClasses <> Equivalence class
+R3619:3620 MetaCoq.Template.utils.MCCompare ListOrderedType eq def
+ind 3641:3643 ListOrderedType lt_
+constr 3669:3679 ListOrderedType lt_nil_cons
+constr 3711:3725 ListOrderedType lt_cons_cons_hd
+constr 3790:3804 ListOrderedType lt_cons_cons_tl
+R3648:3651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3647:3647 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+R3653:3656 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3652:3652 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+binder 3681:3682 <> hd:45
+binder 3684:3685 <> tl:46
+R3689:3691 MetaCoq.Template.utils.MCCompare <> lt_:43 ind
+R3699:3702 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3697:3698 MetaCoq.Template.utils.MCCompare <> hd:45 var
+R3703:3704 MetaCoq.Template.utils.MCCompare <> tl:46 var
+R3693:3694 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+binder 3727:3728 <> hd:47
+binder 3730:3731 <> tl:48
+binder 3733:3735 <> hd':49
+binder 3737:3739 <> tl':50
+R3754:3757 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3743:3746 MetaCoq.Template.utils.MCCompare A lt defax
+R3751:3753 MetaCoq.Template.utils.MCCompare <> hd':49 var
+R3748:3749 MetaCoq.Template.utils.MCCompare <> hd:47 var
+R3758:3760 MetaCoq.Template.utils.MCCompare <> lt_:43 ind
+R3777:3780 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3774:3776 MetaCoq.Template.utils.MCCompare <> hd':49 var
+R3781:3783 MetaCoq.Template.utils.MCCompare <> tl':50 var
+R3765:3768 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3763:3764 MetaCoq.Template.utils.MCCompare <> hd:47 var
+R3769:3770 MetaCoq.Template.utils.MCCompare <> tl:48 var
+binder 3806:3807 <> hd:51
+binder 3809:3810 <> tl:52
+binder 3812:3814 <> tl':53
+R3828:3831 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3818:3820 MetaCoq.Template.utils.MCCompare <> lt_:43 ind
+R3825:3827 MetaCoq.Template.utils.MCCompare <> tl':53 var
+R3822:3823 MetaCoq.Template.utils.MCCompare <> tl:52 var
+R3832:3834 MetaCoq.Template.utils.MCCompare <> lt_:43 ind
+R3850:3853 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3848:3849 MetaCoq.Template.utils.MCCompare <> hd:51 var
+R3854:3856 MetaCoq.Template.utils.MCCompare <> tl':53 var
+R3839:3842 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3837:3838 MetaCoq.Template.utils.MCCompare <> hd:51 var
+R3843:3844 MetaCoq.Template.utils.MCCompare <> tl:52 var
+R3883:3885 MetaCoq.Template.utils.MCCompare ListOrderedType lt_ ind
+R3914:3916 MetaCoq.Template.utils.MCCompare <> lt_ ind
+def 3940:3941 ListOrderedType lt
+R3946:3948 MetaCoq.Template.utils.MCCompare ListOrderedType lt_ ind
+inst 3970:3980 ListOrderedType lt_strorder
+R3984:3994 Coq.Classes.RelationClasses <> StrictOrder class
+R3996:3997 MetaCoq.Template.utils.MCCompare ListOrderedType lt def
+R4073:4085 Coq.Classes.RelationClasses <> irreflexivity def
+R4073:4085 Coq.Classes.RelationClasses <> irreflexivity def
+inst 4415:4423 ListOrderedType lt_compat
+R4427:4432 Coq.Classes.Morphisms <> Proper class
+R4454:4455 MetaCoq.Template.utils.MCCompare ListOrderedType lt def
+R4437:4441 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R4435:4436 MetaCoq.Template.utils.MCCompare ListOrderedType eq def
+R4444:4448 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R4442:4443 MetaCoq.Template.utils.MCCompare ListOrderedType eq def
+R4449:4451 Coq.Init.Logic <> iff def
+R4499:4500 MetaCoq.Template.utils.MCCompare ListOrderedType eq def
+def 4549:4560 ListOrderedType compare_spec
+R4581:4581 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+binder 4575:4575 <> x:54
+binder 4577:4577 <> y:55
+R4584:4594 Coq.Init.Datatypes <> CompareSpec ind
+R4623:4629 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R4631:4631 MetaCoq.Template.utils.MCCompare <> x:54 var
+R4633:4633 MetaCoq.Template.utils.MCCompare <> y:55 var
+R4614:4615 MetaCoq.Template.utils.MCCompare ListOrderedType lt def
+R4617:4617 MetaCoq.Template.utils.MCCompare <> y:55 var
+R4619:4619 MetaCoq.Template.utils.MCCompare <> x:54 var
+R4605:4606 MetaCoq.Template.utils.MCCompare ListOrderedType lt def
+R4608:4608 MetaCoq.Template.utils.MCCompare <> x:54 var
+R4610:4610 MetaCoq.Template.utils.MCCompare <> y:55 var
+R4598:4600 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4597:4597 MetaCoq.Template.utils.MCCompare <> x:54 var
+R4601:4601 MetaCoq.Template.utils.MCCompare <> y:55 var
+R4718:4731 MetaCoq.Template.utils.MCCompare A compare_spec prfax
+R4718:4731 MetaCoq.Template.utils.MCCompare A compare_spec prfax
+R4765:4782 MetaCoq.Template.utils.MCCompare <> CompareSpec_Proper thm
+R4765:4782 MetaCoq.Template.utils.MCCompare <> CompareSpec_Proper thm
+R4917:4929 Coq.Classes.RelationClasses <> irreflexivity def
+R4917:4929 Coq.Classes.RelationClasses <> irreflexivity def
+R5031:5043 Coq.Classes.RelationClasses <> irreflexivity def
+R5031:5043 Coq.Classes.RelationClasses <> irreflexivity def
+prf 5176:5185 ListOrderedType compare_eq
+binder 5187:5187 <> x:56
+binder 5189:5189 <> y:57
+R5209:5212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5204:5206 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5193:5199 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R5201:5201 MetaCoq.Template.utils.MCCompare <> x:56 var
+R5203:5203 MetaCoq.Template.utils.MCCompare <> y:57 var
+R5207:5208 Coq.Init.Datatypes <> Eq constr
+R5214:5216 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5213:5213 MetaCoq.Template.utils.MCCompare <> x:56 var
+R5217:5217 MetaCoq.Template.utils.MCCompare <> y:57 var
+R5243:5254 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5243:5254 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+prf 5296:5307 ListOrderedType compare_refl
+binder 5309:5309 <> x:58
+R5324:5326 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5313:5319 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R5321:5321 MetaCoq.Template.utils.MCCompare <> x:58 var
+R5323:5323 MetaCoq.Template.utils.MCCompare <> x:58 var
+R5327:5328 Coq.Init.Datatypes <> Eq constr
+R5350:5361 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5385:5397 Coq.Classes.RelationClasses <> irreflexivity def
+R5350:5361 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5385:5397 Coq.Classes.RelationClasses <> irreflexivity def
+R5385:5397 Coq.Classes.RelationClasses <> irreflexivity def
+prf 5419:5429 ListOrderedType compare_sym
+binder 5431:5431 <> x:59
+binder 5433:5433 <> y:60
+R5448:5450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5437:5443 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R5445:5445 MetaCoq.Template.utils.MCCompare <> x:59 var
+R5447:5447 MetaCoq.Template.utils.MCCompare <> y:60 var
+R5451:5457 Coq.Init.Datatypes <> CompOpp def
+R5460:5466 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R5468:5468 MetaCoq.Template.utils.MCCompare <> y:60 var
+R5470:5470 MetaCoq.Template.utils.MCCompare <> x:59 var
+R5497:5508 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5530:5541 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5497:5508 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5530:5541 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5530:5541 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5530:5541 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5607:5619 Coq.Classes.RelationClasses <> irreflexivity def
+R5607:5619 Coq.Classes.RelationClasses <> irreflexivity def
+R5607:5619 Coq.Classes.RelationClasses <> irreflexivity def
+R5607:5619 Coq.Classes.RelationClasses <> irreflexivity def
+R5607:5619 Coq.Classes.RelationClasses <> irreflexivity def
+R5649:5661 Coq.Classes.RelationClasses <> irreflexivity def
+R5649:5661 Coq.Classes.RelationClasses <> irreflexivity def
+R5649:5661 Coq.Classes.RelationClasses <> irreflexivity def
+R5649:5661 Coq.Classes.RelationClasses <> irreflexivity def
+R5649:5661 Coq.Classes.RelationClasses <> irreflexivity def
+R5686:5697 Coq.Classes.RelationClasses <> transitivity def
+R5686:5697 Coq.Classes.RelationClasses <> transitivity def
+R5716:5728 Coq.Classes.RelationClasses <> irreflexivity def
+R5716:5728 Coq.Classes.RelationClasses <> irreflexivity def
+R5753:5764 Coq.Classes.RelationClasses <> transitivity def
+R5753:5764 Coq.Classes.RelationClasses <> transitivity def
+R5783:5795 Coq.Classes.RelationClasses <> irreflexivity def
+R5783:5795 Coq.Classes.RelationClasses <> irreflexivity def
+prf 5820:5832 ListOrderedType compare_lt_lt
+binder 5834:5834 <> x:61
+binder 5836:5836 <> y:62
+R5856:5860 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5851:5853 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5840:5846 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R5848:5848 MetaCoq.Template.utils.MCCompare <> x:61 var
+R5850:5850 MetaCoq.Template.utils.MCCompare <> y:62 var
+R5854:5855 Coq.Init.Datatypes <> Lt constr
+R5861:5862 MetaCoq.Template.utils.MCCompare ListOrderedType lt def
+R5864:5864 MetaCoq.Template.utils.MCCompare <> x:61 var
+R5866:5866 MetaCoq.Template.utils.MCCompare <> y:62 var
+R5905:5916 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5905:5916 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5981:5992 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R5981:5992 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6031:6043 Coq.Classes.RelationClasses <> irreflexivity def
+R6031:6043 Coq.Classes.RelationClasses <> irreflexivity def
+R6068:6079 Coq.Classes.RelationClasses <> transitivity def
+R6068:6079 Coq.Classes.RelationClasses <> transitivity def
+R6104:6116 Coq.Classes.RelationClasses <> irreflexivity def
+R6104:6116 Coq.Classes.RelationClasses <> irreflexivity def
+prf 6140:6152 ListOrderedType compare_trans
+binder 6154:6154 <> x:63
+binder 6156:6156 <> y:64
+binder 6158:6158 <> z:65
+binder 6160:6160 <> c:66
+R6179:6182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6175:6177 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6164:6170 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R6172:6172 MetaCoq.Template.utils.MCCompare <> x:63 var
+R6174:6174 MetaCoq.Template.utils.MCCompare <> y:64 var
+R6178:6178 MetaCoq.Template.utils.MCCompare <> c:66 var
+R6198:6201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6194:6196 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6183:6189 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R6191:6191 MetaCoq.Template.utils.MCCompare <> y:64 var
+R6193:6193 MetaCoq.Template.utils.MCCompare <> z:65 var
+R6197:6197 MetaCoq.Template.utils.MCCompare <> c:66 var
+R6213:6215 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6202:6208 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R6210:6210 MetaCoq.Template.utils.MCCompare <> x:63 var
+R6212:6212 MetaCoq.Template.utils.MCCompare <> z:65 var
+R6216:6216 MetaCoq.Template.utils.MCCompare <> c:66 var
+R6242:6253 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6293:6304 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6242:6253 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6293:6304 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6293:6304 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6293:6304 MetaCoq.Template.utils.MCCompare ListOrderedType compare_spec def
+R6346:6357 Coq.Classes.RelationClasses <> transitivity def
+R6346:6357 Coq.Classes.RelationClasses <> transitivity def
+R6401:6413 MetaCoq.Template.utils.MCCompare ListOrderedType compare_lt_lt thm
+R6401:6413 MetaCoq.Template.utils.MCCompare ListOrderedType compare_lt_lt thm
+R6427:6438 Coq.Classes.RelationClasses <> transitivity def
+R6427:6438 Coq.Classes.RelationClasses <> transitivity def
+R6471:6483 MetaCoq.Template.utils.MCCompare ListOrderedType compare_lt_lt thm
+R6471:6483 MetaCoq.Template.utils.MCCompare ListOrderedType compare_lt_lt thm
+R6499:6509 MetaCoq.Template.utils.MCCompare ListOrderedType compare_sym thm
+R6499:6509 MetaCoq.Template.utils.MCCompare ListOrderedType compare_sym thm
+R6499:6509 MetaCoq.Template.utils.MCCompare ListOrderedType compare_sym thm
+def 6552:6554 ListOrderedType eqb
+R6565:6565 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+binder 6557:6558 <> l1:67
+binder 6560:6561 <> l2:68
+R6570:6573 Coq.Init.Datatypes <> bool ind
+R6588:6594 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R6596:6597 MetaCoq.Template.utils.MCCompare <> l1:67 var
+R6599:6600 MetaCoq.Template.utils.MCCompare <> l2:68 var
+R6607:6608 Coq.Init.Datatypes <> Eq constr
+R6613:6616 Coq.Init.Datatypes <> true constr
+R6625:6629 Coq.Init.Datatypes <> false constr
+def 6650:6659 ListOrderedType eq_leibniz
+R6668:6668 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+binder 6662:6662 <> x:69
+binder 6664:6664 <> y:70
+R6679:6682 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6673:6674 MetaCoq.Template.utils.MCCompare ListOrderedType eq def
+R6676:6676 MetaCoq.Template.utils.MCCompare <> x:69 var
+R6678:6678 MetaCoq.Template.utils.MCCompare <> y:70 var
+R6684:6686 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6683:6683 MetaCoq.Template.utils.MCCompare <> x:69 var
+R6687:6687 MetaCoq.Template.utils.MCCompare <> y:70 var
+R6692:6693 Coq.Init.Datatypes <> id def
+def 6718:6724 ListOrderedType eqb_dec
+R6733:6733 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+binder 6727:6727 <> x:71
+binder 6729:6729 <> y:72
+R6738:6739 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6745:6751 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6758:6759 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6741:6743 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6740:6740 MetaCoq.Template.utils.MCCompare <> x:71 var
+R6744:6744 MetaCoq.Template.utils.MCCompare <> y:72 var
+R6753:6756 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6752:6752 MetaCoq.Template.utils.MCCompare <> x:71 var
+R6757:6757 MetaCoq.Template.utils.MCCompare <> y:72 var
+R6774:6776 MetaCoq.Template.utils.MCCompare ListOrderedType eqb def
+R6778:6778 MetaCoq.Template.utils.MCCompare <> x:71 var
+R6780:6780 MetaCoq.Template.utils.MCCompare <> y:72 var
+R6793:6796 Coq.Init.Datatypes <> true constr
+R6801:6804 Coq.Init.Specif <> left constr
+R6814:6818 Coq.Init.Datatypes <> false constr
+R6823:6827 Coq.Init.Specif <> right constr
+R6870:6872 MetaCoq.Template.utils.MCCompare ListOrderedType eqb def
+R6906:6912 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R6906:6912 MetaCoq.Template.utils.MCCompare ListOrderedType compare def
+R6958:6967 MetaCoq.Template.utils.MCCompare ListOrderedType compare_eq thm
+R6958:6967 MetaCoq.Template.utils.MCCompare ListOrderedType compare_eq thm
+R7013:7015 MetaCoq.Template.utils.MCCompare ListOrderedType eqb def
+R7047:7058 MetaCoq.Template.utils.MCCompare ListOrderedType compare_refl thm
+R7047:7058 MetaCoq.Template.utils.MCCompare ListOrderedType compare_refl thm
+R7047:7058 MetaCoq.Template.utils.MCCompare ListOrderedType compare_refl thm
+inst 7122:7127 ListOrderedType eq_dec
+R7131:7135 Equations.Prop.Classes <> EqDec class
+R7137:7137 MetaCoq.Template.utils.MCCompare ListOrderedType t def
+R7144:7149 Equations.Prop.Classes <> eq_dec def
+R7154:7160 MetaCoq.Template.utils.MCCompare ListOrderedType eqb_dec def
+R7170:7184 MetaCoq.Template.utils.MCCompare ListOrderedType <> mod

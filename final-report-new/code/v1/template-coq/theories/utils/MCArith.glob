@@ -1,0 +1,150 @@
+DIGEST dc368a15d27c714c1893db016da714d3
+FMetaCoq.Template.utils.MCArith
+R24:28 Coq.Arith.Arith <> <> lib
+R30:35 Coq.ZArith.ZArith <> <> lib
+R37:39 Coq.micromega.Lia <> <> lib
+ind 53:63 <> BoolSpecSet
+constr 99:107 <> BoolSpecT
+constr 139:147 <> BoolSpecF
+binder 66:66 <> P:1
+binder 68:68 <> Q:2
+R84:87 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R80:83 Coq.Init.Datatypes <> bool ind
+R112:115 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R111:111 MetaCoq.Template.utils.MCArith <> P:1 var
+R116:126 MetaCoq.Template.utils.MCArith <> BoolSpecSet:3 ind
+R132:135 Coq.Init.Datatypes <> true constr
+R130:130 MetaCoq.Template.utils.MCArith <> Q:2 var
+R128:128 MetaCoq.Template.utils.MCArith <> P:1 var
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 MetaCoq.Template.utils.MCArith <> Q:2 var
+R156:166 MetaCoq.Template.utils.MCArith <> BoolSpecSet:3 ind
+R172:176 Coq.Init.Datatypes <> false constr
+R170:170 MetaCoq.Template.utils.MCArith <> Q:2 var
+R168:168 MetaCoq.Template.utils.MCArith <> P:1 var
+prf 186:197 <> leb_spec_Set
+R214:216 Coq.Init.Datatypes <> nat ind
+binder 208:208 <> x:5
+binder 210:210 <> y:6
+R219:229 MetaCoq.Template.utils.MCArith <> BoolSpecSet ind
+R233:236 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R232:232 MetaCoq.Template.utils.MCArith <> x:5 var
+R237:237 MetaCoq.Template.utils.MCArith <> y:6 var
+R242:244 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R241:241 MetaCoq.Template.utils.MCArith <> y:6 var
+R245:245 MetaCoq.Template.utils.MCArith <> x:5 var
+R250:254 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R249:249 MetaCoq.Template.utils.MCArith <> x:5 var
+R255:255 MetaCoq.Template.utils.MCArith <> y:6 var
+R288:300 Coq.Arith.PeanoNat Nat leb_spec0 thm
+R288:300 Coq.Arith.PeanoNat Nat leb_spec0 thm
+prf 363:373 <> nat_rev_ind
+R382:384 Coq.Init.Datatypes <> nat ind
+binder 376:378 <> max:7
+R406:409 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R403:405 Coq.Init.Datatypes <> nat ind
+binder 399:399 <> P:8
+R421:421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R447:455 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 429:429 <> n:9
+R440:443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R433:436 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R432:432 MetaCoq.Template.utils.MCArith <> n:9 var
+R437:439 MetaCoq.Template.utils.MCArith <> max:7 var
+R444:444 MetaCoq.Template.utils.MCArith <> P:8 var
+R446:446 MetaCoq.Template.utils.MCArith <> n:9 var
+R456:456 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R492:500 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 464:464 <> n:10
+R474:477 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R468:470 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R467:467 MetaCoq.Template.utils.MCArith <> n:10 var
+R471:473 MetaCoq.Template.utils.MCArith <> max:7 var
+R485:488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R478:478 MetaCoq.Template.utils.MCArith <> P:8 var
+R481:481 Coq.Init.Datatypes <> S constr
+R483:483 MetaCoq.Template.utils.MCArith <> n:10 var
+R489:489 MetaCoq.Template.utils.MCArith <> P:8 var
+R491:491 MetaCoq.Template.utils.MCArith <> n:10 var
+binder 508:508 <> n:11
+R511:511 MetaCoq.Template.utils.MCArith <> P:8 var
+R513:513 MetaCoq.Template.utils.MCArith <> n:11 var
+binder 564:564 <> n:12
+R573:575 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R576:576 MetaCoq.Template.utils.MCArith <> n:12 var
+binder 564:564 <> n:13
+R573:575 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R576:576 MetaCoq.Template.utils.MCArith <> n:13 var
+R647:659 Coq.Arith.PeanoNat Nat leb_spec0 thm
+R647:659 Coq.Arith.PeanoNat Nat leb_spec0 thm
+R689:691 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R692:692 Coq.Init.Datatypes <> S constr
+R689:691 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R692:692 Coq.Init.Datatypes <> S constr
+R732:734 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R732:734 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R800:802 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R812:812 Coq.Init.Datatypes <> S constr
+R818:820 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R821:821 Coq.Init.Datatypes <> S constr
+R800:802 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R812:812 Coq.Init.Datatypes <> S constr
+R818:820 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R821:821 Coq.Init.Datatypes <> S constr
+R924:936 Coq.Arith.PeanoNat Nat leb_spec0 thm
+R924:936 Coq.Arith.PeanoNat Nat leb_spec0 thm
+R990:993 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R1001:1001 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R997:999 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R990:993 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R1001:1001 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R997:999 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+prf 1033:1046 <> strong_nat_ind
+R1067:1070 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1064:1066 Coq.Init.Datatypes <> nat ind
+binder 1060:1060 <> P:14
+R1082:1082 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1124:1132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1090:1090 <> n:15
+R1093:1093 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1116:1120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1101:1101 <> m:16
+R1109:1112 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1105:1107 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1104:1104 MetaCoq.Template.utils.MCArith <> m:16 var
+R1108:1108 MetaCoq.Template.utils.MCArith <> n:15 var
+R1113:1113 MetaCoq.Template.utils.MCArith <> P:14 var
+R1115:1115 MetaCoq.Template.utils.MCArith <> m:16 var
+R1121:1121 MetaCoq.Template.utils.MCArith <> P:14 var
+R1123:1123 MetaCoq.Template.utils.MCArith <> n:15 var
+binder 1140:1140 <> n:17
+R1143:1143 MetaCoq.Template.utils.MCArith <> P:14 var
+R1145:1145 MetaCoq.Template.utils.MCArith <> n:17 var
+binder 1188:1188 <> m:18
+R1196:1199 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1192:1194 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1191:1191 MetaCoq.Template.utils.MCArith <> m:18 var
+R1202:1202 MetaCoq.Template.utils.MCArith <> m:18 var
+binder 1188:1188 <> m:19
+R1196:1199 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1192:1194 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1191:1191 MetaCoq.Template.utils.MCArith <> m:19 var
+R1202:1202 MetaCoq.Template.utils.MCArith <> m:19 var
+R1264:1275 Coq.Arith.PeanoNat Nat eqb_spec thm
+R1264:1275 Coq.Arith.PeanoNat Nat eqb_spec thm
+prf 1385:1396 <> Z_of_pos_alt
+binder 1398:1398 <> p:20
+R1425:1427 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1402:1409 Coq.ZArith.BinInt Z of_nat def
+R1412:1421 Coq.PArith.BinPos Pos to_nat def
+R1423:1423 MetaCoq.Template.utils.MCArith <> p:20 var
+R1428:1432 Coq.ZArith.BinInt Z pos abbrev
+R1434:1434 MetaCoq.Template.utils.MCArith <> p:20 var
+R1464:1476 Coq.PArith.BinPos Pos peano_ind def
+R1464:1476 Coq.PArith.BinPos Pos peano_ind def
+R1489:1501 Coq.PArith.Pnat Pos2Nat inj_1 thm
+R1489:1501 Coq.PArith.Pnat Pos2Nat inj_1 thm
+R1489:1501 Coq.PArith.Pnat Pos2Nat inj_1 thm
+R1527:1542 Coq.PArith.Pnat Pos2Nat inj_succ thm
+R1527:1542 Coq.PArith.Pnat Pos2Nat inj_succ thm
+R1527:1542 Coq.PArith.Pnat Pos2Nat inj_succ thm

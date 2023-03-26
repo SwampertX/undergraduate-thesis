@@ -1,0 +1,396 @@
+\chapter{Typing Rules for Coq Modules}
+\label{chap:typing}
+% \section{Specification of Coq Modules}
+
+\newcommand{\wf}[1]{\mathrm{WF}(#1)}
+\newcommand{\struct}[1]{\text{Struct }#1\text{ End}}
+\newcommand{\module}[1]{\text{Mod}(#1)}
+\newcommand{\moda}[1]{\text{ModA}(#1)}
+\newcommand{\modtype}[1]{\text{ModType}(#1)}
+\newcommand{\with}{\text{ with }}
+% \newcommand{\range} %range([separator=;], variable, start, end)
+% [4][;]{{#2}_{#3}{#1}\ldots{#1}{#2}_{#4}}
+\newcommand{\range} % range(variable, start, end)
+[3]{{#1}_{#2};\ldots;{#1}_{#3}}
+
+Typing rules here are given by
+\href{https://coq.inria.fr/refman/language/core/modules.html#typing-modules}{Coq: Typing Modules}.
+
+\section{Overview}
+\label{sec:typing-overview}
+This appendix is divided into 5 parts. Section \ref{sec:typing-overview} will
+first define the necessary terminology. Then, sections \ref{sec:typing-formation}
+to \ref{sec:typing-typing} will define the typing rules of Coq Modules. They
+correspond to the 4 operations defined on modules:
+
+\begin{enumerate}
+\item \textbf{Formation Rules} (\ref{sec:typing-formation}) describes how to form
+modules.
+\item \textbf{Evaluation Rules} (\ref{sec:typing-evaluation}) describes how to
+evaluate specific terms involving modules: with-expressions and path-expressions.
+\item \textbf{Access Rules} (\ref{sec:typing-access}) describes how to access
+contents of modules (i.e. definitions in modules) using pathnames.
+\item \textbf{Typing Rules} (\ref{sec:typing-typing}) describes how a module is 
+inductively typed.
+\end{enumerate}
+
+\subsection{Definitions}
+\label{sec:typing-overview-definitions}
+A structure is ...
+A module type is ...
+FIXME:
+\subsection{Judgement Rules}
+\label{sec:typing-overview-judgement}
+\subsection{Variables}
+\label{sec:typing-overview-variables}
+E represents environment, S represents structures, ...
+
+\section{Formation Rules}
+\label{sec:typing-formation}
+
+WF-Struct: 
+\marginnote{A structure can be formed from the tail of a well-formed environment.}
+\[
+\inferrule{\wf{E,E'}[]}{E[]\vdash\wf{\struct{E'}}}
+\]
+
+WF-Mod1
+\marginnote{If structure $S$ is well-formed under the well-formed environment $E$, then
+the environment containing the Module $X$ of type $S$ is well-formed.}
+\[
+\inferrule{
+    \wf{E}[]\\ E[]\vdash\wf{S}
+}{
+    \wf{E;\module{X:S}}[]
+}    
+\]
+
+WF-Mod2
+\marginnote{The previous also works if $X$ is of type $S_2$, a subtype of $S_1$.}
+\[
+\inferrule{
+    E[]\vdash S_2<:S_1\\
+    \wf{E}[]\\
+    E[]\vdash\wf{S_1}\\
+    E[]\vdash\wf{S_2}
+}{
+    \wf{E;\module{X:S_1:=S_2}}[]
+}    
+\]
+
+WF-Alias
+\marginnote{If the module pointed by $p$ has type $S$ in the global environment $E$,
+then we can create an aliased module $X$ to $p$. This implies that $p\in E$. }
+\[
+\inferrule{
+    \wf{E}[]\\
+    E[]\vdash p:S
+}{
+    \wf{E;\moda{X==p}}[]
+}    
+\]
+
+WF-ModType
+\marginnote{A ModType is a named well-formed structure.}
+\[
+\inferrule{
+    \wf{E}[]\\
+    E[]\vdash\wf{S}
+}{
+    \wf{E;\modtype{Y:=S}}[]
+}    
+\]
+
+WF-Ind
+\marginnote{An inductive definition strenghtened by $p$ is well-formed if 
+it is already well-formed in $E$ and it is within $p$. This can be generalized
+with subtyping.}
+\[
+\inferrule{
+    \wf{E;\text{Ind}[r](\Gamma_I:=\Gamma_C)}[]\\
+    E[]\vdash p:\struct{\range{e}{1}{n};\text{Ind}[r](\Gamma^{'}_I:=\Gamma^{'}_C);\ldots}\\
+    E[]\vdash \text{Ind}[r](\Gamma^{'}_I:=\Gamma^{'}_C)<: \text{Ind}[r](\Gamma_I:=\Gamma_C)\\
+}{
+    \wf{E;\text{Ind}_p[r](\Gamma_I:=\Gamma_C)}[]
+}    
+\]
+
+\section{Evaluation Rules}
+\label{sec:typing-evaluation}
+\subsection{Evaluating \texttt{with} expressions}
+WEval-With-Mod:
+\[
+\inferrule
+{E[]\vdash S\to\struct{e_1;\ldots;e_i;\module{X:S_1};e_{i+2};\ldots;e_n}\\
+    E;e_1;\ldots;e_i[]\vdash S_1\to \overline{S_1}\\
+    E[]\vdash p:S_2\\
+    E;e_1;\ldots;e_i[]\vdash S_2<:\overline{S_1}}
+{E[]\vdash S\with X:=p\to\\\\
+    \struct{\range{e}{1}{i};\moda{X==p};e_{i+2}\{X/p\};\ldots;e_n\{X/p\}}}
+\]
+
+
+WEval-With-Mod-Rec:
+\[
+\inferrule
+{E[]\vdash S\to\struct{e_1;\ldots;e_i;\module{X:S_1};e_{i+2};\ldots;e_n}\\
+    E;\range{e}{1}{i}[]\vdash S_1\with p:=p_1\to\overline{S_2}}
+{E[]\vdash S\with X_1.p:=p_1\to\\\\
+    \struct{\range{e}{1}{i};\mod{X:\overline{S_2}};e_{i+2}\{X.p/p_1\};\ldots;e_n\{X.p/p_1\}}}
+\]
+
+WEval-With-Def
+\marginnote{This is the base case.}
+\[
+\inferrule{
+    E[]\vdash S\to\struct{\range{e}{1}{i};(c:T_1);\range{e}{i+2}{n}}\\
+    E;\range{e}{1}{i}[]\vdash(c:=t:T)<:(c:T_1)
+}{
+    E[]\vdash S\with c:=t:T\to
+    \struct{\range{e}{1}{i};(c:=t:T);\range{e}{i+2}{n}}
+}  
+\]
+
+
+WEval-With-Def-Rec
+\[
+\inferrule{
+    E[]\vdash S\to\struct{\range{e}{1}{i};\module{X_1:S_1};\range{e}{i+2}{n}}\\
+    E;\range{e}{1}{i}[]\vdash S_1\with p:=p_1\to\overline{S_2}
+}{
+    E[]\vdash S\with X_1.p:=t:T\to\\\\
+    \struct{\range{e}{1}{i};\module{X:\overline{S_2}};\range{e}{i+2}{n}}
+}  
+\]
+
+\subsection{Evaluating paths ($p.X$)}
+WEval-Path-Mod1
+\[
+\inferrule{
+    E[]\vdash p\to\struct{\range{e}{1}{i};\module{X:S[:=S_1]};\range{e}{i+2}{n}}\\\\    
+    E;\range{e}{1}{i}[]\vdash S\to\overline{S}
+}{
+    E[]\vdash p.X\to\overline{S}
+}
+\]
+
+WEval-Path-Mod2
+\[
+\inferrule{
+    \wf{E}[]\\
+    \module{X:S[:=S_1]}\in E\\
+    E[]\vdash S\to\overline{S}
+}{
+    E[]\vdash X\to\overline{S}
+}
+\]
+
+WEval-Path-Alias1
+\[
+\inferrule{
+    E[]\vdash p\to\struct{\range{e}{1}{i};\moda{X==p_1};\range{e}{i+2}{n}}\\\\    
+    E;\range{e}{1}{i}[]\vdash p_1\to\overline{S}
+}{
+    E[]\vdash p.X\to\overline{S}
+}
+\]
+
+WEval-Path-Alias2
+\[
+\inferrule{
+    \wf{E}[]\\
+    \moda{X==p_1}\in E\\
+    E[]\vdash p_1\to\overline{S}
+}{
+    E[]\vdash X\to\overline{S}
+}
+\]
+
+WEval-Path-Type1
+\[
+\inferrule{
+    E[]\vdash p\to\struct{\range{e}{1}{i};\modtype{Y:=S};\range{e}{i+2}{n}}\\\\    
+    E;\range{e}{1}{i}[]\vdash S\to\overline{S}
+}{
+    E[]\vdash p.Y\to\overline{S}
+}
+\]
+
+WEval-Path-Type2
+\[
+\inferrule{
+    \wf{E}[]\\
+    \modtype{Y:=S}\in E\\
+    E[]\vdash S\to\overline{S}
+}{
+    E[]\vdash Y\to\overline{S}
+}
+\]
+
+\section{Access Rules}
+\label{sec:typing-access}
+
+
+\section{Typing Rules}
+\label{sec:typing-typing}
+MT-Eval
+\[
+\inferrule{
+    E[]\vdash p\to\overline{S}
+}{
+    E[]\vdash p:\overline{S}
+}      
+\]
+
+MT-Str
+\[
+\inferrule{
+    E[]\vdash p\to\overline{S}
+}{
+    E[]\vdash p:S/p
+}      
+\]
+
+Where $S/p$ is the strengthening operation, defined on $S$ where $S\to\struct{\range{e}{1}{n}}$ as:
+\begin{align*}
+(c:=t:T)/p &= (c:=t:T)\\
+(c:U)/p &= (c:=p.c:U)\\
+\module{X:S}/p &= \moda{X==p.X}\\
+\moda{X==p'}/p &= \moda{X==p'}\\
+\text{Ind}[r](\Gamma_I :=\Gamma_C)/p &= \text{Ind}_p[r](\Gamma_I :=\Gamma_C)\\
+\text{Ind}_{p'}[r](\Gamma_I :=\Gamma_C)/p &= \text{Ind}_{p'}[r](\Gamma_I :=\Gamma_C)
+\end{align*}
+It strengthens the definition of inductives to equal to the current path only,
+solving the issue of equality of defined inductive types in modules.
+
+\subsection{Subtyping rules}
+MSub-Str 
+\[
+\inferrule{
+    E;\range{e}{1}{n}[]\vdash e_{\sigma(i)}<: e'_i \text{ for }i=1,\ldots,m\\\\
+    \sigma:\{1,\ldots,m\}\to\{1,\ldots,n\} \text{ injective}
+}{
+ E[]\vdash\struct{\range{e}{1}{n}}<:\struct{\range{e'}{1}{m}}
+}    
+\]
+
+Mod-Mod:
+\[
+\inferrule{
+    E[]\vdash S_1<:S_2
+}{
+    E[]\vdash\module{X:S_1}<:\module{X:S_2}
+}    
+\]
+
+Alias-Mod:
+\[
+\inferrule{
+    E[]\vdash p:S_1
+    E[]\vdash S_1<:S_2
+}{
+    E[]\vdash\moda{X==p}<:\module{X:S_2}
+}    
+\]
+
+Mod-Alias:
+\[
+\inferrule{
+    E[]\vdash p:S_2
+    E[]\vdash S_1<:S_2
+    E[]\vdash X=_{\beta\delta\iota\zeta\eta}p
+}{
+    E[]\vdash\module{X:S_1}<:\moda{X==p}
+}    
+\]
+
+Alias-Alias
+\[
+\inferrule{
+    E[]\vdash p_1=_{\beta\delta\iota\zeta\eta}p_2
+}{
+    E[]\vdash\moda{X==p_1}<:\moda{X==p_2}
+}    
+\]
+
+Modtype-Modtype
+\[
+\inferrule{
+    E[]\vdash S_1<:S_2
+    E[]\vdash S_2<:S_1
+}{
+    E[]\vdash\modtype{Y:=S_1}<:\modtype{Y:=S_2}
+}    
+\]
+
+
+\subsubsection{Structure element subtyping rules}
+Assum-Assum
+\[
+\inferrule{
+    E[]\vdash T_1\le_{\beta\delta\iota\zeta\eta}T_2
+}{
+    E[]\vdash(c:T_1)<:(c:T_2)
+}    
+\]
+
+
+Def-Assum
+\[
+\inferrule{
+    E[]\vdash T_1\le_{\beta\delta\iota\zeta\eta}T_2
+}{
+    E[]\vdash(c:=t:T_1)<:(c:T_2)
+}    
+\]
+
+Assum-Def
+\[
+\inferrule{
+    E[]\vdash T_1\le_{\beta\delta\iota\zeta\eta}T_2\\
+    E[]\vdash c=_{\beta\delta\iota\zeta\eta}t_2
+}{
+    E[]\vdash(c:T_1)<:(c:=t_2:T_2)
+}    
+\]
+
+Def-Def
+\[
+\inferrule{
+    E[]\vdash T_1\le_{\beta\delta\iota\zeta\eta}T_2\\
+    E[]\vdash t_1=_{\beta\delta\iota\zeta\eta}t_2
+}{
+    E[]\vdash(c:=t_1:T_1)<:(c:=t_2:T_2)
+}    
+\]
+
+Ind-Ind
+\[
+\inferrule{
+    E[]\vdash \Gamma_I=_{\beta\delta\iota\zeta\eta}\Gamma'_I\\
+    E[\Gamma_I]\vdash \Gamma_C=_{\beta\delta\iota\zeta\eta}\Gamma'_C
+}{
+    \text{Ind}[r](\Gamma_I :=\Gamma_C) <: \text{Ind}[r](\Gamma'_I :=\Gamma'_C)
+}    
+\]
+
+Indp-Ind
+\[
+\inferrule{
+    E[]\vdash \Gamma_I=_{\beta\delta\iota\zeta\eta}\Gamma'_I\\
+    E[\Gamma_I]\vdash \Gamma_C=_{\beta\delta\iota\zeta\eta}\Gamma'_C
+}{
+    \text{Ind}_p[r](\Gamma_I :=\Gamma_C) <: \text{Ind}[r](\Gamma'_I :=\Gamma'_C)
+}    
+\]
+
+Indp-Indp
+\[
+\inferrule{
+    E[]\vdash \Gamma_I=_{\beta\delta\iota\zeta\eta}\Gamma'_I\\
+    E[\Gamma_I]\vdash \Gamma_C=_{\beta\delta\iota\zeta\eta}\Gamma'_C\\
+    E[]\vdash p={\beta\delta\iota\zeta\eta}p'
+}{
+    \text{Ind}_p[r](\Gamma_I :=\Gamma_C) <: \text{Ind}_{p'}[r](\Gamma'_I :=\Gamma'_C)
+}    
+\]

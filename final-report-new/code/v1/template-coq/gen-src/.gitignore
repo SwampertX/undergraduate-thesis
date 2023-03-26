@@ -1,0 +1,4 @@
+*.mli
+*.ml
+.generate
+*.mli.bak

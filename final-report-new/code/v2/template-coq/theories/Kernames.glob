@@ -1,0 +1,848 @@
+DIGEST fa0231bed38cf79bc59699eb7567639b
+FMetaCoq.Template.Kernames
+R79:81 Coq.micromega.Lia <> <> lib
+R83:90 Coq.MSets.MSetList <> <> lib
+R92:105 Coq.Structures.OrderedTypeAlt <> <> lib
+R107:119 Coq.Structures.OrderedTypeEx <> <> lib
+R121:127 Coq.FSets.FMapAVL <> <> lib
+R129:137 Coq.FSets.FMapFacts <> <> lib
+R139:145 Coq.MSets.MSetAVL <> <> lib
+R147:155 Coq.MSets.MSetFacts <> <> lib
+R157:170 Coq.MSets.MSetProperties <> <> lib
+R210:214 MetaCoq.Template.utils <> <> lib
+R241:249 Coq.ssr.ssreflect <> <> lib
+R282:290 Equations.Prop.Equations <> <> lib
+def 337:349 <> compare_ident
+R354:367 MetaCoq.Template.utils.bytestring <> string_compare abbrev
+def 1375:1379 <> ident
+R1386:1391 MetaCoq.Template.utils.bytestring <> string abbrev
+def 1420:1425 <> qualid
+R1431:1436 MetaCoq.Template.utils.bytestring <> string abbrev
+def 1624:1630 <> dirpath
+R1635:1638 Coq.Init.Datatypes <> list ind
+R1640:1644 MetaCoq.Template.Kernames <> ident def
+R1666:1673 MetaCoq.Template.utils.bytestring StringOT <> modtype
+mod 1655:1661 <> IdentOT
+R1697:1711 MetaCoq.Template.utils.MCCompare ListOrderedType <> modtype
+R1713:1719 MetaCoq.Template.Kernames IdentOT <> modtype
+mod 1684:1692 <> DirPathOT
+inst 1742:1754 <> dirpath_eqdec
+R1758:1770 Equations.Prop.Classes <> EqDec class
+R1772:1778 MetaCoq.Template.Kernames <> dirpath def
+def 1798:1814 <> string_of_dirpath
+R1822:1828 MetaCoq.Template.Kernames <> dirpath def
+binder 1817:1818 <> dp:1
+R1833:1838 MetaCoq.Template.utils.bytestring <> string abbrev
+R1845:1857 MetaCoq.Template.utils.bytestring String concat def
+R1864:1871 Coq.Lists.List <> rev def
+R1873:1874 MetaCoq.Template.Kernames <> dp:1 var
+ind 2058:2064 <> modpath
+constr 2071:2076 <> MPfile
+constr 2096:2102 <> MPbound
+constr 2144:2148 <> MPdot
+R2085:2091 MetaCoq.Template.Kernames <> dirpath def
+binder 2080:2081 <> dp:4
+R2110:2116 MetaCoq.Template.Kernames <> dirpath def
+binder 2105:2106 <> dp:5
+R2125:2129 MetaCoq.Template.Kernames <> ident def
+binder 2120:2121 <> id:6
+R2137:2139 Coq.Init.Datatypes <> nat ind
+binder 2133:2133 <> i:7
+R2158:2164 MetaCoq.Template.Kernames <> modpath:2 ind
+binder 2153:2154 <> mp:8
+R2173:2177 MetaCoq.Template.Kernames <> ident def
+binder 2168:2169 <> id:9
+R2204:2210 MetaCoq.Template.Kernames <> modpath ind
+def 2223:2239 <> string_of_modpath
+R2247:2253 MetaCoq.Template.Kernames <> modpath ind
+binder 2242:2243 <> mp:10
+R2258:2263 MetaCoq.Template.utils.bytestring <> string abbrev
+R2276:2277 MetaCoq.Template.Kernames <> mp:10 var
+R2288:2293 MetaCoq.Template.Kernames <> MPfile constr
+R2301:2317 MetaCoq.Template.Kernames <> string_of_dirpath def
+R2326:2332 MetaCoq.Template.Kernames <> MPbound constr
+R2337:2338 Coq.Init.Datatypes <> id def
+R2365:2367 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2345:2361 MetaCoq.Template.Kernames <> string_of_dirpath def
+R2371:2373 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2376:2378 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2382:2384 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2385:2397 MetaCoq.Template.utils.MCString <> string_of_nat def
+R2405:2409 MetaCoq.Template.Kernames <> MPdot constr
+R2414:2415 Coq.Init.Datatypes <> id def
+R2440:2442 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2420:2436 MetaCoq.Template.Kernames <> string_of_modpath:11 def
+R2438:2439 MetaCoq.Template.Kernames <> mp:10 var
+R2446:2448 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+def 2523:2529 <> kername
+R2541:2544 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R2534:2540 MetaCoq.Template.Kernames <> modpath ind
+R2545:2549 MetaCoq.Template.Kernames <> ident def
+def 2564:2580 <> string_of_kername
+R2588:2594 MetaCoq.Template.Kernames <> kername def
+binder 2583:2584 <> kn:13
+R2624:2626 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2602:2618 MetaCoq.Template.Kernames <> string_of_modpath def
+R2622:2623 MetaCoq.Template.utils.MCProd <> ::pair_scope:x_'.1' not
+R2620:2621 MetaCoq.Template.Kernames <> kn:13 var
+R2630:2632 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2635:2636 MetaCoq.Template.utils.MCProd <> ::pair_scope:x_'.2' not
+R2633:2634 MetaCoq.Template.Kernames <> kn:13 var
+mod 2713:2723 <> ModPathComp
+def 2739:2739 ModPathComp t
+R2744:2750 MetaCoq.Template.Kernames <> modpath ind
+def 2767:2768 ModPathComp eq
+R2774:2775 Coq.Init.Logic <> eq ind
+R2777:2783 MetaCoq.Template.Kernames <> modpath ind
+def 2799:2805 ModPathComp eq_univ
+R2809:2835 Coq.Classes.RelationClasses <> Equivalence class
+R2837:2838 MetaCoq.Template.Kernames ModPathComp eq def
+def 2860:2874 ModPathComp mpbound_compare
+binder 2876:2877 <> dp:14
+binder 2879:2880 <> id:15
+binder 2882:2882 <> k:16
+binder 2884:2886 <> dp':17
+binder 2888:2890 <> id':18
+binder 2892:2893 <> k':19
+R2902:2913 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R2916:2932 MetaCoq.Template.Kernames DirPathOT compare def
+R2934:2935 MetaCoq.Template.Kernames <> dp:14 var
+R2937:2939 MetaCoq.Template.Kernames <> dp':17 var
+R2949:2960 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R2963:2977 MetaCoq.Template.Kernames IdentOT compare def
+R2979:2980 MetaCoq.Template.Kernames <> id:15 var
+R2982:2984 MetaCoq.Template.Kernames <> id':18 var
+R2988:2998 Coq.Arith.PeanoNat Nat compare def
+R3000:3000 MetaCoq.Template.Kernames <> k:16 var
+R3002:3003 MetaCoq.Template.Kernames <> k':19 var
+def 3020:3026 ModPathComp compare
+binder 3028:3029 <> mp:20
+binder 3031:3033 <> mp':21
+R3052:3054 MetaCoq.Template.Kernames <> mp':21 var
+R3048:3049 MetaCoq.Template.Kernames <> mp:20 var
+R3067:3072 MetaCoq.Template.Kernames <> MPfile constr
+R3078:3083 MetaCoq.Template.Kernames <> MPfile constr
+R3092:3108 MetaCoq.Template.Kernames DirPathOT compare def
+R3123:3129 MetaCoq.Template.Kernames <> MPbound constr
+R3134:3135 Coq.Init.Datatypes <> id def
+R3140:3146 MetaCoq.Template.Kernames <> MPbound constr
+R3168:3182 MetaCoq.Template.Kernames ModPathComp mpbound_compare def
+R3209:3213 MetaCoq.Template.Kernames <> MPdot constr
+R3218:3219 Coq.Init.Datatypes <> id def
+R3222:3226 MetaCoq.Template.Kernames <> MPdot constr
+R3245:3256 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R3259:3265 MetaCoq.Template.Kernames <> compare:22 def
+R3270:3272 MetaCoq.Template.Kernames <> mp':21 var
+R3267:3268 MetaCoq.Template.Kernames <> mp:20 var
+R3276:3290 MetaCoq.Template.Kernames IdentOT compare def
+R3306:3311 MetaCoq.Template.Kernames <> MPfile constr
+R3321:3322 Coq.Init.Datatypes <> Gt constr
+R3333:3338 MetaCoq.Template.Kernames <> MPfile constr
+R3345:3346 Coq.Init.Datatypes <> Lt constr
+R3354:3360 MetaCoq.Template.Kernames <> MPbound constr
+R3374:3375 Coq.Init.Datatypes <> Gt constr
+R3386:3392 MetaCoq.Template.Kernames <> MPbound constr
+R3403:3404 Coq.Init.Datatypes <> Lt constr
+R3432:3438 MetaCoq.Template.Kernames ModPathComp compare def
+not 3424:3424 ModPathComp :::x_'?='_x
+prf 3482:3496 ModPathComp nat_compare_sym
+binder 3507:3507 <> x:25
+binder 3509:3509 <> y:26
+R3527:3529 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3512:3522 Coq.Arith.PeanoNat Nat compare def
+R3524:3524 MetaCoq.Template.Kernames <> x:25 var
+R3526:3526 MetaCoq.Template.Kernames <> y:26 var
+R3530:3536 Coq.Init.Datatypes <> CompOpp def
+R3539:3549 Coq.Arith.PeanoNat Nat compare def
+R3551:3551 MetaCoq.Template.Kernames <> y:26 var
+R3553:3553 MetaCoq.Template.Kernames <> x:25 var
+R3584:3611 Coq.Arith.PeanoNat Nat compare_antisym thm
+R3584:3611 Coq.Arith.PeanoNat Nat compare_antisym thm
+prf 3630:3639 ModPathComp compare_eq
+binder 3641:3641 <> x:27
+binder 3643:3643 <> y:28
+R3658:3661 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3653:3655 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3648:3651 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R3647:3647 MetaCoq.Template.Kernames <> x:27 var
+R3652:3652 MetaCoq.Template.Kernames <> y:28 var
+R3656:3657 Coq.Init.Datatypes <> Eq constr
+R3663:3665 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3662:3662 MetaCoq.Template.Kernames <> x:27 var
+R3666:3666 MetaCoq.Template.Kernames <> y:28 var
+R3767:3786 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R3767:3786 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R3816:3830 MetaCoq.Template.Kernames ModPathComp mpbound_compare def
+R3847:3863 MetaCoq.Template.Kernames DirPathOT compare def
+R3847:3863 MetaCoq.Template.Kernames DirPathOT compare def
+R3901:3915 MetaCoq.Template.Kernames IdentOT compare def
+R3901:3915 MetaCoq.Template.Kernames IdentOT compare def
+R3954:3964 Coq.Arith.PeanoNat Nat compare def
+R3954:3964 Coq.Arith.PeanoNat Nat compare def
+R3998:4017 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R3998:4017 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R4036:4052 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R4036:4052 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R4072:4094 Coq.Arith.PeanoNat Nat compare_eq thm
+R4072:4094 Coq.Arith.PeanoNat Nat compare_eq thm
+R4132:4135 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R4132:4135 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R4221:4237 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R4221:4237 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+prf 4297:4307 ModPathComp compare_sym
+binder 4318:4318 <> x:29
+binder 4320:4320 <> y:30
+R4323:4323 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4330:4333 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4325:4328 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R4324:4324 MetaCoq.Template.Kernames <> y:30 var
+R4329:4329 MetaCoq.Template.Kernames <> x:29 var
+R4334:4340 Coq.Init.Datatypes <> CompOpp def
+R4344:4347 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R4343:4343 MetaCoq.Template.Kernames <> x:29 var
+R4348:4348 MetaCoq.Template.Kernames <> y:30 var
+R4413:4433 MetaCoq.Template.Kernames DirPathOT compare_sym thm
+R4413:4433 MetaCoq.Template.Kernames DirPathOT compare_sym thm
+R4447:4461 MetaCoq.Template.Kernames ModPathComp mpbound_compare def
+R4476:4496 MetaCoq.Template.Kernames DirPathOT compare_sym thm
+R4476:4496 MetaCoq.Template.Kernames DirPathOT compare_sym thm
+R4476:4496 MetaCoq.Template.Kernames DirPathOT compare_sym thm
+R4511:4529 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R4511:4529 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R4511:4529 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R4546:4562 MetaCoq.Template.Kernames DirPathOT compare def
+R4546:4562 MetaCoq.Template.Kernames DirPathOT compare def
+R4600:4614 MetaCoq.Template.Kernames IdentOT compare def
+R4600:4614 MetaCoq.Template.Kernames IdentOT compare def
+R4648:4662 MetaCoq.Template.Kernames ModPathComp nat_compare_sym thm
+R4648:4662 MetaCoq.Template.Kernames ModPathComp nat_compare_sym thm
+R4697:4700 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R4697:4700 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R4728:4746 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R4728:4746 MetaCoq.Template.Kernames IdentOT compare_sym thm
+prf 4765:4781 ModPathComp nat_compare_trans
+binder 4796:4796 <> c:31
+binder 4798:4798 <> x:32
+binder 4800:4800 <> y:33
+binder 4802:4802 <> z:34
+R4824:4827 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4820:4822 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4805:4815 Coq.Arith.PeanoNat Nat compare def
+R4817:4817 MetaCoq.Template.Kernames <> x:32 var
+R4819:4819 MetaCoq.Template.Kernames <> y:33 var
+R4823:4823 MetaCoq.Template.Kernames <> c:31 var
+R4847:4850 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4843:4845 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4828:4838 Coq.Arith.PeanoNat Nat compare def
+R4840:4840 MetaCoq.Template.Kernames <> y:33 var
+R4842:4842 MetaCoq.Template.Kernames <> z:34 var
+R4846:4846 MetaCoq.Template.Kernames <> c:31 var
+R4866:4868 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4851:4861 Coq.Arith.PeanoNat Nat compare def
+R4863:4863 MetaCoq.Template.Kernames <> x:32 var
+R4865:4865 MetaCoq.Template.Kernames <> z:34 var
+R4869:4869 MetaCoq.Template.Kernames <> c:31 var
+R4915:4939 Coq.Arith.PeanoNat Nat compare_spec thm
+R4979:5003 Coq.Arith.PeanoNat Nat compare_spec thm
+R5048:5072 Coq.Arith.PeanoNat Nat compare_spec thm
+R4915:4939 Coq.Arith.PeanoNat Nat compare_spec thm
+R4979:5003 Coq.Arith.PeanoNat Nat compare_spec thm
+R4979:5003 Coq.Arith.PeanoNat Nat compare_spec thm
+R4979:5003 Coq.Arith.PeanoNat Nat compare_spec thm
+R5048:5072 Coq.Arith.PeanoNat Nat compare_spec thm
+R5048:5072 Coq.Arith.PeanoNat Nat compare_spec thm
+prf 5124:5136 ModPathComp compare_trans
+binder 5151:5151 <> c:35
+binder 5153:5153 <> x:36
+binder 5155:5155 <> y:37
+binder 5157:5157 <> z:38
+R5170:5173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5160:5160 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5165:5168 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5162:5163 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5161:5161 MetaCoq.Template.Kernames <> x:36 var
+R5164:5164 MetaCoq.Template.Kernames <> y:37 var
+R5169:5169 MetaCoq.Template.Kernames <> c:35 var
+R5184:5187 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5174:5174 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5179:5182 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5176:5177 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5175:5175 MetaCoq.Template.Kernames <> y:37 var
+R5178:5178 MetaCoq.Template.Kernames <> z:38 var
+R5183:5183 MetaCoq.Template.Kernames <> c:35 var
+R5188:5188 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5193:5196 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5190:5191 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5189:5189 MetaCoq.Template.Kernames <> x:36 var
+R5192:5192 MetaCoq.Template.Kernames <> z:38 var
+R5197:5197 MetaCoq.Template.Kernames <> c:35 var
+R5333:5355 MetaCoq.Template.Kernames DirPathOT compare_trans thm
+R5333:5355 MetaCoq.Template.Kernames DirPathOT compare_trans thm
+R5369:5383 MetaCoq.Template.Kernames ModPathComp mpbound_compare def
+R5397:5414 MetaCoq.Template.utils.MCCompare <> compare_cont_trans thm
+R5429:5451 MetaCoq.Template.Kernames DirPathOT compare_trans thm
+R5454:5473 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R5397:5414 MetaCoq.Template.utils.MCCompare <> compare_cont_trans thm
+R5429:5451 MetaCoq.Template.Kernames DirPathOT compare_trans thm
+R5429:5451 MetaCoq.Template.Kernames DirPathOT compare_trans thm
+R5429:5451 MetaCoq.Template.Kernames DirPathOT compare_trans thm
+R5454:5473 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R5454:5473 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R5454:5473 MetaCoq.Template.Kernames DirPathOT compare_eq thm
+R5502:5519 MetaCoq.Template.utils.MCCompare <> compare_cont_trans thm
+R5534:5555 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R5558:5576 MetaCoq.Template.utils.bytestring StringOT compare_eq thm
+R5579:5595 MetaCoq.Template.Kernames ModPathComp nat_compare_trans thm
+R5502:5519 MetaCoq.Template.utils.MCCompare <> compare_cont_trans thm
+R5534:5555 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R5534:5555 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R5534:5555 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R5558:5576 MetaCoq.Template.utils.bytestring StringOT compare_eq thm
+R5579:5595 MetaCoq.Template.Kernames ModPathComp nat_compare_trans thm
+R5558:5576 MetaCoq.Template.utils.bytestring StringOT compare_eq thm
+R5579:5595 MetaCoq.Template.Kernames ModPathComp nat_compare_trans thm
+R5558:5576 MetaCoq.Template.utils.bytestring StringOT compare_eq thm
+R5579:5595 MetaCoq.Template.Kernames ModPathComp nat_compare_trans thm
+R5620:5638 MetaCoq.Template.utils.bytestring StringOT compare_eq thm
+R5620:5638 MetaCoq.Template.utils.bytestring StringOT compare_eq thm
+R5656:5659 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5656:5659 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5681:5690 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R5681:5690 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R5720:5734 MetaCoq.Template.Kernames IdentOT compare def
+R5720:5734 MetaCoq.Template.Kernames IdentOT compare def
+R5762:5778 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R5762:5778 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R5841:5844 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5841:5844 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5873:5882 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R5873:5882 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R5926:5946 MetaCoq.Template.Kernames IdentOT compare_trans thm
+R5926:5946 MetaCoq.Template.Kernames IdentOT compare_trans thm
+R5981:5984 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R5981:5984 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R6022:6042 MetaCoq.Template.Kernames IdentOT compare_trans thm
+R6022:6042 MetaCoq.Template.Kernames IdentOT compare_trans thm
+R6060:6063 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R6060:6063 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R6113:6122 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R6113:6122 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R6221:6224 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R6221:6224 MetaCoq.Template.Kernames ModPathComp :::x_'?='_x not
+R6274:6283 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R6274:6283 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R6380:6390 MetaCoq.Template.Kernames ModPathComp <> mod
+R6414:6433 Coq.Structures.OrderedTypeAlt OrderedType_from_Alt <> modtype
+R6435:6445 MetaCoq.Template.Kernames ModPathComp <> modtype
+mod 6401:6409 <> ModPathOT
+def 6468:6481 <> modpath_eq_dec
+R6490:6496 MetaCoq.Template.Kernames <> modpath ind
+binder 6484:6484 <> x:39
+binder 6486:6486 <> y:40
+R6501:6502 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6508:6514 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6521:6522 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6504:6506 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6503:6503 MetaCoq.Template.Kernames <> x:39 var
+R6507:6507 MetaCoq.Template.Kernames <> y:40 var
+R6516:6519 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6515:6515 MetaCoq.Template.Kernames <> x:39 var
+R6520:6520 MetaCoq.Template.Kernames <> y:40 var
+R6535:6553 MetaCoq.Template.Kernames <> compare def
+R6555:6555 MetaCoq.Template.Kernames <> x:39 var
+R6557:6557 MetaCoq.Template.Kernames <> y:40 var
+R6568:6569 Coq.Init.Datatypes <> Eq constr
+R6574:6577 Coq.Init.Specif <> left constr
+R6590:6594 Coq.Init.Specif <> right constr
+R6664:6685 MetaCoq.Template.Kernames <> compare_eq thm
+R6664:6685 MetaCoq.Template.Kernames <> compare_eq thm
+R6752:6755 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6752:6755 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6776:6792 MetaCoq.Template.Kernames <> eq_refl thm
+R6776:6792 MetaCoq.Template.Kernames <> eq_refl thm
+R6776:6792 MetaCoq.Template.Kernames <> eq_refl thm
+inst 6841:6853 <> modpath_EqDec
+R6857:6869 Equations.Prop.Classes <> EqDec class
+R6871:6877 MetaCoq.Template.Kernames <> modpath ind
+R6884:6889 Equations.Prop.Classes <> eq_dec def
+R6894:6907 MetaCoq.Template.Kernames <> modpath_eq_dec def
+mod 6920:6930 <> KernameComp
+def 6946:6946 KernameComp t
+R6951:6957 MetaCoq.Template.Kernames <> kername def
+def 6974:6975 KernameComp eq
+R6981:6982 Coq.Init.Logic <> eq ind
+R6984:6990 MetaCoq.Template.Kernames <> kername def
+prf 7001:7008 KernameComp eq_equiv
+R7012:7038 Coq.Classes.RelationClasses <> Equivalence class
+R7040:7041 MetaCoq.Template.Kernames KernameComp eq def
+def 7081:7087 KernameComp compare
+binder 7089:7090 <> kn:41
+binder 7092:7094 <> kn':42
+R7113:7115 MetaCoq.Template.Kernames <> kn':42 var
+R7109:7110 MetaCoq.Template.Kernames <> kn:41 var
+R7128:7128 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7131:7132 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7135:7135 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7133:7134 Coq.Init.Datatypes <> id def
+R7138:7138 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7142:7143 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7147:7147 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7158:7169 MetaCoq.Template.utils.MCCompare <> compare_cont def
+R7172:7190 MetaCoq.Template.Kernames ModPathComp compare def
+R7201:7215 MetaCoq.Template.Kernames IdentOT compare def
+R7251:7257 MetaCoq.Template.Kernames KernameComp compare def
+not 7243:7243 KernameComp :::x_'?='_x
+prf 7301:7311 KernameComp compare_sym
+binder 7322:7322 <> x:45
+binder 7324:7324 <> y:46
+R7327:7327 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7334:7337 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7329:7332 MetaCoq.Template.Kernames KernameComp :::x_'?='_x not
+R7328:7328 MetaCoq.Template.Kernames <> y:46 var
+R7333:7333 MetaCoq.Template.Kernames <> x:45 var
+R7338:7344 Coq.Init.Datatypes <> CompOpp def
+R7348:7351 MetaCoq.Template.Kernames KernameComp :::x_'?='_x not
+R7347:7347 MetaCoq.Template.Kernames <> x:45 var
+R7352:7352 MetaCoq.Template.Kernames <> y:46 var
+R7418:7430 MetaCoq.Template.Kernames <> compare_ident def
+R7445:7467 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R7469:7487 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R7445:7467 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R7445:7467 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R7469:7487 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R7469:7487 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R7503:7521 MetaCoq.Template.Kernames ModPathComp compare def
+R7524:7538 MetaCoq.Template.Kernames IdentOT compare def
+R7503:7521 MetaCoq.Template.Kernames ModPathComp compare def
+R7524:7538 MetaCoq.Template.Kernames IdentOT compare def
+R7524:7538 MetaCoq.Template.Kernames IdentOT compare def
+R7524:7538 MetaCoq.Template.Kernames IdentOT compare def
+prf 7563:7575 KernameComp compare_trans
+binder 7590:7590 <> c:47
+binder 7592:7592 <> x:48
+binder 7594:7594 <> y:49
+binder 7596:7596 <> z:50
+R7609:7612 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7599:7599 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7604:7607 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7601:7602 MetaCoq.Template.Kernames KernameComp :::x_'?='_x not
+R7600:7600 MetaCoq.Template.Kernames <> x:48 var
+R7603:7603 MetaCoq.Template.Kernames <> y:49 var
+R7608:7608 MetaCoq.Template.Kernames <> c:47 var
+R7623:7626 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7613:7613 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7618:7621 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7615:7616 MetaCoq.Template.Kernames KernameComp :::x_'?='_x not
+R7614:7614 MetaCoq.Template.Kernames <> y:49 var
+R7617:7617 MetaCoq.Template.Kernames <> z:50 var
+R7622:7622 MetaCoq.Template.Kernames <> c:47 var
+R7627:7627 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7632:7635 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7629:7630 MetaCoq.Template.Kernames KernameComp :::x_'?='_x not
+R7628:7628 MetaCoq.Template.Kernames <> x:48 var
+R7631:7631 MetaCoq.Template.Kernames <> z:50 var
+R7636:7636 MetaCoq.Template.Kernames <> c:47 var
+R7688:7705 MetaCoq.Template.utils.MCCompare <> compare_cont_trans thm
+R7720:7744 MetaCoq.Template.Kernames ModPathComp compare_trans thm
+R7747:7768 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R7777:7798 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R7688:7705 MetaCoq.Template.utils.MCCompare <> compare_cont_trans thm
+R7720:7744 MetaCoq.Template.Kernames ModPathComp compare_trans thm
+R7720:7744 MetaCoq.Template.Kernames ModPathComp compare_trans thm
+R7720:7744 MetaCoq.Template.Kernames ModPathComp compare_trans thm
+R7747:7768 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R7777:7798 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R7747:7768 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R7777:7798 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R7747:7768 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R7777:7798 MetaCoq.Template.utils.bytestring StringOT compare_trans thm
+R7813:7823 MetaCoq.Template.Kernames KernameComp <> mod
+mod 7834:7840 <> Kername
+R7852:7862 MetaCoq.Template.Kernames KernameComp <> modtype
+R7879:7898 Coq.Structures.OrderedTypeAlt OrderedType_from_Alt <> modtype
+R7900:7910 MetaCoq.Template.Kernames KernameComp <> modtype
+mod 7873:7874 <> Kername.OT
+def 7926:7927 Kername lt
+R7932:7936 MetaCoq.Template.Kernames Kername lt def
+inst 7956:7966 Kername lt_strorder
+R7970:7980 Coq.Classes.RelationClasses <> StrictOrder class
+R7982:7986 MetaCoq.Template.Kernames Kername lt def
+R8039:8050 MetaCoq.Template.Kernames Kername lt_not_eq thm
+R8039:8050 MetaCoq.Template.Kernames Kername lt_not_eq thm
+R8073:8082 MetaCoq.Template.Kernames Kername eq_refl thm
+R8073:8082 MetaCoq.Template.Kernames Kername eq_refl thm
+R8118:8128 MetaCoq.Template.Kernames Kername lt_trans def
+R8118:8128 MetaCoq.Template.Kernames Kername lt_trans def
+prf 8154:8162 Kername lt_compat
+R8166:8171 Coq.Classes.Morphisms <> Proper class
+R8193:8197 MetaCoq.Template.Kernames Kername lt def
+R8176:8180 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R8174:8175 MetaCoq.Template.Kernames Kername eq def
+R8183:8187 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R8181:8182 MetaCoq.Template.Kernames Kername eq def
+R8188:8190 Coq.Init.Logic <> iff def
+def 8297:8308 Kername compare_spec
+binder 8319:8319 <> x:51
+binder 8321:8321 <> y:52
+R8324:8334 Coq.Init.Datatypes <> CompareSpec ind
+R8364:8370 MetaCoq.Template.Kernames Kername compare def
+R8372:8372 MetaCoq.Template.Kernames <> x:51 var
+R8374:8374 MetaCoq.Template.Kernames <> y:52 var
+R8355:8356 MetaCoq.Template.Kernames Kername lt def
+R8358:8358 MetaCoq.Template.Kernames <> y:52 var
+R8360:8360 MetaCoq.Template.Kernames <> x:51 var
+R8346:8347 MetaCoq.Template.Kernames Kername lt def
+R8349:8349 MetaCoq.Template.Kernames <> x:51 var
+R8351:8351 MetaCoq.Template.Kernames <> y:52 var
+R8337:8338 MetaCoq.Template.Kernames Kername eq def
+R8340:8340 MetaCoq.Template.Kernames <> x:51 var
+R8342:8342 MetaCoq.Template.Kernames <> y:52 var
+R8441:8459 MetaCoq.Template.Kernames ModPathComp compare def
+R8441:8459 MetaCoq.Template.Kernames ModPathComp compare def
+R8488:8502 MetaCoq.Template.Kernames IdentOT compare def
+R8488:8502 MetaCoq.Template.Kernames IdentOT compare def
+R8551:8572 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R8551:8572 MetaCoq.Template.Kernames ModPathComp compare_eq thm
+R8588:8604 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R8588:8604 MetaCoq.Template.utils.bytestring <> string_compare_eq abbrev
+R8655:8656 MetaCoq.Template.Kernames Kername eq def
+R8679:8701 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R8709:8727 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R8679:8701 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R8679:8701 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R8709:8727 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R8709:8727 MetaCoq.Template.Kernames IdentOT compare_sym thm
+R8753:8775 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R8753:8775 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+R8753:8775 MetaCoq.Template.Kernames ModPathComp compare_sym thm
+prf 8804:8813 Kername compare_eq
+binder 8815:8815 <> x:53
+binder 8817:8817 <> y:54
+R8837:8841 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8832:8834 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8821:8827 MetaCoq.Template.Kernames Kername compare def
+R8829:8829 MetaCoq.Template.Kernames <> x:53 var
+R8831:8831 MetaCoq.Template.Kernames <> y:54 var
+R8835:8836 Coq.Init.Datatypes <> Eq constr
+R8843:8845 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8842:8842 MetaCoq.Template.Kernames <> x:53 var
+R8846:8846 MetaCoq.Template.Kernames <> y:54 var
+R8885:8896 MetaCoq.Template.Kernames Kername compare_spec def
+R8885:8896 MetaCoq.Template.Kernames Kername compare_spec def
+R8947:8958 MetaCoq.Template.Kernames Kername compare_spec def
+R8947:8958 MetaCoq.Template.Kernames Kername compare_spec def
+R8988:9000 Coq.Classes.RelationClasses <> irreflexivity def
+R8988:9000 Coq.Classes.RelationClasses <> irreflexivity def
+R9024:9036 Coq.Classes.RelationClasses <> irreflexivity def
+R9024:9036 Coq.Classes.RelationClasses <> irreflexivity def
+def 9065:9067 Kername eqb
+binder 9069:9070 <> kn:55
+binder 9072:9074 <> kn':56
+R9089:9095 MetaCoq.Template.Kernames Kername compare def
+R9097:9098 MetaCoq.Template.Kernames <> kn:55 var
+R9100:9102 MetaCoq.Template.Kernames <> kn':56 var
+R9115:9116 Coq.Init.Datatypes <> Eq constr
+R9121:9124 Coq.Init.Datatypes <> true constr
+R9137:9141 Coq.Init.Datatypes <> false constr
+inst 9183:9197 Kername reflect_kername
+R9201:9209 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R9211:9217 MetaCoq.Template.Kernames <> kername def
+R9228:9230 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R9235:9237 MetaCoq.Template.Kernames Kername eqb def
+R9274:9276 MetaCoq.Template.Kernames Kername eqb def
+R9288:9294 MetaCoq.Template.Kernames Kername compare def
+R9332:9341 MetaCoq.Template.Kernames Kername compare_eq thm
+R9332:9341 MetaCoq.Template.Kernames Kername compare_eq thm
+R9384:9393 MetaCoq.Template.Kernames Kername eq_refl thm
+R9384:9393 MetaCoq.Template.Kernames Kername eq_refl thm
+R9384:9393 MetaCoq.Template.Kernames Kername eq_refl thm
+R9436:9445 MetaCoq.Template.Kernames Kername eq_refl thm
+R9436:9445 MetaCoq.Template.Kernames Kername eq_refl thm
+R9436:9445 MetaCoq.Template.Kernames Kername eq_refl thm
+def 9478:9483 Kername eq_dec
+R9501:9501 MetaCoq.Template.Kernames Kername t def
+binder 9495:9495 <> x:57
+binder 9497:9497 <> y:58
+R9505:9506 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9512:9518 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9525:9526 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9508:9510 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9507:9507 MetaCoq.Template.Kernames <> x:57 var
+R9511:9511 MetaCoq.Template.Kernames <> y:58 var
+R9520:9523 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R9519:9519 MetaCoq.Template.Kernames <> x:57 var
+R9524:9524 MetaCoq.Template.Kernames <> y:58 var
+R9531:9544 Equations.Prop.Classes <> eq_dec def
+R9552:9558 MetaCoq.Template.Kernames Kername <> mod
+R9583:9594 Coq.FSets.FMapAVL Make <> modtype
+R9596:9605 MetaCoq.Template.Kernames Kername.OT <> modtype
+mod 9569:9578 <> KernameMap
+R9633:9653 Coq.FSets.FMapFacts WProperties <> modtype
+R9655:9664 MetaCoq.Template.Kernames KernameMap <> modtype
+mod 9615:9628 <> KernameMapFact
+abbrev 9677:9686 <> eq_kername
+R9692:9694 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R9700:9706 MetaCoq.Template.Kernames <> kername def
+prf 9733:9747 <> eq_kername_refl
+binder 9749:9750 <> kn:59
+R9754:9763 MetaCoq.Template.Kernames <> eq_kername abbrev
+R9768:9769 MetaCoq.Template.Kernames <> kn:59 var
+R9765:9766 MetaCoq.Template.Kernames <> kn:59 var
+R9788:9805 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+R9788:9805 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+def 9825:9835 <> eq_constant
+R9840:9849 MetaCoq.Template.Kernames <> eq_kername abbrev
+R10004:10015 Coq.MSets.MSetAVL Make <> modtype
+R10017:10023 MetaCoq.Template.Kernames Kername <> modtype
+mod 9990:9999 <> KernameSet
+R10051:10068 Coq.MSets.MSetFacts WFactsOn <> modtype
+R10070:10076 MetaCoq.Template.Kernames Kername <> modtype
+R10078:10087 MetaCoq.Template.Kernames KernameSet <> modtype
+mod 10033:10046 <> KernameSetFact
+R10115:10142 Coq.MSets.MSetProperties WPropertiesOn <> modtype
+R10144:10150 MetaCoq.Template.Kernames Kername <> modtype
+R10152:10161 MetaCoq.Template.Kernames KernameSet <> modtype
+mod 10097:10110 <> KernameSetProp
+prf 10171:10188 <> knset_in_fold_left
+binder 10191:10191 <> A:60
+binder 10194:10195 <> kn:61
+binder 10197:10197 <> f:62
+R10204:10207 Coq.Init.Datatypes <> list ind
+R10209:10209 MetaCoq.Template.Kernames <> A:60 var
+binder 10200:10200 <> l:63
+binder 10212:10214 <> acc:64
+R10296:10303 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10370:10370 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10220:10232 MetaCoq.Template.Kernames <> In def
+R10238:10246 Coq.Lists.List <> fold_left def
+R10292:10294 MetaCoq.Template.Kernames <> acc:64 var
+R10290:10290 MetaCoq.Template.Kernames <> l:63 var
+binder 10253:10255 <> acc:65
+binder 10257:10257 <> x:66
+R10262:10277 MetaCoq.Template.Kernames <> union def
+R10285:10287 MetaCoq.Template.Kernames <> acc:65 var
+R10280:10280 MetaCoq.Template.Kernames <> f:62 var
+R10282:10282 MetaCoq.Template.Kernames <> x:66 var
+R10234:10235 MetaCoq.Template.Kernames <> kn:61 var
+R10324:10327 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R10304:10316 MetaCoq.Template.Kernames <> In def
+R10321:10323 MetaCoq.Template.Kernames <> acc:64 var
+R10318:10319 MetaCoq.Template.Kernames <> kn:61 var
+R10328:10334 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10336:10337 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10335:10335 <> a:67
+R10344:10347 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10338:10339 Coq.Lists.List <> In def
+R10343:10343 MetaCoq.Template.Kernames <> l:63 var
+R10341:10341 MetaCoq.Template.Kernames <> a:67 var
+R10348:10360 MetaCoq.Template.Kernames <> In def
+R10366:10366 MetaCoq.Template.Kernames <> f:62 var
+R10368:10368 MetaCoq.Template.Kernames <> a:67 var
+R10362:10363 MetaCoq.Template.Kernames <> kn:61 var
+R10495:10515 MetaCoq.Template.Kernames <> union_spec thm
+R10495:10515 MetaCoq.Template.Kernames <> union_spec thm
+R10495:10515 MetaCoq.Template.Kernames <> union_spec thm
+rec 10844:10852 <> inductive
+proj 10871:10884 <> inductive_mind
+proj 10932:10944 <> inductive_ind
+R10888:10894 MetaCoq.Template.Kernames <> kername def
+R10948:10950 Coq.Init.Datatypes <> nat ind
+R10965:10969 MetaCoq.Template.Kernames <> mkInd constr
+R10965:10969 MetaCoq.Template.Kernames <> mkInd constr
+R11007:11015 MetaCoq.Template.Kernames <> inductive rec
+def 11030:11048 <> string_of_inductive
+R11055:11063 MetaCoq.Template.Kernames <> inductive rec
+binder 11051:11051 <> i:71
+R11107:11109 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R11071:11087 MetaCoq.Template.Kernames <> string_of_kername def
+R11090:11103 MetaCoq.Template.Kernames <> inductive_mind proj
+R11105:11105 MetaCoq.Template.Kernames <> i:71 var
+R11113:11115 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R11116:11128 MetaCoq.Template.utils.MCString <> string_of_nat def
+R11131:11143 MetaCoq.Template.Kernames <> inductive_ind proj
+R11145:11145 MetaCoq.Template.Kernames <> i:71 var
+def 11161:11176 <> eq_inductive_def
+binder 11178:11178 <> i:72
+binder 11180:11181 <> i':73
+R11206:11206 MetaCoq.Template.Kernames <> i:72 var
+R11193:11197 MetaCoq.Template.Kernames <> mkInd constr
+R11233:11234 MetaCoq.Template.Kernames <> i':73 var
+R11218:11222 MetaCoq.Template.Kernames <> mkInd constr
+R11241:11243 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11252:11252 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11255:11256 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11259:11259 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11253:11254 MetaCoq.Template.Kernames <> i':73 var
+R11245:11245 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11247:11248 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11250:11250 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11246:11246 MetaCoq.Template.Kernames <> i:72 var
+inst 11291:11310 <> reflect_eq_inductive
+R11314:11322 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R11324:11332 MetaCoq.Template.Kernames <> inductive rec
+R11341:11343 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11348:11363 MetaCoq.Template.Kernames <> eq_inductive_def def
+R11442:11449 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R11442:11449 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R11442:11449 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+abbrev 11518:11529 <> eq_inductive
+R11535:11537 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11543:11551 MetaCoq.Template.Kernames <> inductive rec
+prf 11563:11579 <> eq_inductive_refl
+binder 11581:11581 <> i:76
+R11585:11596 MetaCoq.Template.Kernames <> eq_inductive abbrev
+R11600:11600 MetaCoq.Template.Kernames <> i:76 var
+R11598:11598 MetaCoq.Template.Kernames <> i:76 var
+R11618:11635 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+R11618:11635 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+rec 11651:11660 <> projection
+proj 11682:11689 <> proj_ind
+proj 11708:11717 <> proj_npars
+proj 11767:11774 <> proj_arg
+R11693:11701 MetaCoq.Template.Kernames <> inductive rec
+R11721:11723 Coq.Init.Datatypes <> nat ind
+R11778:11780 Coq.Init.Datatypes <> nat ind
+def 11823:11835 <> eq_projection
+R11845:11854 MetaCoq.Template.Kernames <> projection rec
+binder 11838:11838 <> p:81
+binder 11840:11841 <> p':82
+R11906:11909 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R11862:11862 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11875:11876 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11891:11892 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11905:11905 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11866:11873 MetaCoq.Template.Kernames <> proj_ind proj
+R11863:11863 MetaCoq.Template.Kernames <> p:81 var
+R11880:11889 MetaCoq.Template.Kernames <> proj_npars proj
+R11877:11877 MetaCoq.Template.Kernames <> p:81 var
+R11896:11903 MetaCoq.Template.Kernames <> proj_arg proj
+R11893:11893 MetaCoq.Template.Kernames <> p:81 var
+R11910:11910 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11924:11925 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11941:11942 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11956:11956 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11915:11922 MetaCoq.Template.Kernames <> proj_ind proj
+R11911:11912 MetaCoq.Template.Kernames <> p':82 var
+R11930:11939 MetaCoq.Template.Kernames <> proj_npars proj
+R11926:11927 MetaCoq.Template.Kernames <> p':82 var
+R11947:11954 MetaCoq.Template.Kernames <> proj_arg proj
+R11943:11944 MetaCoq.Template.Kernames <> p':82 var
+inst 11988:12008 <> reflect_eq_projection
+R12012:12020 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R12022:12031 MetaCoq.Template.Kernames <> projection rec
+R12040:12042 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12047:12059 MetaCoq.Template.Kernames <> eq_projection def
+R12090:12102 MetaCoq.Template.Kernames <> eq_projection def
+R12113:12120 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R12113:12120 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R12113:12120 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+prf 12182:12199 <> eq_projection_refl
+binder 12201:12201 <> i:83
+R12205:12217 MetaCoq.Template.Kernames <> eq_projection def
+R12219:12219 MetaCoq.Template.Kernames <> i:83 var
+R12221:12221 MetaCoq.Template.Kernames <> i:83 var
+R12239:12256 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+R12239:12256 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+ind 12331:12346 <> global_reference
+constr 12353:12358 <> VarRef
+constr 12390:12397 <> ConstRef
+constr 12431:12436 <> IndRef
+constr 12472:12483 <> ConstructRef
+R12367:12370 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12362:12366 MetaCoq.Template.Kernames <> ident def
+R12371:12386 MetaCoq.Template.Kernames <> global_reference:84 ind
+R12408:12411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12401:12407 MetaCoq.Template.Kernames <> kername def
+R12412:12427 MetaCoq.Template.Kernames <> global_reference:84 ind
+R12449:12452 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12440:12448 MetaCoq.Template.Kernames <> inductive rec
+R12453:12468 MetaCoq.Template.Kernames <> global_reference:84 ind
+R12496:12499 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12487:12495 MetaCoq.Template.Kernames <> inductive rec
+R12503:12506 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12500:12502 Coq.Init.Datatypes <> nat ind
+R12507:12522 MetaCoq.Template.Kernames <> global_reference:84 ind
+R12549:12564 MetaCoq.Template.Kernames <> global_reference ind
+def 12579:12592 <> string_of_gref
+binder 12594:12595 <> gr:86
+R12599:12604 MetaCoq.Template.utils.bytestring <> string abbrev
+R12617:12618 MetaCoq.Template.Kernames <> gr:86 var
+R12629:12634 MetaCoq.Template.Kernames <> VarRef constr
+R12647:12654 MetaCoq.Template.Kernames <> ConstRef constr
+R12661:12677 MetaCoq.Template.Kernames <> string_of_kername def
+R12685:12690 MetaCoq.Template.Kernames <> IndRef constr
+R12693:12697 MetaCoq.Template.Kernames <> mkInd constr
+R12723:12725 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12745:12747 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12726:12742 MetaCoq.Template.Kernames <> string_of_kername def
+R12751:12754 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12770:12770 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12755:12767 MetaCoq.Template.utils.MCString <> string_of_nat def
+R12776:12787 MetaCoq.Template.Kernames <> ConstructRef constr
+R12790:12794 MetaCoq.Template.Kernames <> mkInd constr
+R12824:12826 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12846:12848 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12827:12843 MetaCoq.Template.Kernames <> string_of_kername def
+R12852:12854 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12855:12855 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12871:12874 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12856:12868 MetaCoq.Template.utils.MCString <> string_of_nat def
+R12878:12881 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12897:12897 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R12882:12894 MetaCoq.Template.utils.MCString <> string_of_nat def
+def 12918:12925 <> gref_eqb
+R12934:12949 MetaCoq.Template.Kernames <> global_reference ind
+binder 12928:12928 <> x:88
+binder 12930:12930 <> y:89
+R12954:12957 Coq.Init.Datatypes <> bool ind
+R12973:12973 MetaCoq.Template.Kernames <> y:89 var
+R12970:12970 MetaCoq.Template.Kernames <> x:88 var
+R12984:12989 MetaCoq.Template.Kernames <> VarRef constr
+R12994:12999 MetaCoq.Template.Kernames <> VarRef constr
+R13007:13009 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13020:13027 MetaCoq.Template.Kernames <> ConstRef constr
+R13032:13039 MetaCoq.Template.Kernames <> ConstRef constr
+R13047:13049 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13060:13065 MetaCoq.Template.Kernames <> IndRef constr
+R13070:13075 MetaCoq.Template.Kernames <> IndRef constr
+R13083:13085 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13096:13107 MetaCoq.Template.Kernames <> ConstructRef constr
+R13114:13125 MetaCoq.Template.Kernames <> ConstructRef constr
+R13144:13147 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R13136:13138 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13148:13150 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13169:13173 Coq.Init.Datatypes <> false constr
+inst 13211:13225 <> grep_reflect_eq
+R13229:13237 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R13239:13254 MetaCoq.Template.Kernames <> global_reference ind
+R13264:13266 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13264:13266 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13264:13266 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13271:13278 MetaCoq.Template.Kernames <> gref_eqb def
+R13370:13377 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13370:13377 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13438:13445 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13438:13445 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13506:13513 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13506:13513 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13574:13581 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13574:13581 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13655:13662 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13655:13662 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 13724:13734 <> gref_eq_dec
+R13746:13761 MetaCoq.Template.Kernames <> global_reference ind
+binder 13737:13738 <> gr:92
+binder 13740:13742 <> gr':93
+R13766:13766 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R13775:13779 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R13790:13790 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R13769:13771 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13767:13768 MetaCoq.Template.Kernames <> gr:92 var
+R13772:13774 MetaCoq.Template.Kernames <> gr':93 var
+R13780:13781 Coq.Init.Logic <> ::type_scope:'~'_x not
+R13784:13786 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13782:13783 MetaCoq.Template.Kernames <> gr:92 var
+R13787:13789 MetaCoq.Template.Kernames <> gr':93 var
+R13795:13808 Equations.Prop.Classes <> eq_dec def
+R13813:13815 MetaCoq.Template.Kernames <> gr':93 var
+R13810:13811 MetaCoq.Template.Kernames <> gr:92 var
