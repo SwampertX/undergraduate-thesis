@@ -65,31 +65,69 @@ it is thus natural to link both of them together.
 \newcommand{\pcuicc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
   code/v2/pcuic/theories/#3}}
 
-It would be beneficial to unify these two with the same structure: modules. The
-list of global declarations itself can be seen as an anonymous, ambient,
-top-level module, thus just a special case of a module. Under this
+It would be beneficial to unify modules and environments into a single structure
+- modules. The list of global declarations itself can be seen as an anonymous,
+ambient, top-level module, thus just a special case of a module. Under this
 generalization, any well-formedness properties or well-typedness properties
 about environments should be subsumed under that of modules, and thus giving us
 a good sense in defining the typing rules for modules.
 
+\subsection{Definition of the Data Structure}
 Let us begin by defining modules, then specialize into global declarations:
 
-\tcc{325}{336}{Environment.v}
+\tcc{325}{338}{Environment.v}
 
 Structure field now subsumes global declaration, and we note that structure body
 is just a convenient name for the list of structure fields indexed by its name -
 an identifier. The possible nested structure body inside structure fields are
 what gives the tree structure of modules.
 
-\tcc{405}{408}{Environment.v}
+\tcc{409}{412}{Environment.v}
 
 Similarly, we define module types to be structure bodies, and a module to be a
 module type with an implementation. Since global environments are anonymous
 modules, they do not have a possibility of reuse and thus signature is
 insignificant here - it is of the same structure of a structure body.
 
+So, how do we tell apart a global environment? One way to do it is to
+differentiate it by the directory path to the file.
 
+\tcc{478}{482}{Environment.v}
 
+\subsection{Definition of Typing Rules}
+This section of typing rules are not yet finalized, and are still experimental.
+However, they illustrate a possible set of rules that can implemented and then
+verified against various properties.
+
+\tcc{1271}{1282}{EnvironmentTyping.v}
+\tcc{1292}{1298}{EnvironmentTyping.v}
+
+Structure fields and module implementations are typed accordingly: constants and
+inductives are typed as-if, while modules and module types are typed
+recursively. Module implementation checks relevant definitions except for the
+case of an algebraic expression (in our case an alias to a defined module),
+requires a proof that such a aliased target exists.
+
+The interesting part that is different from the previous implementation is the
+combination of the information when typing a structure body:
+
+\tcc{1284}{1290}{EnvironmentTyping.v}
+
+This time, the typing rules for structure body includes typical checks as in the
+global environment. If we focus on the \verb|on_sb_cons| constructor for the
+inductive case, the checks include
+\begin{enumerate}
+  \item the correctness of the prefix structure body against the environment,
+  \item the freshness of identifier \verb|i| against the prefix structure body
+  and the environment,
+  \item the universe declaration of the structure field,
+  \item and the recursive check to the structure field itself.
+\end{enumerate} 
+
+We define naturally the below:
+
+\tcc{1301}{1302}{EnvironmentTyping.v}
+\tcc{1312}{1312}{EnvironmentTyping.v}
 
 \section{Tactics and Proof Machineries}
 \begin{itemize}

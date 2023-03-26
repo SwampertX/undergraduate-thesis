@@ -1230,75 +1230,73 @@ Module GlobalMaps (T: Term) (E: EnvironmentSig T) (TU : TermUtils T E) (ET: EnvT
     Definition fresh_structure_body (i: ident) (sb: structure_body) :=
       All (fun '(i', _) => i <> i') sb.
 
-    (* Record on_structure_field_data (on_structure_field : global_env_ext -> structure_field -> Type)
-      univs sb retro path (udecl: universes_decl) i sf :=
-      {
-          ident_fresh :  fresh_structure_body i sb ;
-          udecl := universes_decl_of_decl sf ;
-          on_udecl_udecl : on_udecl univs udecl ;
-          on_global_decl_d : on_structure_field (mk_global_env univs sb retro path, udecl) sf
-      }. *)
+Record on_structure_field_data
+(on_structure_field : global_env_ext -> structure_field -> Type)
+univs sb retro path (udecl: universes_decl) i sf :=
+  {
+    ident_fresh :  fresh_structure_body i sb ;
+    udecl := universes_decl_of_decl sf ;
+    on_udecl_udecl : on_udecl univs udecl ;
+    on_global_decl_d : on_structure_field (mk_global_env univs sb retro path, udecl) sf
+  }.
 
     Record on_structure_field_data Σ sb i sf :=
       {
           ident_fresh : fresh_structure_body i sb ;
           udecl := universes_decl_of_decl sf ;
           on_udecl_udecl : on_udecl univs udecl ;
-
           on_structure_field_sb : on_structure_field  sf
       }.
 
-    (* Inductive on_structure_body on_structure_field : structure_body -> Type :=
-      | on_sb_nil : on_structure_body on_structure_field nil
-      | on_sb_cons univs sb retro path udecl i sf :
-          on_structure_body on_structure_field sb ->
-          on_structure_field_data on_structure_field univs sb retro path udecl i sf ->
-          on_structure_body on_structure_field (sb ,, (i, sf)). *)
+Inductive on_structure_field Σ : structure_field -> Type :=
+  | on_ConstantDecl c :
+      on_constant_body Σ c -> on_structure_field Σ (ConstantDecl c)
+  | on_InductiveDecl kn inds :
+      on_inductive Σ kn inds -> on_structure_field Σ (InductiveDecl inds)
+  | on_ModuleDecl mi mt :
+      on_module_impl Σ mi
+      -> on_structure_body on_structure_field mt
+      -> on_structure_field Σ (ModuleDecl mi mt)
+  | on_ModuleTypeDecl mtd :
+    on_structure_body Σ mtd
+    -> on_structure_field Σ (ModuleTypeDecl mtd)
+with on_module_impl Σ : module_implementation -> Type :=
+  | on_mi_abstract : on_module_impl Σ mi_abstract
+  | on_mi_algebraic kn :
+      (exists mi mt, lookup_env Σ kn = Some (ModuleDecl mi mt))
+      -> on_module_impl Σ (mi_algebraic kn)
+  | on_mi_struct sb : on_structure_body Σ sb -> on_module_impl Σ (mi_struct sb)
+  | on_mi_fullstruct : on_module_impl Σ mi_fullstruct.
 
-    Inductive on_structure_field Σ : structure_field -> Type :=
-      | on_ConstantDecl c :
-          on_constant_body Σ c -> on_structure_field Σ (ConstantDecl c)
-      | on_InductiveDecl kn inds :
-          on_inductive Σ kn inds -> on_structure_field Σ (InductiveDecl inds)
-      | on_ModuleDecl mi mt :
-          on_module_impl Σ mi ->
-          on_structure_body on_structure_field mt -> (* module type must be correct wrt Σ. *)
-          on_structure_field Σ (ModuleDecl mi mt)
-      | on_ModuleTypeDecl mtd :
-        on_structure_body Σ mtd ->
-        on_structure_field Σ (ModuleTypeDecl mtd)
-    with on_module_impl Σ : module_implementation -> Type :=
-      | on_mi_abstract : on_module_impl Σ mi_abstract
-      | on_mi_algebraic kn : (exists mi mt, lookup_env Σ kn = Some (ModuleDecl mi mt))
-                              -> on_module_impl Σ (mi_algebraic kn)
-      | on_mi_struct sb : on_structure_body Σ sb -> on_module_impl Σ (mi_struct sb)
-      | on_mi_fullstruct : on_module_impl Σ mi_fullstruct.
+Inductive on_structure_field Σ : structure_field -> Type :=
+  | on_ConstantDecl c :
+      on_constant_body Σ c -> on_structure_field Σ (ConstantDecl c)
+  | on_InductiveDecl kn inds :
+      on_inductive Σ kn inds -> on_structure_field Σ (InductiveDecl inds)
+  | on_ModuleDecl mi mt :
+      on_module_impl Σ mi ->
+      on_structure_body on_structure_field mt ->
+      on_structure_field Σ (ModuleDecl mi mt)
+  | on_ModuleTypeDecl mtd :
+      on_structure_body Σ mtd ->
+      on_structure_field Σ (ModuleTypeDecl mtd)
 
-    Inductive on_structure_field Σ : structure_field -> Type :=
-      | on_ConstantDecl c :
-          on_constant_body Σ c -> on_structure_field Σ (ConstantDecl c)
-      | on_InductiveDecl kn inds :
-          on_inductive Σ kn inds -> on_structure_field Σ (InductiveDecl inds)
-      | on_ModuleDecl mi mt :
-          on_module_impl Σ mi ->
-          on_structure_body on_structure_field mt -> (* module type must be correct wrt Σ. *)
-          on_structure_field Σ (ModuleDecl mi mt)
-      | on_ModuleTypeDecl mtd :
-        on_structure_body Σ mtd ->
-        on_structure_field Σ (ModuleTypeDecl mtd)
-    with on_structure_body (Σ: global_env_ext) : structure_body -> Type :=
-      | on_sb_nil : on_structure_body Σ nil
-      | on_sb_cons Σ sb i sf :
-          on_structure_body Σ sb ->
-          on_structure_field_data on_structure_field univs sb retro path udecl i sf ->
-          on_structure_body on_structure_field (sb ,, (i, sf)).
+with on_structure_body (Σ: global_env_ext) : structure_body -> Type :=
+  | on_sb_nil : on_structure_body Σ nil
+  | on_sb_cons Σ sb i sf :
+      on_structure_body Σ sb ->
+      fresh_structure_body Σ i sb ->
+      on_udecl Σ (universes_decl_of_decl sf) ->
+      on_structure_field Σ sf ->
+      on_structure_body Σ (sb ,, (i, sf))
 
-    with on_module_impl Σ : module_implementation -> Type :=
-      | on_mi_abstract : on_module_impl Σ mi_abstract
-      | on_mi_algebraic kn : (exists mi mt, lookup_env Σ kn = Some (ModuleDecl mi mt))
-                              -> on_module_impl Σ (mi_algebraic kn)
-      | on_mi_struct sb : on_structure_body Σ sb -> on_module_impl Σ (mi_struct sb)
-      | on_mi_fullstruct : on_module_impl Σ mi_fullstruct.
+with on_module_impl Σ : module_implementation -> Type :=
+  | on_mi_abstract : on_module_impl Σ mi_abstract
+  | on_mi_algebraic kn :
+      (exists mi mt, lookup_env Σ kn = Some (ModuleDecl mi mt)) ->
+      on_module_impl Σ (mi_algebraic kn)
+  | on_mi_struct sb : on_structure_body Σ sb -> on_module_impl Σ (mi_struct sb)
+  | on_mi_fullstruct : on_module_impl Σ mi_fullstruct.
 
     Definition on_module_type_decl := on_structure_body.
     Definition on_module_decl Σ m := on_module_impl Σ m.1 × on_module_type_decl Σ m.2.

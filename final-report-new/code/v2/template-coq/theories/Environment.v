@@ -325,12 +325,16 @@ Module Environment (T : Term).
   Inductive structure_field :=
   | ConstantDecl : constant_body -> structure_field
   | InductiveDecl : mutual_inductive_body -> structure_field
-  | ModuleDecl : module_implementation -> list (ident × structure_field) -> structure_field
+  | ModuleDecl :
+      module_implementation
+      -> list (ident × structure_field)
+      -> structure_field
   | ModuleTypeDecl : list (ident × structure_field) -> structure_field
   with module_implementation :=
   | mi_abstract : module_implementation (** Declare Module M: T. *)
   | mi_algebraic : kername -> module_implementation (** Module M [:T] := N. *)
-  | mi_struct : list (ident × structure_field) -> module_implementation (** Module M:T. ... End M.*)
+  | mi_struct : (** Module M:T. ... End M.*)
+      list (ident × structure_field) -> module_implementation 
   | mi_fullstruct : module_implementation (** Module M. ... End M.*).
 
   Notation structure_body := (list (ident × structure_field))%type.
