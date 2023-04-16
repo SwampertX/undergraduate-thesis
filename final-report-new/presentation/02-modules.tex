@@ -1,0 +1,116 @@
+% \section{Background}
+
+\subsection{The MetaCoq Project}
+
+\begin{frame}
+  \frametitle{The MetaCoq Project - History}
+  A metaprogramming platform for Coq.
+
+  Originally \textbf{TemplateCoq}, a Coq program that reifies/quotes terms in
+  Coq.\pause
+
+  Since we have terms, why not state some properties about them?\pause
+    
+  Added \textbf{PCUIC} (Polymorphic Cumulative Calculus of Inductive
+  Constructions) and \textbf{Safechecker}, a fuel-free, verified reduction
+  machine.
+  \pause
+
+  \textbf{Proof erasure} to untyped calculus, ready for translation into "usual"
+  programming languages. \pause
+\end{frame}
+
+\begin{frame}
+  \frametitle{Where is the implementation?}
+  \begin{itemize}
+    \item (Coq) -- TemplateCoq -- PCUIC -- Checker -- Erasure -- (Machine Code)
+    \item Actual data structure of modules live in \textbf{TemplateCoq}.
+    \item Verification of properties of modules live in \textbf{TemplateCoq}.
+    \item Translation from \textbf{TemplateCoq} to \textbf{PCUIC}.
+    \item Difference? PCUIC is easier to prove (semantical) theorems.
+  \end{itemize}
+\end{frame}
+
+\subsection{Syntax and Semantics of Coq Modules}
+\begin{frame}
+  \frametitle{Example - Definitions}
+  Modules as ``collections of definitions''.
+  \inputminted[firstline=1,lastline=10]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example - Modules}
+  ``Packaging'' definitions into a Module (Type).
+  \inputminted[firstline=11,lastline=16]{coq}{code/module_example.v}
+  \inputminted[firstline=19,lastline=23]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example - Aliasing}
+  Modules can be aliased for ease of reference.
+  \inputminted[firstline=24,lastline=25]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example - Functors}
+  Higher-order modules - Functors.
+  \inputminted[firstline=27]{coq}{code/module_example.v}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Abstract Syntax of Coq Modules}
+  A \textbf{structure} is an ordered list of declarations of the following
+  kinds:
+  \begin{itemize}
+    \item A \textbf{constant} declaration.
+    \item An \textbf{inductive} declaration.
+    \item A \textbf{module} declaration.
+    \item A \textbf{module type} declaration.
+  \end{itemize}\pause
+  A \textbf{module} is a \textbf{structure} with a name and possibly a
+  \textbf{module type}, where all definitions are concrete.\pause
+  
+  A \textbf{module type} is a \textbf{structure} with a name.\pause
+
+  A \textbf{functor} is a parametrized module, by another module or functor.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Semantics of Coq Modules}
+  Modules are declarations, and they live in an \textbf{environment}. An
+  environment is an ordered list of declarations:
+  \begin{itemize}
+    \item A \textbf{constant} declaration.
+    \item An \textbf{inductive} declaration.
+    \item A \textbf{module} declaration.
+    \item A \textbf{module type} declaration.
+  \end{itemize}
+\end{frame}
+
+\newcommand{\wf}[1]{\mathrm{WF}(#1)}
+\newcommand{\struct}[1]{\text{Struct }#1\text{ End}}
+\newcommand{\module}[1]{\text{Mod}(#1)}
+\newcommand{\moda}[1]{\text{ModA}(#1)}
+\newcommand{\modtype}[1]{\text{ModType}(#1)}
+\newcommand{\with}{\text{ with }}
+\newcommand{\range} % range(variable, start, end)
+[3]{{#1}_{#2};\ldots;{#1}_{#3}}
+\begin{frame}
+  \frametitle{Semantics of Coq Modules}
+  Coq Modules are second-class objects and have separate semantics from that of
+  terms. Lives on another plane and have limited interactions.
+
+  Semantics are given by typing rules. Formation rules and access rules.
+
+  \[
+  \inferrule{\wf{E,E'}[]}{E[]\vdash\wf{\struct{E'}}}\quad
+  \]
+  \[
+  \inferrule{
+      E[]\vdash p\to\struct{\range{e}{1}{i};\module{X:S[:=S_1]};\range{e}{i+2}{n}}\\\\    
+      E;\range{e}{1}{i}[]\vdash S\to\overline{S}
+  }{
+    E[]\vdash p.X\to\overline{S}
+  }
+  \]
+\end{frame}

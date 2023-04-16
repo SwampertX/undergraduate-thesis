@@ -1,0 +1,378 @@
+\section{Implementation}
+
+\newcommand{\tc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
+code/v1/template-coq/theories/#3}}
+\newcommand{\pcuic}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
+code/v1/pcuic/theories/#3}}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+  \frametitle{Roadmap}
+  \begin{center}
+  \begin{tabular}{ |l|l| }
+    \hline
+    Implementation & Verification \\
+    \hline\hline
+    {1. Definition of Modules }& 2. Lookup of definitions\\
+    3. Typing rules for Modules & 4. Functoriality of Typing Rules\\
+    \emph{(Term typing rules)} & 5. Typing of terms\\
+    6. Translation to PCUIC & (Correctness of translation)\\
+    \hline
+    7. Modular Environment & (Correctness of implementation)\\
+    \hline\hline
+  \end{tabular}
+  \end{center}
+  8. Three Formal Proof Techniques
+\end{frame}
+
+\subsection{First Implementation}
+
+\begin{frame}
+  \frametitle{1. Definition of Modules}
+  Definition of Structures.
+\begin{listing}[H]
+  \tc{324}{336}{Environment.v}
+  \caption{TemplateCoq/theories/Environment.v}
+\end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. Definition of Modules}
+Now, we can define proper Modules and Module Types as follows:
+\begin{listing}[H]
+  \tc{344}{345}{Environment.v}
+  \tc{347}{351}{Environment.v}
+  \caption{TemplateCoq/theories/Environment.v}
+\end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2. Lookup of Modules}
+  \begin{theorem}[Lookup]
+  Looking up \texttt{kn} yields \texttt{mdecl} iff \texttt{mdecl} is declared
+  with \texttt{kn}.
+  \end{theorem}
+\begin{listing}[H]
+  \tc{202}{215}{EnvironmentTyping.v}
+  \caption{TemplateCoq/theories/EnvironmentTyping.v}
+\end{listing}
+\end{frame}
+  
+\begin{frame}
+  \frametitle{3. Typing rules for modules}
+  The core is the structure fields.
+  \begin{listing}[H]
+    \tc{1223}{1232}{EnvironmentTyping.v}
+    \caption{Typing rules for structure fields.}
+\end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{3. Typing rules for modules}
+  Subsequently, the typing rule for structures, and modules.
+  \begin{listing}[H]
+    \tc{1233}{1243}{EnvironmentTyping.v}
+    \tc{1250}{1252}{EnvironmentTyping.v}
+    \caption{Typing rules for structure, and modules.}
+\end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{4. Functoriality of Typing Rules}
+  \begin{lemma}[Global declaration]
+    Fix term typing rules $P,Q$ such that if the environment is $P$-well-formed
+    if $P$ types term $t$ with type $T$, then $Q$ types term $t$ with type $T$
+    as well.
+    
+    Let $\Sigma$ be a $P$-well-formed environment. If the definition $(kn,d)$ is
+    well-formed, then $(kn,d)$ is $Q$-well-formed.
+  \end{lemma}
+  \begin{listing}[H]
+    \tc{1431}{1436}{EnvironmentTyping.v}
+    \caption{Functoriality of typing of a global declaration.}
+  \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{4. Functoriality of Typing Rules}
+  \begin{theorem}[Global Environment]
+    Fix term typing rules $P,Q$ such that they type terms in the same way for
+    all terms $t:T$.
+    
+    Let $\Sigma$ be a $P$-well-formed environment. Then $\Sigma$ is
+    $Q$-well-formed.
+  \end{theorem}
+  \begin{listing}[H]
+    \tc{1459}{1464}{EnvironmentTyping.v}
+    \caption{Functoriality of the typing of global environments.}
+  \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{5. Typing of terms}
+  \begin{theorem}
+    Fix any two predicates $P$ and $P_\Gamma$ that about a term $t$ and
+    a type $T$. Suppose we are given global environment $\Sigma$ and local
+    context $\Gamma$ which are well-formed, and that the following typing
+    relation holds: $\Sigma ;; \Gamma \vdash t:T$, then $P$ holds on the
+    global environment $\Sigma$, and $P_\Gamma$ holds on the local context. 
+  \end{theorem}
+  \begin{listing}[H]
+    \tc{1020}{1025}{Typing.v}
+    \caption{Definition of key lemma in typing.}
+  \end{listing} 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Checkpoint 1!}
+
+  This marks the end of the TemplateCoq part of the First Implementation.
+  We have seen
+  \begin{enumerate}
+  \item The definition of Modules.
+  \item Proof of lookup iff declared.
+  \item The definition of Typing Rules.
+  \item Functoriality.
+  \item Typing properties of terms.
+  \end{enumerate}
+
+  We will show the translation to PCUIC and motivate the Second Implementation.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{6. Translation to PCUIC}
+  The global environment for PCUIC is without modules:
+
+  \begin{listing}[H]
+    \pcuic{278}{288}{Environment.v}
+    \caption{Definition of the global environment for PCUIC.}
+  \end{listing}
+  
+  So we translate by ... removing modules!
+\end{frame}
+
+\begin{frame}
+  \frametitle{6. Translation to PCUIC}
+  The engine of the translation of modules.
+  \begin{listing}[H]
+    \pcuic{314}{325}{TemplateToPCUIC.v}
+    \caption{Translation of structure fields to PCUIC.}
+  \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{6. Translation to PCUIC}
+  Run the field-by-field translation over the body.
+  \begin{listing}[H]
+    \pcuic{334}{339}{TemplateToPCUIC.v}
+      \caption{Translating structure body.}
+    \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{6. Translation to PCUIC}
+  Now we can translate a global declaration...
+  \begin{listing}[H]
+    \pcuic{508}{516}{TemplateToPCUIC.v}
+      \caption{Translating a global declaration.}
+    \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{6. Translation to PCUIC}
+  And finally global declarations!
+  \begin{listing}[H]
+    \pcuic{527}{531}{TemplateToPCUIC.v}
+      \caption{Translating global declarations.}
+    \end{listing}
+  \pause
+  Uh-oh... notice the double fold.
+\end{frame}
+
+\begin{frame}
+  \frametitle{6.5. Verification of translation}
+  \begin{theorem}[Translated iff Exists]
+    "Translation preserves non-existence", that is, the translated environment
+    should only contain the intended translation and nothing more; and its dual,
+    "Translation preserves existence", that is, nothing is lost in translation.
+  \end{theorem}
+\end{frame}
+
+\begin{frame}
+  \frametitle{6.5. Verification of translation}
+
+  
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{6.9. Motivation for Second Implementation}
+  \begin{listing}[H]
+    \pcuic{239}{241}{TemplateToPCUICCorrectness.v}
+    \pcuic{307}{308}{TemplateToPCUICCorrectness.v}
+    \pcuic{316}{318}{TemplateToPCUICCorrectness.v}
+    \pcuic{326}{326}{TemplateToPCUICCorrectness.v}
+    ...
+      \caption{Tedious nested proofs.}
+    \end{listing}
+    The first case takes 200 lines and counting! \pause
+    Too many repeated proofs.
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{6.9. Motivation for Second Implementation}
+  Culprit!
+\begin{listing}[H]
+  \tc{324}{328}{Environment.v}
+  \tc{347}{351}{Environment.v}
+  \caption{An opportunity for abstraction!}
+\end{listing}
+\end{frame}
+
+\subsection{Second Implementation - Modular Environment}
+
+\begin{frame}
+  \frametitle{7. The Modular Environment}
+  As the name suggests, we combine the concepts of structures (modules) and
+  environments.\pause
+
+  An environment is just a module \pause named by its directory path (eg.
+  \texttt{~/metacoq/template-coq/theories/Environment.v}).\pause
+
+  All theorems on the typing of environment follow from that of modules!
+\end{frame}
+
+\newcommand{\tcc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
+  code/v2/template-coq/theories/#3}}
+\newcommand{\pcuicc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
+  code/v2/pcuic/theories/#3}}
+
+\begin{frame}
+  \frametitle{7. The Modular Environment}
+  Let us define modules, then specialize into environments.
+  \begin{listing}[H]
+    \tcc{325}{332}{Environment.v}
+      \caption{Definition of structure fields.}
+    \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. The Modular Environment}
+  ``Globalization''!
+  \begin{listing}[H]
+    \tcc{409}{412}{Environment.v}
+    \caption{Definition of global declarations.}
+  \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7.5. Typing Rules}
+  Implemented but unverified typing rules. The interesting part follows...
+  \begin{listing}[H]
+    \tcc{1271}{1282}{EnvironmentTyping.v}
+    \caption{Typing rules for structure fields.}
+  \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7.5. Typing Rules}
+  Now structure bodies encompass the typing of environments, such as the
+  freshness of names.
+  \begin{listing}[H]
+    \tcc{1284}{1291}{EnvironmentTyping.v}
+      \caption{Typing rules of structure body.}
+    \end{listing}
+\end{frame}
+
+\subsection{Formal Proof Techniques}
+
+\begin{frame}
+  \frametitle{Recursion, recursion, recursion}
+  
+  All three techniques are related to recursion and were investigated during
+  the modular environment rewrite.
+  \begin{enumerate}
+  \item Stronger Induction Principle for Nested Inductive Types
+  \item Well-formed Recursion
+  \item Strengthening of Induction Hypothesis (omitted)
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{8.1. Nested Inductive Types}
+  Inductive type within an inductive type.
+
+  Rose tree (Meertens 1998):
+
+  \begin{listing}[H]
+    \inputminted[firstline=1,lastline=2]{Coq}{code/machineries.v}
+  \caption{Definition of a rose tree.}
+  \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{8.1. Nested Inductive Types}
+
+  Unfortunately, Coq does not generate a strong enough induction principle
+  for nested inductive types, only the below:
+
+\begin{align*}
+  \forall P, (\forall xs, P (node\ xs)) \implies \forall rt, (P\ rt)
+\end{align*}
+
+We need to check each rose tree within the list with predicate $P$ first. \pause
+Here is a stronger induction principle that is generally used:
+
+\begin{align*}
+  \forall P, (\forall xs, (\forall x\in xs, P\ x) \implies P (node\ xs))
+   \implies \forall rt, (P\ rt)
+\end{align*}
+
+The induction hypothesis is weakened, and the induction principle is
+strengthened!
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{8.1. Where is this used?}
+  In the modular rewrite - definition of structures!
+  \begin{listing}[H]
+    \tcc{325}{332}{Environment.v}
+      \caption{Definition of structure fields.}
+    \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{8.2. Well-founded recursion}
+  Typical recursion: predecessor. What if this is not obvious?\pause
+  
+  Define a measure, and show that it is
+  \begin{itemize}
+    \item bounded below, and
+    \item strictly decreasing at every recursive step.
+  \end{itemize}\pause
+\end{frame}
+
+\begin{frame}
+  \frametitle{8.2. Where is this used?}
+  To recurse through the nested inductive structure body! Here is a measure:
+  \begin{listing}[H]
+    \tcc{415}{425}{Environment.v}
+      \caption{Height defined on structure body.}
+    \end{listing}
+\end{frame}
+
+\begin{frame}
+  \frametitle{8.2. Where is this used?}
+  \begin{listing}[H]
+    \tcc{427}{430}{Environment.v}
+      \caption{Proof of lower bound of the height measure.}
+      \label{lst:def-height-lb}
+    \end{listing}
+\end{frame}

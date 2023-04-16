@@ -1,0 +1,42 @@
+% \renewcommand{\chaptermark}[1]{\markboth{Chapter \thechapter:\ #1}{}}
+
+
+% \usepackage{minitoc}
+
+% % % Renew the \chapter command to include the minitoc
+% \makeatletter
+% \renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+%                     \thispagestyle{plain}%
+%                     \global\@topnum\z@
+%                     \@afterindentfalse
+%                     \secdef\@chapter\@schapter}
+% \def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+%                         \if@mainmatter
+%                             \refstepcounter{chapter}%
+%                             \typeout{\@chapapp\space\thechapter.}%
+%                             \addtocontents{toc}{\protect\addvspace{10\p@}}%
+%                             \addcontentsline{toc}{chapter}%
+%                                 {\protect\numberline{\thechapter}#1}%
+%                             \mtcaddchaptertocentry{#1}{\thechapter}
+%                         \else
+%                             \addcontentsline{toc}{chapter}{#1}%
+%                             \mtcaddchaptertocentry{#1}{}
+%                         \fi
+%                     \else
+%                         \addcontentsline{toc}{chapter}{#1}%
+%                         \mtcaddchaptertocentry{#1}{}
+%                     \fi
+%                     \chaptermark{#1}%
+%                     \addtocontents{lof}{\protect\addvspace{10\p@}}%
+%                     \addtocontents{lot}{\protect\addvspace{10\p@}}%
+%                     \@makechapterhead{#2}%
+%                     \@afterheading
+% }
+% \makeatother
+
+% % Customize the minitoc appearance
+% \renewcommand{\mtcfont}{\small\rmfamily\upshape\bfseries}
+% \renewcommand{\mtcSfont}{\small\rmfamily\upshape}
+% \renewcommand{\mtcSSfont}{\small\rmfamily\upshape}
+% \renewcommand{\mtcindent}{0pt}
+% \renewcommand{\mtcnumwidth}{1.5em}

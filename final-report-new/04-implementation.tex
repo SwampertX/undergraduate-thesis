@@ -1,41 +1,58 @@
-% note: kername = kernel name = internal representation name
+% note: kername = kername = internal representation name
 % environment is implicitly global environment
 % global decl -> global decls -> global env -> global env ext
 % mind includes inductive, but not necessarily mutual (or rather, might be
 % mutual with one branch)
 \chapter{Implementation of MetaCoq Modules}
-\newcommand{\tc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
-  code/v1/template-coq/theories/#3}}
+\label{ch:impl1}
+\newcommand{\tc}[3]{
+  % \begin{listing}[H]
+  \inputminted[firstline={#1},lastline={#2},linenos]{Coq}{code/v1/template-coq/theories/#3}
+  % \caption{Test caption}
+  % \end{listing}
+  }
+
 \newcommand{\pcuic}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
-  code/v1/pcuic/theories/#3}}
+code/v1/pcuic/theories/#3}}
+
+\counterwithin{listing}{section}
 
 \section{The Module Data Structure}
 
 First, we define the underlying \emph{structure} of a module. A
-\verb|structure_field| contains a list of pairs with first entry an identifier,
-and second entry a \verb|structure_field|. A \verb|structure_field| can then be
-declarations of the following form: for a constant, a mutually inductive type, a
-module, and a module type.
+\verb|structure_field| contains a list of pairs with the first entry an
+identifier, and the second entry a \verb|structure_field|. A
+\verb|structure_field| can then be declarations for the following: constants,
+mutually inductive types, modules, and module types.
 
-\tc{324}{336}{Environment.v}
+\begin{listing}[H]
+  \tc{324}{336}{Environment.v}
+  \caption{Definition of a structure field.}
+  \label{lst:1-def-sf}
+\end{listing}
 
-\verb|module_implementation| here represents the four ways of defining a module,
-respectively,
+The type \verb|module_implementation| here represents the four ways of defining
+a module respectively:
 \begin{enumerate}
-  \item an abstract module declaration usually used in module signatures for
-  nested modules;
-  \item an algebraic module expression, most commonly a form of functor
-  application. Here, we consider only module aliasing (nullary functor
+  \item \verb|mi_abstract|: an abstract module declaration usually used in
+  module signatures for nested modules;
+  \item \verb|mi_algebraic|: an algebraic module expression, most commonly
+  functor application. Here, we consider only module aliasing (nullary functor
   application).
-  \item a module declaration given with an explicit module type. The
+  \item \verb|mi_struct|: a module declaration with an explicit module type. The
   \verb|structure_body| argument will contain the concrete implementation given.
-  \item a module declaration without an explicit module type; in other words,
-  the module has the type exactly equal to itself, so the implementation will be
-  stored within the second argument to the \verb|sfmod| constructor.
+  \item \verb|mi_fullstruct|: a module declaration without an explicit module
+  type; in other words, the module has a type exactly equal to itself, so the
+  implementation will be stored within the second argument to the \verb|sfmod|
+  constructor.
 \end{enumerate}
 
 Now, we can define proper Modules and Module Types as follows:
-\tc{344}{345}{Environment.v}
+\begin{listing}[H]
+  \tc{344}{345}{Environment.v}
+  \caption{Definition of the Module and Module Type structures.}
+  \label{lst:1-def-mt}
+\end{listing}
 
 Since a module type is a module without an implementation. Note that from the
 code from now on, structure body (\verb|structure_body|) and module type
@@ -43,13 +60,21 @@ code from now on, structure body (\verb|structure_body|) and module type
 
 Finally, the global declaration can be added with two new constructors,
 \verb|ModuleDecl| and \verb|ModuleTypeDecl|:
-\tc{347}{351}{Environment.v}
+\begin{listing}[H]
+  \tc{347}{351}{Environment.v}
+  \caption{Extending the global declarations with modules.}
+  \label{lst:1-def-gd}
+\end{listing}
 
 A global environment is defined as a list of global declarations with some other
 bookeeping data, most importantly information about type universes, which is
-outside of the scope of this paper, so I will merely mention it.
+outside of the scope of this paper, so we will merely mention it.
 
-\tc{354}{359}{Environment.v}
+\begin{listing}[H]
+  \tc{354}{359}{Environment.v}
+  \caption{Definition of a global environment.}
+  \label{lst:1-def-env}
+\end{listing}
 
 \subsection*{Verified Properties}
 
@@ -59,32 +84,46 @@ up in the global environment $\Sigma$, and the lookup result is the exact module
 we defined. Vice versa, if we found some module via a kername \verb|kn|, it must
 have been defined with the same name.
 
-\tc{202}{215}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tc{202}{215}{EnvironmentTyping.v}
+  \caption{Proof of lookup of modules.}
+  \label{lst:1-mod-lookup}
+\end{listing}
 
 The same is done for Module Types as well.
 
 \section{Typing Modules}
-To ensure a module, or a module type is well-defined, we need to define typing
+To ensure a module or a module type is well-typed, we need to define typing
 rules on modules. They are defined in terms of inductive types:
 
-\tc{1222}{1237}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tc{1222}{1237}{EnvironmentTyping.v}
+  \caption{Typing rules for structure fields.}
+  \label{lst:1-typ-sf}
+\end{listing}
 
 For example, the constructor \verb|on_sfmod| says that for a structure field
 containing a module to be well-defined, we require the module implementation and
-module type (here written as structure body) to be recursively well-typed. Since
-the checking of well-typedness depends on the global environment (eg. reference
+module type (here written as structure body) to be recursively well-typed, via
+\verb|on_module_impl| and \verb|on_structure_body| respectively. Since the
+checking of well-typedness also depends on the global environment (eg. reference
 to predefined constants etc.), the argument $\Sigma$ is passed around everywhere
 in these typing rules.
 
-One might further notice that the type constructors \verb|on_*| here are largely
-self-contained, except for \verb|on_constant_decl| and \verb|on_inductive| in
-the \verb|on_sfconst| and \verb|on_sfmind| constructors, respectively. This
-should give the reader some insight on the intuition that non-parametrized
-modules are largely tree-like containers with actual content supplied by
-Constant Declarations and (Mutually) Inductive Declarations. If we follow the
-path of definition of, say, \verb|on_constant_decl|:
+One might further notice that the type constructors \verb|on_*| in
+\ref{lst:1-typ-sf} are largely self-contained, except for
+\verb|on_constant_decl| and \verb|on_inductive| in the \verb|on_sfconst| and
+\verb|on_sfmind| constructors, respectively. This should give the reader some
+insight into the intuition that non-parametrized modules are largely tree-like
+containers with actual content supplied by Constant Declarations and (Mutually)
+Inductive Declarations. If we follow the path of the definition of, say,
+\verb|on_constant_decl|:
 
-\tc{1214}{1218}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tc{1214}{1218}{EnvironmentTyping.v}
+  \caption{Typing rule for constant declarations.}
+  \label{lst:1-typ-cst}
+\end{listing}
 
 The type-checking is now at the level of terms - if the constant body is
 \verb|None|, ie. it is a declaration without a body, then one checks the
@@ -95,34 +134,47 @@ type, using the predicate \verb|P| that will be supplied later.
 \section{Typing the Global Environment}
 Since modules do not interact with terms, it thus mainly lives in the global
 environment and provides namespaced definitions to the user. It is thus
-important to make sure that the global environment is well-typed, and as we will
-see later, this will be the main challenge of this project.
+important to make sure that the global environment is well-typed.
 
-\tc{1257}{1263}{EnvironmentTyping.v}
-\tc{1284}{1290}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tc{1257}{1263}{EnvironmentTyping.v}
+  \tc{1284}{1290}{EnvironmentTyping.v}
+  \caption{Typing rule for global declarations.}
+  \label{lst:1-typ-gd}
+\end{listing}
 
-To make sure that a list of global declarations is well typed, we need to check that:
+To make sure that a list of global declarations is well-typed, we need to check that:
 \begin{enumerate}
   \item the prefix global environment $\Sigma$ is well-defined; and
-  \item the current global declaration given by kernel name \verb|kername| and
+  \item the current global declaration given by kername \verb|kername| and
   declaration \verb|d| consists of well-typed data
-  (\verb|on_global_decls_data|) with respect to the prefix $\Sigma$:
-  \tc{1270}{1282}{EnvironmentTyping.v}
+  (\verb|on_global_decls_data|) concerning the prefix $\Sigma$:
+
+\begin{listing}[H]
+  \tc{1271}{1282}{EnvironmentTyping.v}
+  \caption{Freshness requirement for global declarations.}
+  \label{lst:1-typ-fresh}
+\end{listing}
+
 \end{enumerate}
 
-The global environment is well typed if it has well-typed global declarations
+The global environment is well-typed if it has well-typed global declarations
 and well-typed universes.
 
-\tc{1322}{1324}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tc{1322}{1324}{EnvironmentTyping.v}
+  \caption{Typing the global environment.}
+  \label{lst:1-typ-env}
+\end{listing}
 
 \subsection*{Verified Properties}
 A few things can be said about typing rules. First thing is that it is
 artificially defined to "carve out" a subset of terms that we deem as
 well-typed; and other than a few sanity properties such as being consistent (if
-there exist a proof tree showing the well-typedness of a term, there doesn't
-exist another proof tree that show otherwise), it is entirely what it is made to
-be. Therefore, the main place to verify these properties are at the typing of
-terms, which I will explain later. Also, the definition of environment is
+there exists a proof tree showing the well-typedness of a term, there doesn't
+exist another proof tree that shows otherwise), it is entirely what it is made
+to be. Therefore, the main place to verify these properties is at the typing of
+terms, which we will explain later. Also, the definition of environment is
 parallel to the calculus of the terms, so instead of checking the correctness of
 the typing rules itself, we can check its behavior when we change a set of
 typing rules for the terms.
@@ -130,9 +182,13 @@ typing rules for the terms.
 Recall that the in the example of chasing the definition of
 \verb|on_constant_decl|, we found that the well-typedness predicate \verb|P| is
 parametrized, therefore allowing us to investigate the following functoriality
-property with respect to different predicates:
+property concerning different predicates:
 
-\tc{1426}{1452}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tc{1426}{1431}{EnvironmentTyping.v}
+  \caption{Functoriality of typing of a global declaration.}
+  \label{lst:1-typ-funct}
+\end{listing}
 
 This lemma says that: fix a global environment $\Sigma$. Let well-typeness
 predicates \verb|P, Q| be given. Then for all global declarations with kername
@@ -150,41 +206,68 @@ declaration \verb|d|. Since any global declaration can only be a constant,
 inductive, module or module type, we first clear the first two cases using
 lemmas \verb|on_{constant,inductive}_decl_impl|. The remaining two are mutually
 inductive, so we solve them using the mutual induction principle
-\verb|on_mi_sf_sb_mutrect|, and reduce to the base case, which are again the
+\verb|on_mi_sf_sb_mutrect|, and reduce to the base cases, which are again the
 constant and the inductive case.
 
-Since the above lemma is true across all declarations, it is natural to think
-that that this functoriality should extend to lists of global declarations as
-well. That is indeed the case, this time we omit the proof, which uses the above
-lemma in its core.
+% \begin{listing}[H]
+%   \tc{1432}{1452}{EnvironmentTyping.v}
+%   \caption{Proof of functoriality of typing of a global declaration.}
+%   \label{lst:1-typ-funct-pf}
+% \end{listing}
 
-\tc{1454}{1459}{EnvironmentTyping.v}
+Since the above lemma is true across all declarations, it is natural to think
+that this functoriality should extend to lists of global declarations as
+well -- that is indeed the case.
+% , this time we omit the proof, which uses the above
+% lemma at its core.
+
+\begin{listing}[H]
+  \tc{1454}{1459}{EnvironmentTyping.v}
+  \caption{Functoriality of typing of the global environment.}
+  \label{lst:1-typ-funct-env}
+\end{listing}
 
 
 
 \section{Typing of Terms}
-Since I modified the environment to include module definitions, this also
-directly affects the properties about the typing of Coq terms, since every term
-is typed under a global environment (and a local context). Terms in TemplateCoq
-are of an inductive type with 18 constructors:
-\tc{401}{420}{Ast.v}
+Since we modified the environment to include module definitions, this also
+directly affects the properties of the typing of Coq terms, since every term is
+typed under a global environment (and a local context). Terms in TemplateCoq are
+of an inductive type with 18 constructors:
+
+\begin{listing}[H]
+  \tc{401}{402}{Ast.v}
+  ...
+  \tc{420}{420}{Ast.v}
+  \caption{Definition of TemplateCoq terms.}
+  \label{lst:1-term}
+\end{listing}
 
 each having its own typing rule (relation between a term and its type). The
-typing relation can be found as a 122-line inductive type in the project. For
-brevity, we show here its "signature" and notation:
+typing relation is too long (around 122 lines) to show in its entirety, thus we
+show its signature and a few constructors:
 
-\tc{741}{742}{Typing.v}
-...
-\tc{864}{864}{Typing.v}
+\begin{listing}[H]
+  \tc{741}{747}{Typing.v}
+  ...
+  \tc{864}{864}{Typing.v}
+  \caption{Typing of TemplateCoq terms.}
+  \label{lst:1-typ-term}
+\end{listing}
 
-Where its constructors are typing rules for each kind of term, such as a
+where the constructors are typing rules for each kind of term, such as a
 variable, a sort, a lambda abstraction, an application and so on.
 
 \subsection*{Verified Properties}
 
-One of the key lemma here, \verb|env_prop|, is given as follows:
+A key lemma about the typing of terms under well-formed environments,
+\verb|env_prop|, is given as follows:
 
-\tc{1020}{1025}{Typing.v}
+\begin{listing}[H]
+  \tc{1020}{1025}{Typing.v}
+  \caption{Definition of key lemma in typing.}
+  \label{lst:1-def-env-prop}
+\end{listing}
 
 Which says the following: fix any two predicates \verb|P| and \verb|PΓ| that
 about a term \verb|t| and a type \verb|T|. Suppose we are given global
@@ -198,49 +281,65 @@ Once we supply such predicates \verb|P| and \verb|PΓ|, the above will be turned
 into a statement that can be proven (or disproved). This is a strong statement
 because, for instance, it implies the following property about typing:
 
+\begin{listing}[H]
 \tc{1027}{1029}{Typing.v}
+  \caption{A consequence of env prop.}
+  \label{lst:1-def-env-prop-typing}
+\end{listing}
 
 Implying that if we know that \verb|env_prop P PΓ| is true, then \verb|P| does
 not only holds on the global environment $\Sigma$, it holds on the terms as
 well.
 
-To show such a strong statement is difficult since, mechanically, it is a
+To proof \verb|env_prop| is difficult since, mechanically, it is a
 verification across the inductive cases of the global environment, as well as
 the 18 kinds of terms and their corresponding typing rules. It would be
 immensely useful to first prove an intermediary lemma leading to it, or in a
-way, an induction hypothesis:
+way, an induction step:
 
-\tc{1118}{1124}{Typing.v}
-...
-\tc{1262}{1272}{Typing.v}
-...
-\tc{1667}{1667}{Typing.v}
+\begin{listing}[H]
+  \tc{1118}{1121}{Typing.v}
+  ...
+  \tc{1269}{1271}{Typing.v}
+  \caption{Induction hypothesis for proving env prop.}
+  \label{lst:1-def-env-prop-ind}
+\end{listing}
 
-In its proof, the module typing rules are used extensively since we are showing
-properties of global environments as well. We omit the almost 400 lines of
-proofs and leave the details to the interested reader.
+The module typing rules we defined earlier are used extensively since we are
+showing properties of global environments as well. We omit almost 400 lines of
+verified proof from this report and leave the details to the interested reader.
 
 
 
 \section{Translation to PCUIC}
 
-Since TemplateCoq has modules while PCUIC does not, to translate to PCUIC, we
-need to elaborate modules away via the natural elaboration - store all
-definitions within modules as if they are in the (flat) global environment. Of
-course, the key here is to choose an algorithm for the elaboration of modules
-that preserves the freshness (no name clash) of the translated environment,
-preserves the correct "look-up" properties, and also being well-typed.
+At this point, we have already successfully defined modules and their typing
+rules in TemplateCoq, as well as verifying their correctness properties. Since
+TemplateCoq has modules while PCUIC does not, we need to elaborate modules away
+during the translation. We do this by storing all definitions within modules as
+if they are in the (flat) global environment. Of course, the key here is to
+choose an algorithm for the elaboration of modules that preserves the freshness
+(no name clash) of the translated environment, preserves the correct "look-up"
+properties, and also being well-typed.
 
 The global environment for PCUIC is without modules:
 
-\pcuic{278}{288}{Environment.v}
+\begin{listing}[H]
+  \pcuic{278}{288}{Environment.v}
+  \caption{Definition of the global environment for PCUIC.}
+  \label{lst:1-def-pcuic-env}
+\end{listing}
 
 Having seen definitions of global environments on both sides, we can now look at
 the translation function. This is similarly a mutually recursive function (since
-structures are defined in a mutual inductive manner), but the heavy-lifting is
+structures are defined in a mutual inductive manner), but the heavy lifting is
 done in the translation of structure fields:
 
-\pcuic{314}{325}{TemplateToPCUIC.v}
+\begin{listing}[H]
+  \pcuic{314}{325}{TemplateToPCUIC.v}
+  \caption{Translation of structure fields to PCUIC.}
+  \label{lst:1-trans-pcuic-sf}
+\end{listing}
 
 There are a few things to note:
 \begin{enumerate}
@@ -256,33 +355,42 @@ There are a few things to note:
   \end{itemize} 
   \item The new kername \verb|kn'| is done by appending the prefix (module) name
   \verb|kn| with the identifier \verb|id| associated with that structure field
-  entry. For example, in the example below:
-  \begin{minted}{Coq}
-Module M.
-    Definition a := 0.
-End M.
-  \end{minted}
-  We have \verb|kn := "M", id := "a"|, and thus \verb|kn' := "M.a"|.
+  entry.
+%   For example, in the example below:
+%   \begin{minted}{Coq}
+% Module M.
+%     Definition a := 0.
+% End M.
+%   \end{minted}
+%   We have \verb|kn := "M", id := "a"|, and thus \verb|kn' := "M.a"|.
 \end{enumerate}
 
+\begin{listing}[H]
+  \pcuic{150}{150}{TemplateToPCUIC.v}
+  \caption{Appending kernames.}
+  \label{lst:1-kn-append}
+\end{listing}
 
 Once we have the above, we can translate modules by folding through the
-structure body:
+structure body.
 
-\pcuic{334}{347}{TemplateToPCUIC.v}
-
-Once we are done with the translation of modules, we can translate the global
-declaration(s):
-
+\begin{listing}[H]
+\pcuic{334}{339}{TemplateToPCUIC.v}
 \pcuic{508}{514}{TemplateToPCUIC.v}
+  \caption{Translating structure body and global declarations.}
+  \label{lst:1-trans-sb}
+\end{listing}
 
-Which is analogous to that of structure fields. The interesting part is the
-double fold in the translation of global declarations, which is actually a
-flatmap across \verb|trans_global_decl|, since now each TemplateCoq global
-declaration can translate into multiple PCUIC global declarations, thanks to the
+To translate global declarations, we need to flatmap across the global
+environment with \verb|trans_global_decl|, since now each TemplateCoq global
+declaration can translate into multiple PCUIC global declarations due to the
 tree structure of modules.
 
-\pcuic{525}{528}{TemplateToPCUIC.v}
+\begin{listing}[H]
+  \pcuic{525}{528}{TemplateToPCUIC.v}
+  \caption{Translating global declarations.}
+  \label{lst:1-trans-env-gd}
+\end{listing}
 
 \subsection*{Properties on Translation}
 
@@ -293,53 +401,64 @@ tree structure of modules.
 % 2473: template_to_pcuic: env_prop on (typing t' T'),  (wf local)
 % 3528: template_to_pcuic_typing: preserves (ST.typing, typing)
 
-The properties in this part can be phrased in the form of "[property] is
-preserved under translation". The ultimate property here is that
-under a well-formed environment $\Sigma$, "typing/well-typedness is preserved
-under translation":
+The properties in this part can be phrased in the form of "translation preserves
+[property]". The ultimate property here is that under a well-formed environment
+$\Sigma$, "translation preserves typing/well-typedness":
 
-\pcuic{3528}{3538}{TemplateToPCUICCorrectness.v}
+\begin{listing}[H]
+  \pcuic{3528}{3532}{TemplateToPCUICCorrectness.v}
+  \caption{Translation preserves typing.}
+  \label{lst:1-trans-typing}
+\end{listing}
 
 The main lemma proved here is \verb|template_to_pcuic|, which is of the
 following form:
 
-\pcuic{2473}{2481}{TemplateToPCUICCorrectness.v}
+\begin{listing}[H]
+  \pcuic{2473}{2481}{TemplateToPCUICCorrectness.v}
+  \caption{Template to PCUIC.}
+  \label{lst:1-trans-ttp}
+\end{listing}
 
-The statement here is abstracted by the \verb|env_prop| (TODO: link me to
-section 4.4), which in its totality, assigns \verb|P| to the first argument,
-asserting that
-\[\Sigma ;;; \Gamma \vdash t: T \implies \Sigma' ;;; \Gamma' \vdash t' : T'\]
+The statement here is abstracted by the \verb|env_prop|
+(\ref{lst:1-def-env-prop}), which in its totality, assigns \verb|P| to the first
+argument, asserting that
+\[\Sigma ;; \Gamma \vdash t: T \implies \Sigma' ;; \Gamma' \vdash t' : T'\]
 
 where $\Sigma', \Gamma', t', T'$ represents the translated global environment,
 local context, term and type $\Sigma, \Gamma, t, T$ respectively; and sets the
 second argument to assert that the translated local context is also well-formed.
 
-Before showing these big theories about typing, we we have need to  "sanity"
-checks on translation to ensure that environments are well-translated. This
-property can be formulated as
+Before showing these big theories about typing, we have "sanity" checks on
+translation to ensure that environments are well-translated. This property can
+be formulated as
 \begin{enumerate}
-  \item "non-existence is preserved under translation", that is, the translated
-  environment should only contain the intended translation and nothing more, and
-  its dual;
-  \item "existence is preserved under translation", that is, nothing is lost in
+  \item "translation preserves non-existence", that is, the translated
+  environment should only contain the intended translation and nothing more; and
+  \item its dual, "translation preserves existence", that is, nothing is lost in
   translation.
 \end{enumerate}
  In Coq, this can be formulated as the following lemma:
 
-\pcuic{222}{237}{TemplateToPCUICCorrectness.v}
+\begin{listing}[H]
+\pcuic{222}{238}{TemplateToPCUICCorrectness.v}
+  \caption{Translation preserves (non-)existence.}
+  \label{lst:1-trans-lookup}
+\end{listing}
 
 The two cases of the outermost \verb|match| statement on the return value of
 \verb|lookup_env Σ cst| correspond to the two properties above:
 \begin{enumerate}
-\item the case of \verb|None| returned, which means that the original
-  environment $\Sigma$ does not contain the declaration \verb|cst|, it should
-  not appear in the translated environment. Contrastingly,
-\item the case where \verb|cst| is the declaration \verb|d| in the original
-  environment $\Sigma$, we can say the following:
+\item (non-existence) the case of \verb|None| returned, which means that the
+  original environment $\Sigma$ does not contain the declaration \verb|cst|, it
+  should not appear in the translated environment. Contrastingly,
+\item (existence) the case where \verb|cst| is the declaration \verb|d| in the
+  original environment $\Sigma$, we can say the following:
   \begin{itemize}
     \item if \verb|d| is a constant or an inductive declaration, it should be
       translated as if, therefore it should be found in the translated,
-      well-formed environment $\Sigma'$ (lines 228-234). However,
+      well-formed environment $\Sigma'$ (lines 228-233 of
+      \ref{lst:1-trans-lookup}). However,
     \item if \verb|d| is a module or a module type, then it shouldn't exist in
     the translated environment $\Sigma'$. Furthermore, its constituent structure
     fields should appear as declarations in $\Sigma'$, which is exactly the

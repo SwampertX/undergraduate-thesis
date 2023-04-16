@@ -1,0 +1,58 @@
+DIGEST 4dd455beea39ab3e0b509fc971189c85
+FMetaCoq.Template.utils.canonicaltries.String2pos
+R134:139 Coq.Strings.String <> <> lib
+R141:145 Coq.Strings.Ascii <> <> lib
+R147:152 Coq.ZArith.ZArith <> <> lib
+R154:163 Coq.extraction.Extraction <> <> lib
+R196:204 Equations.Prop.Equations <> <> lib
+ind 218:225 <> positive
+constr 240:241 <> xI
+constr 270:271 <> xO
+constr 300:301 <> xH
+R253:256 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R245:252 MetaCoq.Template.utils.canonicaltries.String2pos <> positive:1 ind
+R257:264 MetaCoq.Template.utils.canonicaltries.String2pos <> positive:1 ind
+R283:286 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R275:282 MetaCoq.Template.utils.canonicaltries.String2pos <> positive:1 ind
+R287:294 MetaCoq.Template.utils.canonicaltries.String2pos <> positive:1 ind
+R305:312 MetaCoq.Template.utils.canonicaltries.String2pos <> positive:1 ind
+R345:352 MetaCoq.Template.utils.canonicaltries.String2pos <> positive ind
+def 367:379 <> bool_cons_pos
+R385:388 Coq.Init.Datatypes <> bool ind
+binder 382:382 <> b:3
+R395:402 MetaCoq.Template.utils.canonicaltries.String2pos <> positive ind
+binder 392:392 <> n:4
+R407:414 MetaCoq.Template.utils.canonicaltries.String2pos <> positive ind
+R424:424 MetaCoq.Template.utils.canonicaltries.String2pos <> b:3 var
+R441:442 MetaCoq.Template.utils.canonicaltries.String2pos <> xO constr
+R444:444 MetaCoq.Template.utils.canonicaltries.String2pos <> n:4 var
+R431:432 MetaCoq.Template.utils.canonicaltries.String2pos <> xI constr
+R434:434 MetaCoq.Template.utils.canonicaltries.String2pos <> n:4 var
+def 459:472 <> ascii_cons_pos
+R478:482 Coq.Strings.Ascii <> ascii ind
+binder 475:475 <> c:5
+R489:496 MetaCoq.Template.utils.canonicaltries.String2pos <> positive ind
+binder 486:486 <> n:6
+R501:508 MetaCoq.Template.utils.canonicaltries.String2pos <> positive ind
+R521:521 MetaCoq.Template.utils.canonicaltries.String2pos <> c:5 var
+R532:536 Coq.Strings.Ascii <> Ascii constr
+R571:583 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R596:608 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R621:633 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R646:658 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R671:683 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R696:708 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R721:733 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R746:758 MetaCoq.Template.utils.canonicaltries.String2pos <> bool_cons_pos def
+R763:763 MetaCoq.Template.utils.canonicaltries.String2pos <> n:6 var
+def 1375:1387 <> pos_of_string
+R1393:1398 Coq.Strings.String <> string ind
+binder 1390:1390 <> s:8
+R1403:1410 MetaCoq.Template.utils.canonicaltries.String2pos <> positive ind
+R1423:1423 MetaCoq.Template.utils.canonicaltries.String2pos <> s:8 var
+R1434:1444 Coq.Strings.String <> EmptyString constr
+R1449:1450 MetaCoq.Template.utils.canonicaltries.String2pos <> xH constr
+R1456:1461 Coq.Strings.String <> String constr
+R1470:1483 MetaCoq.Template.utils.canonicaltries.String2pos <> ascii_cons_pos def
+R1488:1500 MetaCoq.Template.utils.canonicaltries.String2pos <> pos_of_string:9 def
+R1502:1502 MetaCoq.Template.utils.canonicaltries.String2pos <> s:8 var

@@ -1,34 +1,54 @@
 % \documentclass{kaobook}
-\documentclass{report}
+\documentclass[12pt]{report}
+\usepackage{geometry}[a4paper]
 \usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{mathrsfs}
-\usepackage[style=numeric,backend=biber]{biblatex}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{amsmath, mathrsfs, amsthm, amssymb}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Collorary}[section]
+
+\usepackage[style=authoryear,backend=biber]{biblatex}
 \addbibresource{main.bib}
 \usepackage{minted}
+\usepackage{listings}
+\usepackage{chngcntr}
 \usepackage{hyperref}
 
-\usepackage{lmodern}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{\nouppercase\leftmark}
+
 \usepackage{fontspec}
-\setmonofont{Iosevka Term}
+\usepackage{libertinus}
+\setmonofont{Iosevka Term}[SizeFeatures={Size=11}]
+
+\usepackage{float}
 
 \author{Tan Yee Jian}
-\title{My Document}
+\title{Formalizing Coq Modules in the MetaCoq project}
 \date{\today}
 
 
-\begin{document}
-\maketitle
-\begin{abstract}
-  This is an abstract.
-\end{abstract}
-\tableofcontents
+\renewcommand\qedsymbol{$\blacksquare$}
 
+\begin{document}
+
+\pagenumbering{roman}
+\include{00-frontmatter.tex}
+
+\pagenumbering{arabic}
 \include{01-introduction.tex}
 \include{02-previous-works.tex}
 \include{03-coq-modules.tex}
 \include{04-implementation.tex}
 \include{05-modular.tex}
+\include{06-machineries.tex}
+\include{07-future-work.tex}
 
-\printbibliography
 \end{document}

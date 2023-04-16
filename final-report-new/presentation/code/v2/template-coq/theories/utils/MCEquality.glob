@@ -1,0 +1,47 @@
+DIGEST b90e3c97c30ab69a5349d66c9b9fdc7e
+FMetaCoq.Template.utils.MCEquality
+def 12:20 <> transport
+binder 23:23 <> A:1
+R32:35 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31:31 MetaCoq.Template.utils.MCEquality <> A:1 var
+binder 27:27 <> P:2
+R49:49 MetaCoq.Template.utils.MCEquality <> A:1 var
+binder 43:43 <> x:3
+binder 45:45 <> y:4
+R58:60 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R57:57 MetaCoq.Template.utils.MCEquality <> x:3 var
+R61:61 MetaCoq.Template.utils.MCEquality <> y:4 var
+binder 53:53 <> e:5
+R69:72 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R66:66 MetaCoq.Template.utils.MCEquality <> P:2 var
+R68:68 MetaCoq.Template.utils.MCEquality <> x:3 var
+R73:73 MetaCoq.Template.utils.MCEquality <> P:2 var
+R75:75 MetaCoq.Template.utils.MCEquality <> y:4 var
+binder 86:86 <> u:6
+R91:97 Coq.Init.Logic <> eq_rect scheme
+R107:107 MetaCoq.Template.utils.MCEquality <> e:5 var
+R105:105 MetaCoq.Template.utils.MCEquality <> y:4 var
+R103:103 MetaCoq.Template.utils.MCEquality <> u:6 var
+R101:101 MetaCoq.Template.utils.MCEquality <> P:2 var
+R99:99 MetaCoq.Template.utils.MCEquality <> x:3 var
+R132:140 MetaCoq.Template.utils.MCEquality <> transport def
+not 120:120 <> :::x_'#'_x
+prf 239:255 <> eq_rect_transport
+binder 257:257 <> A:7
+binder 259:259 <> x:8
+binder 261:261 <> P:9
+binder 263:263 <> u:10
+binder 265:265 <> y:11
+binder 267:267 <> p:12
+R293:295 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R274:280 Coq.Init.Logic <> eq_rect scheme
+R282:282 MetaCoq.Template.utils.MCEquality <> A:7 var
+R284:284 MetaCoq.Template.utils.MCEquality <> x:8 var
+R286:286 MetaCoq.Template.utils.MCEquality <> P:9 var
+R288:288 MetaCoq.Template.utils.MCEquality <> u:10 var
+R290:290 MetaCoq.Template.utils.MCEquality <> y:11 var
+R292:292 MetaCoq.Template.utils.MCEquality <> p:12 var
+R296:304 MetaCoq.Template.utils.MCEquality <> transport def
+R310:310 MetaCoq.Template.utils.MCEquality <> u:10 var
+R308:308 MetaCoq.Template.utils.MCEquality <> p:12 var
+R306:306 MetaCoq.Template.utils.MCEquality <> P:9 var

@@ -1,0 +1,69 @@
+\chapter{Conclusion and Future Work}
+\label{ch:future}
+
+\section{Conclusion}
+In this paper, we looked at Coq's module system and gave two possible
+implementations of non-parametrized Modules in the MetaCoq project, by the means
+of elaborating the module structures away when translating from TemplateCoq to
+PCUIC. In the first implementation, we verified several niceness properties
+about the implementation. Inspired by the difficulty of verifying the
+translation from TemplateCoq to PCUIC, we have proposed another implementation
+that unifies the Coq global environment with modules with initial
+implementations and ideas. Along the way, we also noted down the proof-theoretic
+skills acquired with nested inductive types, well-formed recursion, and the
+strengthening of induction hypotheses for future references.
+
+
+\section{Future Work}
+We list a few directions for possible future work:
+
+\subsection{Modular Environment Rewrite}
+\label{subsec:modular-env}
+The (experimental) modular rewrite of the environment is incomplete due to its
+complexity and the time required to troubleshoot Coq errors and acquire the
+machineries mentioned in Chapter \ref{ch:machineries}. An immediate, possible
+future work is to continue the work done in Chapter \ref{ch:impl2}, with
+implementation and verification order similar to that of Chapter \ref{ch:impl1}.
+Verification of the TemplateCoq to PCUIC translation under the new
+implementation, which should be easier due to the lack of the double-fold
+problem (\ref{lst:1-trans-env-gd}).
+
+% Some extra tasks and their possible benefits are listed below.
+
+% \begin{enumerate}
+%   \item The first possible extra task is to revamp the kername usage throughout
+%   the TemplateCoq part of the project. Since modules didn't exist previously,
+%   all names are by default assumed to be the fully qualified form, while in
+%   practice, to maintain a single source of truth, the prefix of a declaration's
+%   fully qualified name should be calculated instead of stored separately across
+%   every declaration.
+%   \item To remove code duplication, one can consider having a unified (modular)
+%   implementation of the environment, and then disable it at the level of PCUIC
+%   using the checker-flag mechanism of MetaCoq. This will clean up the many
+%   duplicated niceness properties about environments that hold regardless of
+%   whether the global environment is treated as a module. Currently, the code is
+%   explicitly duplicated, including their (slightly different) proofs.
+% \end{enumerate}
+
+
+\subsection{Functors, and higher-order functors}
+
+In Section \ref{sec:ml-dialects}, we briefly studied the history of module
+implementations, and the behavior of functors and their semantics have been a
+non-trivial topic. Even in Coq, the OCaml implementation has encountered
+consistency-threatening bugs from functors
+\footnote{such as \url{https://github.com/coq/coq/issues/15838}}, a sign of complexity in this
+area. However, functors are arguably the most interesting part of modules that
+allow massive abstraction and generalization that is worth looking into.
+
+
+\subsection{More Typing Rules}
+
+More of a documentation effort, the state of typing rules specifically for
+modular environments (as implemented in the OCaml implementation) perhaps needs
+to be re-studied with the recent paper of Soubrian after the improvements since
+his Ph.D. There are some differences between the typing rules of the official
+documentation, Chr{\k{a}}szsz's and Soubrian's Ph.D. thesis, which might all be
+different from that of the official implementation. This is not only important
+for contributors and maintainers of the future, but will also facilitate
+potential academic explorations of module implementations.

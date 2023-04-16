@@ -1,0 +1,2468 @@
+DIGEST 84a27f58e8710bf1db723267cd686eac
+FMetaCoq.PCUIC.PCUICEnvironment
+R78:86 Coq.ssr.ssreflect <> <> lib
+R88:94 Coq.ssr.ssrbool <> <> lib
+R96:101 Coq.ssr.ssrfun <> <> lib
+R103:111 Coq.Classes.Morphisms <> <> lib
+R113:118 Coq.Setoids.Setoid <> <> lib
+R158:162 MetaCoq.Template.utils <> <> lib
+R164:171 MetaCoq.Template.BasicAst <> <> lib
+R173:181 MetaCoq.Template.Primitive <> <> lib
+R221:229 MetaCoq.Template.Universes <> <> lib
+modtype 245:248 <> Term
+ax 271:274 Term term
+ax 304:307 Term tRel
+R314:317 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R311:313 Coq.Init.Datatypes <> nat ind
+R318:321 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 343:347 Term tSort
+R361:364 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R351:360 MetaCoq.Template.Universes Universe t def
+R365:368 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 390:394 Term tProd
+R403:406 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R398:402 MetaCoq.Template.BasicAst <> aname def
+R411:414 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R407:410 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R419:422 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R415:418 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R423:426 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 448:454 Term tLambda
+R463:466 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R458:462 MetaCoq.Template.BasicAst <> aname def
+R471:474 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R467:470 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R479:482 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R475:478 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R483:486 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 508:513 Term tLetIn
+R522:525 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R517:521 MetaCoq.Template.BasicAst <> aname def
+R530:533 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R526:529 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R538:541 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R534:537 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R546:549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R542:545 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R550:553 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 575:578 Term tInd
+R591:594 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R582:590 MetaCoq.Template.Kernames <> inductive rec
+R605:608 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R595:604 MetaCoq.Template.Universes Instance t def
+R609:612 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 634:638 Term tProj
+R652:655 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R642:651 MetaCoq.Template.Kernames <> projection rec
+R660:663 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R656:659 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R664:667 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 689:694 Term mkApps
+R702:705 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R698:701 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R715:718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R706:709 Coq.Init.Datatypes <> list ind
+R711:714 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R719:722 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 745:748 Term lift
+R755:758 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R752:754 Coq.Init.Datatypes <> nat ind
+R762:765 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R759:761 Coq.Init.Datatypes <> nat ind
+R770:773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R766:769 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R774:777 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 799:803 Term subst
+R816:819 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R807:810 Coq.Init.Datatypes <> list ind
+R812:815 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R823:826 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R820:822 Coq.Init.Datatypes <> nat ind
+R831:834 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R827:830 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R835:838 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+ax 860:866 Term closedn
+R873:876 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R870:872 Coq.Init.Datatypes <> nat ind
+R881:884 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R877:880 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R885:888 Coq.Init.Datatypes <> bool ind
+ax 910:923 Term noccur_between
+R930:933 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R927:929 Coq.Init.Datatypes <> nat ind
+R937:940 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R934:936 Coq.Init.Datatypes <> nat ind
+R945:948 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R941:944 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+R949:952 Coq.Init.Datatypes <> bool ind
+ax 974:994 Term subst_instance_constr
+R998:1006 MetaCoq.Template.Universes <> UnivSubst class
+R1008:1011 MetaCoq.PCUIC.PCUICEnvironment Term term defax
+abbrev 1026:1030 Term lift0
+R1038:1041 MetaCoq.PCUIC.PCUICEnvironment Term lift defax
+R1053:1056 MetaCoq.PCUIC.PCUICEnvironment Term <> modtype
+mod 1067:1080 <> Retroknowledge
+rec 1093:1093 Retroknowledge t
+proj 1122:1132 Retroknowledge retro_int63
+proj 1156:1168 Retroknowledge retro_float64
+R1136:1141 Coq.Init.Datatypes <> option ind
+R1143:1149 MetaCoq.Template.Kernames <> kername def
+R1172:1177 Coq.Init.Datatypes <> option ind
+R1179:1185 MetaCoq.Template.Kernames <> kername def
+def 1207:1211 Retroknowledge empty
+R1219:1229 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_int63 proj
+R1219:1229 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_int63 proj
+R1219:1229 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_int63 proj
+R1240:1252 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_float64 proj
+R1240:1252 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_float64 proj
+R1234:1237 Coq.Init.Datatypes <> None constr
+R1257:1260 Coq.Init.Datatypes <> None constr
+def 1280:1286 Retroknowledge extends
+R1295:1295 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge t rec
+binder 1289:1289 <> x:18
+binder 1291:1291 <> y:19
+R1351:1358 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1305:1318 MetaCoq.Template.utils.MCOption <> option_extends ind
+R1339:1349 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_int63 proj
+R1336:1336 MetaCoq.PCUIC.PCUICEnvironment <> y:19 var
+R1323:1333 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_int63 proj
+R1320:1320 MetaCoq.PCUIC.PCUICEnvironment <> x:18 var
+R1359:1372 MetaCoq.Template.utils.MCOption <> option_extends ind
+R1395:1407 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_float64 proj
+R1392:1392 MetaCoq.PCUIC.PCUICEnvironment <> y:19 var
+R1377:1389 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_float64 proj
+R1374:1374 MetaCoq.PCUIC.PCUICEnvironment <> x:18 var
+inst 1459:1470 Retroknowledge extends_refl
+binder 1472:1472 <> x:20
+R1476:1482 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends class
+R1484:1484 MetaCoq.PCUIC.PCUICEnvironment <> x:20 var
+R1486:1486 MetaCoq.PCUIC.PCUICEnvironment <> x:20 var
+R1515:1533 MetaCoq.Template.utils.MCOption <> option_extends_refl inst
+R1515:1533 MetaCoq.Template.utils.MCOption <> option_extends_refl inst
+R1515:1533 MetaCoq.Template.utils.MCOption <> option_extends_refl inst
+inst 1565:1577 Retroknowledge extends_trans
+R1581:1606 Coq.Classes.RelationClasses <> Transitive class
+R1608:1629 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends class
+R1713:1726 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge <> mod
+R1754:1757 MetaCoq.PCUIC.PCUICEnvironment Term <> mod
+mod 1737:1747 <> Environment
+R1771:1771 MetaCoq.PCUIC.PCUICEnvironment T <> mod
+def 1841:1851 Environment typ_or_sort
+R1856:1867 MetaCoq.Template.BasicAst <> typ_or_sort_ variant
+R1869:1872 MetaCoq.PCUIC.PCUICEnvironment T term defax
+abbrev 1912:1923 Environment context_decl
+R1929:1940 MetaCoq.Template.BasicAst <> context_decl rec
+R1942:1945 MetaCoq.PCUIC.PCUICEnvironment T term defax
+def 2008:2011 Environment vass
+binder 2013:2013 <> x:21
+binder 2015:2015 <> A:22
+R2019:2030 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R2042:2050 MetaCoq.Template.BasicAst <> decl_name proj
+R2042:2050 MetaCoq.Template.BasicAst <> decl_name proj
+R2042:2050 MetaCoq.Template.BasicAst <> decl_name proj
+R2059:2067 MetaCoq.Template.BasicAst <> decl_body proj
+R2059:2067 MetaCoq.Template.BasicAst <> decl_body proj
+R2079:2087 MetaCoq.Template.BasicAst <> decl_type proj
+R2079:2087 MetaCoq.Template.BasicAst <> decl_type proj
+R2055:2055 MetaCoq.PCUIC.PCUICEnvironment <> x:21 var
+R2072:2075 Coq.Init.Datatypes <> None constr
+R2092:2092 MetaCoq.PCUIC.PCUICEnvironment <> A:22 var
+def 2152:2155 Environment vdef
+binder 2157:2157 <> x:23
+binder 2159:2159 <> t:24
+binder 2161:2161 <> A:25
+R2165:2176 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R2188:2196 MetaCoq.Template.BasicAst <> decl_name proj
+R2188:2196 MetaCoq.Template.BasicAst <> decl_name proj
+R2188:2196 MetaCoq.Template.BasicAst <> decl_name proj
+R2205:2213 MetaCoq.Template.BasicAst <> decl_body proj
+R2205:2213 MetaCoq.Template.BasicAst <> decl_body proj
+R2227:2235 MetaCoq.Template.BasicAst <> decl_type proj
+R2227:2235 MetaCoq.Template.BasicAst <> decl_type proj
+R2201:2201 MetaCoq.PCUIC.PCUICEnvironment <> x:23 var
+R2218:2221 Coq.Init.Datatypes <> Some constr
+R2223:2223 MetaCoq.PCUIC.PCUICEnvironment <> t:24 var
+R2240:2240 MetaCoq.PCUIC.PCUICEnvironment <> A:25 var
+def 2296:2302 Environment context
+R2307:2310 Coq.Init.Datatypes <> list ind
+R2312:2323 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+def 2373:2381 Environment lift_decl
+binder 2383:2383 <> n:26
+binder 2385:2385 <> k:27
+binder 2387:2387 <> d:28
+R2393:2400 MetaCoq.Template.BasicAst <> map_decl def
+R2413:2413 MetaCoq.PCUIC.PCUICEnvironment <> d:28 var
+R2403:2406 MetaCoq.PCUIC.PCUICEnvironment T lift defax
+R2408:2408 MetaCoq.PCUIC.PCUICEnvironment <> n:26 var
+R2410:2410 MetaCoq.PCUIC.PCUICEnvironment <> k:27 var
+def 2431:2442 Environment lift_context
+binder 2444:2444 <> n:29
+binder 2446:2446 <> k:30
+R2454:2460 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 2449:2450 <> Γ:31
+R2465:2471 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R2480:2493 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 2500:2501 <> k':32
+R2506:2509 MetaCoq.PCUIC.PCUICEnvironment T lift defax
+R2511:2511 MetaCoq.PCUIC.PCUICEnvironment <> n:29 var
+R2516:2518 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2514:2515 MetaCoq.PCUIC.PCUICEnvironment <> k':32 var
+R2519:2519 MetaCoq.PCUIC.PCUICEnvironment <> k:30 var
+R2523:2524 MetaCoq.PCUIC.PCUICEnvironment <> Γ:31 var
+prf 2536:2551 Environment lift_context_alt
+binder 2553:2553 <> n:33
+binder 2555:2555 <> k:34
+binder 2557:2558 <> Γ:35
+R2585:2591 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2566:2577 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R2579:2579 MetaCoq.PCUIC.PCUICEnvironment <> n:33 var
+R2581:2581 MetaCoq.PCUIC.PCUICEnvironment <> k:34 var
+R2583:2584 MetaCoq.PCUIC.PCUICEnvironment <> Γ:35 var
+R2592:2595 MetaCoq.Template.utils.MCList <> mapi def
+R2651:2652 MetaCoq.PCUIC.PCUICEnvironment <> Γ:35 var
+binder 2602:2603 <> k':36
+binder 2605:2605 <> d:37
+R2610:2618 MetaCoq.PCUIC.PCUICEnvironment Environment lift_decl def
+R2620:2620 MetaCoq.PCUIC.PCUICEnvironment <> n:33 var
+R2642:2644 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2637:2639 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R2623:2630 Coq.Arith.PeanoNat Nat pred def
+R2632:2633 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R2636:2636 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R2634:2635 MetaCoq.PCUIC.PCUICEnvironment <> Γ:35 var
+R2640:2641 MetaCoq.PCUIC.PCUICEnvironment <> k':36 var
+R2645:2645 MetaCoq.PCUIC.PCUICEnvironment <> k:34 var
+R2648:2648 MetaCoq.PCUIC.PCUICEnvironment <> d:37 var
+R2675:2686 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R2696:2713 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R2696:2713 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+prf 2732:2750 Environment lift_context_length
+binder 2752:2752 <> n:38
+binder 2754:2754 <> k:39
+binder 2756:2757 <> Γ:40
+R2783:2785 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2761:2762 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R2782:2782 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R2763:2774 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R2776:2776 MetaCoq.PCUIC.PCUICEnvironment <> n:38 var
+R2778:2778 MetaCoq.PCUIC.PCUICEnvironment <> k:39 var
+R2780:2781 MetaCoq.PCUIC.PCUICEnvironment <> Γ:40 var
+R2786:2787 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R2790:2790 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R2788:2789 MetaCoq.PCUIC.PCUICEnvironment <> Γ:40 var
+R2815:2826 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R2815:2826 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R2815:2826 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R2864:2882 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context_length thm
+def 2905:2917 Environment subst_context
+binder 2919:2919 <> s:41
+binder 2921:2921 <> k:42
+R2929:2935 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 2924:2925 <> Γ:43
+R2940:2946 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R2955:2968 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 2975:2976 <> k':44
+R2981:2985 MetaCoq.PCUIC.PCUICEnvironment T subst defax
+R2987:2987 MetaCoq.PCUIC.PCUICEnvironment <> s:41 var
+R2992:2994 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2990:2991 MetaCoq.PCUIC.PCUICEnvironment <> k':44 var
+R2995:2995 MetaCoq.PCUIC.PCUICEnvironment <> k:42 var
+R2999:3000 MetaCoq.PCUIC.PCUICEnvironment <> Γ:43 var
+def 3017:3026 Environment subst_decl
+binder 3028:3028 <> s:45
+binder 3030:3030 <> k:46
+R3037:3048 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+binder 3033:3033 <> d:47
+R3054:3061 MetaCoq.Template.BasicAst <> map_decl def
+R3075:3075 MetaCoq.PCUIC.PCUICEnvironment <> d:47 var
+R3064:3068 MetaCoq.PCUIC.PCUICEnvironment T subst defax
+R3070:3070 MetaCoq.PCUIC.PCUICEnvironment <> s:45 var
+R3072:3072 MetaCoq.PCUIC.PCUICEnvironment <> k:46 var
+prf 3087:3106 Environment subst_context_length
+binder 3108:3108 <> s:48
+binder 3110:3110 <> n:49
+binder 3112:3113 <> Γ:50
+R3140:3142 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3117:3118 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3139:3139 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3119:3131 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3133:3133 MetaCoq.PCUIC.PCUICEnvironment <> s:48 var
+R3135:3135 MetaCoq.PCUIC.PCUICEnvironment <> n:49 var
+R3137:3138 MetaCoq.PCUIC.PCUICEnvironment <> Γ:50 var
+R3143:3144 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3147:3147 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3145:3146 MetaCoq.PCUIC.PCUICEnvironment <> Γ:50 var
+R3172:3184 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3172:3184 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3172:3184 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3222:3241 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context_length thm
+prf 3259:3275 Environment subst_context_nil
+binder 3277:3277 <> s:51
+binder 3279:3279 <> n:52
+R3303:3305 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3283:3295 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3297:3297 MetaCoq.PCUIC.PCUICEnvironment <> s:51 var
+R3299:3299 MetaCoq.PCUIC.PCUICEnvironment <> n:52 var
+R3301:3302 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3306:3307 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+prf 3346:3362 Environment subst_context_alt
+binder 3364:3364 <> s:53
+binder 3366:3366 <> k:54
+binder 3368:3369 <> Γ:55
+R3397:3403 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3377:3389 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3391:3391 MetaCoq.PCUIC.PCUICEnvironment <> s:53 var
+R3393:3393 MetaCoq.PCUIC.PCUICEnvironment <> k:54 var
+R3395:3396 MetaCoq.PCUIC.PCUICEnvironment <> Γ:55 var
+R3404:3407 MetaCoq.Template.utils.MCList <> mapi def
+R3464:3465 MetaCoq.PCUIC.PCUICEnvironment <> Γ:55 var
+binder 3414:3415 <> k':56
+binder 3417:3417 <> d:57
+R3422:3431 MetaCoq.PCUIC.PCUICEnvironment Environment subst_decl def
+R3433:3433 MetaCoq.PCUIC.PCUICEnvironment <> s:53 var
+R3455:3457 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3450:3452 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R3436:3443 Coq.Arith.PeanoNat Nat pred def
+R3445:3446 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3449:3449 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3447:3448 MetaCoq.PCUIC.PCUICEnvironment <> Γ:55 var
+R3453:3454 MetaCoq.PCUIC.PCUICEnvironment <> k':56 var
+R3458:3458 MetaCoq.PCUIC.PCUICEnvironment <> k:54 var
+R3461:3461 MetaCoq.PCUIC.PCUICEnvironment <> d:57 var
+R3488:3500 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3503:3516 MetaCoq.Template.BasicAst <> fold_context_k def
+R3527:3534 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R3527:3534 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R3527:3534 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R3545:3563 Coq.Lists.List <> rev_involutive thm
+R3545:3563 Coq.Lists.List <> rev_involutive thm
+R3545:3563 Coq.Lists.List <> rev_involutive thm
+R3576:3583 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R3576:3583 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R3615:3629 Coq.Lists.List <> rev_length thm
+R3615:3629 Coq.Lists.List <> rev_length thm
+R3615:3629 Coq.Lists.List <> rev_length thm
+prf 3648:3665 Environment subst_context_snoc
+binder 3667:3667 <> s:58
+binder 3669:3669 <> k:59
+binder 3671:3672 <> Γ:60
+binder 3674:3674 <> d:61
+R3705:3707 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3678:3690 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3692:3692 MetaCoq.PCUIC.PCUICEnvironment <> s:58 var
+R3694:3694 MetaCoq.PCUIC.PCUICEnvironment <> k:59 var
+R3698:3701 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3697:3697 MetaCoq.PCUIC.PCUICEnvironment <> d:61 var
+R3702:3703 MetaCoq.PCUIC.PCUICEnvironment <> Γ:60 var
+R3728:3731 MetaCoq.Template.BasicAst <> :::x_',,'_x not
+R3708:3720 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3722:3722 MetaCoq.PCUIC.PCUICEnvironment <> s:58 var
+R3724:3724 MetaCoq.PCUIC.PCUICEnvironment <> k:59 var
+R3726:3727 MetaCoq.PCUIC.PCUICEnvironment <> Γ:60 var
+R3732:3741 MetaCoq.PCUIC.PCUICEnvironment Environment subst_decl def
+R3743:3743 MetaCoq.PCUIC.PCUICEnvironment <> s:58 var
+R3751:3753 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3746:3747 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3750:3750 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R3748:3749 MetaCoq.PCUIC.PCUICEnvironment <> Γ:60 var
+R3754:3754 MetaCoq.PCUIC.PCUICEnvironment <> k:59 var
+R3757:3757 MetaCoq.PCUIC.PCUICEnvironment <> d:61 var
+R3786:3798 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3800:3819 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R3786:3798 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3786:3798 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R3800:3819 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R3800:3819 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+def 3843:3857 Environment subst_telescope
+binder 3859:3859 <> s:62
+binder 3861:3861 <> k:63
+R3869:3875 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 3864:3865 <> Γ:64
+R3880:3886 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R3895:3898 MetaCoq.Template.utils.MCList <> mapi def
+R3950:3951 MetaCoq.PCUIC.PCUICEnvironment <> Γ:64 var
+binder 3905:3906 <> k':65
+binder 3908:3911 <> decl:66
+R3916:3923 MetaCoq.Template.BasicAst <> map_decl def
+R3944:3947 MetaCoq.PCUIC.PCUICEnvironment <> decl:66 var
+R3926:3930 MetaCoq.PCUIC.PCUICEnvironment T subst defax
+R3932:3932 MetaCoq.PCUIC.PCUICEnvironment <> s:62 var
+R3937:3939 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3935:3936 MetaCoq.PCUIC.PCUICEnvironment <> k':65 var
+R3940:3940 MetaCoq.PCUIC.PCUICEnvironment <> k:63 var
+inst 3973:3991 Environment subst_instance_decl
+R3995:4003 MetaCoq.Template.Universes <> UnivSubst class
+R4005:4016 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R4033:4037 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R4025:4032 MetaCoq.Template.BasicAst <> map_decl def
+R4038:4051 MetaCoq.Template.Universes <> subst_instance def
+inst 4073:4094 Environment subst_instance_context
+R4098:4106 MetaCoq.Template.Universes <> UnivSubst class
+R4108:4114 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R4134:4138 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R4123:4133 MetaCoq.Template.BasicAst <> map_context def
+R4139:4152 MetaCoq.Template.Universes <> subst_instance def
+prf 4164:4184 Environment subst_instance_length
+binder 4186:4186 <> u:67
+R4195:4201 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 4189:4191 <> ctx:68
+R4233:4235 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4210:4211 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R4232:4232 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R4212:4225 MetaCoq.Template.Universes <> subst_instance def
+R4229:4231 MetaCoq.PCUIC.PCUICEnvironment <> ctx:68 var
+R4227:4227 MetaCoq.PCUIC.PCUICEnvironment <> u:67 var
+R4236:4237 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R4241:4241 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R4238:4240 MetaCoq.PCUIC.PCUICEnvironment <> ctx:68 var
+R4260:4273 MetaCoq.Template.Universes <> subst_instance def
+R4276:4297 MetaCoq.PCUIC.PCUICEnvironment Environment subst_instance_context inst
+R4300:4310 MetaCoq.Template.BasicAst <> map_context def
+R4325:4334 Coq.Lists.List <> map_length thm
+R4325:4334 Coq.Lists.List <> map_length thm
+R4325:4334 Coq.Lists.List <> map_length thm
+R4367:4387 MetaCoq.PCUIC.PCUICEnvironment Environment subst_instance_length thm
+def 4410:4424 Environment set_binder_name
+R4432:4436 MetaCoq.Template.BasicAst <> aname def
+binder 4427:4428 <> na:69
+R4444:4455 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+binder 4440:4440 <> x:70
+R4460:4471 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R4483:4491 MetaCoq.Template.BasicAst <> decl_name proj
+R4483:4491 MetaCoq.Template.BasicAst <> decl_name proj
+R4483:4491 MetaCoq.Template.BasicAst <> decl_name proj
+R4507:4515 MetaCoq.Template.BasicAst <> decl_body proj
+R4507:4515 MetaCoq.Template.BasicAst <> decl_body proj
+R4540:4548 MetaCoq.Template.BasicAst <> decl_type proj
+R4540:4548 MetaCoq.Template.BasicAst <> decl_type proj
+R4496:4497 MetaCoq.PCUIC.PCUICEnvironment <> na:69 var
+R4520:4528 MetaCoq.Template.BasicAst <> decl_body proj
+R4530:4530 MetaCoq.PCUIC.PCUICEnvironment <> x:70 var
+R4553:4561 MetaCoq.Template.BasicAst <> decl_type proj
+R4563:4563 MetaCoq.PCUIC.PCUICEnvironment <> x:70 var
+def 4581:4599 Environment context_assumptions
+R4607:4613 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 4602:4603 <> Γ:71
+R4629:4630 MetaCoq.PCUIC.PCUICEnvironment <> Γ:71 var
+R4643:4644 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4658:4661 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4683:4691 MetaCoq.Template.BasicAst <> decl_body proj
+R4707:4710 Coq.Init.Datatypes <> Some constr
+R4717:4735 MetaCoq.PCUIC.PCUICEnvironment <> context_assumptions:72 def
+R4737:4738 MetaCoq.PCUIC.PCUICEnvironment <> Γ:71 var
+R4748:4751 Coq.Init.Datatypes <> None constr
+R4756:4756 Coq.Init.Datatypes <> S constr
+R4759:4777 MetaCoq.PCUIC.PCUICEnvironment <> context_assumptions:72 def
+R4779:4780 MetaCoq.PCUIC.PCUICEnvironment <> Γ:71 var
+def 4814:4834 Environment is_assumption_context
+R4842:4848 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 4837:4838 <> Γ:74
+R4864:4865 MetaCoq.PCUIC.PCUICEnvironment <> Γ:74 var
+R4878:4879 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4884:4887 Coq.Init.Datatypes <> true constr
+R4896:4899 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4921:4929 MetaCoq.Template.BasicAst <> decl_body proj
+R4945:4948 Coq.Init.Datatypes <> Some constr
+R4955:4959 Coq.Init.Datatypes <> false constr
+R4969:4972 Coq.Init.Datatypes <> None constr
+R4977:4997 MetaCoq.PCUIC.PCUICEnvironment <> is_assumption_context:75 def
+R4999:5000 MetaCoq.PCUIC.PCUICEnvironment <> Γ:74 var
+def 5094:5106 Environment smash_context
+R5118:5124 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 5109:5110 <> Γ:77
+binder 5112:5114 <> Γ':78
+R5129:5135 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R5150:5152 MetaCoq.PCUIC.PCUICEnvironment <> Γ':78 var
+R5190:5193 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5168:5176 MetaCoq.Template.BasicAst <> decl_body proj
+R5168:5176 MetaCoq.Template.BasicAst <> decl_body proj
+R5168:5176 MetaCoq.Template.BasicAst <> decl_body proj
+R5181:5184 Coq.Init.Datatypes <> Some constr
+R5201:5213 MetaCoq.PCUIC.PCUICEnvironment <> smash_context:79 def
+R5240:5242 MetaCoq.PCUIC.PCUICEnvironment <> Γ':78 var
+R5216:5228 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R5230:5230 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5232:5232 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5236:5237 MetaCoq.PCUIC.PCUICEnvironment <> Γ:77 var
+R5278:5281 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5253:5261 MetaCoq.Template.BasicAst <> decl_body proj
+R5253:5261 MetaCoq.Template.BasicAst <> decl_body proj
+R5253:5261 MetaCoq.Template.BasicAst <> decl_body proj
+R5266:5269 Coq.Init.Datatypes <> None constr
+R5289:5301 MetaCoq.PCUIC.PCUICEnvironment <> smash_context:79 def
+R5315:5317 MetaCoq.PCUIC.PCUICEnvironment <> Γ':78 var
+R5306:5309 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5304:5305 MetaCoq.PCUIC.PCUICEnvironment <> Γ:77 var
+R5310:5310 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5312:5312 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5325:5326 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5331:5332 MetaCoq.PCUIC.PCUICEnvironment <> Γ:77 var
+prf 5352:5371 Environment smash_context_length
+binder 5373:5374 <> Γ:81
+binder 5376:5378 <> Γ':82
+R5405:5407 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5382:5383 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R5404:5404 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R5384:5396 MetaCoq.PCUIC.PCUICEnvironment Environment smash_context def
+R5398:5399 MetaCoq.PCUIC.PCUICEnvironment <> Γ:81 var
+R5401:5403 MetaCoq.PCUIC.PCUICEnvironment <> Γ':82 var
+R5413:5415 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R5408:5409 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R5412:5412 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R5410:5411 MetaCoq.PCUIC.PCUICEnvironment <> Γ:81 var
+R5416:5434 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R5436:5438 MetaCoq.PCUIC.PCUICEnvironment <> Γ':82 var
+R5540:5559 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context_length thm
+R5540:5559 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context_length thm
+R5540:5559 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context_length thm
+R5581:5590 Coq.Lists.List <> app_length thm
+R5581:5590 Coq.Lists.List <> app_length thm
+R5581:5590 Coq.Lists.List <> app_length thm
+R5637:5656 MetaCoq.PCUIC.PCUICEnvironment Environment smash_context_length thm
+prf 5839:5855 Environment smash_context_app
+binder 5857:5858 <> Δ:83
+binder 5860:5861 <> Γ:84
+binder 5863:5865 <> Γ':85
+R5901:5903 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5873:5885 MetaCoq.PCUIC.PCUICEnvironment Environment smash_context def
+R5887:5888 MetaCoq.PCUIC.PCUICEnvironment <> Δ:83 var
+R5893:5896 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5891:5892 MetaCoq.PCUIC.PCUICEnvironment <> Γ:84 var
+R5897:5899 MetaCoq.PCUIC.PCUICEnvironment <> Γ':85 var
+R5904:5916 MetaCoq.PCUIC.PCUICEnvironment Environment smash_context def
+R5919:5931 MetaCoq.PCUIC.PCUICEnvironment Environment smash_context def
+R5933:5934 MetaCoq.PCUIC.PCUICEnvironment <> Δ:83 var
+R5936:5937 MetaCoq.PCUIC.PCUICEnvironment <> Γ:84 var
+R5940:5942 MetaCoq.PCUIC.PCUICEnvironment <> Γ':85 var
+def 6045:6058 Environment extended_subst
+R6066:6072 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 6061:6062 <> Γ:86
+R6080:6082 Coq.Init.Datatypes <> nat ind
+binder 6076:6076 <> n:87
+R6156:6157 MetaCoq.PCUIC.PCUICEnvironment <> Γ:86 var
+R6168:6170 Coq.Init.Datatypes <> nil constr
+R6175:6177 Coq.Init.Datatypes <> nil constr
+R6183:6186 Coq.Init.Datatypes <> cons constr
+R6206:6214 MetaCoq.Template.BasicAst <> decl_body proj
+R6229:6232 Coq.Init.Datatypes <> Some constr
+R6279:6292 MetaCoq.PCUIC.PCUICEnvironment <> extended_subst:88 def
+R6297:6297 MetaCoq.PCUIC.PCUICEnvironment <> n:87 var
+binder 6274:6274 <> s:90
+R6366:6369 MetaCoq.PCUIC.PCUICEnvironment T lift defax
+R6394:6396 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6372:6390 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R6397:6397 MetaCoq.PCUIC.PCUICEnvironment <> n:87 var
+R6400:6401 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6403:6403 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6402:6402 MetaCoq.PCUIC.PCUICEnvironment <> s:90 var
+binder 6360:6361 <> b':91
+R6473:6477 MetaCoq.PCUIC.PCUICEnvironment T subst defax
+R6479:6479 MetaCoq.PCUIC.PCUICEnvironment <> s:90 var
+R6483:6484 MetaCoq.PCUIC.PCUICEnvironment <> b':91 var
+binder 6467:6468 <> b':92
+R6540:6543 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6538:6539 MetaCoq.PCUIC.PCUICEnvironment <> b':92 var
+R6544:6544 MetaCoq.PCUIC.PCUICEnvironment <> s:90 var
+R6552:6555 Coq.Init.Datatypes <> None constr
+R6566:6569 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6560:6563 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R6565:6565 MetaCoq.PCUIC.PCUICEnvironment <> n:87 var
+R6570:6583 MetaCoq.PCUIC.PCUICEnvironment <> extended_subst:88 def
+R6589:6589 Coq.Init.Datatypes <> S constr
+R6591:6591 MetaCoq.PCUIC.PCUICEnvironment <> n:87 var
+prf 6618:6638 Environment extended_subst_length
+binder 6640:6641 <> Γ:93
+binder 6643:6643 <> n:94
+R6669:6671 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6647:6648 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6668:6668 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6649:6662 MetaCoq.PCUIC.PCUICEnvironment Environment extended_subst def
+R6664:6665 MetaCoq.PCUIC.PCUICEnvironment <> Γ:93 var
+R6667:6667 MetaCoq.PCUIC.PCUICEnvironment <> n:94 var
+R6672:6673 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6676:6676 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6674:6675 MetaCoq.PCUIC.PCUICEnvironment <> Γ:93 var
+R6822:6842 MetaCoq.PCUIC.PCUICEnvironment Environment extended_subst_length thm
+def 6865:6877 Environment expand_lets_k
+binder 6879:6880 <> Γ:95
+binder 6882:6882 <> k:96
+binder 6884:6884 <> t:97
+R6894:6898 MetaCoq.PCUIC.PCUICEnvironment T subst defax
+R6901:6914 MetaCoq.PCUIC.PCUICEnvironment Environment extended_subst def
+R6916:6917 MetaCoq.PCUIC.PCUICEnvironment <> Γ:95 var
+R6922:6922 MetaCoq.PCUIC.PCUICEnvironment <> k:96 var
+R6925:6928 MetaCoq.PCUIC.PCUICEnvironment T lift defax
+R6931:6949 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R6951:6952 MetaCoq.PCUIC.PCUICEnvironment <> Γ:95 var
+R6957:6959 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6956:6956 MetaCoq.PCUIC.PCUICEnvironment <> k:96 var
+R6960:6961 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6964:6964 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R6962:6963 MetaCoq.PCUIC.PCUICEnvironment <> Γ:95 var
+R6967:6967 MetaCoq.PCUIC.PCUICEnvironment <> t:97 var
+def 6986:6996 Environment expand_lets
+binder 6998:6999 <> Γ:98
+binder 7001:7001 <> t:99
+R7006:7018 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k def
+R7020:7021 MetaCoq.PCUIC.PCUICEnvironment <> Γ:98 var
+R7025:7025 MetaCoq.PCUIC.PCUICEnvironment <> t:99 var
+def 7042:7058 Environment expand_lets_k_ctx
+binder 7060:7061 <> Γ:100
+binder 7063:7063 <> k:101
+binder 7065:7066 <> Δ:102
+R7076:7088 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R7091:7104 MetaCoq.PCUIC.PCUICEnvironment Environment extended_subst def
+R7106:7107 MetaCoq.PCUIC.PCUICEnvironment <> Γ:100 var
+R7112:7112 MetaCoq.PCUIC.PCUICEnvironment <> k:101 var
+R7115:7126 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R7129:7147 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R7149:7150 MetaCoq.PCUIC.PCUICEnvironment <> Γ:100 var
+R7155:7157 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R7154:7154 MetaCoq.PCUIC.PCUICEnvironment <> k:101 var
+R7158:7159 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7162:7162 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7160:7161 MetaCoq.PCUIC.PCUICEnvironment <> Γ:100 var
+R7165:7166 MetaCoq.PCUIC.PCUICEnvironment <> Δ:102 var
+def 7185:7199 Environment expand_lets_ctx
+binder 7201:7202 <> Γ:103
+binder 7204:7205 <> Δ:104
+R7210:7226 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k_ctx def
+R7228:7229 MetaCoq.PCUIC.PCUICEnvironment <> Γ:103 var
+R7233:7234 MetaCoq.PCUIC.PCUICEnvironment <> Δ:104 var
+prf 7246:7269 Environment expand_lets_k_ctx_length
+binder 7271:7272 <> Γ:105
+binder 7274:7274 <> k:106
+binder 7276:7277 <> Δ:107
+R7309:7311 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7281:7282 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7308:7308 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7283:7299 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k_ctx def
+R7301:7302 MetaCoq.PCUIC.PCUICEnvironment <> Γ:105 var
+R7304:7304 MetaCoq.PCUIC.PCUICEnvironment <> k:106 var
+R7306:7307 MetaCoq.PCUIC.PCUICEnvironment <> Δ:107 var
+R7312:7313 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7316:7316 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7314:7315 MetaCoq.PCUIC.PCUICEnvironment <> Δ:107 var
+R7341:7357 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k_ctx def
+R7341:7357 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k_ctx def
+R7341:7357 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k_ctx def
+R7395:7418 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_k_ctx_length thm
+prf 7436:7457 Environment expand_lets_ctx_length
+binder 7459:7460 <> Γ:108
+binder 7462:7463 <> Δ:109
+R7491:7493 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7467:7468 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7490:7490 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7469:7483 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_ctx def
+R7485:7486 MetaCoq.PCUIC.PCUICEnvironment <> Γ:108 var
+R7488:7489 MetaCoq.PCUIC.PCUICEnvironment <> Δ:109 var
+R7494:7495 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7498:7498 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R7496:7497 MetaCoq.PCUIC.PCUICEnvironment <> Δ:109 var
+R7523:7537 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_ctx def
+R7523:7537 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_ctx def
+R7523:7537 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_ctx def
+R7575:7596 MetaCoq.PCUIC.PCUICEnvironment Environment expand_lets_ctx_length thm
+def 7619:7629 Environment fix_context
+R7636:7644 MetaCoq.Template.BasicAst <> mfixpoint def
+R7646:7649 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 7632:7632 <> m:110
+R7654:7660 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R7669:7676 Coq.Lists.List <> rev def
+R7679:7682 MetaCoq.Template.utils.MCList <> mapi def
+R7733:7733 MetaCoq.PCUIC.PCUICEnvironment <> m:110 var
+binder 7689:7689 <> i:111
+binder 7691:7691 <> d:112
+R7696:7699 MetaCoq.PCUIC.PCUICEnvironment Environment vass def
+R7704:7708 MetaCoq.Template.BasicAst <> dname proj
+R7701:7701 MetaCoq.PCUIC.PCUICEnvironment <> d:112 var
+R7712:7715 MetaCoq.PCUIC.PCUICEnvironment T lift defax
+R7717:7717 MetaCoq.PCUIC.PCUICEnvironment <> i:111 var
+R7724:7728 MetaCoq.Template.BasicAst <> dtype proj
+R7721:7721 MetaCoq.PCUIC.PCUICEnvironment <> d:112 var
+rec 7774:7789 Environment constructor_body
+proj 7800:7808 Environment cstr_name
+proj 7944:7952 Environment cstr_args
+proj 7969:7980 Environment cstr_indices
+proj 7999:8007 Environment cstr_type
+proj 8121:8130 Environment cstr_arity
+R7812:7816 MetaCoq.Template.Kernames <> ident def
+R7956:7962 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R7984:7987 Coq.Init.Datatypes <> list ind
+R7989:7992 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R8011:8014 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R8134:8136 Coq.Init.Datatypes <> nat ind
+rec 8192:8206 Environment projection_body
+proj 8217:8225 Environment proj_name
+proj 8361:8374 Environment proj_relevance
+proj 8393:8401 Environment proj_type
+R8229:8233 MetaCoq.Template.Kernames <> ident def
+R8378:8386 MetaCoq.Template.BasicAst <> relevance ind
+R8405:8408 MetaCoq.PCUIC.PCUICEnvironment T term defax
+def 8486:8505 Environment map_constructor_body
+binder 8507:8511 <> npars:123
+binder 8513:8519 <> arities:124
+binder 8521:8521 <> f:125
+binder 8523:8523 <> c:126
+R8535:8543 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_name proj
+R8535:8543 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_name proj
+R8535:8543 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_name proj
+R8570:8578 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_args proj
+R8570:8578 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_args proj
+R8655:8666 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_indices proj
+R8655:8666 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_indices proj
+R8885:8893 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_type proj
+R8885:8893 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_type proj
+R8930:8939 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_arity proj
+R8930:8939 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_arity proj
+R8551:8559 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_name proj
+R8548:8548 MetaCoq.PCUIC.PCUICEnvironment <> c:126 var
+R8583:8596 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 8603:8603 <> x:127
+R8608:8608 MetaCoq.PCUIC.PCUICEnvironment <> f:125 var
+R8620:8622 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R8612:8614 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R8611:8611 MetaCoq.PCUIC.PCUICEnvironment <> x:127 var
+R8615:8619 MetaCoq.PCUIC.PCUICEnvironment <> npars:123 var
+R8623:8629 MetaCoq.PCUIC.PCUICEnvironment <> arities:124 var
+R8636:8644 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_args proj
+R8633:8633 MetaCoq.PCUIC.PCUICEnvironment <> c:126 var
+R8671:8673 Coq.Lists.List <> map def
+R8719:8730 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_indices proj
+R8716:8716 MetaCoq.PCUIC.PCUICEnvironment <> c:126 var
+R8676:8676 MetaCoq.PCUIC.PCUICEnvironment <> f:125 var
+R8694:8696 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R8684:8686 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R8679:8683 MetaCoq.PCUIC.PCUICEnvironment <> npars:123 var
+R8687:8693 MetaCoq.PCUIC.PCUICEnvironment <> arities:124 var
+R8697:8698 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R8712:8712 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R8702:8710 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_args proj
+R8699:8699 MetaCoq.PCUIC.PCUICEnvironment <> c:126 var
+R8898:8898 MetaCoq.PCUIC.PCUICEnvironment <> f:125 var
+R8900:8906 MetaCoq.PCUIC.PCUICEnvironment <> arities:124 var
+R8911:8919 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_type proj
+R8908:8908 MetaCoq.PCUIC.PCUICEnvironment <> c:126 var
+R8947:8956 MetaCoq.PCUIC.PCUICEnvironment Environment cstr_arity proj
+R8944:8944 MetaCoq.PCUIC.PCUICEnvironment <> c:126 var
+def 9059:9077 Environment map_projection_body
+binder 9079:9083 <> npars:128
+binder 9085:9085 <> f:129
+binder 9087:9087 <> c:130
+R9099:9107 MetaCoq.PCUIC.PCUICEnvironment Environment proj_name proj
+R9099:9107 MetaCoq.PCUIC.PCUICEnvironment Environment proj_name proj
+R9099:9107 MetaCoq.PCUIC.PCUICEnvironment Environment proj_name proj
+R9134:9147 MetaCoq.PCUIC.PCUICEnvironment Environment proj_relevance proj
+R9134:9147 MetaCoq.PCUIC.PCUICEnvironment Environment proj_relevance proj
+R9179:9187 MetaCoq.PCUIC.PCUICEnvironment Environment proj_type proj
+R9179:9187 MetaCoq.PCUIC.PCUICEnvironment Environment proj_type proj
+R9115:9123 MetaCoq.PCUIC.PCUICEnvironment Environment proj_name proj
+R9112:9112 MetaCoq.PCUIC.PCUICEnvironment <> c:130 var
+R9155:9168 MetaCoq.PCUIC.PCUICEnvironment Environment proj_relevance proj
+R9152:9152 MetaCoq.PCUIC.PCUICEnvironment <> c:130 var
+R9192:9192 MetaCoq.PCUIC.PCUICEnvironment <> f:129 var
+R9195:9195 Coq.Init.Datatypes <> S constr
+R9197:9201 MetaCoq.PCUIC.PCUICEnvironment <> npars:128 var
+R9207:9215 MetaCoq.PCUIC.PCUICEnvironment Environment proj_type proj
+R9204:9204 MetaCoq.PCUIC.PCUICEnvironment <> c:130 var
+rec 9294:9311 Environment one_inductive_body
+proj 9322:9329 Environment ind_name
+proj 9344:9354 Environment ind_indices
+proj 9422:9429 Environment ind_sort
+proj 9478:9485 Environment ind_type
+proj 9568:9576 Environment ind_kelim
+proj 9633:9641 Environment ind_ctors
+proj 9672:9680 Environment ind_projs
+proj 9756:9768 Environment ind_relevance
+R9333:9337 MetaCoq.Template.Kernames <> ident def
+R9358:9364 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R9433:9442 MetaCoq.Template.Universes Universe t def
+R9489:9492 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R9580:9599 MetaCoq.Template.Universes <> allowed_eliminations ind
+R9645:9648 Coq.Init.Datatypes <> list ind
+R9650:9665 MetaCoq.PCUIC.PCUICEnvironment Environment constructor_body rec
+R9684:9687 Coq.Init.Datatypes <> list ind
+R9689:9703 MetaCoq.PCUIC.PCUICEnvironment Environment projection_body rec
+R9772:9780 MetaCoq.Template.BasicAst <> relevance ind
+def 9843:9864 Environment map_one_inductive_body
+binder 9866:9870 <> npars:140
+binder 9872:9878 <> arities:141
+binder 9880:9880 <> f:142
+binder 9882:9882 <> m:143
+R9897:9897 MetaCoq.PCUIC.PCUICEnvironment <> m:143 var
+R9910:9933 MetaCoq.PCUIC.PCUICEnvironment Environment Build_one_inductive_body constr
+R10012:10024 MetaCoq.PCUIC.PCUICEnvironment Environment ind_relevance proj
+R10002:10010 MetaCoq.PCUIC.PCUICEnvironment Environment ind_projs proj
+R9992:10000 MetaCoq.PCUIC.PCUICEnvironment Environment ind_ctors proj
+R9982:9990 MetaCoq.PCUIC.PCUICEnvironment Environment ind_kelim proj
+R9973:9980 MetaCoq.PCUIC.PCUICEnvironment Environment ind_type proj
+R9956:9963 MetaCoq.PCUIC.PCUICEnvironment Environment ind_sort proj
+R9944:9954 MetaCoq.PCUIC.PCUICEnvironment Environment ind_indices proj
+R9935:9942 MetaCoq.PCUIC.PCUICEnvironment Environment ind_name proj
+R10035:10058 MetaCoq.PCUIC.PCUICEnvironment Environment Build_one_inductive_body constr
+R10079:10092 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 10099:10099 <> x:145
+R10104:10104 MetaCoq.PCUIC.PCUICEnvironment <> f:142 var
+R10112:10114 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10107:10111 MetaCoq.PCUIC.PCUICEnvironment <> npars:140 var
+R10115:10115 MetaCoq.PCUIC.PCUICEnvironment <> x:145 var
+R10160:10160 MetaCoq.PCUIC.PCUICEnvironment <> f:142 var
+R10185:10187 Coq.Lists.List <> map def
+R10190:10209 MetaCoq.PCUIC.PCUICEnvironment Environment map_constructor_body def
+R10211:10215 MetaCoq.PCUIC.PCUICEnvironment <> npars:140 var
+R10217:10223 MetaCoq.PCUIC.PCUICEnvironment <> arities:141 var
+R10225:10225 MetaCoq.PCUIC.PCUICEnvironment <> f:142 var
+R10258:10260 Coq.Lists.List <> map def
+R10263:10281 MetaCoq.PCUIC.PCUICEnvironment Environment map_projection_body def
+R10283:10287 MetaCoq.PCUIC.PCUICEnvironment <> npars:140 var
+R10289:10289 MetaCoq.PCUIC.PCUICEnvironment <> f:142 var
+rec 10397:10417 Environment mutual_inductive_body
+proj 10428:10437 Environment ind_finite
+proj 10463:10471 Environment ind_npars
+proj 10484:10493 Environment ind_params
+proj 10510:10519 Environment ind_bodies
+proj 10553:10565 Environment ind_universes
+proj 10589:10600 Environment ind_variance
+R10441:10456 MetaCoq.Template.BasicAst <> recursivity_kind ind
+R10475:10477 Coq.Init.Datatypes <> nat ind
+R10497:10503 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R10523:10526 Coq.Init.Datatypes <> list ind
+R10528:10545 MetaCoq.PCUIC.PCUICEnvironment Environment one_inductive_body rec
+R10569:10582 MetaCoq.Template.Universes <> universes_decl ind
+R10604:10609 Coq.Init.Datatypes <> option ind
+R10612:10615 Coq.Init.Datatypes <> list ind
+R10617:10636 MetaCoq.Template.Universes Variance t ind
+rec 10704:10716 Environment constant_body
+proj 10727:10734 Environment cst_type
+proj 10748:10755 Environment cst_body
+proj 10776:10788 Environment cst_universes
+proj 10812:10824 Environment cst_relevance
+R10738:10741 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R10759:10764 Coq.Init.Datatypes <> option ind
+R10766:10769 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R10792:10805 MetaCoq.Template.Universes <> universes_decl ind
+R10828:10836 MetaCoq.Template.BasicAst <> relevance ind
+def 10855:10871 Environment map_constant_body
+binder 10873:10873 <> f:158
+binder 10875:10878 <> decl:159
+R10890:10897 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R10890:10897 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R10890:10897 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R10928:10935 MetaCoq.PCUIC.PCUICEnvironment Environment cst_body proj
+R10928:10935 MetaCoq.PCUIC.PCUICEnvironment Environment cst_body proj
+R10977:10989 MetaCoq.PCUIC.PCUICEnvironment Environment cst_universes proj
+R10977:10989 MetaCoq.PCUIC.PCUICEnvironment Environment cst_universes proj
+R11023:11035 MetaCoq.PCUIC.PCUICEnvironment Environment cst_relevance proj
+R11023:11035 MetaCoq.PCUIC.PCUICEnvironment Environment cst_relevance proj
+R10902:10902 MetaCoq.PCUIC.PCUICEnvironment <> f:158 var
+R10910:10917 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R10904:10907 MetaCoq.PCUIC.PCUICEnvironment <> decl:159 var
+R10940:10949 Coq.Init.Datatypes <> option_map def
+R10959:10966 MetaCoq.PCUIC.PCUICEnvironment Environment cst_body proj
+R10953:10956 MetaCoq.PCUIC.PCUICEnvironment <> decl:159 var
+R10951:10951 MetaCoq.PCUIC.PCUICEnvironment <> f:158 var
+R11000:11012 MetaCoq.PCUIC.PCUICEnvironment Environment cst_universes proj
+R10994:10997 MetaCoq.PCUIC.PCUICEnvironment <> decl:159 var
+R11046:11058 MetaCoq.PCUIC.PCUICEnvironment Environment cst_relevance proj
+R11040:11043 MetaCoq.PCUIC.PCUICEnvironment <> decl:159 var
+prf 11074:11085 Environment map_cst_type
+binder 11087:11087 <> f:160
+binder 11089:11092 <> decl:161
+R11117:11119 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11100:11100 MetaCoq.PCUIC.PCUICEnvironment <> f:160 var
+R11103:11110 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R11112:11115 MetaCoq.PCUIC.PCUICEnvironment <> decl:161 var
+R11120:11127 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R11130:11146 MetaCoq.PCUIC.PCUICEnvironment Environment map_constant_body def
+R11148:11148 MetaCoq.PCUIC.PCUICEnvironment <> f:160 var
+R11150:11153 MetaCoq.PCUIC.PCUICEnvironment <> decl:161 var
+prf 11208:11219 Environment map_cst_body
+binder 11221:11221 <> f:162
+binder 11223:11226 <> decl:163
+R11262:11264 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11234:11243 Coq.Init.Datatypes <> option_map def
+R11248:11255 MetaCoq.PCUIC.PCUICEnvironment Environment cst_body proj
+R11257:11260 MetaCoq.PCUIC.PCUICEnvironment <> decl:163 var
+R11245:11245 MetaCoq.PCUIC.PCUICEnvironment <> f:162 var
+R11265:11272 MetaCoq.PCUIC.PCUICEnvironment Environment cst_body proj
+R11275:11291 MetaCoq.PCUIC.PCUICEnvironment Environment map_constant_body def
+R11293:11293 MetaCoq.PCUIC.PCUICEnvironment <> f:162 var
+R11295:11298 MetaCoq.PCUIC.PCUICEnvironment <> decl:163 var
+ind 11357:11367 Environment global_decl
+constr 11376:11387 Environment ConstantDecl
+constr 11424:11436 Environment InductiveDecl
+R11404:11407 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11391:11403 MetaCoq.PCUIC.PCUICEnvironment Environment constant_body rec
+R11408:11418 MetaCoq.PCUIC.PCUICEnvironment <> global_decl:164 ind
+R11461:11464 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11440:11460 MetaCoq.PCUIC.PCUICEnvironment Environment mutual_inductive_body rec
+R11465:11475 MetaCoq.PCUIC.PCUICEnvironment <> global_decl:164 ind
+R11503:11513 MetaCoq.PCUIC.PCUICEnvironment Environment global_decl ind
+def 11530:11548 Environment global_declarations
+R11553:11556 Coq.Init.Datatypes <> list ind
+R11566:11568 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11559:11565 MetaCoq.Template.Kernames <> kername def
+R11569:11579 MetaCoq.PCUIC.PCUICEnvironment Environment global_decl ind
+rec 11593:11602 Environment global_env
+proj 11627:11635 Environment universes
+proj 11659:11670 Environment declarations
+proj 11701:11714 Environment retroknowledge
+R11639:11650 MetaCoq.Template.Universes ContextSet t def
+R11674:11692 MetaCoq.PCUIC.PCUICEnvironment Environment global_declarations def
+R11718:11733 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge t rec
+R11741:11788 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+def 11805:11820 Environment empty_global_env
+R11832:11840 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R11832:11840 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R11832:11840 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R11870:11881 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R11870:11881 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R11897:11910 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R11897:11910 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R11845:11860 MetaCoq.Template.Universes ContextSet empty def
+R11886:11887 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11915:11934 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge empty def
+def 11954:11968 Environment add_global_decl
+binder 11970:11971 <> Σ:170
+binder 11973:11976 <> decl:171
+R11988:11996 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R11988:11996 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R11988:11996 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12024:12035 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12024:12035 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12074:12087 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12074:12087 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12005:12013 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12001:12002 MetaCoq.PCUIC.PCUICEnvironment <> Σ:170 var
+R12044:12047 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12040:12043 MetaCoq.PCUIC.PCUICEnvironment <> decl:171 var
+R12052:12063 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12048:12049 MetaCoq.PCUIC.PCUICEnvironment <> Σ:170 var
+R12096:12109 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12092:12093 MetaCoq.PCUIC.PCUICEnvironment <> Σ:170 var
+prf 12125:12138 Environment eta_global_env
+binder 12140:12141 <> Σ:172
+R12147:12152 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12258:12260 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12145:12146 MetaCoq.PCUIC.PCUICEnvironment <> Σ:172 var
+R12153:12161 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12153:12161 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12153:12161 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12182:12193 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12182:12193 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12221:12234 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12221:12234 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12170:12178 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12166:12167 MetaCoq.PCUIC.PCUICEnvironment <> Σ:172 var
+R12202:12213 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12198:12199 MetaCoq.PCUIC.PCUICEnvironment <> Σ:172 var
+R12243:12256 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12239:12240 MetaCoq.PCUIC.PCUICEnvironment <> Σ:172 var
+def 12308:12323 Environment set_declarations
+binder 12325:12326 <> Σ:173
+binder 12328:12332 <> decls:174
+R12344:12352 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12344:12352 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12344:12352 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12380:12391 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12380:12391 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12410:12423 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12410:12423 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12361:12369 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12357:12358 MetaCoq.PCUIC.PCUICEnvironment <> Σ:173 var
+R12396:12400 MetaCoq.PCUIC.PCUICEnvironment <> decls:174 var
+R12432:12445 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12428:12429 MetaCoq.PCUIC.PCUICEnvironment <> Σ:173 var
+def 12464:12476 Environment lookup_global
+R12484:12502 MetaCoq.PCUIC.PCUICEnvironment Environment global_declarations def
+binder 12479:12480 <> Σ:175
+R12511:12517 MetaCoq.Template.Kernames <> kername def
+binder 12506:12507 <> kn:176
+R12522:12527 Coq.Init.Datatypes <> option ind
+R12529:12539 MetaCoq.PCUIC.PCUICEnvironment Environment global_decl ind
+R12554:12555 MetaCoq.PCUIC.PCUICEnvironment <> Σ:175 var
+R12568:12570 Coq.Init.Datatypes <> nil constr
+R12575:12578 Coq.Init.Datatypes <> None constr
+R12587:12590 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12591:12592 Coq.Lists.List <> tl def
+R12603:12605 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R12615:12620 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R12629:12640 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R12608:12611 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R12606:12607 MetaCoq.PCUIC.PCUICEnvironment <> kn:176 var
+R12613:12614 MetaCoq.Template.utils.MCProd <> ::pair_scope:x_'.1' not
+R12621:12624 Coq.Init.Datatypes <> Some constr
+R12627:12628 MetaCoq.Template.utils.MCProd <> ::pair_scope:x_'.2' not
+R12641:12653 MetaCoq.PCUIC.PCUICEnvironment <> lookup_global:177 def
+R12658:12659 MetaCoq.PCUIC.PCUICEnvironment <> kn:176 var
+def 12684:12693 Environment lookup_env
+R12701:12710 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+binder 12696:12697 <> Σ:179
+R12719:12725 MetaCoq.Template.Kernames <> kername def
+binder 12714:12715 <> kn:180
+R12731:12743 MetaCoq.PCUIC.PCUICEnvironment Environment lookup_global def
+R12749:12760 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12745:12746 MetaCoq.PCUIC.PCUICEnvironment <> Σ:179 var
+R12763:12764 MetaCoq.PCUIC.PCUICEnvironment <> kn:180 var
+def 12781:12787 Environment extends
+R12799:12808 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+binder 12790:12791 <> Σ:181
+binder 12793:12795 <> Σ':182
+R12818:12821 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R12859:12866 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R12923:12931 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R12995:12995 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R12836:12843 MetaCoq.Template.Universes <> :::x_'⊂_cs'_x not
+R12826:12834 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12822:12823 MetaCoq.PCUIC.PCUICEnvironment <> Σ:181 var
+R12849:12857 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R12844:12846 MetaCoq.PCUIC.PCUICEnvironment <> Σ':182 var
+R12867:12870 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+R12875:12876 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+binder 12871:12874 <> Σ'':183
+R12895:12897 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12882:12893 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12877:12879 MetaCoq.PCUIC.PCUICEnvironment <> Σ':182 var
+R12902:12905 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12898:12901 MetaCoq.PCUIC.PCUICEnvironment <> Σ'':183 var
+R12910:12921 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R12906:12907 MetaCoq.PCUIC.PCUICEnvironment <> Σ:181 var
+R12932:12953 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends class
+R12959:12972 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12955:12956 MetaCoq.PCUIC.PCUICEnvironment <> Σ:181 var
+R12980:12993 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R12975:12977 MetaCoq.PCUIC.PCUICEnvironment <> Σ':182 var
+def 13012:13024 Environment extends_decls
+R13036:13045 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+binder 13027:13028 <> Σ:184
+binder 13030:13032 <> Σ':185
+R13055:13058 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R13091:13099 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R13156:13165 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R13208:13208 MetaCoq.Template.utils.MCProd <> ::type_scope:'['_'×'_x_','_x_'&'_x_']' not
+R13073:13075 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13063:13071 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R13059:13060 MetaCoq.PCUIC.PCUICEnvironment <> Σ:184 var
+R13081:13089 MetaCoq.PCUIC.PCUICEnvironment Environment universes proj
+R13076:13078 MetaCoq.PCUIC.PCUICEnvironment <> Σ':185 var
+R13100:13103 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+R13108:13109 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+binder 13104:13107 <> Σ'':186
+R13128:13130 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13115:13126 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R13110:13112 MetaCoq.PCUIC.PCUICEnvironment <> Σ':185 var
+R13135:13138 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13131:13134 MetaCoq.PCUIC.PCUICEnvironment <> Σ'':186 var
+R13143:13154 MetaCoq.PCUIC.PCUICEnvironment Environment declarations proj
+R13139:13140 MetaCoq.PCUIC.PCUICEnvironment <> Σ:184 var
+R13185:13187 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13170:13183 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R13166:13167 MetaCoq.PCUIC.PCUICEnvironment <> Σ:184 var
+R13193:13206 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R13188:13190 MetaCoq.PCUIC.PCUICEnvironment <> Σ':185 var
+prf 13279:13296 Environment lookup_global_None
+binder 13298:13299 <> Σ:187
+binder 13301:13302 <> kn:188
+R13330:13334 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13306:13306 Coq.Init.Logic <> ::type_scope:'~'_x not
+R13307:13308 Coq.Lists.List <> In def
+R13314:13321 Coq.Lists.List <> map def
+R13327:13328 MetaCoq.PCUIC.PCUICEnvironment <> Σ:187 var
+R13323:13325 Coq.Init.Datatypes <> fst def
+R13310:13311 MetaCoq.PCUIC.PCUICEnvironment <> kn:188 var
+R13354:13356 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13335:13347 MetaCoq.PCUIC.PCUICEnvironment Environment lookup_global def
+R13349:13350 MetaCoq.PCUIC.PCUICEnvironment <> Σ:187 var
+R13352:13353 MetaCoq.PCUIC.PCUICEnvironment <> kn:188 var
+R13357:13360 Coq.Init.Datatypes <> None constr
+R13432:13439 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13432:13439 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13432:13439 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+prf 13480:13510 Environment lookup_global_Some_iff_In_NoDup
+binder 13512:13513 <> Σ:189
+binder 13515:13516 <> kn:190
+binder 13518:13521 <> decl:191
+R13528:13532 Coq.Lists.List <> NoDup ind
+R13535:13542 Coq.Lists.List <> map def
+R13548:13549 MetaCoq.PCUIC.PCUICEnvironment <> Σ:189 var
+R13544:13546 Coq.Init.Datatypes <> fst def
+binder 13524:13524 <> H:192
+R13575:13579 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13559:13560 Coq.Lists.List <> In def
+R13573:13574 MetaCoq.PCUIC.PCUICEnvironment <> Σ:189 var
+R13562:13562 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13565:13566 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13571:13571 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13563:13564 MetaCoq.PCUIC.PCUICEnvironment <> kn:190 var
+R13567:13570 MetaCoq.PCUIC.PCUICEnvironment <> decl:191 var
+R13599:13601 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13580:13592 MetaCoq.PCUIC.PCUICEnvironment Environment lookup_global def
+R13594:13595 MetaCoq.PCUIC.PCUICEnvironment <> Σ:189 var
+R13597:13598 MetaCoq.PCUIC.PCUICEnvironment <> kn:190 var
+R13602:13605 Coq.Init.Datatypes <> Some constr
+R13607:13610 MetaCoq.PCUIC.PCUICEnvironment <> decl:191 var
+R13687:13694 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13687:13694 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13687:13694 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R13861:13863 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13855:13855 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13857:13858 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13860:13860 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13864:13864 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13866:13867 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13869:13869 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13861:13863 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13855:13855 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13857:13858 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13860:13860 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13864:13864 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13866:13867 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13869:13869 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13947:13949 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13941:13944 Coq.Init.Datatypes <> Some constr
+R13950:13953 Coq.Init.Datatypes <> Some constr
+R13947:13949 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13941:13944 Coq.Init.Datatypes <> Some constr
+R13950:13953 Coq.Init.Datatypes <> Some constr
+R14051:14056 Coq.Lists.List <> in_map thm
+R14062:14064 Coq.Init.Datatypes <> fst def
+R14068:14068 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14070:14071 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14073:14073 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14051:14056 Coq.Lists.List <> in_map thm
+R14062:14064 Coq.Init.Datatypes <> fst def
+R14068:14068 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14070:14071 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14073:14073 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+inst 14132:14152 Environment extends_decls_extends
+binder 14154:14155 <> Σ:193
+binder 14157:14159 <> Σ':194
+R14183:14186 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14163:14175 MetaCoq.PCUIC.PCUICEnvironment Environment extends_decls class
+R14177:14178 MetaCoq.PCUIC.PCUICEnvironment <> Σ:193 var
+R14180:14182 MetaCoq.PCUIC.PCUICEnvironment <> Σ':194 var
+R14187:14193 MetaCoq.PCUIC.PCUICEnvironment Environment extends class
+R14195:14196 MetaCoq.PCUIC.PCUICEnvironment <> Σ:193 var
+R14198:14200 MetaCoq.PCUIC.PCUICEnvironment <> Σ':194 var
+R14308:14334 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends_refl inst
+R14308:14334 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends_refl inst
+inst 14366:14383 Environment extends_decls_refl
+R14387:14412 Coq.Classes.CRelationClasses <> Reflexive class
+R14414:14426 MetaCoq.PCUIC.PCUICEnvironment Environment extends_decls class
+R14477:14478 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R14477:14478 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+prf 14501:14512 Environment extends_refl
+R14516:14541 Coq.Classes.CRelationClasses <> Reflexive class
+R14543:14549 MetaCoq.PCUIC.PCUICEnvironment Environment extends class
+R14590:14601 MetaCoq.Template.Universes <> incl_cs_refl thm
+R14616:14617 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R14627:14653 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends_refl inst
+R14590:14601 MetaCoq.Template.Universes <> incl_cs_refl thm
+R14616:14617 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R14627:14653 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge extends_refl inst
+R14979:14991 MetaCoq.Template.Universes <> incl_cs_trans thm
+R15105:15108 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+R15114:15115 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+binder 15109:15109 <> x:195
+R15105:15108 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+R15114:15115 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+binder 15109:15109 <> x:196
+R15177:15183 MetaCoq.Template.Kernames <> kername def
+binder 15173:15173 <> c:197
+R15177:15183 MetaCoq.Template.Kernames <> kername def
+binder 15173:15173 <> c:198
+R15194:15200 MetaCoq.Template.Kernames <> kername def
+R15194:15200 MetaCoq.Template.Kernames <> kername def
+R15259:15261 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15259:15261 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15407:15415 Coq.Lists.List <> app_assoc thm
+inst 15441:15459 Environment extends_decls_trans
+R15463:15489 Coq.Classes.CRelationClasses <> Transitive class
+R15491:15503 MetaCoq.PCUIC.PCUICEnvironment Environment extends_decls class
+inst 15558:15570 Environment extends_trans
+R15574:15600 Coq.Classes.CRelationClasses <> Transitive class
+R15602:15608 MetaCoq.PCUIC.PCUICEnvironment Environment extends class
+def 15656:15673 Environment primitive_constant
+R15681:15690 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+binder 15676:15677 <> Σ:199
+R15698:15705 MetaCoq.Template.Primitive <> prim_tag variant
+binder 15694:15694 <> p:200
+R15710:15715 Coq.Init.Datatypes <> option ind
+R15717:15723 MetaCoq.Template.Kernames <> kername def
+R15738:15738 MetaCoq.PCUIC.PCUICEnvironment <> p:200 var
+R15751:15757 MetaCoq.Template.Primitive <> primInt constr
+R15783:15808 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_int63 proj
+R15766:15779 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R15762:15763 MetaCoq.PCUIC.PCUICEnvironment <> Σ:199 var
+R15817:15825 MetaCoq.Template.Primitive <> primFloat constr
+R15851:15878 MetaCoq.PCUIC.PCUICEnvironment Retroknowledge retro_float64 proj
+R15834:15847 MetaCoq.PCUIC.PCUICEnvironment Environment retroknowledge proj
+R15830:15831 MetaCoq.PCUIC.PCUICEnvironment <> Σ:199 var
+def 15904:15923 Environment primitive_invariants
+R15934:15946 MetaCoq.PCUIC.PCUICEnvironment Environment constant_body rec
+binder 15926:15930 <> cdecl:202
+R15956:15959 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+R15961:15962 MetaCoq.Template.utils.MCPrelude <> ::type_scope:'∑'_x_'..'_x_','_x not
+binder 15960:15960 <> s:203
+R15963:15966 Coq.ssr.ssrbool <> ::type_scope:'['_'/\'_x_','_x_'&'_x_']' not
+R15993:15994 Coq.ssr.ssrbool <> ::type_scope:'['_'/\'_x_','_x_'&'_x_']' not
+R16018:16033 Coq.ssr.ssrbool <> ::type_scope:'['_'/\'_x_','_x_'&'_x_']' not
+R16073:16073 Coq.ssr.ssrbool <> ::type_scope:'['_'/\'_x_','_x_'&'_x_']' not
+R15983:15985 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15974:15981 MetaCoq.PCUIC.PCUICEnvironment Environment cst_type proj
+R15967:15971 MetaCoq.PCUIC.PCUICEnvironment <> cdecl:202 var
+R15986:15990 MetaCoq.PCUIC.PCUICEnvironment T tSort defax
+R15992:15992 MetaCoq.PCUIC.PCUICEnvironment <> s:203 var
+R16011:16013 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16002:16009 MetaCoq.PCUIC.PCUICEnvironment Environment cst_body proj
+R15995:15999 MetaCoq.PCUIC.PCUICEnvironment <> cdecl:202 var
+R16014:16017 Coq.Init.Datatypes <> None constr
+R16055:16057 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16041:16053 MetaCoq.PCUIC.PCUICEnvironment Environment cst_universes proj
+R16034:16038 MetaCoq.PCUIC.PCUICEnvironment <> cdecl:202 var
+R16058:16072 MetaCoq.Template.Universes <> Monomorphic_ctx constr
+def 16197:16210 Environment global_env_ext
+R16232:16234 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R16222:16231 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+R16235:16248 MetaCoq.Template.Universes <> universes_decl ind
+def 16339:16345 Environment fst_ctx
+R16363:16366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16349:16362 MetaCoq.PCUIC.PCUICEnvironment Environment global_env_ext def
+R16367:16376 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+R16381:16383 Coq.Init.Datatypes <> fst def
+R16388:16435 MetaCoq.PCUIC.PCUICEnvironment Environment fst_ctx def
+def 16452:16460 Environment empty_ext
+R16468:16477 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+binder 16463:16464 <> Σ:204
+R16482:16495 MetaCoq.PCUIC.PCUICEnvironment Environment global_env_ext def
+R16504:16504 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16507:16508 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16524:16524 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16505:16506 MetaCoq.PCUIC.PCUICEnvironment <> Σ:204 var
+R16509:16523 MetaCoq.Template.Universes <> Monomorphic_ctx constr
+def 16647:16653 Environment program
+R16675:16677 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R16665:16674 MetaCoq.PCUIC.PCUICEnvironment Environment global_env rec
+R16678:16681 MetaCoq.PCUIC.PCUICEnvironment T term defax
+def 16740:16750 Environment app_context
+R16762:16768 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 16753:16754 <> Γ:205
+binder 16756:16758 <> Γ':206
+R16773:16779 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R16787:16790 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R16784:16786 MetaCoq.PCUIC.PCUICEnvironment <> Γ':206 var
+R16791:16792 MetaCoq.PCUIC.PCUICEnvironment <> Γ:205 var
+R16827:16837 MetaCoq.PCUIC.PCUICEnvironment Environment app_context def
+not 16806:16806 Environment :::x_',,,'_x
+def 17012:17028 Environment mkLambda_or_LetIn
+binder 17030:17030 <> d:207
+binder 17032:17032 <> t:208
+R17050:17058 MetaCoq.Template.BasicAst <> decl_body proj
+R17047:17047 MetaCoq.PCUIC.PCUICEnvironment <> d:207 var
+R17072:17075 Coq.Init.Datatypes <> None constr
+R17080:17086 MetaCoq.PCUIC.PCUICEnvironment T tLambda defax
+R17091:17099 MetaCoq.Template.BasicAst <> decl_name proj
+R17088:17088 MetaCoq.PCUIC.PCUICEnvironment <> d:207 var
+R17105:17113 MetaCoq.Template.BasicAst <> decl_type proj
+R17102:17102 MetaCoq.PCUIC.PCUICEnvironment <> d:207 var
+R17116:17116 MetaCoq.PCUIC.PCUICEnvironment <> t:208 var
+R17124:17127 Coq.Init.Datatypes <> Some constr
+R17134:17139 MetaCoq.PCUIC.PCUICEnvironment T tLetIn defax
+R17144:17152 MetaCoq.Template.BasicAst <> decl_name proj
+R17141:17141 MetaCoq.PCUIC.PCUICEnvironment <> d:207 var
+R17160:17168 MetaCoq.Template.BasicAst <> decl_type proj
+R17157:17157 MetaCoq.PCUIC.PCUICEnvironment <> d:207 var
+R17171:17171 MetaCoq.PCUIC.PCUICEnvironment <> t:208 var
+def 17196:17215 Environment it_mkLambda_or_LetIn
+R17222:17228 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 17218:17218 <> l:209
+R17236:17239 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 17232:17232 <> t:210
+R17249:17262 Coq.Lists.List <> fold_left def
+R17305:17305 MetaCoq.PCUIC.PCUICEnvironment <> t:210 var
+R17303:17303 MetaCoq.PCUIC.PCUICEnvironment <> l:209 var
+binder 17269:17271 <> acc:211
+binder 17273:17273 <> d:212
+R17278:17294 MetaCoq.PCUIC.PCUICEnvironment Environment mkLambda_or_LetIn def
+R17296:17296 MetaCoq.PCUIC.PCUICEnvironment <> d:212 var
+R17298:17300 MetaCoq.PCUIC.PCUICEnvironment <> acc:211 var
+def 17417:17431 Environment mkProd_or_LetIn
+binder 17433:17433 <> d:213
+binder 17435:17435 <> t:214
+R17453:17461 MetaCoq.Template.BasicAst <> decl_body proj
+R17450:17450 MetaCoq.PCUIC.PCUICEnvironment <> d:213 var
+R17475:17478 Coq.Init.Datatypes <> None constr
+R17483:17487 MetaCoq.PCUIC.PCUICEnvironment T tProd defax
+R17492:17500 MetaCoq.Template.BasicAst <> decl_name proj
+R17489:17489 MetaCoq.PCUIC.PCUICEnvironment <> d:213 var
+R17506:17514 MetaCoq.Template.BasicAst <> decl_type proj
+R17503:17503 MetaCoq.PCUIC.PCUICEnvironment <> d:213 var
+R17517:17517 MetaCoq.PCUIC.PCUICEnvironment <> t:214 var
+R17525:17528 Coq.Init.Datatypes <> Some constr
+R17535:17540 MetaCoq.PCUIC.PCUICEnvironment T tLetIn defax
+R17545:17553 MetaCoq.Template.BasicAst <> decl_name proj
+R17542:17542 MetaCoq.PCUIC.PCUICEnvironment <> d:213 var
+R17561:17569 MetaCoq.Template.BasicAst <> decl_type proj
+R17558:17558 MetaCoq.PCUIC.PCUICEnvironment <> d:213 var
+R17572:17572 MetaCoq.PCUIC.PCUICEnvironment <> t:214 var
+def 17597:17614 Environment it_mkProd_or_LetIn
+R17621:17627 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 17617:17617 <> l:215
+R17635:17638 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 17631:17631 <> t:216
+R17648:17661 Coq.Lists.List <> fold_left def
+R17702:17702 MetaCoq.PCUIC.PCUICEnvironment <> t:216 var
+R17700:17700 MetaCoq.PCUIC.PCUICEnvironment <> l:215 var
+binder 17668:17670 <> acc:217
+binder 17672:17672 <> d:218
+R17677:17691 MetaCoq.PCUIC.PCUICEnvironment Environment mkProd_or_LetIn def
+R17693:17693 MetaCoq.PCUIC.PCUICEnvironment <> d:218 var
+R17695:17697 MetaCoq.PCUIC.PCUICEnvironment <> acc:217 var
+prf 17714:17735 Environment it_mkProd_or_LetIn_app
+binder 17737:17737 <> l:219
+binder 17739:17740 <> l':220
+binder 17742:17742 <> t:221
+R17780:17782 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17750:17767 MetaCoq.PCUIC.PCUICEnvironment Environment it_mkProd_or_LetIn def
+R17771:17774 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R17770:17770 MetaCoq.PCUIC.PCUICEnvironment <> l:219 var
+R17775:17776 MetaCoq.PCUIC.PCUICEnvironment <> l':220 var
+R17779:17779 MetaCoq.PCUIC.PCUICEnvironment <> t:221 var
+R17783:17800 MetaCoq.PCUIC.PCUICEnvironment Environment it_mkProd_or_LetIn def
+R17802:17803 MetaCoq.PCUIC.PCUICEnvironment <> l':220 var
+R17806:17823 MetaCoq.PCUIC.PCUICEnvironment Environment it_mkProd_or_LetIn def
+R17825:17825 MetaCoq.PCUIC.PCUICEnvironment <> l:219 var
+R17827:17827 MetaCoq.PCUIC.PCUICEnvironment <> t:221 var
+def 17897:17900 Environment reln
+R17907:17910 Coq.Init.Datatypes <> list ind
+R17912:17915 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 17903:17903 <> l:222
+R17923:17925 Coq.Init.Datatypes <> nat ind
+binder 17919:17919 <> p:223
+R17935:17938 Coq.Init.Datatypes <> list ind
+R17940:17951 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+binder 17929:17931 <> Γ0:224
+R17969:17972 Coq.Init.Datatypes <> list ind
+R17974:17977 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R17992:17994 MetaCoq.PCUIC.PCUICEnvironment <> Γ0:224 var
+R18007:18008 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R18013:18013 MetaCoq.PCUIC.PCUICEnvironment <> l:222 var
+R18046:18049 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18024:18032 MetaCoq.Template.BasicAst <> decl_body proj
+R18024:18032 MetaCoq.Template.BasicAst <> decl_body proj
+R18024:18032 MetaCoq.Template.BasicAst <> decl_body proj
+R18037:18040 Coq.Init.Datatypes <> Some constr
+R18058:18061 MetaCoq.PCUIC.PCUICEnvironment <> reln:225 def
+R18067:18069 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R18066:18066 MetaCoq.PCUIC.PCUICEnvironment <> p:223 var
+R18063:18063 MetaCoq.PCUIC.PCUICEnvironment <> l:222 var
+R18107:18110 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18087:18095 MetaCoq.Template.BasicAst <> decl_body proj
+R18087:18095 MetaCoq.Template.BasicAst <> decl_body proj
+R18087:18095 MetaCoq.Template.BasicAst <> decl_body proj
+R18100:18103 Coq.Init.Datatypes <> None constr
+R18119:18122 MetaCoq.PCUIC.PCUICEnvironment <> reln:225 def
+R18140:18142 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R18139:18139 MetaCoq.PCUIC.PCUICEnvironment <> p:223 var
+R18131:18134 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R18125:18128 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R18130:18130 MetaCoq.PCUIC.PCUICEnvironment <> p:223 var
+R18135:18135 MetaCoq.PCUIC.PCUICEnvironment <> l:222 var
+def 18174:18191 Environment to_extended_list_k
+binder 18193:18194 <> Γ:227
+binder 18196:18196 <> k:228
+R18201:18204 MetaCoq.PCUIC.PCUICEnvironment Environment reln def
+R18206:18207 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R18209:18209 MetaCoq.PCUIC.PCUICEnvironment <> k:228 var
+R18211:18212 MetaCoq.PCUIC.PCUICEnvironment <> Γ:227 var
+def 18228:18243 Environment to_extended_list
+binder 18245:18246 <> Γ:229
+R18251:18268 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+R18270:18271 MetaCoq.PCUIC.PCUICEnvironment <> Γ:229 var
+prf 18285:18293 Environment reln_fold
+binder 18295:18295 <> f:230
+binder 18297:18299 <> ctx:231
+binder 18301:18301 <> n:232
+binder 18303:18305 <> acc:233
+R18346:18352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18313:18316 MetaCoq.PCUIC.PCUICEnvironment Environment reln def
+R18318:18320 MetaCoq.PCUIC.PCUICEnvironment <> acc:233 var
+R18322:18322 MetaCoq.PCUIC.PCUICEnvironment <> n:232 var
+R18325:18338 MetaCoq.Template.BasicAst <> fold_context_k def
+R18340:18340 MetaCoq.PCUIC.PCUICEnvironment <> f:230 var
+R18342:18344 MetaCoq.PCUIC.PCUICEnvironment <> ctx:231 var
+R18353:18356 MetaCoq.PCUIC.PCUICEnvironment Environment reln def
+R18358:18360 MetaCoq.PCUIC.PCUICEnvironment <> acc:233 var
+R18362:18362 MetaCoq.PCUIC.PCUICEnvironment <> n:232 var
+R18364:18366 MetaCoq.PCUIC.PCUICEnvironment <> ctx:231 var
+R18462:18481 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R18462:18481 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R18462:18481 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R18462:18481 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R18462:18481 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+prf 18516:18535 Environment reln_list_lift_above
+binder 18537:18537 <> l:234
+binder 18539:18539 <> p:235
+binder 18541:18542 <> Γ:236
+R18621:18628 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18550:18555 Coq.Lists.List <> Forall ind
+R18620:18620 MetaCoq.PCUIC.PCUICEnvironment <> l:234 var
+binder 18562:18562 <> x:237
+R18567:18573 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18575:18576 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18574:18574 <> n:238
+R18587:18590 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18578:18580 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18577:18577 MetaCoq.PCUIC.PCUICEnvironment <> x:237 var
+R18581:18584 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R18586:18586 MetaCoq.PCUIC.PCUICEnvironment <> n:238 var
+R18597:18600 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18592:18595 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R18591:18591 MetaCoq.PCUIC.PCUICEnvironment <> p:235 var
+R18596:18596 MetaCoq.PCUIC.PCUICEnvironment <> n:238 var
+R18602:18604 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R18601:18601 MetaCoq.PCUIC.PCUICEnvironment <> n:238 var
+R18606:18608 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R18605:18605 MetaCoq.PCUIC.PCUICEnvironment <> p:235 var
+R18609:18614 Coq.Init.Datatypes <> length def
+R18616:18617 MetaCoq.PCUIC.PCUICEnvironment <> Γ:236 var
+R18629:18634 Coq.Lists.List <> Forall ind
+R18700:18703 MetaCoq.PCUIC.PCUICEnvironment Environment reln def
+R18705:18705 MetaCoq.PCUIC.PCUICEnvironment <> l:234 var
+R18707:18707 MetaCoq.PCUIC.PCUICEnvironment <> p:235 var
+R18709:18710 MetaCoq.PCUIC.PCUICEnvironment <> Γ:236 var
+binder 18641:18641 <> x:239
+R18646:18652 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18654:18655 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18653:18653 <> n:240
+R18666:18669 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18657:18659 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18656:18656 MetaCoq.PCUIC.PCUICEnvironment <> x:239 var
+R18660:18663 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R18665:18665 MetaCoq.PCUIC.PCUICEnvironment <> n:240 var
+R18676:18679 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18671:18674 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R18670:18670 MetaCoq.PCUIC.PCUICEnvironment <> p:235 var
+R18675:18675 MetaCoq.PCUIC.PCUICEnvironment <> n:240 var
+R18681:18683 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R18680:18680 MetaCoq.PCUIC.PCUICEnvironment <> n:240 var
+R18685:18687 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R18684:18684 MetaCoq.PCUIC.PCUICEnvironment <> p:235 var
+R18688:18693 Coq.Init.Datatypes <> length def
+R18695:18696 MetaCoq.PCUIC.PCUICEnvironment <> Γ:236 var
+R18739:18749 Coq.Arith.PeanoNat Nat le_refl thm
+R18739:18749 Coq.Arith.PeanoNat Nat le_refl thm
+R18890:18893 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R18894:18894 Coq.Init.Datatypes <> S constr
+R18890:18893 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R18894:18894 Coq.Init.Datatypes <> S constr
+R18931:18931 Coq.Init.Datatypes <> S constr
+R18931:18931 Coq.Init.Datatypes <> S constr
+R18955:18971 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R18974:18984 Coq.Arith.PeanoNat Nat add_1_r thm
+R18955:18971 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R18955:18971 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R18974:18984 Coq.Arith.PeanoNat Nat add_1_r thm
+R18974:18984 Coq.Arith.PeanoNat Nat add_1_r thm
+R19014:19030 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19014:19030 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19014:19030 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19090:19093 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R19084:19087 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R19098:19098 Coq.Init.Datatypes <> S constr
+R19090:19093 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R19084:19087 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R19098:19098 Coq.Init.Datatypes <> S constr
+R19134:19150 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19153:19163 Coq.Arith.PeanoNat Nat add_1_r thm
+R19134:19150 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19134:19150 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19153:19163 Coq.Arith.PeanoNat Nat add_1_r thm
+R19153:19163 Coq.Arith.PeanoNat Nat add_1_r thm
+R19206:19222 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19206:19222 Coq.Arith.PeanoNat Nat add_succ_comm thm
+R19206:19222 Coq.Arith.PeanoNat Nat add_succ_comm thm
+prf 19317:19339 Environment to_extended_list_k_spec
+binder 19341:19342 <> Γ:241
+binder 19344:19344 <> k:242
+R19352:19357 Coq.Lists.List <> Forall ind
+R19434:19451 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+R19453:19454 MetaCoq.PCUIC.PCUICEnvironment <> Γ:241 var
+R19456:19456 MetaCoq.PCUIC.PCUICEnvironment <> k:242 var
+binder 19364:19364 <> x:243
+R19369:19375 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19377:19378 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 19376:19376 <> n:244
+R19389:19392 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19380:19382 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19379:19379 MetaCoq.PCUIC.PCUICEnvironment <> x:243 var
+R19383:19386 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R19388:19388 MetaCoq.PCUIC.PCUICEnvironment <> n:244 var
+R19399:19402 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19394:19397 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R19393:19393 MetaCoq.PCUIC.PCUICEnvironment <> k:242 var
+R19398:19398 MetaCoq.PCUIC.PCUICEnvironment <> n:244 var
+R19404:19406 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R19403:19403 MetaCoq.PCUIC.PCUICEnvironment <> n:244 var
+R19408:19410 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R19407:19407 MetaCoq.PCUIC.PCUICEnvironment <> k:242 var
+R19411:19416 Coq.Init.Datatypes <> length def
+R19418:19419 MetaCoq.PCUIC.PCUICEnvironment <> Γ:241 var
+R19479:19498 MetaCoq.PCUIC.PCUICEnvironment Environment reln_list_lift_above thm
+R19500:19501 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R19479:19498 MetaCoq.PCUIC.PCUICEnvironment Environment reln_list_lift_above thm
+R19500:19501 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R19521:19538 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+prf 19594:19620 Environment to_extended_list_lift_above
+binder 19622:19623 <> Γ:245
+R19631:19636 Coq.Lists.List <> Forall ind
+R19688:19703 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list def
+R19705:19706 MetaCoq.PCUIC.PCUICEnvironment <> Γ:245 var
+binder 19643:19643 <> x:246
+R19648:19654 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19656:19657 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 19655:19655 <> n:247
+R19668:19671 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19659:19661 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19658:19658 MetaCoq.PCUIC.PCUICEnvironment <> x:246 var
+R19662:19665 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R19667:19667 MetaCoq.PCUIC.PCUICEnvironment <> n:247 var
+R19673:19675 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R19672:19672 MetaCoq.PCUIC.PCUICEnvironment <> n:247 var
+R19676:19681 Coq.Init.Datatypes <> length def
+R19683:19684 MetaCoq.PCUIC.PCUICEnvironment <> Γ:245 var
+R19729:19748 MetaCoq.PCUIC.PCUICEnvironment Environment reln_list_lift_above thm
+R19750:19751 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R19729:19748 MetaCoq.PCUIC.PCUICEnvironment Environment reln_list_lift_above thm
+R19750:19751 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R19771:19786 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list def
+R19824:19834 MetaCoq.Template.utils.All_Forall <> Forall_impl thm
+R19824:19834 MetaCoq.Template.utils.All_Forall <> Forall_impl thm
+def 19913:19920 Environment reln_alt
+binder 19922:19922 <> p:248
+R19930:19936 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 19925:19926 <> Γ:249
+R19952:19953 MetaCoq.PCUIC.PCUICEnvironment <> Γ:249 var
+R19966:19967 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R19972:19973 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R20006:20009 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R19984:19992 MetaCoq.Template.BasicAst <> decl_body proj
+R19984:19992 MetaCoq.Template.BasicAst <> decl_body proj
+R19984:19992 MetaCoq.Template.BasicAst <> decl_body proj
+R19997:20000 Coq.Init.Datatypes <> Some constr
+R20016:20023 MetaCoq.PCUIC.PCUICEnvironment <> reln_alt:250 def
+R20033:20034 MetaCoq.PCUIC.PCUICEnvironment <> Γ:249 var
+R20027:20029 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R20026:20026 MetaCoq.PCUIC.PCUICEnvironment <> p:248 var
+R20065:20068 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20045:20053 MetaCoq.Template.BasicAst <> decl_body proj
+R20045:20053 MetaCoq.Template.BasicAst <> decl_body proj
+R20045:20053 MetaCoq.Template.BasicAst <> decl_body proj
+R20058:20061 Coq.Init.Datatypes <> None constr
+R20081:20084 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20075:20078 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R20080:20080 MetaCoq.PCUIC.PCUICEnvironment <> p:248 var
+R20085:20092 MetaCoq.PCUIC.PCUICEnvironment <> reln_alt:250 def
+R20102:20103 MetaCoq.PCUIC.PCUICEnvironment <> Γ:249 var
+R20096:20098 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R20095:20095 MetaCoq.PCUIC.PCUICEnvironment <> p:248 var
+prf 20123:20133 Environment reln_alt_eq
+binder 20135:20135 <> l:252
+binder 20137:20138 <> Γ:253
+binder 20140:20140 <> k:254
+R20155:20157 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20144:20147 MetaCoq.PCUIC.PCUICEnvironment Environment reln def
+R20149:20149 MetaCoq.PCUIC.PCUICEnvironment <> l:252 var
+R20151:20151 MetaCoq.PCUIC.PCUICEnvironment <> k:254 var
+R20153:20154 MetaCoq.PCUIC.PCUICEnvironment <> Γ:253 var
+R20182:20185 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R20158:20165 Coq.Lists.List <> rev def
+R20168:20175 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt def
+R20177:20177 MetaCoq.PCUIC.PCUICEnvironment <> k:254 var
+R20179:20180 MetaCoq.PCUIC.PCUICEnvironment <> Γ:253 var
+R20186:20186 MetaCoq.PCUIC.PCUICEnvironment <> l:252 var
+R20328:20336 Coq.Lists.List <> app_assoc thm
+R20328:20336 Coq.Lists.List <> app_assoc thm
+R20328:20336 Coq.Lists.List <> app_assoc thm
+prf 20355:20377 Environment to_extended_list_k_cons
+binder 20379:20379 <> d:255
+binder 20381:20382 <> Γ:256
+binder 20384:20384 <> k:257
+R20422:20428 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20392:20409 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+R20413:20416 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20412:20412 MetaCoq.PCUIC.PCUICEnvironment <> d:255 var
+R20417:20418 MetaCoq.PCUIC.PCUICEnvironment <> Γ:256 var
+R20421:20421 MetaCoq.PCUIC.PCUICEnvironment <> k:257 var
+R20438:20446 MetaCoq.Template.BasicAst <> decl_body proj
+R20435:20435 MetaCoq.PCUIC.PCUICEnvironment <> d:255 var
+R20460:20463 Coq.Init.Datatypes <> None constr
+R20495:20498 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R20468:20485 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+R20487:20488 MetaCoq.PCUIC.PCUICEnvironment <> Γ:256 var
+R20491:20491 Coq.Init.Datatypes <> S constr
+R20493:20493 MetaCoq.PCUIC.PCUICEnvironment <> k:257 var
+R20499:20499 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R20506:20506 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R20500:20503 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R20505:20505 MetaCoq.PCUIC.PCUICEnvironment <> k:257 var
+R20514:20517 Coq.Init.Datatypes <> Some constr
+R20524:20541 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+R20543:20544 MetaCoq.PCUIC.PCUICEnvironment <> Γ:256 var
+R20547:20547 Coq.Init.Datatypes <> S constr
+R20549:20549 MetaCoq.PCUIC.PCUICEnvironment <> k:257 var
+R20581:20598 MetaCoq.PCUIC.PCUICEnvironment Environment to_extended_list_k def
+R20613:20623 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20613:20623 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20613:20623 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20691:20701 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20703:20713 Coq.Arith.PeanoNat Nat add_1_r thm
+R20691:20701 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20691:20701 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20703:20713 Coq.Arith.PeanoNat Nat add_1_r thm
+R20703:20713 Coq.Arith.PeanoNat Nat add_1_r thm
+R20735:20745 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20735:20745 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20735:20745 MetaCoq.PCUIC.PCUICEnvironment Environment reln_alt_eq thm
+R20767:20775 Coq.Lists.List <> app_assoc thm
+R20779:20787 Coq.Lists.List <> app_nil_r thm
+R20790:20800 Coq.Arith.PeanoNat Nat add_1_r thm
+R20767:20775 Coq.Lists.List <> app_assoc thm
+R20767:20775 Coq.Lists.List <> app_assoc thm
+R20779:20787 Coq.Lists.List <> app_nil_r thm
+R20779:20787 Coq.Lists.List <> app_nil_r thm
+R20779:20787 Coq.Lists.List <> app_nil_r thm
+R20779:20787 Coq.Lists.List <> app_nil_r thm
+R20790:20800 Coq.Arith.PeanoNat Nat add_1_r thm
+R20790:20800 Coq.Arith.PeanoNat Nat add_1_r thm
+def 20825:20839 Environment arities_context
+R20846:20849 Coq.Init.Datatypes <> list ind
+R20851:20868 MetaCoq.PCUIC.PCUICEnvironment Environment one_inductive_body rec
+binder 20842:20842 <> l:258
+R20878:20884 MetaCoq.Template.utils.MCList <> rev_map def
+R21005:21005 MetaCoq.PCUIC.PCUICEnvironment <> l:258 var
+binder 20891:20893 <> ind:259
+R20898:20901 MetaCoq.PCUIC.PCUICEnvironment Environment vass def
+R20904:20912 MetaCoq.Template.BasicAst <> mkBindAnn constr
+R20972:20984 MetaCoq.PCUIC.PCUICEnvironment Environment ind_relevance proj
+R20967:20969 MetaCoq.PCUIC.PCUICEnvironment <> ind:259 var
+R20915:20920 MetaCoq.Template.BasicAst <> nNamed constr
+R20927:20934 MetaCoq.PCUIC.PCUICEnvironment Environment ind_name proj
+R20922:20924 MetaCoq.PCUIC.PCUICEnvironment <> ind:259 var
+R20994:21001 MetaCoq.PCUIC.PCUICEnvironment Environment ind_type proj
+R20989:20991 MetaCoq.PCUIC.PCUICEnvironment <> ind:259 var
+prf 21017:21038 Environment arities_context_length
+binder 21040:21040 <> l:260
+R21064:21066 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21044:21045 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21063:21063 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21046:21060 MetaCoq.PCUIC.PCUICEnvironment Environment arities_context def
+R21062:21062 MetaCoq.PCUIC.PCUICEnvironment <> l:260 var
+R21067:21068 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21070:21070 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21069:21069 MetaCoq.PCUIC.PCUICEnvironment <> l:260 var
+R21089:21103 MetaCoq.PCUIC.PCUICEnvironment Environment arities_context def
+R21118:21131 MetaCoq.Template.utils.MCList <> rev_map_length thm
+R21118:21131 MetaCoq.Template.utils.MCList <> rev_map_length thm
+R21118:21131 MetaCoq.Template.utils.MCList <> rev_map_length thm
+R21164:21185 MetaCoq.PCUIC.PCUICEnvironment Environment arities_context_length thm
+prf 21203:21219 Environment app_context_nil_l
+binder 21221:21222 <> Γ:261
+R21235:21237 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21228:21232 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21226:21227 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R21233:21234 MetaCoq.PCUIC.PCUICEnvironment <> Γ:261 var
+R21238:21239 MetaCoq.PCUIC.PCUICEnvironment <> Γ:261 var
+R21262:21272 MetaCoq.PCUIC.PCUICEnvironment Environment app_context def
+R21283:21291 Coq.Lists.List <> app_nil_r thm
+R21283:21291 Coq.Lists.List <> app_nil_r thm
+R21283:21291 Coq.Lists.List <> app_nil_r thm
+prf 21323:21339 Environment app_context_assoc
+binder 21341:21342 <> Γ:262
+binder 21344:21346 <> Γ':263
+binder 21348:21351 <> Γ'':264
+R21376:21378 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21357:21362 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21375:21375 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21355:21356 MetaCoq.PCUIC.PCUICEnvironment <> Γ:262 var
+R21366:21370 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21363:21365 MetaCoq.PCUIC.PCUICEnvironment <> Γ':263 var
+R21371:21374 MetaCoq.PCUIC.PCUICEnvironment <> Γ'':264 var
+R21389:21393 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21381:21385 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21379:21380 MetaCoq.PCUIC.PCUICEnvironment <> Γ:262 var
+R21386:21388 MetaCoq.PCUIC.PCUICEnvironment <> Γ':263 var
+R21394:21397 MetaCoq.PCUIC.PCUICEnvironment <> Γ'':264 var
+R21416:21426 MetaCoq.PCUIC.PCUICEnvironment Environment app_context def
+R21441:21449 Coq.Lists.List <> app_assoc thm
+R21441:21449 Coq.Lists.List <> app_assoc thm
+R21441:21449 Coq.Lists.List <> app_assoc thm
+prf 21466:21481 Environment app_context_cons
+binder 21483:21484 <> Γ:265
+binder 21486:21488 <> Γ':266
+binder 21490:21490 <> A:267
+R21511:21513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21496:21501 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21510:21510 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21494:21495 MetaCoq.PCUIC.PCUICEnvironment <> Γ:265 var
+R21505:21508 MetaCoq.Template.BasicAst <> :::x_',,'_x not
+R21502:21504 MetaCoq.PCUIC.PCUICEnvironment <> Γ':266 var
+R21509:21509 MetaCoq.PCUIC.PCUICEnvironment <> A:267 var
+R21514:21514 MetaCoq.Template.BasicAst <> :::x_',,'_x not
+R21525:21529 MetaCoq.Template.BasicAst <> :::x_',,'_x not
+R21517:21521 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21515:21516 MetaCoq.PCUIC.PCUICEnvironment <> Γ:265 var
+R21522:21524 MetaCoq.PCUIC.PCUICEnvironment <> Γ':266 var
+R21530:21530 MetaCoq.PCUIC.PCUICEnvironment <> A:267 var
+R21549:21565 MetaCoq.PCUIC.PCUICEnvironment Environment app_context_assoc thm
+R21571:21571 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21573:21573 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21549:21565 MetaCoq.PCUIC.PCUICEnvironment Environment app_context_assoc thm
+R21571:21571 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21573:21573 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+prf 21591:21608 Environment app_context_length
+binder 21610:21611 <> Γ:268
+binder 21613:21615 <> Γ':269
+R21632:21634 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21619:21620 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21631:21631 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21623:21627 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21621:21622 MetaCoq.PCUIC.PCUICEnvironment <> Γ:268 var
+R21628:21630 MetaCoq.PCUIC.PCUICEnvironment <> Γ':269 var
+R21641:21643 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R21635:21636 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21640:21640 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21637:21639 MetaCoq.PCUIC.PCUICEnvironment <> Γ':269 var
+R21644:21645 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21648:21648 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21646:21647 MetaCoq.PCUIC.PCUICEnvironment <> Γ:268 var
+R21667:21677 MetaCoq.PCUIC.PCUICEnvironment Environment app_context def
+R21692:21701 Coq.Lists.List <> app_length thm
+R21692:21701 Coq.Lists.List <> app_length thm
+R21692:21701 Coq.Lists.List <> app_length thm
+R21734:21751 MetaCoq.PCUIC.PCUICEnvironment Environment app_context_length thm
+prf 21769:21792 Environment nth_error_app_context_ge
+binder 21794:21794 <> v:270
+binder 21796:21797 <> Γ:271
+binder 21799:21801 <> Γ':272
+R21820:21823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21815:21818 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R21809:21810 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21814:21814 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21811:21813 MetaCoq.PCUIC.PCUICEnvironment <> Γ':272 var
+R21819:21819 MetaCoq.PCUIC.PCUICEnvironment <> v:270 var
+R21848:21850 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21824:21832 Coq.Lists.List <> nth_error def
+R21847:21847 MetaCoq.PCUIC.PCUICEnvironment <> v:270 var
+R21837:21841 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21835:21836 MetaCoq.PCUIC.PCUICEnvironment <> Γ:271 var
+R21842:21844 MetaCoq.PCUIC.PCUICEnvironment <> Γ':272 var
+R21851:21859 Coq.Lists.List <> nth_error def
+R21866:21868 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R21865:21865 MetaCoq.PCUIC.PCUICEnvironment <> v:270 var
+R21869:21870 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21874:21874 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21871:21873 MetaCoq.PCUIC.PCUICEnvironment <> Γ':272 var
+R21861:21862 MetaCoq.PCUIC.PCUICEnvironment <> Γ:271 var
+R21893:21908 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R21893:21908 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+prf 21925:21948 Environment nth_error_app_context_lt
+binder 21950:21950 <> v:273
+binder 21952:21953 <> Γ:274
+binder 21955:21957 <> Γ':275
+R21975:21978 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21966:21968 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R21965:21965 MetaCoq.PCUIC.PCUICEnvironment <> v:273 var
+R21969:21970 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21974:21974 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21971:21973 MetaCoq.PCUIC.PCUICEnvironment <> Γ':275 var
+R22003:22005 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21979:21987 Coq.Lists.List <> nth_error def
+R22002:22002 MetaCoq.PCUIC.PCUICEnvironment <> v:273 var
+R21992:21996 MetaCoq.PCUIC.PCUICEnvironment Environment :::x_',,,'_x not
+R21990:21991 MetaCoq.PCUIC.PCUICEnvironment <> Γ:274 var
+R21997:21999 MetaCoq.PCUIC.PCUICEnvironment <> Γ':275 var
+R22006:22014 Coq.Lists.List <> nth_error def
+R22020:22020 MetaCoq.PCUIC.PCUICEnvironment <> v:273 var
+R22016:22018 MetaCoq.PCUIC.PCUICEnvironment <> Γ':275 var
+R22038:22053 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R22038:22053 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+def 22076:22100 Environment map_mutual_inductive_body
+binder 22102:22102 <> f:276
+binder 22104:22104 <> m:277
+R22119:22119 MetaCoq.PCUIC.PCUICEnvironment <> m:277 var
+R22132:22158 MetaCoq.PCUIC.PCUICEnvironment Environment Build_mutual_inductive_body constr
+R22211:22222 MetaCoq.PCUIC.PCUICEnvironment Environment ind_variance proj
+R22197:22209 MetaCoq.PCUIC.PCUICEnvironment Environment ind_universes proj
+R22186:22195 MetaCoq.PCUIC.PCUICEnvironment Environment ind_bodies proj
+R22167:22175 MetaCoq.PCUIC.PCUICEnvironment Environment ind_npars proj
+R22248:22262 MetaCoq.PCUIC.PCUICEnvironment Environment arities_context def
+binder 22237:22243 <> arities:279
+R22296:22309 MetaCoq.Template.BasicAst <> fold_context_k def
+R22311:22311 MetaCoq.PCUIC.PCUICEnvironment <> f:276 var
+binder 22288:22291 <> pars:280
+R22331:22357 MetaCoq.PCUIC.PCUICEnvironment Environment Build_mutual_inductive_body constr
+R22376:22379 MetaCoq.PCUIC.PCUICEnvironment <> pars:280 var
+R22416:22418 Coq.Lists.List <> map def
+R22421:22442 MetaCoq.PCUIC.PCUICEnvironment Environment map_one_inductive_body def
+R22445:22463 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R22465:22468 MetaCoq.PCUIC.PCUICEnvironment <> pars:280 var
+R22472:22477 Coq.Init.Datatypes <> length def
+R22479:22485 MetaCoq.PCUIC.PCUICEnvironment <> arities:279 var
+R22488:22488 MetaCoq.PCUIC.PCUICEnvironment <> f:276 var
+prf 22582:22593 Environment ind_type_map
+binder 22595:22595 <> f:281
+binder 22597:22605 <> npars_ass:282
+binder 22607:22613 <> arities:283
+binder 22615:22617 <> oib:284
+R22682:22684 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22625:22632 MetaCoq.PCUIC.PCUICEnvironment Environment ind_type proj
+R22635:22656 MetaCoq.PCUIC.PCUICEnvironment Environment map_one_inductive_body def
+R22658:22666 MetaCoq.PCUIC.PCUICEnvironment <> npars_ass:282 var
+R22668:22674 MetaCoq.PCUIC.PCUICEnvironment <> arities:283 var
+R22676:22676 MetaCoq.PCUIC.PCUICEnvironment <> f:281 var
+R22678:22680 MetaCoq.PCUIC.PCUICEnvironment <> oib:284 var
+R22685:22685 MetaCoq.PCUIC.PCUICEnvironment <> f:281 var
+R22690:22697 MetaCoq.PCUIC.PCUICEnvironment Environment ind_type proj
+R22699:22701 MetaCoq.PCUIC.PCUICEnvironment <> oib:284 var
+prf 22755:22767 Environment ind_ctors_map
+binder 22769:22769 <> f:285
+binder 22771:22779 <> npars_ass:286
+binder 22781:22787 <> arities:287
+binder 22789:22791 <> oib:288
+R22857:22863 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22799:22807 MetaCoq.PCUIC.PCUICEnvironment Environment ind_ctors proj
+R22810:22831 MetaCoq.PCUIC.PCUICEnvironment Environment map_one_inductive_body def
+R22833:22841 MetaCoq.PCUIC.PCUICEnvironment <> npars_ass:286 var
+R22843:22849 MetaCoq.PCUIC.PCUICEnvironment <> arities:287 var
+R22851:22851 MetaCoq.PCUIC.PCUICEnvironment <> f:285 var
+R22853:22855 MetaCoq.PCUIC.PCUICEnvironment <> oib:288 var
+R22864:22866 Coq.Lists.List <> map def
+R22912:22920 MetaCoq.PCUIC.PCUICEnvironment Environment ind_ctors proj
+R22922:22924 MetaCoq.PCUIC.PCUICEnvironment <> oib:288 var
+R22869:22888 MetaCoq.PCUIC.PCUICEnvironment Environment map_constructor_body def
+R22890:22898 MetaCoq.PCUIC.PCUICEnvironment <> npars_ass:286 var
+R22900:22906 MetaCoq.PCUIC.PCUICEnvironment <> arities:287 var
+R22908:22908 MetaCoq.PCUIC.PCUICEnvironment <> f:285 var
+prf 22985:22996 Environment ind_pars_map
+binder 22998:22998 <> f:289
+binder 23000:23000 <> m:290
+R23050:23056 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23008:23017 MetaCoq.PCUIC.PCUICEnvironment Environment ind_params proj
+R23020:23044 MetaCoq.PCUIC.PCUICEnvironment Environment map_mutual_inductive_body def
+R23046:23046 MetaCoq.PCUIC.PCUICEnvironment <> f:289 var
+R23048:23048 MetaCoq.PCUIC.PCUICEnvironment <> m:290 var
+R23057:23070 MetaCoq.Template.BasicAst <> fold_context_k def
+R23072:23072 MetaCoq.PCUIC.PCUICEnvironment <> f:289 var
+R23075:23084 MetaCoq.PCUIC.PCUICEnvironment Environment ind_params proj
+R23086:23086 MetaCoq.PCUIC.PCUICEnvironment <> m:290 var
+prf 23145:23157 Environment ind_projs_map
+binder 23159:23159 <> f:291
+binder 23161:23169 <> npars_ass:292
+binder 23171:23177 <> arities:293
+binder 23179:23181 <> oib:294
+R23247:23253 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23189:23197 MetaCoq.PCUIC.PCUICEnvironment Environment ind_projs proj
+R23200:23221 MetaCoq.PCUIC.PCUICEnvironment Environment map_one_inductive_body def
+R23223:23231 MetaCoq.PCUIC.PCUICEnvironment <> npars_ass:292 var
+R23233:23239 MetaCoq.PCUIC.PCUICEnvironment <> arities:293 var
+R23241:23241 MetaCoq.PCUIC.PCUICEnvironment <> f:291 var
+R23243:23245 MetaCoq.PCUIC.PCUICEnvironment <> oib:294 var
+R23254:23256 Coq.Lists.List <> map def
+R23293:23301 MetaCoq.PCUIC.PCUICEnvironment Environment ind_projs proj
+R23303:23305 MetaCoq.PCUIC.PCUICEnvironment <> oib:294 var
+R23259:23277 MetaCoq.PCUIC.PCUICEnvironment Environment map_projection_body def
+R23279:23287 MetaCoq.PCUIC.PCUICEnvironment <> npars_ass:292 var
+R23289:23289 MetaCoq.PCUIC.PCUICEnvironment <> f:291 var
+def 23369:23373 Environment projs
+binder 23375:23377 <> ind:295
+binder 23379:23383 <> npars:296
+binder 23385:23385 <> k:297
+R23400:23400 MetaCoq.PCUIC.PCUICEnvironment <> k:297 var
+R23418:23419 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R23427:23427 Coq.Init.Datatypes <> S constr
+R23435:23435 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R23478:23482 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R23436:23440 MetaCoq.PCUIC.PCUICEnvironment T tProj defax
+R23443:23454 MetaCoq.Template.Kernames <> mkProjection constr
+R23456:23458 MetaCoq.PCUIC.PCUICEnvironment <> ind:295 var
+R23460:23464 MetaCoq.PCUIC.PCUICEnvironment <> npars:296 var
+R23471:23474 MetaCoq.PCUIC.PCUICEnvironment T tRel defax
+R23483:23487 MetaCoq.PCUIC.PCUICEnvironment <> projs:298 def
+R23493:23497 MetaCoq.PCUIC.PCUICEnvironment <> npars:296 var
+R23489:23491 MetaCoq.PCUIC.PCUICEnvironment <> ind:295 var
+prf 23520:23531 Environment projs_length
+binder 23533:23535 <> ind:300
+binder 23537:23541 <> npars:301
+binder 23543:23543 <> k:302
+R23567:23569 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23547:23548 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23566:23566 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23549:23553 MetaCoq.PCUIC.PCUICEnvironment Environment projs def
+R23555:23557 MetaCoq.PCUIC.PCUICEnvironment <> ind:300 var
+R23559:23563 MetaCoq.PCUIC.PCUICEnvironment <> npars:301 var
+R23565:23565 MetaCoq.PCUIC.PCUICEnvironment <> k:302 var
+R23570:23570 MetaCoq.PCUIC.PCUICEnvironment <> k:302 var
+prf 23622:23645 Environment context_assumptions_fold
+binder 23647:23648 <> Γ:303
+binder 23650:23650 <> f:304
+R23695:23697 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23654:23672 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R23675:23688 MetaCoq.Template.BasicAst <> fold_context_k def
+R23690:23690 MetaCoq.PCUIC.PCUICEnvironment <> f:304 var
+R23692:23693 MetaCoq.PCUIC.PCUICEnvironment <> Γ:303 var
+R23698:23716 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R23718:23719 MetaCoq.PCUIC.PCUICEnvironment <> Γ:303 var
+R23743:23760 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23743:23760 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23743:23760 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23774:23777 MetaCoq.Template.utils.MCList <> mapi def
+R23794:23801 Coq.Arith.PeanoNat Nat pred def
+R23803:23804 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23807:23807 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23794:23801 Coq.Arith.PeanoNat Nat pred def
+R23803:23804 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23807:23807 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23906:23929 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_fold thm
+prf 23947:23970 Environment nth_error_fold_context_k
+R23980:23983 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23977:23979 Coq.Init.Datatypes <> nat ind
+R23988:23991 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23984:23987 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R23992:23995 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 23973:23973 <> f:305
+R24022:24028 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 24011:24013 <> Γ':306
+binder 24015:24018 <> Γ'':307
+R24036:24038 Coq.Init.Datatypes <> nat ind
+binder 24032:24032 <> v:308
+R24062:24065 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24049:24051 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R24048:24048 MetaCoq.PCUIC.PCUICEnvironment <> v:308 var
+R24052:24057 Coq.Init.Datatypes <> length def
+R24059:24061 MetaCoq.PCUIC.PCUICEnvironment <> Γ':306 var
+binder 24073:24075 <> nth:309
+R24112:24123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24101:24103 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24086:24094 Coq.Lists.List <> nth_error def
+R24100:24100 MetaCoq.PCUIC.PCUICEnvironment <> v:308 var
+R24096:24098 MetaCoq.PCUIC.PCUICEnvironment <> Γ':306 var
+R24104:24107 Coq.Init.Datatypes <> Some constr
+R24109:24111 MetaCoq.PCUIC.PCUICEnvironment <> nth:309 var
+R24158:24160 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24124:24132 Coq.Lists.List <> nth_error def
+R24157:24157 MetaCoq.PCUIC.PCUICEnvironment <> v:308 var
+R24135:24148 MetaCoq.Template.BasicAst <> fold_context_k def
+R24150:24150 MetaCoq.PCUIC.PCUICEnvironment <> f:305 var
+R24152:24154 MetaCoq.PCUIC.PCUICEnvironment <> Γ':306 var
+R24161:24164 Coq.Init.Datatypes <> Some constr
+R24167:24174 MetaCoq.Template.BasicAst <> map_decl def
+R24199:24201 MetaCoq.PCUIC.PCUICEnvironment <> nth:309 var
+R24177:24177 MetaCoq.PCUIC.PCUICEnvironment <> f:305 var
+R24190:24192 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R24180:24185 Coq.Init.Datatypes <> length def
+R24187:24189 MetaCoq.PCUIC.PCUICEnvironment <> Γ':306 var
+R24193:24193 Coq.Init.Datatypes <> S constr
+R24195:24195 MetaCoq.PCUIC.PCUICEnvironment <> v:308 var
+R24286:24305 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24286:24305 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24286:24305 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24286:24305 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24286:24305 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+prf 24449:24475 Environment nth_error_fold_context_k_eq
+R24496:24502 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+binder 24490:24492 <> Γ':310
+R24510:24512 Coq.Init.Datatypes <> nat ind
+binder 24506:24506 <> v:311
+R24523:24526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24520:24522 Coq.Init.Datatypes <> nat ind
+R24531:24534 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24527:24530 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R24535:24538 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 24516:24516 <> f:312
+R24582:24590 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24548:24556 Coq.Lists.List <> nth_error def
+R24581:24581 MetaCoq.PCUIC.PCUICEnvironment <> v:311 var
+R24559:24572 MetaCoq.Template.BasicAst <> fold_context_k def
+R24574:24574 MetaCoq.PCUIC.PCUICEnvironment <> f:312 var
+R24576:24578 MetaCoq.PCUIC.PCUICEnvironment <> Γ':310 var
+R24591:24600 Coq.Init.Datatypes <> option_map def
+R24637:24645 Coq.Lists.List <> nth_error def
+R24651:24651 MetaCoq.PCUIC.PCUICEnvironment <> v:311 var
+R24647:24649 MetaCoq.PCUIC.PCUICEnvironment <> Γ':310 var
+R24603:24610 MetaCoq.Template.BasicAst <> map_decl def
+R24613:24613 MetaCoq.PCUIC.PCUICEnvironment <> f:312 var
+R24626:24628 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R24616:24621 Coq.Init.Datatypes <> length def
+R24623:24625 MetaCoq.PCUIC.PCUICEnvironment <> Γ':310 var
+R24629:24629 Coq.Init.Datatypes <> S constr
+R24631:24631 MetaCoq.PCUIC.PCUICEnvironment <> v:311 var
+R24711:24724 MetaCoq.Template.BasicAst <> fold_context_k def
+R24746:24758 MetaCoq.Template.utils.MCList <> nth_error_nil thm
+R24746:24758 MetaCoq.Template.utils.MCList <> nth_error_nil thm
+R24746:24758 MetaCoq.Template.utils.MCList <> nth_error_nil thm
+R24794:24813 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24794:24813 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24794:24813 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24794:24813 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R24794:24813 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+prf 24933:24944 Environment nth_error_ge
+binder 24947:24948 <> Γ:313
+binder 24950:24952 <> Γ':314
+binder 24954:24954 <> v:315
+binder 24956:24959 <> Γ'':316
+R24970:24973 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24967:24969 Coq.Init.Datatypes <> nat ind
+R24978:24981 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24974:24977 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R24982:24985 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 24963:24963 <> f:317
+R25009:25016 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25004:25007 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R24994:24999 Coq.Init.Datatypes <> length def
+R25001:25003 MetaCoq.PCUIC.PCUICEnvironment <> Γ':314 var
+R25008:25008 MetaCoq.PCUIC.PCUICEnvironment <> v:315 var
+R25040:25046 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25017:25025 Coq.Lists.List <> nth_error def
+R25039:25039 MetaCoq.PCUIC.PCUICEnvironment <> v:315 var
+R25031:25034 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25028:25030 MetaCoq.PCUIC.PCUICEnvironment <> Γ':314 var
+R25035:25036 MetaCoq.PCUIC.PCUICEnvironment <> Γ:313 var
+R25047:25055 Coq.Lists.List <> nth_error def
+R25106:25108 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R25095:25100 Coq.Init.Datatypes <> length def
+R25102:25105 MetaCoq.PCUIC.PCUICEnvironment <> Γ'':316 var
+R25109:25109 MetaCoq.PCUIC.PCUICEnvironment <> v:315 var
+R25078:25081 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25058:25071 MetaCoq.Template.BasicAst <> fold_context_k def
+R25073:25073 MetaCoq.PCUIC.PCUICEnvironment <> f:317 var
+R25075:25077 MetaCoq.PCUIC.PCUICEnvironment <> Γ':314 var
+R25086:25089 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25082:25085 MetaCoq.PCUIC.PCUICEnvironment <> Γ'':316 var
+R25090:25091 MetaCoq.PCUIC.PCUICEnvironment <> Γ:313 var
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25172:25192 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25153:25168 MetaCoq.Template.utils.MCList <> nth_error_app_ge thm
+R25172:25192 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25172:25192 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25172:25192 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25221:25241 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25221:25241 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25221:25241 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25261:25281 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25261:25281 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25261:25281 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+prf 25311:25322 Environment nth_error_lt
+binder 25325:25326 <> Γ:318
+binder 25328:25330 <> Γ':319
+binder 25332:25335 <> Γ'':320
+binder 25337:25337 <> v:321
+R25348:25351 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25345:25347 Coq.Init.Datatypes <> nat ind
+R25356:25359 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25352:25355 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R25360:25363 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 25341:25341 <> f:322
+R25386:25393 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25373:25375 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R25372:25372 MetaCoq.PCUIC.PCUICEnvironment <> v:321 var
+R25376:25381 Coq.Init.Datatypes <> length def
+R25383:25385 MetaCoq.PCUIC.PCUICEnvironment <> Γ':319 var
+R25442:25448 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25394:25402 Coq.Lists.List <> nth_error def
+R25441:25441 MetaCoq.PCUIC.PCUICEnvironment <> v:321 var
+R25425:25428 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25405:25418 MetaCoq.Template.BasicAst <> fold_context_k def
+R25420:25420 MetaCoq.PCUIC.PCUICEnvironment <> f:322 var
+R25422:25424 MetaCoq.PCUIC.PCUICEnvironment <> Γ':319 var
+R25433:25436 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25429:25432 MetaCoq.PCUIC.PCUICEnvironment <> Γ'':320 var
+R25437:25438 MetaCoq.PCUIC.PCUICEnvironment <> Γ:318 var
+R25449:25458 Coq.Init.Datatypes <> option_map def
+R25495:25503 Coq.Lists.List <> nth_error def
+R25517:25517 MetaCoq.PCUIC.PCUICEnvironment <> v:321 var
+R25509:25512 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25506:25508 MetaCoq.PCUIC.PCUICEnvironment <> Γ':319 var
+R25513:25514 MetaCoq.PCUIC.PCUICEnvironment <> Γ:318 var
+R25461:25468 MetaCoq.Template.BasicAst <> map_decl def
+R25471:25471 MetaCoq.PCUIC.PCUICEnvironment <> f:322 var
+R25484:25486 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R25474:25479 Coq.Init.Datatypes <> length def
+R25481:25483 MetaCoq.PCUIC.PCUICEnvironment <> Γ':319 var
+R25487:25487 Coq.Init.Datatypes <> S constr
+R25489:25489 MetaCoq.PCUIC.PCUICEnvironment <> v:321 var
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25568:25583 MetaCoq.Template.utils.MCList <> nth_error_app_lt thm
+R25598:25624 MetaCoq.PCUIC.PCUICEnvironment Environment nth_error_fold_context_k_eq thm
+R25598:25624 MetaCoq.PCUIC.PCUICEnvironment Environment nth_error_fold_context_k_eq thm
+R25598:25624 MetaCoq.PCUIC.PCUICEnvironment Environment nth_error_fold_context_k_eq thm
+R25662:25682 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25662:25682 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+R25662:25682 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+prf 25701:25732 Environment context_assumptions_length_bound
+binder 25734:25735 <> Γ:323
+R25761:25764 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R25739:25757 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R25759:25760 MetaCoq.PCUIC.PCUICEnvironment <> Γ:323 var
+R25765:25766 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R25769:25769 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R25767:25768 MetaCoq.PCUIC.PCUICEnvironment <> Γ:323 var
+prf 25876:25898 Environment context_assumptions_map
+binder 25900:25900 <> f:324
+binder 25902:25903 <> Γ:325
+R25945:25947 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25907:25925 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R25928:25938 MetaCoq.Template.BasicAst <> map_context def
+R25942:25943 MetaCoq.PCUIC.PCUICEnvironment <> Γ:325 var
+R25940:25940 MetaCoq.PCUIC.PCUICEnvironment <> f:324 var
+R25948:25966 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R25968:25969 MetaCoq.PCUIC.PCUICEnvironment <> Γ:325 var
+prf 26047:26069 Environment context_assumptions_app
+binder 26071:26072 <> Γ:326
+binder 26074:26075 <> Δ:327
+R26109:26115 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26079:26097 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26102:26105 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R26100:26101 MetaCoq.PCUIC.PCUICEnvironment <> Γ:326 var
+R26106:26107 MetaCoq.PCUIC.PCUICEnvironment <> Δ:327 var
+R26138:26140 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R26116:26134 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26136:26137 MetaCoq.PCUIC.PCUICEnvironment <> Γ:326 var
+R26141:26159 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26161:26162 MetaCoq.PCUIC.PCUICEnvironment <> Δ:327 var
+prf 26238:26260 Environment context_assumptions_rev
+binder 26262:26263 <> Γ:328
+R26300:26302 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26267:26285 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26288:26295 Coq.Lists.List <> rev def
+R26297:26298 MetaCoq.PCUIC.PCUICEnvironment <> Γ:328 var
+R26303:26321 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26323:26324 MetaCoq.PCUIC.PCUICEnvironment <> Γ:328 var
+R26386:26408 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_app thm
+R26386:26408 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_app thm
+R26386:26408 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_app thm
+R26433:26441 MetaCoq.Template.BasicAst <> decl_body proj
+R26433:26441 MetaCoq.Template.BasicAst <> decl_body proj
+prf 26476:26499 Environment context_assumptions_mapi
+binder 26501:26501 <> f:329
+binder 26503:26504 <> Γ:330
+R26563:26569 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26508:26526 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26529:26532 MetaCoq.Template.utils.MCList <> mapi def
+R26560:26561 MetaCoq.PCUIC.PCUICEnvironment <> Γ:330 var
+binder 26539:26539 <> i:331
+R26544:26551 MetaCoq.Template.BasicAst <> map_decl def
+R26554:26554 MetaCoq.PCUIC.PCUICEnvironment <> f:329 var
+R26556:26556 MetaCoq.PCUIC.PCUICEnvironment <> i:331 var
+R26570:26588 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26590:26591 MetaCoq.PCUIC.PCUICEnvironment <> Γ:330 var
+R26616:26619 MetaCoq.Template.utils.MCList <> mapi def
+R26616:26619 MetaCoq.Template.utils.MCList <> mapi def
+R26616:26619 MetaCoq.Template.utils.MCList <> mapi def
+R26752:26774 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_map thm
+R26776:26799 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_mapi thm
+R26801:26823 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_app thm
+prf 26841:26874 Environment context_assumptions_subst_instance
+binder 26876:26876 <> u:332
+binder 26878:26879 <> Γ:333
+R26928:26934 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26887:26905 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26908:26921 MetaCoq.Template.Universes <> subst_instance def
+R26925:26926 MetaCoq.PCUIC.PCUICEnvironment <> Γ:333 var
+R26923:26923 MetaCoq.PCUIC.PCUICEnvironment <> u:332 var
+R26935:26953 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R26955:26956 MetaCoq.PCUIC.PCUICEnvironment <> Γ:333 var
+R26974:26996 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_map thm
+R26974:26996 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_map thm
+prf 27013:27045 Environment context_assumptions_subst_context
+binder 27047:27047 <> s:334
+binder 27049:27049 <> k:335
+binder 27051:27052 <> Γ:336
+R27102:27108 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27060:27078 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R27081:27093 MetaCoq.PCUIC.PCUICEnvironment Environment subst_context def
+R27095:27095 MetaCoq.PCUIC.PCUICEnvironment <> s:334 var
+R27097:27097 MetaCoq.PCUIC.PCUICEnvironment <> k:335 var
+R27099:27100 MetaCoq.PCUIC.PCUICEnvironment <> Γ:336 var
+R27109:27127 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R27129:27130 MetaCoq.PCUIC.PCUICEnvironment <> Γ:336 var
+R27148:27171 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_fold thm
+R27148:27171 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_fold thm
+prf 27188:27219 Environment context_assumptions_lift_context
+binder 27221:27221 <> n:337
+binder 27223:27223 <> k:338
+binder 27225:27226 <> Γ:339
+R27275:27281 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27234:27252 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R27255:27266 MetaCoq.PCUIC.PCUICEnvironment Environment lift_context def
+R27268:27268 MetaCoq.PCUIC.PCUICEnvironment <> n:337 var
+R27270:27270 MetaCoq.PCUIC.PCUICEnvironment <> k:338 var
+R27272:27273 MetaCoq.PCUIC.PCUICEnvironment <> Γ:339 var
+R27282:27300 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions def
+R27302:27303 MetaCoq.PCUIC.PCUICEnvironment <> Γ:339 var
+R27321:27344 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_fold thm
+R27321:27344 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_fold thm
+R27378:27411 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_subst_instance thm
+R27418:27450 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_subst_context thm
+R27452:27483 MetaCoq.PCUIC.PCUICEnvironment Environment context_assumptions_lift_context thm
+ind 27574:27582 Environment All_decls
+constr 27657:27663 Environment on_vass
+constr 27735:27741 Environment on_vdef
+R27593:27596 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27589:27592 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R27601:27604 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27597:27600 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 27585:27585 <> P:340
+R27625:27628 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27613:27624 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R27641:27644 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27629:27640 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+binder 27665:27666 <> na:343
+binder 27668:27668 <> t:344
+binder 27670:27671 <> t':345
+R27685:27692 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27679:27679 MetaCoq.PCUIC.PCUICEnvironment <> P:340 var
+R27683:27684 MetaCoq.PCUIC.PCUICEnvironment <> t':345 var
+R27681:27681 MetaCoq.PCUIC.PCUICEnvironment <> t:344 var
+R27693:27701 MetaCoq.PCUIC.PCUICEnvironment <> All_decls:341 ind
+R27718:27721 MetaCoq.PCUIC.PCUICEnvironment Environment vass def
+R27723:27724 MetaCoq.PCUIC.PCUICEnvironment <> na:343 var
+R27726:27727 MetaCoq.PCUIC.PCUICEnvironment <> t':345 var
+R27706:27709 MetaCoq.PCUIC.PCUICEnvironment Environment vass def
+R27711:27712 MetaCoq.PCUIC.PCUICEnvironment <> na:343 var
+R27714:27714 MetaCoq.PCUIC.PCUICEnvironment <> t:344 var
+R27703:27703 MetaCoq.PCUIC.PCUICEnvironment <> P:340 var
+binder 27743:27744 <> na:346
+binder 27746:27746 <> b:347
+binder 27748:27748 <> t:348
+binder 27750:27751 <> b':349
+binder 27753:27754 <> t':350
+R27768:27775 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27762:27762 MetaCoq.PCUIC.PCUICEnvironment <> P:340 var
+R27766:27767 MetaCoq.PCUIC.PCUICEnvironment <> b':349 var
+R27764:27764 MetaCoq.PCUIC.PCUICEnvironment <> b:347 var
+R27782:27789 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27776:27776 MetaCoq.PCUIC.PCUICEnvironment <> P:340 var
+R27780:27781 MetaCoq.PCUIC.PCUICEnvironment <> t':350 var
+R27778:27778 MetaCoq.PCUIC.PCUICEnvironment <> t:348 var
+R27790:27798 MetaCoq.PCUIC.PCUICEnvironment <> All_decls:341 ind
+R27817:27820 MetaCoq.PCUIC.PCUICEnvironment Environment vdef def
+R27822:27823 MetaCoq.PCUIC.PCUICEnvironment <> na:346 var
+R27825:27826 MetaCoq.PCUIC.PCUICEnvironment <> b':349 var
+R27828:27829 MetaCoq.PCUIC.PCUICEnvironment <> t':350 var
+R27803:27806 MetaCoq.PCUIC.PCUICEnvironment Environment vdef def
+R27808:27809 MetaCoq.PCUIC.PCUICEnvironment <> na:346 var
+R27811:27811 MetaCoq.PCUIC.PCUICEnvironment <> b:347 var
+R27813:27813 MetaCoq.PCUIC.PCUICEnvironment <> t:348 var
+R27800:27800 MetaCoq.PCUIC.PCUICEnvironment <> P:340 var
+R27868:27876 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls ind
+ind 27933:27947 Environment All_decls_alpha
+constr 28022:28034 Environment on_vass_alpha
+constr 28147:28159 Environment on_vdef_alpha
+R27958:27961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27954:27957 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R27966:27969 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27962:27965 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 27950:27950 <> P:351
+R27990:27993 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27978:27989 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R28006:28009 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27994:28005 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+binder 28036:28037 <> na:354
+binder 28039:28041 <> na':355
+binder 28043:28043 <> t:356
+binder 28045:28046 <> t':357
+R28076:28083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28054:28068 MetaCoq.Template.BasicAst <> eq_binder_annot def
+R28073:28075 MetaCoq.PCUIC.PCUICEnvironment <> na':355 var
+R28070:28071 MetaCoq.PCUIC.PCUICEnvironment <> na:354 var
+R28090:28097 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28084:28084 MetaCoq.PCUIC.PCUICEnvironment <> P:351 var
+R28088:28089 MetaCoq.PCUIC.PCUICEnvironment <> t':357 var
+R28086:28086 MetaCoq.PCUIC.PCUICEnvironment <> t:356 var
+R28098:28112 MetaCoq.PCUIC.PCUICEnvironment <> All_decls_alpha:352 ind
+R28129:28132 MetaCoq.PCUIC.PCUICEnvironment Environment vass def
+R28134:28136 MetaCoq.PCUIC.PCUICEnvironment <> na':355 var
+R28138:28139 MetaCoq.PCUIC.PCUICEnvironment <> t':357 var
+R28117:28120 MetaCoq.PCUIC.PCUICEnvironment Environment vass def
+R28122:28123 MetaCoq.PCUIC.PCUICEnvironment <> na:354 var
+R28125:28125 MetaCoq.PCUIC.PCUICEnvironment <> t:356 var
+R28114:28114 MetaCoq.PCUIC.PCUICEnvironment <> P:351 var
+binder 28161:28162 <> na:358
+binder 28164:28166 <> na':359
+binder 28168:28168 <> b:360
+binder 28170:28170 <> t:361
+binder 28172:28173 <> b':362
+binder 28175:28176 <> t':363
+R28206:28213 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28184:28198 MetaCoq.Template.BasicAst <> eq_binder_annot def
+R28203:28205 MetaCoq.PCUIC.PCUICEnvironment <> na':359 var
+R28200:28201 MetaCoq.PCUIC.PCUICEnvironment <> na:358 var
+R28220:28227 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28214:28214 MetaCoq.PCUIC.PCUICEnvironment <> P:351 var
+R28218:28219 MetaCoq.PCUIC.PCUICEnvironment <> b':362 var
+R28216:28216 MetaCoq.PCUIC.PCUICEnvironment <> b:360 var
+R28234:28241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28228:28228 MetaCoq.PCUIC.PCUICEnvironment <> P:351 var
+R28232:28233 MetaCoq.PCUIC.PCUICEnvironment <> t':363 var
+R28230:28230 MetaCoq.PCUIC.PCUICEnvironment <> t:361 var
+R28242:28256 MetaCoq.PCUIC.PCUICEnvironment <> All_decls_alpha:352 ind
+R28275:28278 MetaCoq.PCUIC.PCUICEnvironment Environment vdef def
+R28280:28282 MetaCoq.PCUIC.PCUICEnvironment <> na':359 var
+R28284:28285 MetaCoq.PCUIC.PCUICEnvironment <> b':362 var
+R28287:28288 MetaCoq.PCUIC.PCUICEnvironment <> t':363 var
+R28261:28264 MetaCoq.PCUIC.PCUICEnvironment Environment vdef def
+R28266:28267 MetaCoq.PCUIC.PCUICEnvironment <> na:358 var
+R28269:28269 MetaCoq.PCUIC.PCUICEnvironment <> b:360 var
+R28271:28271 MetaCoq.PCUIC.PCUICEnvironment <> t:361 var
+R28258:28258 MetaCoq.PCUIC.PCUICEnvironment <> P:351 var
+R28327:28341 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls_alpha ind
+prf 28353:28366 Environment All_decls_impl
+R28379:28382 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28375:28378 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R28387:28390 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28383:28386 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 28369:28369 <> P:364
+binder 28371:28371 <> Q:365
+binder 28397:28397 <> d:366
+binder 28399:28400 <> d':367
+R28424:28431 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28408:28416 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls ind
+R28418:28418 MetaCoq.PCUIC.PCUICEnvironment <> P:364 var
+R28420:28420 MetaCoq.PCUIC.PCUICEnvironment <> d:366 var
+R28422:28423 MetaCoq.PCUIC.PCUICEnvironment <> d':367 var
+R28432:28432 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28462:28470 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 28440:28440 <> t:368
+binder 28442:28443 <> t':369
+R28452:28455 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28446:28446 MetaCoq.PCUIC.PCUICEnvironment <> P:364 var
+R28450:28451 MetaCoq.PCUIC.PCUICEnvironment <> t':369 var
+R28448:28448 MetaCoq.PCUIC.PCUICEnvironment <> t:368 var
+R28456:28456 MetaCoq.PCUIC.PCUICEnvironment <> Q:365 var
+R28460:28461 MetaCoq.PCUIC.PCUICEnvironment <> t':369 var
+R28458:28458 MetaCoq.PCUIC.PCUICEnvironment <> t:368 var
+R28471:28479 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls ind
+R28481:28481 MetaCoq.PCUIC.PCUICEnvironment <> Q:365 var
+R28483:28483 MetaCoq.PCUIC.PCUICEnvironment <> d:366 var
+R28485:28486 MetaCoq.PCUIC.PCUICEnvironment <> d':367 var
+prf 28565:28584 Environment All_decls_alpha_impl
+R28597:28600 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28593:28596 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R28605:28608 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28601:28604 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 28587:28587 <> P:370
+binder 28589:28589 <> Q:371
+binder 28615:28615 <> d:372
+binder 28617:28618 <> d':373
+R28648:28655 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28626:28640 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls_alpha ind
+R28642:28642 MetaCoq.PCUIC.PCUICEnvironment <> P:370 var
+R28644:28644 MetaCoq.PCUIC.PCUICEnvironment <> d:372 var
+R28646:28647 MetaCoq.PCUIC.PCUICEnvironment <> d':373 var
+R28656:28656 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28686:28694 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 28664:28664 <> t:374
+binder 28666:28667 <> t':375
+R28676:28679 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28670:28670 MetaCoq.PCUIC.PCUICEnvironment <> P:370 var
+R28674:28675 MetaCoq.PCUIC.PCUICEnvironment <> t':375 var
+R28672:28672 MetaCoq.PCUIC.PCUICEnvironment <> t:374 var
+R28680:28680 MetaCoq.PCUIC.PCUICEnvironment <> Q:371 var
+R28684:28685 MetaCoq.PCUIC.PCUICEnvironment <> t':375 var
+R28682:28682 MetaCoq.PCUIC.PCUICEnvironment <> t:374 var
+R28695:28709 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls_alpha ind
+R28711:28711 MetaCoq.PCUIC.PCUICEnvironment <> Q:371 var
+R28713:28713 MetaCoq.PCUIC.PCUICEnvironment <> d:372 var
+R28715:28716 MetaCoq.PCUIC.PCUICEnvironment <> d':373 var
+prf 28795:28812 Environment All_decls_to_alpha
+R28823:28826 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28819:28822 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R28831:28834 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28827:28830 MetaCoq.PCUIC.PCUICEnvironment T term defax
+binder 28815:28815 <> P:376
+binder 28841:28841 <> d:377
+binder 28843:28844 <> d':378
+R28868:28875 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28852:28860 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls ind
+R28862:28862 MetaCoq.PCUIC.PCUICEnvironment <> P:376 var
+R28864:28864 MetaCoq.PCUIC.PCUICEnvironment <> d:377 var
+R28866:28867 MetaCoq.PCUIC.PCUICEnvironment <> d':378 var
+R28876:28890 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls_alpha ind
+R28892:28892 MetaCoq.PCUIC.PCUICEnvironment <> P:376 var
+R28894:28894 MetaCoq.PCUIC.PCUICEnvironment <> d:377 var
+R28896:28897 MetaCoq.PCUIC.PCUICEnvironment <> d':378 var
+def 28977:28990 Environment All2_fold_over
+R29004:29007 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28997:29003 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R29015:29018 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29008:29014 MetaCoq.PCUIC.PCUICEnvironment Environment context def
+R29031:29034 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29019:29030 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+R29047:29050 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29035:29046 MetaCoq.PCUIC.PCUICEnvironment Environment context_decl abbrev
+binder 28993:28993 <> P:379
+binder 29057:29058 <> Γ:380
+binder 29060:29062 <> Γ':381
+R29071:29079 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R29082:29089 MetaCoq.Template.utils.All_Forall <> All_over def
+R29096:29098 MetaCoq.PCUIC.PCUICEnvironment <> Γ':381 var
+R29093:29094 MetaCoq.PCUIC.PCUICEnvironment <> Γ:380 var
+R29091:29091 MetaCoq.PCUIC.PCUICEnvironment <> P:379 var
+abbrev 29114:29121 Environment on_decls
+binder 29133:29134 <> Γ:382
+binder 29136:29138 <> Γ':383
+R29143:29151 MetaCoq.PCUIC.PCUICEnvironment Environment All_decls ind
+R29156:29157 MetaCoq.PCUIC.PCUICEnvironment <> Γ:382 var
+R29159:29161 MetaCoq.PCUIC.PCUICEnvironment <> Γ':383 var
+abbrev 29177:29187 Environment on_contexts
+R29195:29203 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R29206:29213 MetaCoq.PCUIC.PCUICEnvironment Environment on_decls abbrev
+abbrev 29231:29246 Environment on_contexts_over
+R29261:29269 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R29272:29279 MetaCoq.Template.utils.All_Forall <> All_over def
+R29282:29289 MetaCoq.PCUIC.PCUICEnvironment Environment on_decls abbrev
+R29309:29319 MetaCoq.PCUIC.PCUICEnvironment Environment <> mod
+R29355:29358 MetaCoq.PCUIC.PCUICEnvironment Term <> mod
+modtype 29335:29348 <> EnvironmentSig
+R29371:29381 MetaCoq.PCUIC.PCUICEnvironment Environment <> modtype
+R29383:29383 MetaCoq.PCUIC.PCUICEnvironment T <> modtype
+R29390:29403 MetaCoq.PCUIC.PCUICEnvironment EnvironmentSig <> modtype
+R29433:29436 MetaCoq.PCUIC.PCUICEnvironment Term <> mod
+R29443:29456 MetaCoq.PCUIC.PCUICEnvironment EnvironmentSig <> mod
+R29458:29458 MetaCoq.PCUIC.PCUICEnvironment T <> modtype
+modtype 29419:29427 <> TermUtils
+R29471:29471 MetaCoq.PCUIC.PCUICEnvironment T <> mod
+R29473:29473 MetaCoq.PCUIC.PCUICEnvironment E <> mod
+ax 29496:29504 TermUtils destArity
+R29515:29518 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29508:29514 MetaCoq.PCUIC.PCUICEnvironment E context def
+R29523:29526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29519:29522 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R29527:29532 Coq.Init.Datatypes <> option ind
+R29542:29545 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R29535:29541 MetaCoq.PCUIC.PCUICEnvironment E context def
+R29546:29555 MetaCoq.Template.Universes Universe t def
+ax 29578:29581 TermUtils inds
+R29592:29595 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29585:29591 MetaCoq.Template.Kernames <> kername def
+R29606:29609 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29596:29605 MetaCoq.Template.Universes Instance t def
+R29633:29636 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29610:29613 Coq.Init.Datatypes <> list ind
+R29615:29632 MetaCoq.PCUIC.PCUICEnvironment E one_inductive_body rec
+R29637:29640 Coq.Init.Datatypes <> list ind
+R29642:29645 MetaCoq.PCUIC.PCUICEnvironment T term defax
+R29653:29661 MetaCoq.PCUIC.PCUICEnvironment TermUtils <> modtype

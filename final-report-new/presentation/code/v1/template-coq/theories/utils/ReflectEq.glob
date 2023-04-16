@@ -1,0 +1,505 @@
+DIGEST 795b275a39dea51e6c4d77643dc84c57
+FMetaCoq.Template.utils.ReflectEq
+R24:32 Coq.ssr.ssreflect <> <> lib
+R34:40 Coq.ssr.ssrbool <> <> lib
+R42:45 Coq.Lists.List <> <> lib
+R78:86 Equations.Prop.Equations <> <> lib
+R96:108 Coq.Lists.List ListNotations <> mod
+ind 161:171 <> reflectProp
+constr 205:212 <> reflectP
+constr 243:250 <> reflectF
+binder 174:174 <> P:1
+R190:193 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R186:189 Coq.Init.Datatypes <> bool ind
+R217:220 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R216:216 MetaCoq.Template.utils.ReflectEq <> P:1 var
+R221:231 MetaCoq.Template.utils.ReflectEq <> reflectProp:2 ind
+R235:238 Coq.Init.Datatypes <> true constr
+R233:233 MetaCoq.Template.utils.ReflectEq <> P:1 var
+R257:260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R254:255 Coq.Init.Logic <> ::type_scope:'~'_x not
+R256:256 MetaCoq.Template.utils.ReflectEq <> P:1 var
+R261:271 MetaCoq.Template.utils.ReflectEq <> reflectProp:2 ind
+R275:279 Coq.Init.Datatypes <> false constr
+R273:273 MetaCoq.Template.utils.ReflectEq <> P:1 var
+R303:313 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+prf 323:327 <> elimP
+binder 330:330 <> T:4
+binder 334:334 <> b:5
+R354:357 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R339:349 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R351:351 MetaCoq.Template.utils.ReflectEq <> T:4 var
+R353:353 MetaCoq.Template.utils.ReflectEq <> b:5 var
+R359:362 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R358:358 MetaCoq.Template.utils.ReflectEq <> b:5 var
+R363:363 MetaCoq.Template.utils.ReflectEq <> T:4 var
+R395:435 MetaCoq.Template.utils.ReflectEq <> elimP thm
+prf 445:450 <> introP
+binder 453:453 <> T:6
+binder 457:457 <> b:7
+R477:480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R462:472 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R474:474 MetaCoq.Template.utils.ReflectEq <> T:6 var
+R476:476 MetaCoq.Template.utils.ReflectEq <> b:7 var
+R482:485 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R481:481 MetaCoq.Template.utils.ReflectEq <> T:6 var
+R486:486 MetaCoq.Template.utils.ReflectEq <> b:7 var
+R539:544 MetaCoq.Template.utils.ReflectEq <> introP thm
+R570:575 MetaCoq.Template.utils.ReflectEq <> introP thm
+prf 587:605 <> reflect_reflectProp
+binder 608:608 <> P:8
+binder 610:610 <> b:9
+R626:629 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R615:621 Coq.ssr.ssrbool <> reflect abbrev
+R623:623 MetaCoq.Template.utils.ReflectEq <> P:8 var
+R625:625 MetaCoq.Template.utils.ReflectEq <> b:9 var
+R630:640 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R642:642 MetaCoq.Template.utils.ReflectEq <> P:8 var
+R644:644 MetaCoq.Template.utils.ReflectEq <> b:9 var
+prf 751:769 <> reflectProp_reflect
+binder 772:772 <> P:10
+binder 774:774 <> b:11
+R794:797 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R779:789 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R791:791 MetaCoq.Template.utils.ReflectEq <> P:10 var
+R793:793 MetaCoq.Template.utils.ReflectEq <> b:11 var
+R798:804 Coq.ssr.ssrbool <> reflect abbrev
+R806:806 MetaCoq.Template.utils.ReflectEq <> P:10 var
+R808:808 MetaCoq.Template.utils.ReflectEq <> b:11 var
+prf 886:906 <> reflect_reflectProp_1
+binder 909:909 <> A:12
+R918:921 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R917:917 MetaCoq.Template.utils.ReflectEq <> A:12 var
+binder 913:913 <> P:13
+binder 929:929 <> b:14
+R934:934 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R964:969 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1003:1003 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 942:942 <> x:15
+R945:951 Coq.ssr.ssrbool <> reflect abbrev
+R954:954 MetaCoq.Template.utils.ReflectEq <> P:13 var
+R956:956 MetaCoq.Template.utils.ReflectEq <> x:15 var
+R960:960 MetaCoq.Template.utils.ReflectEq <> b:14 var
+R962:962 MetaCoq.Template.utils.ReflectEq <> x:15 var
+binder 977:977 <> x:16
+R980:990 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R993:993 MetaCoq.Template.utils.ReflectEq <> P:13 var
+R995:995 MetaCoq.Template.utils.ReflectEq <> x:16 var
+R999:999 MetaCoq.Template.utils.ReflectEq <> b:14 var
+R1001:1001 MetaCoq.Template.utils.ReflectEq <> x:16 var
+R1037:1055 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp thm
+R1037:1055 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp thm
+prf 1070:1090 <> reflect_reflectProp_2
+binder 1093:1093 <> A:17
+binder 1095:1095 <> B:18
+R1104:1107 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1103:1103 MetaCoq.Template.utils.ReflectEq <> A:17 var
+R1109:1112 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1108:1108 MetaCoq.Template.utils.ReflectEq <> B:18 var
+binder 1099:1099 <> P:19
+binder 1120:1120 <> b:20
+R1125:1125 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1161:1166 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1206:1206 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1133:1133 <> x:21
+binder 1135:1135 <> y:22
+R1138:1144 Coq.ssr.ssrbool <> reflect abbrev
+R1147:1147 MetaCoq.Template.utils.ReflectEq <> P:19 var
+R1151:1151 MetaCoq.Template.utils.ReflectEq <> y:22 var
+R1149:1149 MetaCoq.Template.utils.ReflectEq <> x:21 var
+R1155:1155 MetaCoq.Template.utils.ReflectEq <> b:20 var
+R1157:1157 MetaCoq.Template.utils.ReflectEq <> x:21 var
+R1159:1159 MetaCoq.Template.utils.ReflectEq <> y:22 var
+binder 1174:1174 <> x:23
+binder 1176:1176 <> y:24
+R1179:1189 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R1192:1192 MetaCoq.Template.utils.ReflectEq <> P:19 var
+R1196:1196 MetaCoq.Template.utils.ReflectEq <> y:24 var
+R1194:1194 MetaCoq.Template.utils.ReflectEq <> x:23 var
+R1200:1200 MetaCoq.Template.utils.ReflectEq <> b:20 var
+R1202:1202 MetaCoq.Template.utils.ReflectEq <> x:23 var
+R1204:1204 MetaCoq.Template.utils.ReflectEq <> y:24 var
+R1242:1260 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp thm
+R1242:1260 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp thm
+rec 1275:1283 <> ReflectEq
+proj 1294:1296 <> eqb
+proj 1319:1326 <> eqb_spec
+binder 1285:1285 <> A:25
+R1301:1304 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1300:1300 MetaCoq.Template.utils.ReflectEq <> A:25 var
+R1306:1309 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1305:1305 MetaCoq.Template.utils.ReflectEq <> A:25 var
+R1310:1313 Coq.Init.Datatypes <> bool ind
+R1343:1343 MetaCoq.Template.utils.ReflectEq <> A:25 var
+binder 1337:1337 <> x:28
+binder 1339:1339 <> y:29
+R1346:1356 MetaCoq.Template.utils.ReflectEq <> reflectProp ind
+R1360:1362 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1359:1359 MetaCoq.Template.utils.ReflectEq <> x:28 var
+R1363:1363 MetaCoq.Template.utils.ReflectEq <> y:29 var
+R1367:1369 MetaCoq.Template.utils.ReflectEq <> eqb:27 meth
+R1373:1373 MetaCoq.Template.utils.ReflectEq <> y:29 var
+R1371:1371 MetaCoq.Template.utils.ReflectEq <> x:28 var
+R1442:1444 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R1475:1477 MetaCoq.Template.utils.ReflectEq <> eqb meth
+not 1467:1467 <> :::x_'=='_x
+prf 1605:1613 <> eqb_specT
+binder 1616:1616 <> A:31
+R1625:1633 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R1635:1635 MetaCoq.Template.utils.ReflectEq <> A:31 var
+binder 1620:1621 <> HR:32
+R1645:1645 MetaCoq.Template.utils.ReflectEq <> A:31 var
+binder 1639:1639 <> x:33
+binder 1641:1641 <> y:34
+R1650:1656 Coq.ssr.ssrbool <> reflect abbrev
+R1660:1662 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1659:1659 MetaCoq.Template.utils.ReflectEq <> x:33 var
+R1663:1663 MetaCoq.Template.utils.ReflectEq <> y:34 var
+R1668:1671 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R1667:1667 MetaCoq.Template.utils.ReflectEq <> x:33 var
+R1672:1672 MetaCoq.Template.utils.ReflectEq <> y:34 var
+R1692:1710 MetaCoq.Template.utils.ReflectEq <> reflectProp_reflect thm
+R1692:1710 MetaCoq.Template.utils.ReflectEq <> reflectProp_reflect thm
+R1719:1726 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1719:1726 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+prf 1741:1746 <> eqb_eq
+binder 1749:1749 <> A:35
+R1754:1762 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R1764:1764 MetaCoq.Template.utils.ReflectEq <> A:35 var
+binder 1754:1764 <> H:36
+R1774:1774 MetaCoq.Template.utils.ReflectEq <> A:35 var
+binder 1768:1768 <> x:37
+binder 1770:1770 <> y:38
+R1785:1788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1780:1783 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R1779:1779 MetaCoq.Template.utils.ReflectEq <> x:37 var
+R1784:1784 MetaCoq.Template.utils.ReflectEq <> y:38 var
+R1790:1792 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1789:1789 MetaCoq.Template.utils.ReflectEq <> x:37 var
+R1793:1793 MetaCoq.Template.utils.ReflectEq <> y:38 var
+R1811:1818 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1811:1818 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1811:1818 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+prf 1855:1862 <> eqb_refl
+binder 1865:1865 <> A:39
+R1873:1881 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R1883:1883 MetaCoq.Template.utils.ReflectEq <> A:39 var
+binder 1869:1869 <> R:40
+R1891:1891 MetaCoq.Template.utils.ReflectEq <> A:39 var
+binder 1887:1887 <> x:41
+R1897:1900 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R1896:1896 MetaCoq.Template.utils.ReflectEq <> x:41 var
+R1901:1901 MetaCoq.Template.utils.ReflectEq <> x:41 var
+R1923:1930 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1923:1930 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+prf 1956:1959 <> neqb
+binder 1962:1962 <> A:42
+R1970:1978 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R1980:1980 MetaCoq.Template.utils.ReflectEq <> A:42 var
+binder 1966:1966 <> R:43
+R1990:1990 MetaCoq.Template.utils.ReflectEq <> A:42 var
+binder 1984:1984 <> x:44
+binder 1986:1986 <> y:45
+R2006:2010 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1995:1998 Coq.ssr.ssrbool <> ::bool_scope:'~~'_x not
+R2005:2005 Coq.ssr.ssrbool <> ::bool_scope:'~~'_x not
+R2000:2003 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R1999:1999 MetaCoq.Template.utils.ReflectEq <> x:44 var
+R2004:2004 MetaCoq.Template.utils.ReflectEq <> y:45 var
+R2012:2015 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2011:2011 MetaCoq.Template.utils.ReflectEq <> x:44 var
+R2016:2016 MetaCoq.Template.utils.ReflectEq <> y:45 var
+R2038:2045 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R2038:2045 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+inst 2116:2130 <> ReflectEq_EqDec
+binder 2133:2133 <> A:46
+R2141:2149 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R2151:2151 MetaCoq.Template.utils.ReflectEq <> A:46 var
+binder 2137:2137 <> R:47
+R2156:2160 Equations.Prop.Classes <> EqDec class
+R2162:2162 MetaCoq.Template.utils.ReflectEq <> A:46 var
+R2171:2176 Equations.Prop.Classes <> eq_dec def
+binder 2185:2185 <> x:48
+binder 2187:2187 <> y:49
+R2202:2204 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2208:2208 MetaCoq.Template.utils.ReflectEq <> y:49 var
+R2206:2206 MetaCoq.Template.utils.ReflectEq <> x:48 var
+R2221:2224 Coq.Init.Datatypes <> true constr
+R2229:2232 Coq.Init.Specif <> left constr
+R2242:2246 Coq.Init.Datatypes <> false constr
+R2251:2255 Coq.Init.Specif <> right constr
+R2299:2304 MetaCoq.Template.utils.ReflectEq <> eqb_eq thm
+R2299:2304 MetaCoq.Template.utils.ReflectEq <> eqb_eq thm
+R2339:2346 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+R2339:2346 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+R2339:2346 MetaCoq.Template.utils.ReflectEq <> eqb_refl thm
+def 2399:2412 <> eq_dec_to_bool
+binder 2415:2415 <> A:50
+R2420:2424 Equations.Prop.Classes <> EqDec class
+R2426:2426 MetaCoq.Template.utils.ReflectEq <> A:50 var
+binder 2420:2426 <> H:51
+binder 2429:2429 <> x:52
+binder 2431:2431 <> y:53
+R2444:2449 Equations.Prop.Classes <> eq_dec def
+R2453:2453 MetaCoq.Template.utils.ReflectEq <> y:53 var
+R2451:2451 MetaCoq.Template.utils.ReflectEq <> x:52 var
+R2464:2467 Coq.Init.Specif <> left constr
+R2474:2477 Coq.Init.Datatypes <> true constr
+R2483:2487 Coq.Init.Specif <> right constr
+R2494:2498 Coq.Init.Datatypes <> false constr
+def 2629:2643 <> EqDec_ReflectEq
+binder 2645:2645 <> A:54
+R2652:2656 Equations.Prop.Classes <> EqDec class
+R2658:2658 MetaCoq.Template.utils.ReflectEq <> A:54 var
+binder 2648:2648 <> E:55
+R2663:2671 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R2673:2673 MetaCoq.Template.utils.ReflectEq <> A:54 var
+R2683:2685 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2683:2685 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2683:2685 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2690:2703 MetaCoq.Template.utils.ReflectEq <> eq_dec_to_bool def
+R2742:2755 MetaCoq.Template.utils.ReflectEq <> eq_dec_to_bool def
+R2770:2775 Equations.Prop.Classes <> eq_dec def
+R2770:2775 Equations.Prop.Classes <> eq_dec def
+def 2949:2957 <> eq_option
+binder 2960:2960 <> A:56
+R2971:2974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2970:2970 MetaCoq.Template.utils.ReflectEq <> A:56 var
+R2976:2979 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2975:2975 MetaCoq.Template.utils.ReflectEq <> A:56 var
+R2980:2983 Coq.Init.Datatypes <> bool ind
+binder 2964:2966 <> eqA:57
+R2993:2998 Coq.Init.Datatypes <> option ind
+R3000:3000 MetaCoq.Template.utils.ReflectEq <> A:56 var
+binder 2987:2987 <> u:58
+binder 2989:2989 <> v:59
+R3005:3008 Coq.Init.Datatypes <> bool ind
+R3024:3024 MetaCoq.Template.utils.ReflectEq <> v:59 var
+R3021:3021 MetaCoq.Template.utils.ReflectEq <> u:58 var
+R3035:3038 Coq.Init.Datatypes <> Some constr
+R3043:3046 Coq.Init.Datatypes <> Some constr
+R3053:3055 MetaCoq.Template.utils.ReflectEq <> eqA:57 var
+R3059:3059 MetaCoq.Template.utils.ReflectEq <> v:59 var
+R3057:3057 MetaCoq.Template.utils.ReflectEq <> u:58 var
+R3065:3068 Coq.Init.Datatypes <> None constr
+R3071:3074 Coq.Init.Datatypes <> None constr
+R3079:3082 Coq.Init.Datatypes <> true constr
+R3096:3100 Coq.Init.Datatypes <> false constr
+inst 3138:3151 <> reflect_option
+binder 3154:3154 <> A:62
+R3163:3171 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3173:3173 MetaCoq.Template.utils.ReflectEq <> A:62 var
+binder 3158:3159 <> HA:63
+R3178:3186 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3189:3194 Coq.Init.Datatypes <> option ind
+R3196:3196 MetaCoq.Template.utils.ReflectEq <> A:62 var
+R3207:3209 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3207:3209 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3207:3209 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3214:3222 MetaCoq.Template.utils.ReflectEq <> eq_option def
+R3224:3226 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3338:3345 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3338:3345 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+sec 3412:3418 <> eq_list
+binder 3432:3432 <> A:64
+R3443:3446 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3442:3442 MetaCoq.Template.utils.ReflectEq <> A:64 var
+R3448:3451 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3447:3447 MetaCoq.Template.utils.ReflectEq <> A:64 var
+R3452:3455 Coq.Init.Datatypes <> bool ind
+binder 3436:3438 <> eqA:65
+def 3470:3477 <> eqb_list
+R3487:3490 Coq.Init.Datatypes <> list ind
+R3492:3492 MetaCoq.Template.utils.ReflectEq <> eq_list.A var
+binder 3480:3480 <> l:66
+binder 3482:3483 <> l':67
+R3497:3500 Coq.Init.Datatypes <> bool ind
+R3516:3517 MetaCoq.Template.utils.ReflectEq <> l':67 var
+R3513:3513 MetaCoq.Template.utils.ReflectEq <> l:66 var
+R3529:3532 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3538:3541 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3552:3554 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R3563:3568 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R3582:3591 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R3555:3557 MetaCoq.Template.utils.ReflectEq <> eq_list.eqA var
+R3569:3576 MetaCoq.Template.utils.ReflectEq <> eqb_list:68 def
+R3580:3581 MetaCoq.Template.utils.ReflectEq <> l':67 var
+R3578:3578 MetaCoq.Template.utils.ReflectEq <> l:66 var
+R3592:3596 Coq.Init.Datatypes <> false constr
+R3602:3603 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3606:3607 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3612:3615 Coq.Init.Datatypes <> true constr
+R3629:3633 Coq.Init.Datatypes <> false constr
+R3646:3652 MetaCoq.Template.utils.ReflectEq eq_list <> sec
+inst 3684:3695 <> reflect_list
+binder 3698:3698 <> A:71
+R3707:3715 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3717:3717 MetaCoq.Template.utils.ReflectEq <> A:71 var
+binder 3702:3703 <> RA:72
+R3722:3730 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3733:3736 Coq.Init.Datatypes <> list ind
+R3738:3738 MetaCoq.Template.utils.ReflectEq <> A:71 var
+R3749:3751 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3749:3751 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3749:3751 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3756:3763 MetaCoq.Template.utils.ReflectEq <> eqb_list def
+R3765:3767 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3961:3968 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3961:3968 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+inst 4077:4087 <> reflect_nat
+R4091:4099 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4101:4103 Coq.Init.Datatypes <> nat ind
+R4112:4119 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4124:4144 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp_2 thm
+R4146:4166 Coq.Arith.PeanoNat Nat eqb_spec thm
+def 4184:4190 <> eq_bool
+binder 4192:4193 <> b1:73
+binder 4195:4196 <> b2:74
+R4200:4203 Coq.Init.Datatypes <> bool ind
+R4210:4212 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R4215:4220 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R4223:4228 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R4213:4214 MetaCoq.Template.utils.ReflectEq <> b1:73 var
+R4221:4222 MetaCoq.Template.utils.ReflectEq <> b2:74 var
+R4229:4232 Coq.Init.Datatypes <> negb def
+R4234:4235 MetaCoq.Template.utils.ReflectEq <> b2:74 var
+inst 4302:4313 <> reflect_bool
+R4317:4325 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4327:4330 Coq.Init.Datatypes <> bool ind
+R4339:4341 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4346:4352 MetaCoq.Template.utils.ReflectEq <> eq_bool def
+R4395:4401 MetaCoq.Template.utils.ReflectEq <> eq_bool def
+def 4507:4517 <> eq_sig_true
+binder 4520:4520 <> A:75
+binder 4522:4522 <> f:76
+R4527:4535 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4537:4537 MetaCoq.Template.utils.ReflectEq <> A:75 var
+binder 4527:4537 <> H:77
+R4547:4548 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4550:4552 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4554:4556 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4567:4568 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4553:4553 MetaCoq.Template.utils.ReflectEq <> A:75 var
+binder 4549:4549 <> z:78
+R4560:4562 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4557:4557 MetaCoq.Template.utils.ReflectEq <> f:76 var
+R4559:4559 MetaCoq.Template.utils.ReflectEq <> z:78 var
+R4563:4566 Coq.Init.Datatypes <> true constr
+binder 4541:4541 <> x:79
+binder 4543:4543 <> y:80
+R4573:4576 Coq.Init.Datatypes <> bool ind
+R4594:4597 MetaCoq.Template.utils.ReflectEq <> :::x_'=='_x not
+R4583:4591 Coq.Init.Specif <> proj1_sig def
+R4593:4593 MetaCoq.Template.utils.ReflectEq <> x:79 var
+R4598:4606 Coq.Init.Specif <> proj1_sig def
+R4608:4608 MetaCoq.Template.utils.ReflectEq <> y:80 var
+inst 4640:4655 <> reflect_sig_true
+binder 4658:4658 <> A:81
+binder 4660:4660 <> f:82
+R4665:4673 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4675:4675 MetaCoq.Template.utils.ReflectEq <> A:81 var
+binder 4665:4675 <> H:83
+R4680:4688 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4691:4692 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4694:4696 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4698:4700 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4711:4712 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4697:4697 MetaCoq.Template.utils.ReflectEq <> A:81 var
+binder 4693:4693 <> z:84
+R4704:4706 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4701:4701 MetaCoq.Template.utils.ReflectEq <> f:82 var
+R4703:4703 MetaCoq.Template.utils.ReflectEq <> z:84 var
+R4707:4710 Coq.Init.Datatypes <> true constr
+R4722:4724 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4729:4739 MetaCoq.Template.utils.ReflectEq <> eq_sig_true def
+R4807:4817 MetaCoq.Template.utils.ReflectEq <> eq_sig_true def
+R4837:4844 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4837:4844 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4894:4896 Equations.Prop.Classes <> uip def
+R4894:4896 Equations.Prop.Classes <> uip def
+def 4948:4954 <> eq_prod
+binder 4957:4957 <> A:85
+binder 4959:4959 <> B:86
+R4970:4973 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4969:4969 MetaCoq.Template.utils.ReflectEq <> A:85 var
+R4975:4978 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4974:4974 MetaCoq.Template.utils.ReflectEq <> A:85 var
+R4979:4982 Coq.Init.Datatypes <> bool ind
+binder 4963:4965 <> eqA:87
+R4993:4996 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4992:4992 MetaCoq.Template.utils.ReflectEq <> B:86 var
+R4998:5001 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4997:4997 MetaCoq.Template.utils.ReflectEq <> B:86 var
+R5002:5005 Coq.Init.Datatypes <> bool ind
+binder 4986:4988 <> eqB:88
+binder 5008:5008 <> x:89
+binder 5010:5010 <> y:90
+R5034:5034 MetaCoq.Template.utils.ReflectEq <> x:89 var
+R5022:5022 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5025:5026 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5029:5029 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5058:5058 MetaCoq.Template.utils.ReflectEq <> y:90 var
+R5046:5046 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5049:5050 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5053:5053 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5065:5067 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R5077:5082 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R5092:5099 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R5068:5070 MetaCoq.Template.utils.ReflectEq <> eqA:87 var
+R5083:5085 MetaCoq.Template.utils.ReflectEq <> eqB:88 var
+R5100:5104 Coq.Init.Datatypes <> false constr
+inst 5136:5147 <> reflect_prod
+binder 5159:5159 <> A:93
+binder 5161:5161 <> B:94
+R5176:5179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5165:5173 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R5175:5175 MetaCoq.Template.utils.ReflectEq <> A:93 var
+R5191:5194 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5180:5188 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R5190:5190 MetaCoq.Template.utils.ReflectEq <> B:94 var
+R5195:5203 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R5207:5209 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5206:5206 MetaCoq.Template.utils.ReflectEq <> A:93 var
+R5210:5210 MetaCoq.Template.utils.ReflectEq <> B:94 var
+R5220:5222 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5227:5233 MetaCoq.Template.utils.ReflectEq <> eq_prod def
+R5239:5241 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5235:5237 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5304:5310 MetaCoq.Template.utils.ReflectEq <> eq_prod def
+R5325:5332 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5325:5332 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5360:5367 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5360:5367 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+prf 5434:5445 <> eq_prod_refl
+binder 5458:5458 <> A:95
+binder 5460:5460 <> B:96
+R5470:5473 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5469:5469 MetaCoq.Template.utils.ReflectEq <> A:95 var
+R5475:5478 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5474:5474 MetaCoq.Template.utils.ReflectEq <> A:95 var
+R5479:5482 Coq.Init.Datatypes <> bool ind
+binder 5463:5465 <> eqA:97
+R5493:5496 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5492:5492 MetaCoq.Template.utils.ReflectEq <> B:96 var
+R5498:5501 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5497:5497 MetaCoq.Template.utils.ReflectEq <> B:96 var
+R5502:5505 Coq.Init.Datatypes <> bool ind
+binder 5486:5488 <> eqB:98
+R5513:5513 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5531:5539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5521:5521 <> a:99
+R5524:5526 MetaCoq.Template.utils.ReflectEq <> eqA:97 var
+R5530:5530 MetaCoq.Template.utils.ReflectEq <> a:99 var
+R5528:5528 MetaCoq.Template.utils.ReflectEq <> a:99 var
+R5540:5540 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5558:5566 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5548:5548 <> b:100
+R5551:5553 MetaCoq.Template.utils.ReflectEq <> eqB:98 var
+R5557:5557 MetaCoq.Template.utils.ReflectEq <> b:100 var
+R5555:5555 MetaCoq.Template.utils.ReflectEq <> b:100 var
+binder 5574:5574 <> p:101
+R5577:5583 MetaCoq.Template.utils.ReflectEq <> eq_prod def
+R5595:5595 MetaCoq.Template.utils.ReflectEq <> p:101 var
+R5593:5593 MetaCoq.Template.utils.ReflectEq <> p:101 var
+R5589:5591 MetaCoq.Template.utils.ReflectEq <> eqB:98 var
+R5585:5587 MetaCoq.Template.utils.ReflectEq <> eqA:97 var

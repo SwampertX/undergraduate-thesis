@@ -1,62 +1,68 @@
 \chapter{Introduction}
 
 \section{Why Theorem Provers?}
-Deductive, logical proofs have long been a way for humans to deduce facts and
-truths. However, after several centuries of development, mathematics have grown
-so huge that mathematicians have no choice but to depend on previous results to
-develop new theorems. This requires a form of trust in correctness of
+Deductive, logical proofs have long been a way for humans to deduce mathematical
+facts. However, after several centuries of development, mathematics has grown so
+huge that mathematicians have no choice but to depend on previous results to
+develop new theorems. This requires a form of trust in the correctness of
 pen-and-paper proofs of previous results, which in turn might be dependent on
 previously proved, or even facts dismissed as "obvious". Theoretically,
 mathematicians know that every theorem can be boiled down to merely logical
 consequences from pre-determined axioms, but as more and more recent proofs are
-found to be erroneous (CHECK Voevodsky) to different extents, the field is now
-in need of a mechanical verification.
+found to be erroneous (\cite{voevodsky_2018}) to different extents, the field is
+now in need of mechanical verification.
 
 In the realm of computer programming, another problem arises, which similarly
 cries for a similar mechanical verification - the correctness of computer
-programs. As Dijkstra said, testing can only show the presence of bugs, but not
-the absence of it, to ensure our programs are absolutely true to our intentions,
-a formal verification or proof is needed. Being the tool for automation itself,
-the act of automatically checking the correctness of programs and the lack of
-bugs is, in turn, another task solvable by automation, by programming.
+programs. As Dijkstra said, “Program testing can be used to show the presence of
+bugs, but never to show their absence!” (\cite{dijkstra1970notes}) To ensure our
+programs are true to our intentions, a formal verification or proof is needed.
+Being the tool for automation itself, the act of automatically checking the
+correctness of programs and the lack of bugs is, in turn, another task solvable
+by automation, by programming.
 
-Therefore, proof assistants, or sometimes theorem provers are thus born. In its
-core, it takes a mathematical claim, and checks the user's proofs against a
-logical system with axioms and deductive rules. However, there are two
-approaches to writing such proofs - one can have it automated, thus the family
-of Automated Theorem Provers (ATP) and the family of Interactive Theorem Provers
-(ITP). Coq is a ITP that implements the Polymorphic Cumulative Calculus of
-Inductive Constructions (PCUIC), which can prove facts in higher order logic. It
-is among the earliest ITPs of its time and has been used to complete large
-proofs such as the Four Color Theorem and the Feit-Thompson theorem, and was
-awarded the ACM Software System Award in 2014. In 2021, the CompCert C compiler,
-a industrial-strength compiler verified in Coq has been awarded the ACM Software
-award, recognizing the potential of ITPs in the real of verifying software
-correctness as well.
+Therefore, proof assistants (or sometimes known as theorem provers) are thus
+born. At its core, a proof assistant takes a mathematical claim and checks the
+user's proof against a logical system with axioms and deductive rules. However,
+there are two approaches to writing such proofs - one can have it automated,
+thus the family of Automated Theorem Provers (ATP) and the family of Interactive
+Theorem Provers (ITP). Coq is an ITP that implements the Polymorphic Cumulative
+Calculus of Inductive Constructions (PCUIC) (\cite{pcuic2017timany}), which can
+prove facts in higher-order logic. It is among the earliest ITPs of its time and
+has been used to complete large proofs such as the Four Color
+Theorem (\cite{gonthier2008four}) and the Feit-Thompson
+Theorem (\cite{gonthier2013machine}), and was awarded the 2013 ACM Software System
+Award (\cite{herbelin_2014}). In 2021, the CompCert C compiler, an
+industrial-strength compiler verified in Coq has been awarded the ACM Software
+award (\cite{acm_award_2022}), recognizing the potential of ITPs in the real of
+verifying software correctness as well.
 
 \section{Why MetaCoq?}
 
-As the ancient saying goes: who watches the watchers? While proof assistants
-check for the correctness of proofs and programs (yes, they are equivalent under
-the Curry-Howard Correspondence), who checks the correctness of the proof
-assistants, which are in turn programs themselves? Indeed, although the theory
-behind Coq, PCUIC is known to be mathematically "nice", such as strongly
-normalizing (and hence decidable), however, the current implementation of Coq in
-OCaml is known to be not entirely bug-free -- at least one critical bug that
-threatens the correctness of Coq is found, meaning that it is possible to prove
-\emph{False} in Coq!
+As the ancient saying goes: who watches the watchers\footnote{Originally in
+latin, \emph{Quis custodiet ipsos custodes?}, literally "Who will guard the
+guards themselves?}? While proof assistants check for the correctness of
+mathematical proofs and computer programs (which are equivalent as per the
+Curry-Howard Correspondence (\cite{howard1980formulae,curry1934functionality})),
+who checks the correctness of the proof assistants, which are in turn programs
+themselves? Indeed, although the theory behind Coq, PCUIC is known to be
+``correct'', such as being strongly normalizing (and hence decidable in type
+checking); however, the current implementation of Coq in OCaml is known to be
+not entirely bug-free -- at least one critical bug that threatens the
+correctness of Coq is found per year, meaning that it is possible to prove
+\emph{False} in Coq (\cite{coq_consistency})!
 
 One way to remedy this situation is to have a verified implementation for Coq
-itself - possibly in Coq! The MetaCoq project is in general a metaprogramming
-platform for Coq, where users can reify Coq terms in Coq and manipulate them,
-and thus giving rise for a perfect environment to argue about various properties
-of Coq terms, specifically all the correctness properties of the underlying
-PCUIC system. Then, an verified implementation of Coq can be implemented in the
-MetaCoq project, and after passing through a series of verified components, give
-rise to a compiled, verified version of Coq. Of course, without the low-level
-optimizations in OCaml, the MetaCoq implementation is definitely slower than the
-original Coq, but it can be an implementation that one runs once every month,
-for the highest level of security and assurance.
+itself. The MetaCoq project is in general a metaprogramming platform for Coq,
+where users can reify Coq terms in Coq and manipulate them, and thus giving rise
+to a perfect environment to argue about various properties of Coq terms,
+specifically all the correctness properties of the underlying PCUIC
+system (\cite{sozeau2020metacoq}). Then, a verified implementation of Coq can be
+implemented in the MetaCoq project, and after passing through a series of
+verified components, give rise to a compiled, verified version of Coq. Of
+course, without the low-level optimizations in OCaml, the MetaCoq implementation
+is slower than the original Coq, but it can be an implementation that one runs
+once every month, for the highest level of security and assurance.
 
 The careful reader here might have already noticed a problem in verifying a Coq
 implementation in Coq - Gödel's Second Incompleteness stands in the way of
@@ -67,29 +73,34 @@ correctness of the theory of PCUIC itself.
 
 \section{Why Modules?}
 
+The verified implementation of Coq under the MetaCoq project has been done for a
+substantial, working subset of Coq, excluding the Module system. Why would
+implementing modules be a worthwhile effort, or rather, why is the module system
+important for proof assistants like Coq, or programming in general?
+
 Organizing and generalizing human knowledge is one of the most natural things
 humans do when trying to understand this world. From the distinction of
 different "subjects" ranging from history to engineering, or in the case of
 mathematics, from algebra to statistics. The use of modules is for a similar
 purpose in proof assistants: to categorize, package and organize knowledge, and
 is deeply related to the idea of modular programming and "programming
-in-the-large".
+in-the-large". Therefore, even though adding the idea of modules to Coq or any
+other formal logic systems should not increase the "power" of the system (in
+fact, when extending a formal system with modules, one should actively ensure
+that the extension is conservative), but it is almost essential for the users
+and developers to better organize their proofs.
 
-Therefore, even though adding the idea of modules to Coq or any other formal
-logic systems should not increase the "power" of the system (in fact, when
-extending a formal system with modules, one should actively ensure that the
-extension is a conservative one), but it is almost essential for the users and
-developers to better organize their proofs. The MetaCoq project has successfully
-implemented and verified a large subset of the Coq language in 2020 (?), with
-the exception with a few features such as $\eta$-expansion, Module System, Template
-Polymorphism and Proof-Irrelevant Propositions. Therefore, when I interned at
-the birthplace of the MetaCoq project, the \emph{Gallinette} team in Nantes,
-France, I chose to work on implementing Modules in the MetaCoq project.
+The MetaCoq project has successfully implemented and verified a large subset of
+the Coq language in 2020, with the exception with a few features such as
+$\eta$-expansion, Module System, Template Polymorphism and Proof-Irrelevant
+Propositions(\cite{sozeau2020metacoq}). Therefore, when I interned at the
+birthplace of the MetaCoq project, the \emph{Gallinette} team in Nantes, France,
+I chose to work on implementing Modules in the MetaCoq project.
 
-\section{My Contributions}
+\section{Contributions}
 
 In this project, I have implemented a non-parametrized module system in the
-MetaCoq project and verified various properties about modules and its
+MetaCoq project and verified various properties of modules and its
 interaction with the global environment of Coq, the typing of Coq terms,
 $\eta$-expansion and more. Furthermore, I have written a translation between the
 language with (non-parametrized) modules to PCUIC without modules, hence the use
@@ -98,17 +109,23 @@ the original language.
 
 In this report, I detail my implementation of non-parametrized modules and the
 considerations behind the design choices made. I will also explain the related
-correctness properties related to modules which I proved. As a learning project,
-I will also detail Coq-specific skills that I learnt during the project.
+correctness properties related to the modules which I proved. As a learning
+project, I will also detail Coq-specific skills that I learnt during the
+project.
 
-The rest of the report is structured as follows: I will start by a review of
-previous related works about the implementation of Modules in Coq and relevant
-systems. Then, I will explain the syntax and semantics of Coq modules, before
-describing my implementation of Modules and the verification of its properties,
-the core of this project. After that, I will describe a second implementation of
-Modules in Coq, which I call the Modular Environment rewrite that solves various
-problems surfaced from the initial implementation. Finally, I will document the
-Coq-specific, interactive-proving related skills I learnt during the project.
-This report will end with possible future work; while some technical details,
-such as concrete typing rules, and some type-theoretic results I studied as a
-joint thesis with the Mathematics Department, will be put in the appendix.
+The rest of the report is structured as follows: Chapter \ref{ch:previous-works}
+will start with a review of previous related works about the implementation of
+Modules in Coq and relevant systems. Then, Chapter \ref{ch:coq} will introduce
+the MetaCoq project and explain the syntax and semantics of Coq modules, before
+describing the implementation of Modules and the verification of their
+properties in Chapter \ref{ch:impl1}, the core of this project. After that,
+Chapter \ref{ch:impl2} will describe a second possible implementation of Modules
+in Coq, called the Modular Environment rewrite that solves various problems that
+surfaced from the initial implementation. Finally, Chapter \ref{ch:machineries}
+will document the skill acquired in writing formal proofs in Coq during the
+implementation of the project. This report will end with possible future work in
+Chapter \ref{ch:future}.
+% while some technical details, such as concrete typing rules
+% % , and some type-theoretic results I studied as a joint
+% % thesis with the Mathematics Department
+% will be put in the appendix.

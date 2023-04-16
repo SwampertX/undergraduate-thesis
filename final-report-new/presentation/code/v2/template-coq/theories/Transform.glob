@@ -1,0 +1,276 @@
+DIGEST dac2a895270a9d2f0cef65bbaca7b103
+FMetaCoq.Template.Transform
+R213:219 Coq.Program.Program <> <> lib
+R221:229 Coq.ssr.ssreflect <> <> lib
+R231:237 Coq.ssr.ssrbool <> <> lib
+R270:278 Equations.Prop.Equations <> <> lib
+R318:322 MetaCoq.Template.utils <> <> lib
+R332:341 MetaCoq.Template.utils.bytestring <> <> mod
+def 457:460 <> time
+binder 472:472 <> A:1
+binder 474:474 <> B:2
+R484:487 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R478:483 MetaCoq.Template.utils.bytestring <> string abbrev
+R488:488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R495:499 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R490:493 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R489:489 MetaCoq.Template.Transform <> A:1 var
+R494:494 MetaCoq.Template.Transform <> B:2 var
+R501:504 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R500:500 MetaCoq.Template.Transform <> A:1 var
+R505:505 MetaCoq.Template.Transform <> B:2 var
+binder 516:516 <> A:3
+binder 518:518 <> B:4
+binder 520:520 <> s:5
+binder 522:522 <> f:6
+binder 524:524 <> x:7
+R529:529 MetaCoq.Template.Transform <> f:6 var
+R531:531 MetaCoq.Template.Transform <> x:7 var
+mod 671:679 <> Transform
+sec 692:694 Transform Opt
+binder 711:717 <> program:8
+binder 719:726 <> program':9
+binder 751:755 <> value:10
+binder 757:762 <> value':11
+R802:805 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R795:801 MetaCoq.Template.Transform <> Transform.Opt.program var
+R811:814 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R806:810 MetaCoq.Template.Transform <> Transform.Opt.value var
+binder 787:790 <> eval:12
+R852:855 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R844:851 MetaCoq.Template.Transform <> Transform.Opt.program' var
+R862:865 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R856:861 MetaCoq.Template.Transform <> Transform.Opt.value' var
+binder 836:840 <> eval':13
+def 890:903 Transform preserves_eval
+binder 905:907 <> pre:14
+R933:939 MetaCoq.Template.Transform <> Transform.Opt.program var
+binder 929:929 <> p:15
+R947:950 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R942:944 MetaCoq.Template.Transform <> pre:14 var
+R946:946 MetaCoq.Template.Transform <> p:15 var
+R951:958 MetaCoq.Template.Transform <> Transform.Opt.program' var
+binder 910:918 <> transform:16
+binder 961:965 <> obseq:17
+binder 983:983 <> p:18
+binder 985:985 <> v:19
+R993:995 MetaCoq.Template.Transform <> pre:14 var
+R997:997 MetaCoq.Template.Transform <> p:18 var
+binder 988:989 <> pr:20
+R1017:1028 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1009:1012 MetaCoq.Template.Transform <> Transform.Opt.eval var
+R1014:1014 MetaCoq.Template.Transform <> p:18 var
+R1016:1016 MetaCoq.Template.Transform <> v:19 var
+R1039:1047 MetaCoq.Template.Transform <> transform:16 var
+R1051:1052 MetaCoq.Template.Transform <> pr:20 var
+R1049:1049 MetaCoq.Template.Transform <> p:18 var
+binder 1033:1034 <> p':21
+R1065:1071 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1074:1075 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1072:1073 <> v':22
+R1087:1090 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1076:1080 MetaCoq.Template.Transform <> Transform.Opt.eval' var
+R1082:1083 MetaCoq.Template.Transform <> p':21 var
+R1085:1086 MetaCoq.Template.Transform <> v':22 var
+R1091:1095 MetaCoq.Template.Transform <> obseq:17 var
+R1097:1097 MetaCoq.Template.Transform <> p:18 var
+R1099:1100 MetaCoq.Template.Transform <> p':21 var
+R1102:1102 MetaCoq.Template.Transform <> v:19 var
+R1104:1105 MetaCoq.Template.Transform <> v':22 var
+rec 1120:1120 Transform t
+proj 1131:1134 Transform name
+proj 1152:1154 Transform pre
+proj 1181:1189 Transform transform
+proj 1238:1241 Transform post
+proj 1269:1279 Transform correctness
+proj 1345:1349 Transform obseq
+proj 1407:1418 Transform preservation
+R1138:1143 MetaCoq.Template.utils.bytestring <> string abbrev
+R1165:1168 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1158:1164 MetaCoq.Template.Transform <> Transform.Opt.program var
+R1204:1210 MetaCoq.Template.Transform <> Transform.Opt.program var
+binder 1200:1200 <> p:26
+R1218:1221 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1213:1215 MetaCoq.Template.Transform <> pre:25 meth
+R1217:1217 MetaCoq.Template.Transform <> p:26 var
+R1222:1229 MetaCoq.Template.Transform <> Transform.Opt.program' var
+R1253:1256 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1245:1252 MetaCoq.Template.Transform <> Transform.Opt.program' var
+binder 1290:1294 <> input:29
+R1301:1303 MetaCoq.Template.Transform <> pre:25 meth
+R1305:1309 MetaCoq.Template.Transform <> input:29 var
+binder 1297:1297 <> p:30
+R1313:1316 MetaCoq.Template.Transform <> post:28 meth
+R1319:1327 MetaCoq.Template.Transform <> transform:27 meth
+R1335:1335 MetaCoq.Template.Transform <> p:30 var
+R1329:1333 MetaCoq.Template.Transform <> input:29 var
+R1360:1363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1353:1359 MetaCoq.Template.Transform <> Transform.Opt.program var
+R1372:1375 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1364:1371 MetaCoq.Template.Transform <> Transform.Opt.program' var
+R1381:1384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1376:1380 MetaCoq.Template.Transform <> Transform.Opt.value var
+R1391:1394 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1385:1390 MetaCoq.Template.Transform <> Transform.Opt.value' var
+R1422:1435 MetaCoq.Template.Transform Transform preserves_eval def
+R1437:1439 MetaCoq.Template.Transform <> pre:25 meth
+R1441:1449 MetaCoq.Template.Transform <> transform:27 meth
+R1451:1455 MetaCoq.Template.Transform <> obseq:32 meth
+def 1477:1479 Transform run
+R1486:1486 MetaCoq.Template.Transform Transform t rec
+binder 1482:1482 <> x:34
+R1494:1500 MetaCoq.Template.Transform <> Transform.Opt.program var
+binder 1490:1490 <> p:35
+R1509:1511 MetaCoq.Template.Transform Transform pre proj
+R1513:1513 MetaCoq.Template.Transform <> x:34 var
+R1515:1515 MetaCoq.Template.Transform <> p:35 var
+binder 1504:1505 <> pr:36
+R1520:1527 MetaCoq.Template.Transform <> Transform.Opt.program' var
+R1538:1541 MetaCoq.Template.Transform <> time def
+R1582:1583 Coq.Init.Datatypes <> tt constr
+R1565:1573 MetaCoq.Template.Transform Transform transform proj
+R1562:1562 MetaCoq.Template.Transform <> x:34 var
+R1576:1576 MetaCoq.Template.Transform <> p:35 var
+R1578:1579 MetaCoq.Template.Transform <> pr:36 var
+R1546:1549 MetaCoq.Template.Transform Transform name proj
+R1543:1543 MetaCoq.Template.Transform <> x:34 var
+R1593:1595 MetaCoq.Template.Transform Transform.Opt <> sec
+R1610:1610 MetaCoq.Template.Transform Transform t rec
+R1610:1610 MetaCoq.Template.Transform Transform t rec
+def 1645:1658 Transform self_transform
+binder 1660:1666 <> program:37
+binder 1668:1672 <> value:38
+binder 1674:1677 <> eval:39
+binder 1679:1683 <> eval':40
+R1688:1688 MetaCoq.Template.Transform Transform t rec
+R1723:1727 MetaCoq.Template.Transform <> eval':40 var
+R1718:1721 MetaCoq.Template.Transform <> eval:39 var
+R1712:1716 MetaCoq.Template.Transform <> value:38 var
+R1706:1710 MetaCoq.Template.Transform <> value:38 var
+R1698:1704 MetaCoq.Template.Transform <> program:37 var
+R1690:1696 MetaCoq.Template.Transform <> program:37 var
+sec 1741:1744 Transform Comp
+binder 1760:1766 <> program:41
+binder 1768:1775 <> program':42
+binder 1777:1785 <> program'':43
+binder 1809:1813 <> value:44
+binder 1815:1820 <> value':45
+binder 1822:1828 <> value'':46
+R1866:1869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1859:1865 MetaCoq.Template.Transform <> Transform.Comp.program var
+R1875:1878 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1870:1874 MetaCoq.Template.Transform <> Transform.Comp.value var
+binder 1852:1855 <> eval:47
+R1915:1918 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1907:1914 MetaCoq.Template.Transform <> Transform.Comp.program' var
+R1925:1928 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1919:1924 MetaCoq.Template.Transform <> Transform.Comp.value' var
+binder 1899:1903 <> eval':48
+R1967:1970 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1958:1966 MetaCoq.Template.Transform <> Transform.Comp.program'' var
+R1978:1981 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1971:1977 MetaCoq.Template.Transform <> Transform.Comp.value'' var
+binder 1949:1954 <> eval'':49
+def 2051:2057 Transform compose
+R2064:2064 MetaCoq.Template.Transform Transform t rec
+R2101:2105 MetaCoq.Template.Transform <> Transform.Comp.eval' var
+R2096:2099 MetaCoq.Template.Transform <> Transform.Comp.eval var
+R2089:2094 MetaCoq.Template.Transform <> Transform.Comp.value' var
+R2083:2087 MetaCoq.Template.Transform <> Transform.Comp.value var
+R2074:2081 MetaCoq.Template.Transform <> Transform.Comp.program' var
+R2066:2072 MetaCoq.Template.Transform <> Transform.Comp.program var
+binder 2060:2060 <> o:50
+R2114:2114 MetaCoq.Template.Transform Transform t rec
+R2156:2161 MetaCoq.Template.Transform <> Transform.Comp.eval'' var
+R2150:2154 MetaCoq.Template.Transform <> Transform.Comp.eval' var
+R2142:2148 MetaCoq.Template.Transform <> Transform.Comp.value'' var
+R2135:2140 MetaCoq.Template.Transform <> Transform.Comp.value' var
+R2125:2133 MetaCoq.Template.Transform <> Transform.Comp.program'' var
+R2116:2123 MetaCoq.Template.Transform <> Transform.Comp.program' var
+binder 2109:2110 <> o':51
+binder 2185:2185 <> p:52
+R2198:2201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2191:2194 MetaCoq.Template.Transform Transform post proj
+R2188:2188 MetaCoq.Template.Transform <> o:50 var
+R2197:2197 MetaCoq.Template.Transform <> p:52 var
+R2206:2208 MetaCoq.Template.Transform Transform pre proj
+R2202:2203 MetaCoq.Template.Transform <> o':51 var
+R2211:2211 MetaCoq.Template.Transform <> p:52 var
+binder 2171:2173 <> hpp:53
+R2217:2217 MetaCoq.Template.Transform Transform t rec
+R2256:2261 MetaCoq.Template.Transform <> Transform.Comp.eval'' var
+R2251:2254 MetaCoq.Template.Transform <> Transform.Comp.eval var
+R2243:2249 MetaCoq.Template.Transform <> Transform.Comp.value'' var
+R2237:2241 MetaCoq.Template.Transform <> Transform.Comp.value var
+R2227:2235 MetaCoq.Template.Transform <> Transform.Comp.program'' var
+R2219:2225 MetaCoq.Template.Transform <> Transform.Comp.program var
+R2283:2286 MetaCoq.Template.Transform Transform name proj
+R2283:2286 MetaCoq.Template.Transform Transform name proj
+R2283:2286 MetaCoq.Template.Transform Transform name proj
+R2335:2343 MetaCoq.Template.Transform Transform transform proj
+R2335:2343 MetaCoq.Template.Transform Transform transform proj
+R2413:2415 MetaCoq.Template.Transform Transform pre proj
+R2413:2415 MetaCoq.Template.Transform Transform pre proj
+R2437:2440 MetaCoq.Template.Transform Transform post proj
+R2437:2440 MetaCoq.Template.Transform Transform post proj
+R2464:2468 MetaCoq.Template.Transform Transform obseq proj
+R2464:2468 MetaCoq.Template.Transform Transform obseq proj
+R2300:2302 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2295:2298 MetaCoq.Template.Transform Transform name proj
+R2292:2292 MetaCoq.Template.Transform <> o:50 var
+R2309:2311 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2316:2319 MetaCoq.Template.Transform Transform name proj
+R2312:2313 MetaCoq.Template.Transform <> o':51 var
+R2423:2425 MetaCoq.Template.Transform Transform pre proj
+R2420:2420 MetaCoq.Template.Transform <> o:50 var
+binder 2345:2345 <> p:54
+binder 2347:2348 <> hp:55
+R2353:2355 MetaCoq.Template.Transform Transform run def
+R2357:2358 MetaCoq.Template.Transform <> o':51 var
+R2361:2363 MetaCoq.Template.Transform Transform run def
+R2365:2365 MetaCoq.Template.Transform <> o:50 var
+R2367:2367 MetaCoq.Template.Transform <> p:54 var
+R2369:2370 MetaCoq.Template.Transform <> hp:55 var
+R2374:2376 MetaCoq.Template.Transform <> hpp:53 var
+R2384:2394 MetaCoq.Template.Transform Transform correctness proj
+R2381:2381 MetaCoq.Template.Transform <> o:50 var
+R2399:2400 MetaCoq.Template.Transform <> hp:55 var
+R2449:2452 MetaCoq.Template.Transform Transform post proj
+R2445:2446 MetaCoq.Template.Transform <> o':51 var
+binder 2470:2470 <> g:56
+binder 2472:2473 <> g':57
+binder 2475:2475 <> v:58
+binder 2477:2478 <> v':59
+R2483:2489 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2497:2498 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2490:2492 <> g'':60
+binder 2494:2496 <> v'':61
+R2520:2523 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R2502:2506 MetaCoq.Template.Transform Transform obseq proj
+R2499:2499 MetaCoq.Template.Transform <> o:50 var
+R2509:2509 MetaCoq.Template.Transform <> g:56 var
+R2511:2513 MetaCoq.Template.Transform <> g'':60 var
+R2515:2515 MetaCoq.Template.Transform <> v:58 var
+R2517:2519 MetaCoq.Template.Transform <> v'':61 var
+R2528:2532 MetaCoq.Template.Transform Transform obseq proj
+R2524:2525 MetaCoq.Template.Transform <> o':51 var
+R2535:2537 MetaCoq.Template.Transform <> g'':60 var
+R2539:2540 MetaCoq.Template.Transform <> g':57 var
+R2542:2544 MetaCoq.Template.Transform <> v'':61 var
+R2546:2547 MetaCoq.Template.Transform <> v':59 var
+R2630:2640 MetaCoq.Template.Transform Transform correctness proj
+R2630:2640 MetaCoq.Template.Transform Transform correctness proj
+R2743:2754 MetaCoq.Template.Transform Transform preservation proj
+R2743:2754 MetaCoq.Template.Transform Transform preservation proj
+R2844:2855 MetaCoq.Template.Transform Transform preservation proj
+R2862:2870 MetaCoq.Template.Transform Transform transform proj
+R2844:2855 MetaCoq.Template.Transform Transform preservation proj
+R2862:2870 MetaCoq.Template.Transform Transform transform proj
+R2916:2926 MetaCoq.Template.Transform Transform correctness proj
+R2916:2926 MetaCoq.Template.Transform Transform correctness proj
+R3031:3039 MetaCoq.Template.Transform Transform transform proj
+R3031:3039 MetaCoq.Template.Transform Transform transform proj
+R3080:3083 MetaCoq.Template.Transform Transform.Comp <> sec
+R3186:3202 MetaCoq.Template.Transform Transform compose def
+not 3169:3169 Transform ::transform_scope:x_'▷'_x
+R3300:3308 MetaCoq.Template.Transform Transform <> mod

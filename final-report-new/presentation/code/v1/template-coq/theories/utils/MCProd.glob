@@ -1,0 +1,495 @@
+DIGEST 3343c71cd27bf29a2e06015c9dabe4fb
+FMetaCoq.Template.utils.MCProd
+R24:27 Coq.Bool.Bool <> <> lib
+R29:43 Coq.Classes.RelationClasses <> <> lib
+R61:69 Coq.ssr.ssreflect <> <> lib
+R87:102 Coq.Classes.CRelationClasses <> <> lib
+R112:148 Coq.Init.Datatypes <> is_true def
+R199:201 Coq.Init.Datatypes <> fst def
+not 188:188 <> ::pair_scope:x_'.1'
+R290:292 Coq.Init.Datatypes <> snd def
+not 279:279 <> ::pair_scope:x_'.2'
+R407:410 Coq.Init.Datatypes <> prod ind
+not 394:394 <> :::x_'×'_x
+R476:480 Coq.Init.Logic <> proj1 thm
+not 464:464 <> :::x_'.p1'
+R556:560 Coq.Init.Logic <> proj2 thm
+not 544:544 <> :::x_'.p2'
+def 627:632 <> on_snd
+binder 635:635 <> A:1
+binder 637:637 <> B:2
+binder 639:639 <> C:3
+R648:651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R647:647 MetaCoq.Template.utils.MCProd <> B:2 var
+R652:652 MetaCoq.Template.utils.MCProd <> C:3 var
+binder 643:643 <> f:4
+R661:663 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R660:660 MetaCoq.Template.utils.MCProd <> A:1 var
+R664:664 MetaCoq.Template.utils.MCProd <> B:2 var
+binder 656:656 <> p:5
+R672:672 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R678:679 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R689:689 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R673:675 Coq.Init.Datatypes <> fst def
+R677:677 MetaCoq.Template.utils.MCProd <> p:5 var
+R680:680 MetaCoq.Template.utils.MCProd <> f:4 var
+R683:685 Coq.Init.Datatypes <> snd def
+R687:687 MetaCoq.Template.utils.MCProd <> p:5 var
+def 704:711 <> test_snd
+binder 714:714 <> A:6
+binder 716:716 <> B:7
+R725:728 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R724:724 MetaCoq.Template.utils.MCProd <> B:7 var
+R729:732 Coq.Init.Datatypes <> bool ind
+binder 720:720 <> f:8
+R741:743 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R740:740 MetaCoq.Template.utils.MCProd <> A:6 var
+R744:744 MetaCoq.Template.utils.MCProd <> B:7 var
+binder 736:736 <> p:9
+R752:752 MetaCoq.Template.utils.MCProd <> f:8 var
+R755:757 Coq.Init.Datatypes <> snd def
+R759:759 MetaCoq.Template.utils.MCProd <> p:9 var
+def 775:782 <> map_pair
+binder 785:785 <> A:10
+binder 787:787 <> B:11
+binder 789:789 <> C:12
+binder 791:791 <> D:13
+R800:803 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R799:799 MetaCoq.Template.utils.MCProd <> A:10 var
+R804:804 MetaCoq.Template.utils.MCProd <> B:11 var
+binder 795:795 <> f:14
+R813:816 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R812:812 MetaCoq.Template.utils.MCProd <> C:12 var
+R817:817 MetaCoq.Template.utils.MCProd <> D:13 var
+binder 808:808 <> g:15
+R826:829 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R825:825 MetaCoq.Template.utils.MCProd <> A:10 var
+R830:830 MetaCoq.Template.utils.MCProd <> C:12 var
+binder 821:821 <> p:16
+R836:839 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R835:835 MetaCoq.Template.utils.MCProd <> B:11 var
+R840:840 MetaCoq.Template.utils.MCProd <> D:13 var
+R847:847 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R853:854 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R860:860 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R848:848 MetaCoq.Template.utils.MCProd <> f:14 var
+R851:852 MetaCoq.Template.utils.MCProd <> ::pair_scope:x_'.1' not
+R850:850 MetaCoq.Template.utils.MCProd <> p:16 var
+R855:855 MetaCoq.Template.utils.MCProd <> g:15 var
+R858:859 MetaCoq.Template.utils.MCProd <> ::pair_scope:x_'.2' not
+R857:857 MetaCoq.Template.utils.MCProd <> p:16 var
+prf 870:882 <> on_snd_on_snd
+binder 885:885 <> A:17
+binder 887:887 <> B:18
+binder 889:889 <> C:19
+binder 891:891 <> D:20
+R900:903 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R899:899 MetaCoq.Template.utils.MCProd <> C:19 var
+R904:904 MetaCoq.Template.utils.MCProd <> D:20 var
+binder 895:895 <> f:21
+R913:916 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R912:912 MetaCoq.Template.utils.MCProd <> B:18 var
+R917:917 MetaCoq.Template.utils.MCProd <> C:19 var
+binder 908:908 <> g:22
+R926:928 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R925:925 MetaCoq.Template.utils.MCProd <> A:17 var
+R929:929 MetaCoq.Template.utils.MCProd <> B:18 var
+binder 921:921 <> d:23
+R957:959 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R936:941 MetaCoq.Template.utils.MCProd <> on_snd def
+R946:951 MetaCoq.Template.utils.MCProd <> on_snd def
+R955:955 MetaCoq.Template.utils.MCProd <> d:23 var
+R953:953 MetaCoq.Template.utils.MCProd <> g:22 var
+R943:943 MetaCoq.Template.utils.MCProd <> f:21 var
+R960:965 MetaCoq.Template.utils.MCProd <> on_snd def
+R986:986 MetaCoq.Template.utils.MCProd <> d:23 var
+binder 972:972 <> x:24
+R977:977 MetaCoq.Template.utils.MCProd <> f:21 var
+R980:980 MetaCoq.Template.utils.MCProd <> g:22 var
+R982:982 MetaCoq.Template.utils.MCProd <> x:24 var
+prf 1035:1044 <> snd_on_snd
+binder 1047:1047 <> A:25
+binder 1049:1049 <> B:26
+binder 1051:1051 <> C:27
+R1060:1063 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1059:1059 MetaCoq.Template.utils.MCProd <> B:26 var
+R1064:1064 MetaCoq.Template.utils.MCProd <> C:27 var
+binder 1055:1055 <> f:28
+R1073:1075 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1072:1072 MetaCoq.Template.utils.MCProd <> A:25 var
+R1076:1076 MetaCoq.Template.utils.MCProd <> B:26 var
+binder 1068:1068 <> p:29
+R1097:1099 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1081:1083 Coq.Init.Datatypes <> snd def
+R1086:1091 MetaCoq.Template.utils.MCProd <> on_snd def
+R1095:1095 MetaCoq.Template.utils.MCProd <> p:29 var
+R1093:1093 MetaCoq.Template.utils.MCProd <> f:28 var
+R1100:1100 MetaCoq.Template.utils.MCProd <> f:28 var
+R1103:1105 Coq.Init.Datatypes <> snd def
+R1107:1107 MetaCoq.Template.utils.MCProd <> p:29 var
+prf 1155:1168 <> compose_on_snd
+binder 1171:1171 <> A:30
+binder 1173:1173 <> B:31
+binder 1175:1175 <> C:32
+binder 1177:1177 <> D:33
+R1186:1189 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1185:1185 MetaCoq.Template.utils.MCProd <> C:32 var
+R1190:1190 MetaCoq.Template.utils.MCProd <> D:33 var
+binder 1181:1181 <> f:34
+R1199:1202 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1198:1198 MetaCoq.Template.utils.MCProd <> B:31 var
+R1203:1203 MetaCoq.Template.utils.MCProd <> C:32 var
+binder 1194:1194 <> g:35
+R1210:1210 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1253:1256 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1221:1223 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1220:1220 MetaCoq.Template.utils.MCProd <> A:30 var
+R1224:1224 MetaCoq.Template.utils.MCProd <> B:31 var
+binder 1216:1216 <> x:36
+R1231:1236 MetaCoq.Template.utils.MCProd <> on_snd def
+R1238:1238 MetaCoq.Template.utils.MCProd <> f:34 var
+R1242:1247 MetaCoq.Template.utils.MCProd <> on_snd def
+R1251:1251 MetaCoq.Template.utils.MCProd <> x:36 var
+R1249:1249 MetaCoq.Template.utils.MCProd <> g:35 var
+R1257:1262 MetaCoq.Template.utils.MCProd <> on_snd def
+binder 1269:1269 <> x:37
+R1274:1274 MetaCoq.Template.utils.MCProd <> f:34 var
+R1277:1277 MetaCoq.Template.utils.MCProd <> g:35 var
+R1279:1279 MetaCoq.Template.utils.MCProd <> x:37 var
+prf 1318:1331 <> on_snd_eq_spec
+binder 1334:1334 <> A:38
+binder 1336:1336 <> B:39
+binder 1338:1338 <> C:40
+R1349:1352 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1348:1348 MetaCoq.Template.utils.MCProd <> B:39 var
+R1353:1353 MetaCoq.Template.utils.MCProd <> C:40 var
+binder 1342:1342 <> f:41
+binder 1344:1344 <> g:42
+R1362:1364 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1361:1361 MetaCoq.Template.utils.MCProd <> A:38 var
+R1365:1365 MetaCoq.Template.utils.MCProd <> B:39 var
+binder 1357:1357 <> x:43
+R1393:1399 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1381:1383 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1372:1372 MetaCoq.Template.utils.MCProd <> f:41 var
+R1375:1377 Coq.Init.Datatypes <> snd def
+R1379:1379 MetaCoq.Template.utils.MCProd <> x:43 var
+R1384:1384 MetaCoq.Template.utils.MCProd <> g:42 var
+R1387:1389 Coq.Init.Datatypes <> snd def
+R1391:1391 MetaCoq.Template.utils.MCProd <> x:43 var
+R1410:1412 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1400:1405 MetaCoq.Template.utils.MCProd <> on_snd def
+R1409:1409 MetaCoq.Template.utils.MCProd <> x:43 var
+R1407:1407 MetaCoq.Template.utils.MCProd <> f:41 var
+R1413:1418 MetaCoq.Template.utils.MCProd <> on_snd def
+R1422:1422 MetaCoq.Template.utils.MCProd <> x:43 var
+R1420:1420 MetaCoq.Template.utils.MCProd <> g:42 var
+R1453:1458 MetaCoq.Template.utils.MCProd <> on_snd def
+def 1502:1507 <> on_pi2
+binder 1510:1510 <> A:44
+binder 1512:1512 <> B:45
+binder 1514:1514 <> C:46
+R1523:1526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1522:1522 MetaCoq.Template.utils.MCProd <> B:45 var
+R1527:1527 MetaCoq.Template.utils.MCProd <> B:45 var
+binder 1518:1518 <> f:47
+R1540:1542 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1536:1538 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1535:1535 MetaCoq.Template.utils.MCProd <> A:44 var
+R1539:1539 MetaCoq.Template.utils.MCProd <> B:45 var
+R1543:1543 MetaCoq.Template.utils.MCProd <> C:46 var
+binder 1531:1531 <> p:48
+R1553:1555 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1549:1551 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1548:1548 MetaCoq.Template.utils.MCProd <> A:44 var
+R1552:1552 MetaCoq.Template.utils.MCProd <> B:45 var
+R1556:1556 MetaCoq.Template.utils.MCProd <> C:46 var
+R1563:1563 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1575:1576 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1592:1593 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1599:1599 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1564:1566 Coq.Init.Datatypes <> fst def
+R1569:1571 Coq.Init.Datatypes <> fst def
+R1573:1573 MetaCoq.Template.utils.MCProd <> p:48 var
+R1577:1577 MetaCoq.Template.utils.MCProd <> f:47 var
+R1580:1582 Coq.Init.Datatypes <> snd def
+R1585:1587 Coq.Init.Datatypes <> fst def
+R1589:1589 MetaCoq.Template.utils.MCProd <> p:48 var
+R1594:1596 Coq.Init.Datatypes <> snd def
+R1598:1598 MetaCoq.Template.utils.MCProd <> p:48 var
+prf 1726:1733 <> andb_and
+binder 1735:1735 <> b:49
+binder 1737:1738 <> b':50
+R1749:1753 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1743:1746 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R1742:1742 MetaCoq.Template.utils.MCProd <> b:49 var
+R1747:1748 MetaCoq.Template.utils.MCProd <> b':50 var
+R1755:1758 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1754:1754 MetaCoq.Template.utils.MCProd <> b:49 var
+R1759:1760 MetaCoq.Template.utils.MCProd <> b':50 var
+R1776:1788 Coq.Bool.Bool <> andb_true_iff thm
+R1776:1788 Coq.Bool.Bool <> andb_true_iff thm
+prf 1803:1811 <> andb_andI
+binder 1814:1814 <> b:51
+binder 1816:1817 <> b':52
+R1829:1832 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1823:1826 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R1822:1822 MetaCoq.Template.utils.MCProd <> b:51 var
+R1827:1828 MetaCoq.Template.utils.MCProd <> b':52 var
+R1834:1837 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1833:1833 MetaCoq.Template.utils.MCProd <> b:51 var
+R1838:1839 MetaCoq.Template.utils.MCProd <> b':52 var
+R1855:1862 MetaCoq.Template.utils.MCProd <> andb_and thm
+R1855:1862 MetaCoq.Template.utils.MCProd <> andb_and thm
+def 1882:1887 <> fst_eq
+binder 1890:1890 <> A:53
+binder 1892:1892 <> B:54
+R1903:1903 MetaCoq.Template.utils.MCProd <> A:53 var
+binder 1896:1896 <> x:55
+binder 1898:1899 <> x':56
+R1914:1914 MetaCoq.Template.utils.MCProd <> B:54 var
+binder 1907:1907 <> y:57
+binder 1909:1910 <> y':58
+R1938:1941 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1927:1929 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1921:1921 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1923:1924 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1926:1926 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1922:1922 MetaCoq.Template.utils.MCProd <> x:55 var
+R1925:1925 MetaCoq.Template.utils.MCProd <> y:57 var
+R1930:1930 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1933:1934 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1937:1937 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1931:1932 MetaCoq.Template.utils.MCProd <> x':56 var
+R1935:1936 MetaCoq.Template.utils.MCProd <> y':58 var
+R1943:1945 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1942:1942 MetaCoq.Template.utils.MCProd <> x:55 var
+R1946:1947 MetaCoq.Template.utils.MCProd <> x':56 var
+def 2002:2007 <> snd_eq
+binder 2010:2010 <> A:59
+binder 2012:2012 <> B:60
+R2023:2023 MetaCoq.Template.utils.MCProd <> A:59 var
+binder 2016:2016 <> x:61
+binder 2018:2019 <> x':62
+R2034:2034 MetaCoq.Template.utils.MCProd <> B:60 var
+binder 2027:2027 <> y:63
+binder 2029:2030 <> y':64
+R2058:2061 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2047:2049 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2041:2041 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2043:2044 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2046:2046 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2042:2042 MetaCoq.Template.utils.MCProd <> x:61 var
+R2045:2045 MetaCoq.Template.utils.MCProd <> y:63 var
+R2050:2050 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2053:2054 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2057:2057 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2051:2052 MetaCoq.Template.utils.MCProd <> x':62 var
+R2055:2056 MetaCoq.Template.utils.MCProd <> y':64 var
+R2063:2065 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2062:2062 MetaCoq.Template.utils.MCProd <> y:63 var
+R2066:2067 MetaCoq.Template.utils.MCProd <> y':64 var
+def 2122:2125 <> swap
+binder 2128:2128 <> A:65
+binder 2130:2130 <> B:66
+R2146:2148 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2145:2145 MetaCoq.Template.utils.MCProd <> A:65 var
+R2149:2149 MetaCoq.Template.utils.MCProd <> B:66 var
+binder 2141:2141 <> x:67
+R2155:2157 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2154:2154 MetaCoq.Template.utils.MCProd <> B:66 var
+R2158:2158 MetaCoq.Template.utils.MCProd <> A:65 var
+R2165:2165 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2171:2172 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2178:2178 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2166:2168 Coq.Init.Datatypes <> snd def
+R2170:2170 MetaCoq.Template.utils.MCProd <> x:67 var
+R2173:2175 Coq.Init.Datatypes <> fst def
+R2177:2177 MetaCoq.Template.utils.MCProd <> x:67 var
+def 2193:2201 <> and_assum
+binder 2204:2204 <> A:68
+binder 2206:2206 <> B:69
+R2221:2221 MetaCoq.Template.utils.MCProd <> A:68 var
+binder 2217:2217 <> f:70
+R2231:2234 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2230:2230 MetaCoq.Template.utils.MCProd <> A:68 var
+R2235:2235 MetaCoq.Template.utils.MCProd <> B:69 var
+binder 2225:2226 <> f':71
+R2241:2244 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R2240:2240 MetaCoq.Template.utils.MCProd <> A:68 var
+R2245:2245 MetaCoq.Template.utils.MCProd <> B:69 var
+R2252:2252 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2254:2255 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2260:2260 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2253:2253 MetaCoq.Template.utils.MCProd <> f:70 var
+R2256:2257 MetaCoq.Template.utils.MCProd <> f':71 var
+R2259:2259 MetaCoq.Template.utils.MCProd <> f:70 var
+ind 3760:3763 <> and3
+constr 3793:3798 <> Times3
+binder 3766:3767 <> P1:72
+binder 3769:3770 <> P2:73
+binder 3772:3773 <> P3:74
+R3803:3804 MetaCoq.Template.utils.MCProd <> P1:72 var
+R3808:3809 MetaCoq.Template.utils.MCProd <> P2:73 var
+R3813:3814 MetaCoq.Template.utils.MCProd <> P3:74 var
+ind 3825:3828 <> and4
+constr 3861:3866 <> Times4
+binder 3831:3832 <> P1:77
+binder 3834:3835 <> P2:78
+binder 3837:3838 <> P3:79
+binder 3840:3841 <> P4:80
+R3871:3872 MetaCoq.Template.utils.MCProd <> P1:77 var
+R3876:3877 MetaCoq.Template.utils.MCProd <> P2:78 var
+R3881:3882 MetaCoq.Template.utils.MCProd <> P3:79 var
+R3886:3887 MetaCoq.Template.utils.MCProd <> P4:80 var
+ind 3898:3901 <> and5
+constr 3937:3942 <> Times5
+binder 3904:3905 <> P1:83
+binder 3907:3908 <> P2:84
+binder 3910:3911 <> P3:85
+binder 3913:3914 <> P4:86
+binder 3916:3917 <> P5:87
+R3947:3948 MetaCoq.Template.utils.MCProd <> P1:83 var
+R3952:3953 MetaCoq.Template.utils.MCProd <> P2:84 var
+R3957:3958 MetaCoq.Template.utils.MCProd <> P3:85 var
+R3962:3963 MetaCoq.Template.utils.MCProd <> P4:86 var
+R3967:3968 MetaCoq.Template.utils.MCProd <> P5:87 var
+ind 3979:3982 <> and6
+constr 4021:4026 <> Times6
+binder 3985:3986 <> P1:90
+binder 3988:3989 <> P2:91
+binder 3991:3992 <> P3:92
+binder 3994:3995 <> P4:93
+binder 3997:3998 <> P5:94
+binder 4000:4001 <> P6:95
+R4031:4032 MetaCoq.Template.utils.MCProd <> P1:90 var
+R4036:4037 MetaCoq.Template.utils.MCProd <> P2:91 var
+R4041:4042 MetaCoq.Template.utils.MCProd <> P3:92 var
+R4046:4047 MetaCoq.Template.utils.MCProd <> P4:93 var
+R4051:4052 MetaCoq.Template.utils.MCProd <> P5:94 var
+R4056:4057 MetaCoq.Template.utils.MCProd <> P6:95 var
+ind 4068:4071 <> and7
+constr 4113:4118 <> Times7
+binder 4074:4075 <> P1:98
+binder 4077:4078 <> P2:99
+binder 4080:4081 <> P3:100
+binder 4083:4084 <> P4:101
+binder 4086:4087 <> P5:102
+binder 4089:4090 <> P6:103
+binder 4092:4093 <> P7:104
+R4123:4124 MetaCoq.Template.utils.MCProd <> P1:98 var
+R4128:4129 MetaCoq.Template.utils.MCProd <> P2:99 var
+R4133:4134 MetaCoq.Template.utils.MCProd <> P3:100 var
+R4138:4139 MetaCoq.Template.utils.MCProd <> P4:101 var
+R4143:4144 MetaCoq.Template.utils.MCProd <> P5:102 var
+R4148:4149 MetaCoq.Template.utils.MCProd <> P6:103 var
+R4153:4154 MetaCoq.Template.utils.MCProd <> P7:104 var
+ind 4165:4168 <> and8
+constr 4213:4218 <> Times8
+binder 4171:4172 <> P1:107
+binder 4174:4175 <> P2:108
+binder 4177:4178 <> P3:109
+binder 4180:4181 <> P4:110
+binder 4183:4184 <> P5:111
+binder 4186:4187 <> P6:112
+binder 4189:4190 <> P7:113
+binder 4192:4193 <> P8:114
+R4223:4224 MetaCoq.Template.utils.MCProd <> P1:107 var
+R4228:4229 MetaCoq.Template.utils.MCProd <> P2:108 var
+R4233:4234 MetaCoq.Template.utils.MCProd <> P3:109 var
+R4238:4239 MetaCoq.Template.utils.MCProd <> P4:110 var
+R4243:4244 MetaCoq.Template.utils.MCProd <> P5:111 var
+R4248:4249 MetaCoq.Template.utils.MCProd <> P6:112 var
+R4253:4254 MetaCoq.Template.utils.MCProd <> P7:113 var
+R4258:4259 MetaCoq.Template.utils.MCProd <> P8:114 var
+ind 4270:4273 <> and9
+constr 4321:4326 <> Times9
+binder 4276:4277 <> P1:117
+binder 4279:4280 <> P2:118
+binder 4282:4283 <> P3:119
+binder 4285:4286 <> P4:120
+binder 4288:4289 <> P5:121
+binder 4291:4292 <> P6:122
+binder 4294:4295 <> P7:123
+binder 4297:4298 <> P8:124
+binder 4300:4301 <> P9:125
+R4331:4332 MetaCoq.Template.utils.MCProd <> P1:117 var
+R4336:4337 MetaCoq.Template.utils.MCProd <> P2:118 var
+R4341:4342 MetaCoq.Template.utils.MCProd <> P3:119 var
+R4346:4347 MetaCoq.Template.utils.MCProd <> P4:120 var
+R4351:4352 MetaCoq.Template.utils.MCProd <> P5:121 var
+R4356:4357 MetaCoq.Template.utils.MCProd <> P6:122 var
+R4361:4362 MetaCoq.Template.utils.MCProd <> P7:123 var
+R4366:4367 MetaCoq.Template.utils.MCProd <> P8:124 var
+R4371:4372 MetaCoq.Template.utils.MCProd <> P9:125 var
+ind 4383:4387 <> and10
+constr 4439:4445 <> Times10
+binder 4390:4391 <> P1:128
+binder 4393:4394 <> P2:129
+binder 4396:4397 <> P3:130
+binder 4399:4400 <> P4:131
+binder 4402:4403 <> P5:132
+binder 4405:4406 <> P6:133
+binder 4408:4409 <> P7:134
+binder 4411:4412 <> P8:135
+binder 4414:4415 <> P9:136
+binder 4417:4419 <> P10:137
+R4450:4451 MetaCoq.Template.utils.MCProd <> P1:128 var
+R4455:4456 MetaCoq.Template.utils.MCProd <> P2:129 var
+R4460:4461 MetaCoq.Template.utils.MCProd <> P3:130 var
+R4465:4466 MetaCoq.Template.utils.MCProd <> P4:131 var
+R4470:4471 MetaCoq.Template.utils.MCProd <> P5:132 var
+R4475:4476 MetaCoq.Template.utils.MCProd <> P6:133 var
+R4480:4481 MetaCoq.Template.utils.MCProd <> P7:134 var
+R4485:4486 MetaCoq.Template.utils.MCProd <> P8:135 var
+R4490:4491 MetaCoq.Template.utils.MCProd <> P9:136 var
+R4495:4497 MetaCoq.Template.utils.MCProd <> P10:137 var
+R4529:4532 MetaCoq.Template.utils.MCProd <> and3 ind
+R4534:4537 MetaCoq.Template.utils.MCProd <> and3 ind
+R4539:4542 MetaCoq.Template.utils.MCProd <> and5 ind
+R4544:4547 MetaCoq.Template.utils.MCProd <> and6 ind
+R4549:4552 MetaCoq.Template.utils.MCProd <> and7 ind
+R4554:4557 MetaCoq.Template.utils.MCProd <> and8 ind
+R4559:4562 MetaCoq.Template.utils.MCProd <> and9 ind
+R4603:4606 Coq.Init.Datatypes <> pair constr
+not 4582:4582 <> ::type_scope:'['_'×'_x_'&'_x_']'
+R4679:4682 MetaCoq.Template.utils.MCProd <> and3 variant
+not 4653:4653 <> ::type_scope:'['_'×'_x_','_x_'&'_x_']'
+R4748:4751 MetaCoq.Template.utils.MCProd <> and4 variant
+not 4717:4717 <> ::type_scope:'['_'×'_x_','_x_','_x_'&'_x_']'
+R4825:4828 MetaCoq.Template.utils.MCProd <> and5 variant
+not 4789:4789 <> ::type_scope:'['_'×'_x_','_x_','_x_','_x_'&'_x_']'
+R4910:4913 MetaCoq.Template.utils.MCProd <> and6 variant
+not 4869:4869 <> ::type_scope:'['_'×'_x_','_x_','_x_','_x_','_x_'&'_x_']'
+R5003:5006 MetaCoq.Template.utils.MCProd <> and7 variant
+not 4957:4957 <> ::type_scope:'['_'×'_x_','_x_','_x_','_x_','_x_','_x_'&'_x_']'
+R5104:5107 MetaCoq.Template.utils.MCProd <> and8 variant
+not 5053:5053 <> ::type_scope:'['_'×'_x_','_x_','_x_','_x_','_x_','_x_','_x_'&'_x_']'
+R5213:5216 MetaCoq.Template.utils.MCProd <> and9 variant
+not 5157:5157 <> ::type_scope:'['_'×'_x_','_x_','_x_','_x_','_x_','_x_','_x_','_x_'&'_x_']'
+R5331:5335 MetaCoq.Template.utils.MCProd <> and10 variant
+not 5269:5269 <> ::type_scope:'['_'×'_x_','_x_','_x_','_x_','_x_','_x_','_x_','_x_','_x_'&'_x_']'
+inst 5404:5419 <> Prod_reflexivity
+binder 5422:5422 <> A:140
+R5433:5436 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5432:5432 MetaCoq.Template.utils.MCProd <> A:140 var
+R5438:5441 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5437:5437 MetaCoq.Template.utils.MCProd <> A:140 var
+binder 5426:5426 <> P:141
+binder 5428:5428 <> Q:142
+R5480:5483 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5452:5477 Coq.Classes.CRelationClasses <> Reflexive class
+R5479:5479 MetaCoq.Template.utils.MCProd <> P:141 var
+R5512:5515 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5484:5509 Coq.Classes.CRelationClasses <> Reflexive class
+R5511:5511 MetaCoq.Template.utils.MCProd <> Q:142 var
+R5516:5541 Coq.Classes.CRelationClasses <> Reflexive class
+binder 5548:5548 <> x:143
+binder 5550:5550 <> y:144
+R5555:5558 Coq.Init.Datatypes <> prod ind
+R5569:5569 MetaCoq.Template.utils.MCProd <> Q:142 var
+R5573:5573 MetaCoq.Template.utils.MCProd <> y:144 var
+R5571:5571 MetaCoq.Template.utils.MCProd <> x:143 var
+R5561:5561 MetaCoq.Template.utils.MCProd <> P:141 var
+R5565:5565 MetaCoq.Template.utils.MCProd <> y:144 var
+R5563:5563 MetaCoq.Template.utils.MCProd <> x:143 var

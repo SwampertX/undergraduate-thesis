@@ -1,0 +1,157 @@
+DIGEST ab7a114566b554e27311fb721f24cd94
+FMetaCoq.Template.utils.MCString
+R24:32 Coq.ssr.ssreflect <> <> lib
+R34:40 Coq.ssr.ssrbool <> <> lib
+R42:48 Coq.Init.Decimal <> <> lib
+R50:62 Coq.Numbers.DecimalString <> <> lib
+R64:69 Coq.ZArith.ZArith <> <> lib
+R109:117 MetaCoq.Template.utils.MCCompare <> <> lib
+R119:128 MetaCoq.Template.utils.bytestring <> <> lib
+R130:138 MetaCoq.Template.utils.ReflectEq <> <> lib
+abbrev 172:177 <> string
+R182:189 MetaCoq.Template.utils.bytestring String t ind
+def 357:358 <> nl
+R362:367 MetaCoq.Template.utils.MCString <> string abbrev
+R372:384 MetaCoq.Template.utils.bytestring String String constr
+R397:414 MetaCoq.Template.utils.bytestring String EmptyString constr
+def 429:446 <> string_of_list_aux
+binder 449:449 <> A:1
+R458:461 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R457:457 MetaCoq.Template.utils.MCString <> A:1 var
+R462:467 MetaCoq.Template.utils.MCString <> string abbrev
+binder 453:453 <> f:2
+R477:482 MetaCoq.Template.utils.MCString <> string abbrev
+binder 471:473 <> sep:3
+R490:493 Coq.Init.Datatypes <> list ind
+R495:495 MetaCoq.Template.utils.MCString <> A:1 var
+binder 486:486 <> l:4
+R500:505 MetaCoq.Template.utils.MCString <> string abbrev
+binder 524:524 <> l:5
+R541:541 MetaCoq.Template.utils.MCString <> l:5 var
+R550:555 MetaCoq.Template.utils.MCString <> string abbrev
+R570:572 Coq.Init.Datatypes <> nil constr
+R588:591 Coq.Init.Datatypes <> cons constr
+R595:597 Coq.Init.Datatypes <> nil constr
+R602:602 MetaCoq.Template.utils.MCString <> f:2 var
+R614:617 Coq.Init.Datatypes <> cons constr
+R629:632 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R626:626 MetaCoq.Template.utils.MCString <> f:2 var
+R636:639 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R633:635 MetaCoq.Template.utils.MCString <> sep:3 var
+R640:642 MetaCoq.Template.utils.MCString <> aux:6 var
+R644:644 MetaCoq.Template.utils.MCString <> l:5 var
+binder 520:522 <> aux:8
+R661:663 MetaCoq.Template.utils.MCString <> aux:8 var
+R665:665 MetaCoq.Template.utils.MCString <> l:4 var
+def 680:693 <> string_of_list
+binder 696:696 <> A:9
+R705:708 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R704:704 MetaCoq.Template.utils.MCString <> A:9 var
+R709:714 MetaCoq.Template.utils.MCString <> string abbrev
+binder 700:700 <> f:10
+R722:725 Coq.Init.Datatypes <> list ind
+R727:727 MetaCoq.Template.utils.MCString <> A:9 var
+binder 718:718 <> l:11
+R732:737 MetaCoq.Template.utils.MCString <> string abbrev
+R747:750 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R777:780 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R751:768 MetaCoq.Template.utils.MCString <> string_of_list_aux def
+R776:776 MetaCoq.Template.utils.MCString <> l:11 var
+R770:770 MetaCoq.Template.utils.MCString <> f:10 var
+def 798:807 <> print_list
+binder 810:810 <> A:12
+R819:822 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R818:818 MetaCoq.Template.utils.MCString <> A:12 var
+R823:828 MetaCoq.Template.utils.MCString <> string abbrev
+binder 814:814 <> f:13
+R838:843 MetaCoq.Template.utils.MCString <> string abbrev
+binder 832:834 <> sep:14
+R851:854 Coq.Init.Datatypes <> list ind
+R856:856 MetaCoq.Template.utils.MCString <> A:12 var
+binder 847:847 <> l:15
+R861:866 MetaCoq.Template.utils.MCString <> string abbrev
+R873:890 MetaCoq.Template.utils.MCString <> string_of_list_aux def
+R898:898 MetaCoq.Template.utils.MCString <> l:15 var
+R894:896 MetaCoq.Template.utils.MCString <> sep:14 var
+R892:892 MetaCoq.Template.utils.MCString <> f:13 var
+def 913:918 <> parens
+R927:930 Coq.Init.Datatypes <> bool ind
+binder 921:923 <> top:16
+R938:943 MetaCoq.Template.utils.MCString <> string abbrev
+binder 934:934 <> s:17
+R951:953 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R957:962 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R964:969 Coq.ssr.ssreflect <> ::boolean_if_scope:'if'_x_'then'_x_'else'_x not
+R954:956 MetaCoq.Template.utils.MCString <> top:16 var
+R963:963 MetaCoq.Template.utils.MCString <> s:17 var
+R973:976 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R978:981 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R977:977 MetaCoq.Template.utils.MCString <> s:17 var
+R1008:1020 MetaCoq.Template.utils.bytestring String String constr
+not 1000:1000 <> :::x_'::'_x
+def 1033:1046 <> string_of_uint
+binder 1048:1048 <> n:18
+R1061:1061 MetaCoq.Template.utils.MCString <> n:18 var
+R1072:1074 Coq.Init.Decimal <> Nil constr
+R1086:1087 Coq.Init.Decimal <> D0 constr
+R1097:1100 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1101:1114 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1116:1116 MetaCoq.Template.utils.MCString <> n:18 var
+R1122:1123 Coq.Init.Decimal <> D1 constr
+R1133:1136 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1137:1150 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1152:1152 MetaCoq.Template.utils.MCString <> n:18 var
+R1158:1159 Coq.Init.Decimal <> D2 constr
+R1169:1172 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1173:1186 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1188:1188 MetaCoq.Template.utils.MCString <> n:18 var
+R1194:1195 Coq.Init.Decimal <> D3 constr
+R1205:1208 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1209:1222 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1224:1224 MetaCoq.Template.utils.MCString <> n:18 var
+R1230:1231 Coq.Init.Decimal <> D4 constr
+R1241:1244 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1245:1258 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1260:1260 MetaCoq.Template.utils.MCString <> n:18 var
+R1266:1267 Coq.Init.Decimal <> D5 constr
+R1277:1280 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1281:1294 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1296:1296 MetaCoq.Template.utils.MCString <> n:18 var
+R1302:1303 Coq.Init.Decimal <> D6 constr
+R1313:1316 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1317:1330 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1332:1332 MetaCoq.Template.utils.MCString <> n:18 var
+R1338:1339 Coq.Init.Decimal <> D7 constr
+R1349:1352 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1353:1366 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1368:1368 MetaCoq.Template.utils.MCString <> n:18 var
+R1374:1375 Coq.Init.Decimal <> D8 constr
+R1385:1388 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1389:1402 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1404:1404 MetaCoq.Template.utils.MCString <> n:18 var
+R1410:1411 Coq.Init.Decimal <> D9 constr
+R1421:1424 MetaCoq.Template.utils.MCString <> :::x_'::'_x not
+R1425:1438 MetaCoq.Template.utils.MCString <> string_of_uint:19 def
+R1440:1440 MetaCoq.Template.utils.MCString <> n:18 var
+def 1461:1473 <> string_of_nat
+binder 1475:1475 <> n:21
+R1479:1484 MetaCoq.Template.utils.MCString <> string abbrev
+R1491:1504 MetaCoq.Template.utils.MCString <> string_of_uint def
+R1507:1517 Coq.Arith.PeanoNat Nat to_uint def
+R1519:1519 MetaCoq.Template.utils.MCString <> n:21 var
+def 1587:1604 <> string_of_positive
+binder 1606:1606 <> p:22
+R1613:1626 MetaCoq.Template.utils.MCString <> string_of_uint def
+R1629:1639 Coq.PArith.BinPos Pos to_uint def
+R1641:1641 MetaCoq.Template.utils.MCString <> p:22 var
+def 1657:1667 <> string_of_Z
+R1674:1674 Coq.Numbers.BinNums <> Z ind
+binder 1670:1670 <> z:23
+R1679:1684 MetaCoq.Template.utils.MCString <> string abbrev
+R1697:1697 MetaCoq.Template.utils.MCString <> z:23 var
+R1708:1709 Coq.Numbers.BinNums <> Z0 constr
+R1722:1725 Coq.Numbers.BinNums <> Zpos constr
+R1732:1749 MetaCoq.Template.utils.MCString <> string_of_positive def
+R1757:1760 Coq.Numbers.BinNums <> Zneg constr
+R1770:1773 MetaCoq.Template.utils.bytestring <> ::bs_scope:x_'++'_x not
+R1774:1791 MetaCoq.Template.utils.MCString <> string_of_positive def

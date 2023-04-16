@@ -348,7 +348,8 @@ Section Trans.
 
 
   Lemma translated_structure_field_all_kn_extends:
-  forall sf kn id, Forall (fun '(kn', _) => kn_extends kn kn') (trans_structure_field kn id sf).
+  forall sf kn id, Forall (fun '(kn', _) => kn_extends kn kn')
+    (trans_structure_field kn id sf).
   Proof.
     set (P := fun sf => forall kn id, Forall (fun '(kn', _) => kn_extends kn kn') (trans_structure_field kn id sf)).
     set (P0 := fun mi => forall kn, Forall (fun '(kn', _) => kn_extends kn kn') (trans_module_impl kn mi)).
@@ -356,8 +357,7 @@ Section Trans.
     apply (Ast.Env.sf_mi_sb_mutind P P0 P1); subst P P0 P1; cbn; try auto.
     - intros c kn id. rewrite Forall_forall.
       intros [kn' d] [].
-      inversion H.
-      constructor.
+      inversion H.  constructor.
       inversion H.
     - intros m kn id. rewrite Forall_forall.
       intros [kn' d] [].
@@ -522,10 +522,10 @@ Next Obligation.
   red in H. rewrite H. reflexivity.
 Qed.
 
-Definition trans_global_decls env (d : Ast.Env.global_declarations) : global_env_map :=
-  fold_right (fun decl Σ' =>
-    let decls := (trans_global_decl Σ' decl) in
-    fold_right add_global_decl Σ' decls) env d.
+Definition trans_global_decls env (d : Ast.Env.global_declarations)
+  : global_env_map :=
+  fold_right
+  (fun decl Σ => fold_right add_global_decl Σ (trans_global_decl Σ decl)) env d.
 
 Definition empty_trans_env univs retro :=
   let init_global_env := {| universes := univs; declarations := []; retroknowledge := retro |} in

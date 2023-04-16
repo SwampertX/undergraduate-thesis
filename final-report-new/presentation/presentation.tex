@@ -1,0 +1,51 @@
+\documentclass{beamer}
+%Information to be included in the title page:
+\title{Formalizing Coq Modules in the MetaCoq Project}
+\subtitle{XFC4101 Final Report}
+\author{Tan Yee Jian}
+\institute{National University of Singapore}
+\date{\today}
+
+\usepackage{fontspec}
+\setmonofont{Iosevka Term}
+\usetheme{metropolis}
+\usepackage{minted}
+\setminted{fontsize=\footnotesize,baselinestretch=1.1}
+\usepackage{listings}
+\usepackage{mathpartir}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+% What I have done: results
+% background: Coq modules, syntax and semantics
+% the formalization and some thms proved
+% acknowledgements
+
+% \AtBeginSection[]{
+% \begin{frame}
+%   \frametitle{Contents}
+%   \tableofcontents[currentsection]
+% \end{frame}
+% }
+
+\AtBeginSubsection[]{
+\begin{frame}
+  \frametitle{Contents}
+  \tableofcontents[currentsection,currentsubsection]
+\end{frame}
+}
+
+\include{01-introduction.tex}
+\include{02-modules.tex}
+\include{03-formalization.tex}
+\include{04-conclusion.tex}
+
+\end{document}

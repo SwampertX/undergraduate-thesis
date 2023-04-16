@@ -1,0 +1,13 @@
+DIGEST 8468ecc792231c8e83dd338495cc32da
+FMetaCoq.Template.utils
+R264:267 Coq.Bool.Bool <> <> lib
+R269:274 Coq.ZArith.ZArith <> <> lib
+R276:280 Coq.Arith.Arith <> <> lib
+R282:284 Coq.micromega.Lia <> <> lib
+R286:289 Coq.Lists.List <> <> lib
+R330:342 MetaCoq.Template.utils.MCUtils <> <> lib
+R344:354 MetaCoq.Template.monad_utils <> <> lib
+R655:678 MetaCoq.Template.utils.bytestring MetaCoq.Template.utils append def
+not 641:641 <> ::string_scope2:x_'^'_x
+R956:959 Coq.Init.Datatypes <> prod ind
+not 944:944 <> ::type_scope2:x_'*'_x

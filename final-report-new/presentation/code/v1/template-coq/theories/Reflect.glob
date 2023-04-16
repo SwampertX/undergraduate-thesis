@@ -1,0 +1,725 @@
+DIGEST e47119a8ef21c7e6e9a303dc97bab9f4
+FMetaCoq.Template.Reflect
+R112:138 Coq.Numbers.Cyclic.Int63.Uint63 <> <> lib
+R140:155 Coq.Floats.PrimFloat <> <> lib
+R157:174 Coq.Floats.FloatAxioms <> <> lib
+R214:218 MetaCoq.Template.utils <> <> lib
+R220:227 MetaCoq.Template.BasicAst <> <> lib
+R229:237 MetaCoq.Template.Universes <> <> lib
+R239:246 MetaCoq.Template.Kernames <> <> lib
+R264:272 Coq.ssr.ssreflect <> <> lib
+R305:313 Equations.Prop.Equations <> <> lib
+inst 344:359 <> reflect_prim_int
+R363:371 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R373:403 Coq.Numbers.Cyclic.Int63.Uint63 <> int abbrev
+R412:414 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R419:449 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb abbrev
+R483:492 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb abbrev
+R483:492 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb abbrev
+R533:568 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb_spec thm
+R533:568 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb_spec thm
+R595:636 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb_false_spec thm
+R595:636 Coq.Numbers.Cyclic.Int63.Uint63 <> eqb_false_spec thm
+R685:704 Coq.Floats.SpecFloat <> spec_float variant
+inst 770:787 <> reflect_prim_float
+R791:799 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R801:815 Coq.Floats.PrimFloat <> float prim
+R824:826 MetaCoq.Template.utils.ReflectEq <> eqb meth
+binder 828:828 <> x:1
+binder 830:830 <> y:2
+R835:837 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R913:928 Coq.Floats.FloatOps <> Prim2SF def
+R930:930 MetaCoq.Template.Reflect <> y:2 var
+R892:907 Coq.Floats.FloatOps <> Prim2SF def
+R909:909 MetaCoq.Template.Reflect <> x:1 var
+R853:867 MetaCoq.Template.utils.ReflectEq <> EqDec_ReflectEq def
+R869:888 Coq.Floats.SpecFloat <> spec_float variant
+R987:994 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1070:1085 Coq.Floats.FloatOps <> Prim2SF def
+R1049:1064 Coq.Floats.FloatOps <> Prim2SF def
+R1010:1024 MetaCoq.Template.utils.ReflectEq <> EqDec_ReflectEq def
+R1026:1045 Coq.Floats.SpecFloat <> spec_float variant
+R987:994 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1070:1085 Coq.Floats.FloatOps <> Prim2SF def
+R1049:1064 Coq.Floats.FloatOps <> Prim2SF def
+R1010:1024 MetaCoq.Template.utils.ReflectEq <> EqDec_ReflectEq def
+R1026:1045 Coq.Floats.SpecFloat <> spec_float variant
+R1126:1148 Coq.Floats.FloatAxioms <> Prim2SF_inj thm
+R1126:1148 Coq.Floats.FloatAxioms <> Prim2SF_inj thm
+def 1215:1227 <> eq_prop_level
+binder 1229:1230 <> l1:3
+binder 1232:1233 <> l2:4
+R1250:1251 MetaCoq.Template.Reflect <> l2:4 var
+R1246:1247 MetaCoq.Template.Reflect <> l1:3 var
+R1262:1276 MetaCoq.Template.Universes PropLevel lProp constr
+R1279:1293 MetaCoq.Template.Universes PropLevel lProp constr
+R1298:1301 Coq.Init.Datatypes <> true constr
+R1307:1322 MetaCoq.Template.Universes PropLevel lSProp constr
+R1325:1340 MetaCoq.Template.Universes PropLevel lSProp constr
+R1345:1348 Coq.Init.Datatypes <> true constr
+R1362:1366 Coq.Init.Datatypes <> false constr
+inst 1404:1421 <> reflect_prop_level
+R1425:1433 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R1435:1445 MetaCoq.Template.Universes PropLevel t ind
+R1454:1456 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R1461:1473 MetaCoq.Template.Reflect <> eq_prop_level def
+R1526:1538 MetaCoq.Template.Reflect <> eq_prop_level def
+def 1655:1663 <> eq_levels
+R1685:1687 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+R1674:1684 MetaCoq.Template.Universes PropLevel t ind
+R1688:1694 MetaCoq.Template.Universes Level t def
+binder 1666:1667 <> l1:7
+binder 1669:1670 <> l2:8
+R1712:1713 MetaCoq.Template.Reflect <> l2:8 var
+R1708:1709 MetaCoq.Template.Reflect <> l1:7 var
+R1724:1726 Coq.Init.Datatypes <> inl constr
+R1731:1733 Coq.Init.Datatypes <> inl constr
+R1741:1743 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R1754:1756 Coq.Init.Datatypes <> inr constr
+R1761:1763 Coq.Init.Datatypes <> inr constr
+R1771:1773 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R1792:1796 Coq.Init.Datatypes <> false constr
+inst 1834:1847 <> reflect_levels
+R1851:1859 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R1873:1875 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+R1862:1872 MetaCoq.Template.Universes PropLevel t ind
+R1876:1882 MetaCoq.Template.Universes Level t def
+R1892:1894 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R1899:1907 MetaCoq.Template.Reflect <> eq_levels def
+R1970:1977 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R1970:1977 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R2065:2072 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R2065:2072 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 2144:2150 <> eq_name
+binder 2152:2153 <> na:11
+binder 2155:2156 <> nb:12
+R2173:2174 MetaCoq.Template.Reflect <> nb:12 var
+R2169:2170 MetaCoq.Template.Reflect <> na:11 var
+R2185:2189 MetaCoq.Template.BasicAst <> nAnon constr
+R2192:2196 MetaCoq.Template.BasicAst <> nAnon constr
+R2201:2204 Coq.Init.Datatypes <> true constr
+R2210:2215 MetaCoq.Template.BasicAst <> nNamed constr
+R2220:2225 MetaCoq.Template.BasicAst <> nNamed constr
+R2232:2234 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2252:2256 Coq.Init.Datatypes <> false constr
+inst 2294:2305 <> reflect_name
+R2309:2317 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R2319:2322 MetaCoq.Template.BasicAst <> name ind
+R2331:2333 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2338:2344 MetaCoq.Template.Reflect <> eq_name def
+R2513:2519 MetaCoq.Template.Reflect <> eq_name def
+R2532:2539 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R2532:2539 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 2610:2621 <> eq_relevance
+binder 2623:2623 <> r:15
+binder 2625:2626 <> r':16
+R2642:2643 MetaCoq.Template.Reflect <> r':16 var
+R2639:2639 MetaCoq.Template.Reflect <> r:15 var
+R2654:2661 MetaCoq.Template.BasicAst <> Relevant constr
+R2664:2671 MetaCoq.Template.BasicAst <> Relevant constr
+R2676:2679 Coq.Init.Datatypes <> true constr
+R2685:2694 MetaCoq.Template.BasicAst <> Irrelevant constr
+R2697:2706 MetaCoq.Template.BasicAst <> Irrelevant constr
+R2711:2714 Coq.Init.Datatypes <> true constr
+R2728:2732 Coq.Init.Datatypes <> false constr
+inst 2770:2786 <> reflect_relevance
+R2790:2798 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R2800:2808 MetaCoq.Template.BasicAst <> relevance ind
+R2817:2819 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R2824:2835 MetaCoq.Template.Reflect <> eq_relevance def
+def 3038:3045 <> eq_aname
+R3056:3067 MetaCoq.Template.BasicAst <> binder_annot rec
+R3069:3072 MetaCoq.Template.BasicAst <> name ind
+binder 3048:3049 <> na:19
+binder 3051:3052 <> nb:20
+R3117:3122 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R3080:3082 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3105:3115 MetaCoq.Template.BasicAst <> binder_name proj
+R3101:3102 MetaCoq.Template.Reflect <> nb:20 var
+R3088:3098 MetaCoq.Template.BasicAst <> binder_name proj
+R3084:3085 MetaCoq.Template.Reflect <> na:19 var
+R3123:3125 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3153:3168 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3149:3150 MetaCoq.Template.Reflect <> nb:20 var
+R3131:3146 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3127:3128 MetaCoq.Template.Reflect <> na:19 var
+inst 3201:3213 <> reflect_aname
+R3217:3225 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3227:3231 MetaCoq.Template.BasicAst <> aname def
+R3240:3242 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3247:3254 MetaCoq.Template.Reflect <> eq_aname def
+R3297:3304 MetaCoq.Template.Reflect <> eq_aname def
+R3319:3326 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3347:3357 MetaCoq.Template.BasicAst <> binder_name proj
+R3331:3341 MetaCoq.Template.BasicAst <> binder_name proj
+R3374:3381 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3407:3422 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3386:3401 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3319:3326 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3347:3357 MetaCoq.Template.BasicAst <> binder_name proj
+R3331:3341 MetaCoq.Template.BasicAst <> binder_name proj
+R3374:3381 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3407:3422 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3386:3401 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3374:3381 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3407:3422 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3386:3401 MetaCoq.Template.BasicAst <> binder_relevance proj
+def 3492:3497 <> eq_def
+binder 3500:3500 <> A:21
+R3505:3513 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3515:3515 MetaCoq.Template.Reflect <> A:21 var
+binder 3505:3515 <> H:22
+R3527:3529 MetaCoq.Template.BasicAst <> def rec
+R3531:3531 MetaCoq.Template.Reflect <> A:21 var
+binder 3519:3520 <> d1:23
+binder 3522:3523 <> d2:24
+R3536:3539 Coq.Init.Datatypes <> bool ind
+R3556:3557 MetaCoq.Template.Reflect <> d2:24 var
+R3552:3553 MetaCoq.Template.Reflect <> d1:23 var
+R3568:3572 MetaCoq.Template.BasicAst <> mkdef constr
+R3587:3591 MetaCoq.Template.BasicAst <> mkdef constr
+R3647:3650 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R3634:3637 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R3621:3624 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R3612:3614 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3625:3627 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3638:3640 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3651:3653 MetaCoq.Template.utils.ReflectEq <> eqb meth
+inst 3697:3707 <> reflect_def
+binder 3719:3719 <> A:27
+R3724:3732 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3734:3734 MetaCoq.Template.Reflect <> A:27 var
+binder 3724:3734 <> H:28
+R3738:3746 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R3749:3751 MetaCoq.Template.BasicAst <> def rec
+R3753:3753 MetaCoq.Template.Reflect <> A:27 var
+R3763:3765 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R3770:3775 MetaCoq.Template.Reflect <> eq_def def
+R3884:3889 MetaCoq.Template.Reflect <> eq_def def
+R3904:3911 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3904:3911 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3941:3948 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3941:3948 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3978:3985 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R3978:3985 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4015:4022 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4015:4022 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 4097:4108 <> eq_cast_kind
+R4118:4126 MetaCoq.Template.BasicAst <> cast_kind ind
+binder 4111:4111 <> c:29
+binder 4113:4114 <> c':30
+R4131:4134 Coq.Init.Datatypes <> bool ind
+R4150:4151 MetaCoq.Template.Reflect <> c':30 var
+R4147:4147 MetaCoq.Template.Reflect <> c:29 var
+R4162:4167 MetaCoq.Template.BasicAst <> VmCast constr
+R4170:4175 MetaCoq.Template.BasicAst <> VmCast constr
+R4181:4190 MetaCoq.Template.BasicAst <> NativeCast constr
+R4193:4202 MetaCoq.Template.BasicAst <> NativeCast constr
+R4208:4211 MetaCoq.Template.BasicAst <> Cast constr
+R4214:4217 MetaCoq.Template.BasicAst <> Cast constr
+R4222:4225 Coq.Init.Datatypes <> true constr
+R4222:4225 Coq.Init.Datatypes <> true constr
+R4222:4225 Coq.Init.Datatypes <> true constr
+R4239:4243 Coq.Init.Datatypes <> false constr
+inst 4281:4297 <> reflect_cast_kind
+R4301:4309 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4311:4319 MetaCoq.Template.BasicAst <> cast_kind ind
+R4328:4330 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4335:4346 MetaCoq.Template.Reflect <> eq_cast_kind def
+def 4458:4470 <> eqb_case_info
+R4484:4501 MetaCoq.Template.BasicAst <> case_info rec
+binder 4475:4476 <> ci:33
+binder 4478:4480 <> ci':34
+R4548:4549 MetaCoq.Template.Reflect <> ci:33 var
+binder 4514:4519 <> ci_ind:35
+binder 4522:4528 <> ci_npar:36
+binder 4531:4542 <> ci_relevance:37
+R4598:4600 MetaCoq.Template.Reflect <> ci':34 var
+binder 4561:4567 <> ci_ind':38
+binder 4570:4577 <> ci_npar':39
+binder 4580:4592 <> ci_relevance':40
+R4649:4652 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R4625:4628 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R4607:4609 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4618:4624 MetaCoq.Template.Reflect <> ci_ind':38 var
+R4611:4616 MetaCoq.Template.Reflect <> ci_ind:35 var
+R4629:4631 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4641:4648 MetaCoq.Template.Reflect <> ci_npar':39 var
+R4633:4639 MetaCoq.Template.Reflect <> ci_npar:36 var
+R4653:4655 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4670:4682 MetaCoq.Template.Reflect <> ci_relevance':40 var
+R4657:4668 MetaCoq.Template.Reflect <> ci_relevance:37 var
+inst 4714:4730 <> reflect_case_info
+R4734:4742 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R4744:4752 MetaCoq.Template.BasicAst <> case_info rec
+R4762:4764 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4762:4764 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4762:4764 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R4769:4781 MetaCoq.Template.Reflect <> eqb_case_info def
+R4922:4929 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4967:4974 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5016:5023 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4922:4929 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4967:4974 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R4967:4974 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5016:5023 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5016:5023 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5016:5023 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5016:5023 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5130:5132 Coq.Init.Specif <> sig ind
+R5173:5176 Coq.Init.Datatypes <> prod ind
+def 5191:5206 <> eqb_context_decl
+binder 5209:5212 <> term:41
+R5236:5239 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5232:5235 MetaCoq.Template.Reflect <> term:41 var
+R5244:5247 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5240:5243 MetaCoq.Template.Reflect <> term:41 var
+R5248:5251 Coq.Init.Datatypes <> bool ind
+binder 5223:5228 <> eqterm:42
+R5263:5283 MetaCoq.Template.BasicAst <> context_decl rec
+R5285:5288 MetaCoq.Template.Reflect <> term:41 var
+binder 5257:5257 <> x:43
+binder 5259:5259 <> y:44
+R5315:5315 MetaCoq.Template.Reflect <> x:43 var
+binder 5301:5302 <> na:45
+binder 5305:5305 <> b:46
+binder 5308:5309 <> ty:47
+R5344:5344 MetaCoq.Template.Reflect <> y:44 var
+binder 5327:5329 <> na':48
+binder 5332:5333 <> b':49
+binder 5336:5338 <> ty':50
+R5386:5389 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R5361:5364 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R5351:5353 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5358:5360 MetaCoq.Template.Reflect <> na':48 var
+R5355:5356 MetaCoq.Template.Reflect <> na:45 var
+R5365:5373 MetaCoq.Template.utils.ReflectEq <> eq_option def
+R5384:5385 MetaCoq.Template.Reflect <> b':49 var
+R5382:5382 MetaCoq.Template.Reflect <> b:46 var
+R5375:5380 MetaCoq.Template.Reflect <> eqterm:42 var
+R5390:5395 MetaCoq.Template.Reflect <> eqterm:42 var
+R5400:5402 MetaCoq.Template.Reflect <> ty':50 var
+R5397:5398 MetaCoq.Template.Reflect <> ty:47 var
+inst 5434:5448 <> eq_decl_reflect
+binder 5451:5454 <> term:51
+R5463:5471 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R5473:5476 MetaCoq.Template.Reflect <> term:51 var
+binder 5458:5459 <> Ht:52
+R5481:5489 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R5492:5512 MetaCoq.Template.BasicAst <> context_decl rec
+R5514:5517 MetaCoq.Template.Reflect <> term:51 var
+R5528:5530 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5528:5530 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5528:5530 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5535:5550 MetaCoq.Template.Reflect <> eqb_context_decl def
+R5552:5554 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5653:5661 MetaCoq.Template.utils.ReflectEq <> eq_option def
+R5663:5665 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5679:5681 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5653:5661 MetaCoq.Template.utils.ReflectEq <> eq_option def
+R5663:5665 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5679:5681 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R5702:5709 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5741:5748 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5780:5787 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5702:5709 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5741:5748 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5741:5748 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5780:5787 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5780:5787 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5780:5787 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R5780:5787 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 5847:5866 <> eqb_recursivity_kind
+binder 5868:5868 <> r:53
+binder 5870:5871 <> r':54
+R5887:5888 MetaCoq.Template.Reflect <> r':54 var
+R5884:5884 MetaCoq.Template.Reflect <> r:53 var
+R5899:5904 MetaCoq.Template.BasicAst <> Finite constr
+R5907:5912 MetaCoq.Template.BasicAst <> Finite constr
+R5917:5920 Coq.Init.Datatypes <> true constr
+R5926:5933 MetaCoq.Template.BasicAst <> CoFinite constr
+R5936:5943 MetaCoq.Template.BasicAst <> CoFinite constr
+R5948:5951 Coq.Init.Datatypes <> true constr
+R5957:5964 MetaCoq.Template.BasicAst <> BiFinite constr
+R5967:5974 MetaCoq.Template.BasicAst <> BiFinite constr
+R5979:5982 Coq.Init.Datatypes <> true constr
+R5996:6000 Coq.Init.Datatypes <> false constr
+inst 6029:6052 <> reflect_recursivity_kind
+R6056:6064 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R6066:6081 MetaCoq.Template.BasicAst <> recursivity_kind ind
+R6103:6105 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6103:6105 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6103:6105 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6110:6129 MetaCoq.Template.Reflect <> eqb_recursivity_kind def
+R6103:6105 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6103:6105 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6103:6105 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6110:6129 MetaCoq.Template.Reflect <> eqb_recursivity_kind def
+def 6205:6222 <> eqb_ConstraintType
+binder 6224:6224 <> x:57
+binder 6226:6226 <> y:58
+R6242:6242 MetaCoq.Template.Reflect <> y:58 var
+R6239:6239 MetaCoq.Template.Reflect <> x:57 var
+R6253:6269 MetaCoq.Template.Universes ConstraintType Le constr
+R6274:6290 MetaCoq.Template.Universes ConstraintType Le constr
+R6297:6301 Coq.ZArith.BinInt Z eqb def
+R6311:6327 MetaCoq.Template.Universes ConstraintType Eq constr
+R6330:6346 MetaCoq.Template.Universes ConstraintType Eq constr
+R6351:6354 Coq.Init.Datatypes <> true constr
+R6368:6372 Coq.Init.Datatypes <> false constr
+inst 6401:6422 <> reflect_ConstraintType
+R6426:6434 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R6436:6451 MetaCoq.Template.Universes ConstraintType t def
+R6473:6475 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6473:6475 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6473:6475 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6480:6497 MetaCoq.Template.Reflect <> eqb_ConstraintType def
+R6473:6475 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6473:6475 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6473:6475 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6480:6497 MetaCoq.Template.Reflect <> eqb_ConstraintType def
+R6572:6581 Coq.ZArith.BinInt Z eqb_spec thm
+R6572:6581 Coq.ZArith.BinInt Z eqb_spec thm
+inst 6660:6667 <> Z_as_int
+R6671:6679 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R6681:6694 Coq.ZArith.Int Z_as_Int t def
+R6703:6705 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R6710:6714 Coq.ZArith.BinInt Z eqb def
+R6745:6765 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp_2 thm
+R6767:6776 Coq.ZArith.BinInt Z eqb_spec thm
+R6745:6765 MetaCoq.Template.utils.ReflectEq <> reflect_reflectProp_2 thm
+R6767:6776 Coq.ZArith.BinInt Z eqb_spec thm
+def 6793:6808 <> level_lt_ind_dep
+R6827:6835 MetaCoq.Template.Universes Level lt_ ind
+def 6855:6880 <> constraint_type_lt_ind_dep
+R6899:6916 MetaCoq.Template.Universes ConstraintType lt_ ind
+def 6936:6956 <> constraint_lt_ind_dep
+R6975:6992 MetaCoq.Template.Universes UnivConstraint lt_ ind
+R7026:7043 MetaCoq.Template.Universes UnivConstraint lt_ ind
+R7067:7068 Coq.Init.Peano <> le ind
+R7125:7134 Coq.Init.Datatypes <> comparison ind
+prf 7144:7163 <> string_compare_irrel
+binder 7166:7166 <> s:61
+binder 7168:7169 <> s':62
+binder 7173:7173 <> c:63
+R7203:7205 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7184:7197 MetaCoq.Template.utils.bytestring <> string_compare abbrev
+R7199:7199 MetaCoq.Template.Reflect <> s:61 var
+R7201:7202 MetaCoq.Template.Reflect <> s':62 var
+R7206:7206 MetaCoq.Template.Reflect <> c:63 var
+binder 7177:7177 <> H:64
+binder 7179:7180 <> H':65
+R7212:7214 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7211:7211 MetaCoq.Template.Reflect <> H:64 var
+R7215:7216 MetaCoq.Template.Reflect <> H':65 var
+R7234:7236 Equations.Prop.Classes <> uip def
+R7234:7236 Equations.Prop.Classes <> uip def
+def 7252:7262 <> le_ind_prop
+R7281:7282 Coq.Init.Peano <> le ind
+prf 7302:7313 <> nat_le_irrel
+R7322:7324 Coq.Init.Datatypes <> nat ind
+binder 7316:7316 <> x:66
+binder 7318:7318 <> y:67
+R7336:7339 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R7335:7335 MetaCoq.Template.Reflect <> x:66 var
+R7340:7340 MetaCoq.Template.Reflect <> y:67 var
+binder 7328:7328 <> l:68
+binder 7330:7331 <> l':69
+R7346:7348 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7345:7345 MetaCoq.Template.Reflect <> l:68 var
+R7349:7350 MetaCoq.Template.Reflect <> l':69 var
+R7380:7390 MetaCoq.Template.Reflect <> le_ind_prop scheme
+R7380:7390 MetaCoq.Template.Reflect <> le_ind_prop scheme
+prf 7476:7489 <> lt_level_irrel
+R7498:7504 MetaCoq.Template.Universes Level t def
+binder 7492:7492 <> x:70
+binder 7494:7494 <> y:71
+R7515:7523 MetaCoq.Template.Universes Level lt_ ind
+R7525:7525 MetaCoq.Template.Reflect <> x:70 var
+R7527:7527 MetaCoq.Template.Reflect <> y:71 var
+binder 7508:7508 <> l:72
+binder 7510:7511 <> l':73
+R7533:7535 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7532:7532 MetaCoq.Template.Reflect <> l:72 var
+R7536:7537 MetaCoq.Template.Reflect <> l':73 var
+R7567:7582 MetaCoq.Template.Reflect <> level_lt_ind_dep scheme
+R7567:7582 MetaCoq.Template.Reflect <> level_lt_ind_dep scheme
+R7638:7640 Equations.Prop.Classes <> uip def
+R7638:7640 Equations.Prop.Classes <> uip def
+R7662:7673 MetaCoq.Template.Reflect <> nat_le_irrel thm
+R7662:7673 MetaCoq.Template.Reflect <> nat_le_irrel thm
+prf 7688:7717 <> constraint_type_lt_level_irrel
+binder 7720:7720 <> x:74
+binder 7722:7722 <> y:75
+R7733:7750 MetaCoq.Template.Universes ConstraintType lt_ ind
+R7752:7752 MetaCoq.Template.Reflect <> x:74 var
+R7754:7754 MetaCoq.Template.Reflect <> y:75 var
+binder 7726:7726 <> l:76
+binder 7728:7729 <> l':77
+R7760:7762 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7759:7759 MetaCoq.Template.Reflect <> l:76 var
+R7763:7764 MetaCoq.Template.Reflect <> l':77 var
+R7794:7819 MetaCoq.Template.Reflect <> constraint_type_lt_ind_dep scheme
+R7794:7819 MetaCoq.Template.Reflect <> constraint_type_lt_ind_dep scheme
+R7857:7859 Equations.Prop.Classes <> uip def
+R7857:7859 Equations.Prop.Classes <> uip def
+R7883:7897 Coq.Classes.RelationClasses <> <> lib
+prf 7907:7925 <> constraint_lt_irrel
+R7934:7949 MetaCoq.Template.Universes UnivConstraint t def
+binder 7928:7928 <> x:78
+binder 7930:7930 <> y:79
+R7960:7977 MetaCoq.Template.Universes UnivConstraint lt_ ind
+R7979:7979 MetaCoq.Template.Reflect <> x:78 var
+R7981:7981 MetaCoq.Template.Reflect <> y:79 var
+binder 7953:7953 <> l:80
+binder 7955:7956 <> l':81
+R7987:7989 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7986:7986 MetaCoq.Template.Reflect <> l:80 var
+R7990:7991 MetaCoq.Template.Reflect <> l':81 var
+R8032:8052 MetaCoq.Template.Reflect <> constraint_lt_ind_dep scheme
+R8032:8052 MetaCoq.Template.Reflect <> constraint_lt_ind_dep scheme
+R8099:8112 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R8099:8112 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R8099:8112 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R8135:8147 Coq.Classes.RelationClasses <> irreflexivity def
+R8153:8169 MetaCoq.Template.Universes ConstraintType lt def
+R8135:8147 Coq.Classes.RelationClasses <> irreflexivity def
+R8153:8169 MetaCoq.Template.Universes ConstraintType lt def
+R8191:8203 Coq.Classes.RelationClasses <> irreflexivity def
+R8191:8203 Coq.Classes.RelationClasses <> irreflexivity def
+R8251:8263 Coq.Classes.RelationClasses <> irreflexivity def
+R8269:8285 MetaCoq.Template.Universes ConstraintType lt def
+R8251:8263 Coq.Classes.RelationClasses <> irreflexivity def
+R8269:8285 MetaCoq.Template.Universes ConstraintType lt def
+R8309:8338 MetaCoq.Template.Reflect <> constraint_type_lt_level_irrel thm
+R8309:8338 MetaCoq.Template.Reflect <> constraint_type_lt_level_irrel thm
+R8309:8338 MetaCoq.Template.Reflect <> constraint_type_lt_level_irrel thm
+R8361:8373 Coq.Classes.RelationClasses <> irreflexivity def
+R8361:8373 Coq.Classes.RelationClasses <> irreflexivity def
+R8421:8433 Coq.Classes.RelationClasses <> irreflexivity def
+R8421:8433 Coq.Classes.RelationClasses <> irreflexivity def
+R8453:8465 Coq.Classes.RelationClasses <> irreflexivity def
+R8453:8465 Coq.Classes.RelationClasses <> irreflexivity def
+R8488:8501 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R8488:8501 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R8488:8501 MetaCoq.Template.Reflect <> lt_level_irrel thm
+mod 8523:8534 <> LevelSetsUIP
+R8546:8557 MetaCoq.Template.Universes LevelSet.Raw <> mod
+def 8572:8586 LevelSetsUIP levels_tree_eqb
+R8595:8608 MetaCoq.Template.Universes LevelSet.Raw t def
+binder 8589:8589 <> x:82
+binder 8591:8591 <> y:83
+R8625:8625 MetaCoq.Template.Reflect <> y:83 var
+R8622:8622 MetaCoq.Template.Reflect <> x:82 var
+R8636:8652 MetaCoq.Template.Universes LevelSet.Raw Leaf constr
+R8655:8671 MetaCoq.Template.Universes LevelSet.Raw Leaf constr
+R8676:8679 Coq.Init.Datatypes <> true constr
+R8685:8701 MetaCoq.Template.Universes LevelSet.Raw Node constr
+R8712:8728 MetaCoq.Template.Universes LevelSet.Raw Node constr
+R8793:8796 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R8781:8784 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R8757:8760 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R8749:8751 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R8761:8775 MetaCoq.Template.Reflect <> levels_tree_eqb:84 def
+R8785:8787 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R8797:8811 MetaCoq.Template.Reflect <> levels_tree_eqb:84 def
+R8830:8834 Coq.Init.Datatypes <> false constr
+def 8853:8868 LevelSetsUIP levels_tree_rect
+R8887:8903 MetaCoq.Template.Universes LevelSet.Raw tree ind
+inst 8947:8965 LevelSetsUIP levels_tree_reflect
+R8969:8977 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R8979:8992 MetaCoq.Template.Universes LevelSet.Raw t def
+R9003:9005 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R9003:9005 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R9003:9005 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R9010:9024 MetaCoq.Template.Reflect LevelSetsUIP levels_tree_eqb def
+R9071:9086 MetaCoq.Template.Reflect LevelSetsUIP levels_tree_rect scheme
+R9071:9086 MetaCoq.Template.Reflect LevelSetsUIP levels_tree_rect scheme
+R9181:9188 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R9181:9188 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R9314:9321 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R9314:9321 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R9466:9482 MetaCoq.Template.Universes LevelSet.Raw tree ind
+R9508:9523 MetaCoq.Template.Universes LevelSet.Raw bst ind
+def 9540:9551 LevelSetsUIP eqb_LevelSet
+binder 9553:9553 <> x:87
+binder 9555:9555 <> y:88
+R9564:9566 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R9587:9599 MetaCoq.Template.Universes LevelSet this proj
+R9601:9601 MetaCoq.Template.Reflect <> y:88 var
+R9569:9581 MetaCoq.Template.Universes LevelSet this proj
+R9583:9583 MetaCoq.Template.Reflect <> x:87 var
+prf 9614:9621 LevelSetsUIP ok_irrel
+R9628:9628 MetaCoq.Template.Universes LevelSet.Raw t def
+binder 9624:9624 <> x:89
+R9639:9640 MetaCoq.Template.Universes LevelSet.Raw Ok class
+R9642:9642 MetaCoq.Template.Reflect <> x:89 var
+binder 9632:9632 <> o:90
+binder 9634:9635 <> o':91
+R9648:9650 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9647:9647 MetaCoq.Template.Reflect <> o:90 var
+R9651:9652 MetaCoq.Template.Reflect <> o':91 var
+R9675:9676 MetaCoq.Template.Universes LevelSet.Raw Ok class
+R9847:9860 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R9847:9860 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R9919:9932 MetaCoq.Template.Reflect <> lt_level_irrel thm
+R9919:9932 MetaCoq.Template.Reflect <> lt_level_irrel thm
+inst 9972:9987 LevelSetsUIP reflect_LevelSet
+R9991:9999 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R10001:10010 MetaCoq.Template.Universes LevelSet t def
+R10021:10023 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10021:10023 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10021:10023 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10028:10039 MetaCoq.Template.Reflect LevelSetsUIP eqb_LevelSet def
+R10111:10122 MetaCoq.Template.Reflect LevelSetsUIP eqb_LevelSet def
+R10155:10162 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R10155:10162 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R10219:10226 MetaCoq.Template.Reflect LevelSetsUIP ok_irrel thm
+R10219:10226 MetaCoq.Template.Reflect LevelSetsUIP ok_irrel thm
+R10258:10269 MetaCoq.Template.Reflect LevelSetsUIP <> mod
+mod 10280:10296 <> ConstraintSetsUIP
+R10308:10324 MetaCoq.Template.Universes ConstraintSet.Raw <> mod
+def 10339:10349 ConstraintSetsUIP cs_tree_eqb
+R10358:10358 MetaCoq.Template.Universes ConstraintSet.Raw t def
+binder 10352:10352 <> x:92
+binder 10354:10354 <> y:93
+R10377:10377 MetaCoq.Template.Reflect <> y:93 var
+R10374:10374 MetaCoq.Template.Reflect <> x:92 var
+R10390:10411 MetaCoq.Template.Universes ConstraintSet.Raw Leaf constr
+R10414:10435 MetaCoq.Template.Universes ConstraintSet.Raw Leaf constr
+R10440:10443 Coq.Init.Datatypes <> true constr
+R10451:10472 MetaCoq.Template.Universes ConstraintSet.Raw Node constr
+R10483:10504 MetaCoq.Template.Universes ConstraintSet.Raw Node constr
+R10567:10570 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R10555:10558 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R10535:10538 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R10527:10529 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10539:10549 MetaCoq.Template.Reflect <> cs_tree_eqb:94 def
+R10559:10561 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10571:10581 MetaCoq.Template.Reflect <> cs_tree_eqb:94 def
+R10602:10606 Coq.Init.Datatypes <> false constr
+def 10627:10638 ConstraintSetsUIP cs_tree_rect
+R10657:10678 MetaCoq.Template.Universes ConstraintSet.Raw tree ind
+inst 10721:10735 ConstraintSetsUIP cs_tree_reflect
+R10739:10747 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R10749:10767 MetaCoq.Template.Universes ConstraintSet.Raw t def
+R10778:10780 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10778:10780 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10778:10780 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R10785:10795 MetaCoq.Template.Reflect ConstraintSetsUIP cs_tree_eqb def
+R10842:10853 MetaCoq.Template.Reflect ConstraintSetsUIP cs_tree_rect scheme
+R10842:10853 MetaCoq.Template.Reflect ConstraintSetsUIP cs_tree_rect scheme
+R10944:10951 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R10944:10951 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R11077:11084 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R11077:11084 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 11216:11232 ConstraintSetsUIP eqb_ConstraintSet
+binder 11234:11234 <> x:97
+binder 11236:11236 <> y:98
+R11245:11247 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11273:11290 MetaCoq.Template.Universes ConstraintSet this proj
+R11292:11292 MetaCoq.Template.Reflect <> y:98 var
+R11250:11267 MetaCoq.Template.Universes ConstraintSet this proj
+R11269:11269 MetaCoq.Template.Reflect <> x:97 var
+R11322:11343 MetaCoq.Template.Universes ConstraintSet.Raw tree ind
+R11369:11389 MetaCoq.Template.Universes ConstraintSet.Raw bst ind
+prf 11401:11408 ConstraintSetsUIP ok_irrel
+R11415:11415 MetaCoq.Template.Universes ConstraintSet.Raw t def
+binder 11411:11411 <> x:99
+R11426:11427 MetaCoq.Template.Universes ConstraintSet.Raw Ok class
+R11429:11429 MetaCoq.Template.Reflect <> x:99 var
+binder 11419:11419 <> o:100
+binder 11421:11422 <> o':101
+R11435:11437 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11434:11434 MetaCoq.Template.Reflect <> o:100 var
+R11438:11439 MetaCoq.Template.Reflect <> o':101 var
+R11462:11463 MetaCoq.Template.Universes ConstraintSet.Raw Ok class
+R11634:11652 MetaCoq.Template.Reflect <> constraint_lt_irrel thm
+R11634:11652 MetaCoq.Template.Reflect <> constraint_lt_irrel thm
+R11711:11729 MetaCoq.Template.Reflect <> constraint_lt_irrel thm
+R11711:11729 MetaCoq.Template.Reflect <> constraint_lt_irrel thm
+inst 11769:11789 ConstraintSetsUIP reflect_ConstraintSet
+R11793:11801 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R11803:11817 MetaCoq.Template.Universes ConstraintSet t def
+R11828:11830 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11828:11830 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11828:11830 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R11835:11851 MetaCoq.Template.Reflect ConstraintSetsUIP eqb_ConstraintSet def
+R11923:11939 MetaCoq.Template.Reflect ConstraintSetsUIP eqb_ConstraintSet def
+R11977:11984 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R11977:11984 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+R12041:12048 MetaCoq.Template.Reflect ConstraintSetsUIP ok_irrel thm
+R12041:12048 MetaCoq.Template.Reflect ConstraintSetsUIP ok_irrel thm
+R12081:12097 MetaCoq.Template.Reflect ConstraintSetsUIP <> mod
+R12171:12173 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12171:12173 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12195:12202 MetaCoq.Template.utils.ReflectEq <> eqb_spec meth
+def 12300:12317 <> eqb_universes_decl
+binder 12319:12319 <> x:102
+binder 12321:12321 <> y:103
+R12337:12337 MetaCoq.Template.Reflect <> y:103 var
+R12334:12334 MetaCoq.Template.Reflect <> x:102 var
+R12348:12362 MetaCoq.Template.Universes <> Monomorphic_ctx constr
+R12365:12379 MetaCoq.Template.Universes <> Monomorphic_ctx constr
+R12384:12387 Coq.Init.Datatypes <> true constr
+R12393:12407 MetaCoq.Template.Universes <> Polymorphic_ctx constr
+R12413:12427 MetaCoq.Template.Universes <> Polymorphic_ctx constr
+R12435:12437 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12457:12461 Coq.Init.Datatypes <> false constr
+inst 12498:12519 <> reflect_universes_decl
+R12523:12531 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R12533:12546 MetaCoq.Template.Universes <> universes_decl ind
+R12555:12557 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12555:12557 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12555:12557 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12562:12579 MetaCoq.Template.Reflect <> eqb_universes_decl def
+R12613:12630 MetaCoq.Template.Reflect <> eqb_universes_decl def
+def 12683:12706 <> eqb_allowed_eliminations
+binder 12708:12708 <> x:106
+binder 12710:12710 <> y:107
+R12726:12726 MetaCoq.Template.Reflect <> y:107 var
+R12723:12723 MetaCoq.Template.Reflect <> x:106 var
+R12737:12745 MetaCoq.Template.Universes <> IntoSProp constr
+R12748:12756 MetaCoq.Template.Universes <> IntoSProp constr
+R12762:12774 MetaCoq.Template.Universes <> IntoPropSProp constr
+R12777:12789 MetaCoq.Template.Universes <> IntoPropSProp constr
+R12795:12810 MetaCoq.Template.Universes <> IntoSetPropSProp constr
+R12813:12828 MetaCoq.Template.Universes <> IntoSetPropSProp constr
+R12834:12840 MetaCoq.Template.Universes <> IntoAny constr
+R12843:12849 MetaCoq.Template.Universes <> IntoAny constr
+R12854:12857 Coq.Init.Datatypes <> true constr
+R12854:12857 Coq.Init.Datatypes <> true constr
+R12854:12857 Coq.Init.Datatypes <> true constr
+R12854:12857 Coq.Init.Datatypes <> true constr
+R12871:12875 Coq.Init.Datatypes <> false constr
+inst 12912:12939 <> reflect_allowed_eliminations
+R12943:12951 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R12953:12972 MetaCoq.Template.Universes <> allowed_eliminations ind
+R12981:12983 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12981:12983 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12981:12983 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R12988:13011 MetaCoq.Template.Reflect <> eqb_allowed_eliminations def
+R13108:13110 MetaCoq.Template.utils.ReflectEq <> eqb meth
+not 13099:13099 <> :::x_'==?'_x
+def 13139:13150 <> eqb_Variance
+binder 13152:13152 <> x:110
+binder 13154:13154 <> y:111
+R13170:13170 MetaCoq.Template.Reflect <> y:111 var
+R13167:13167 MetaCoq.Template.Reflect <> x:110 var
+R13181:13199 MetaCoq.Template.Universes Variance Irrelevant constr
+R13202:13220 MetaCoq.Template.Universes Variance Irrelevant constr
+R13226:13243 MetaCoq.Template.Universes Variance Covariant constr
+R13246:13263 MetaCoq.Template.Universes Variance Covariant constr
+R13269:13286 MetaCoq.Template.Universes Variance Invariant constr
+R13289:13306 MetaCoq.Template.Universes Variance Invariant constr
+R13311:13314 Coq.Init.Datatypes <> true constr
+R13311:13314 Coq.Init.Datatypes <> true constr
+R13311:13314 Coq.Init.Datatypes <> true constr
+R13328:13332 Coq.Init.Datatypes <> false constr
+inst 13369:13384 <> reflect_Variance
+R13388:13396 MetaCoq.Template.utils.ReflectEq <> ReflectEq class
+R13398:13407 MetaCoq.Template.Universes Variance t ind
+R13416:13418 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13416:13418 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13416:13418 MetaCoq.Template.utils.ReflectEq <> eqb meth
+R13423:13434 MetaCoq.Template.Reflect <> eqb_Variance def

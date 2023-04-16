@@ -1,0 +1,284 @@
+\chapter{Tactics and Proof Machineries}
+\label{ch:machineries}
+Now we discuss some of the main learning points gained during the implementation
+of this project. Although these might be common knowledge for the Coq or proof
+theory expert, they contain some non-trivial proof-theoretic machinery that is
+useful in formal proofs involving inductive data types, even though they might
+be dismissed in typical pen-and-paper proofs by their "apparent" correctness.
+They are listed below in no particular order.
+
+\begin{itemize}
+  \item nested induction, mutual induction, (can always reduce to the case of a
+  simple inductive type, but...)
+  \item well-founded recursion and measures.
+  \item definition of strict partial orders and strengthening of induction
+  hypotheses 
+  % \item tactics, reflection, proof management.
+\end{itemize}
+
+\section{Nested Inductive Types}
+
+Inductive types are a way to define things recursively. A typical example is the
+inductive definition of a list:
+
+\begin{listing}[H]
+\begin{minted}{Coq}
+Inductive list (T: Type) :=
+| nil
+| cons (t: T) (tl: list).
+\end{minted}
+  \caption{Definition of a polymorphic list.}
+  \label{lst:def-list}
+\end{listing}
+
+To argue about lists, we have the following induction principle:
+
+\begin{align*}
+  \forall P, (P\ nil) \implies (\forall t\ tl, (P\ tl) \implies P (cons\ t\ tl))
+  \implies \forall l, (P\ l)
+\end{align*}
+
+Nested inductive types
+are inductive types that have nested induction in them, one simple example being
+a rose tree (\cite{meertens1988first}):
+
+\begin{listing}[H]
+\begin{minted}{Coq}
+Inductive roseTree :=
+| node (xs: list roseTree).
+\end{minted}
+  \caption{Definition of a rose tree.}
+  \label{lst:def-rosetree}
+\end{listing}
+
+where the nested induction occurs at the list of rose trees within a node.
+Intuitively, this is a tree structure in which every node contains a "forest" of
+trees. Unfortunately, Coq does not generate a strong enough induction principle
+for nested inductive types such as the below:
+
+\begin{align*}
+  \forall P, (\forall xs, P (node\ xs)) \implies \forall rt, (P\ rt)
+\end{align*}
+
+We focus on the induction hypothesis, the condition before the top-level
+implication. It omitted the fact that $xs$ is a list, and we need to check each
+rose tree within the list with predicate $P$ first. Here is a stronger induction
+principle that is generally used:
+
+\begin{align*}
+  \forall P, (\forall xs, (\forall x\in xs, P\ x) \implies P (node\ xs))
+   \implies \forall rt, (P\ rt)
+\end{align*}
+
+Notice the weakening of the induction hypothesis, and thus the strengthening of
+the induction principle. In my case, it is the definition of structure fields of
+the modular rewrite:
+
+\begin{listing}[H]
+\tcc{325}{332}{Environment.v}
+  \caption{Definition of structure fields.}
+  \label{lst:def-sf}
+\end{listing}
+
+where the nested \verb|list (ident × structure_field)| is a doubly-nested
+inductive, since the product (or pair) type itself is defined inductively, in
+addition to the inductively defined polymorphic lists (\ref{lst:def-list}). In
+this case, we need to manually define a stronger induction principle for use.
+This can be done by noticing that nested inductive types have an equivalent
+rewrite by expanding the definition explicitly. For example, in the case of rose
+trees, Coq will generate the correct (sufficiently strong) induction principle
+for the following equivalent definition:
+
+\begin{listing}[H]
+\begin{minted}{Coq}
+Inductive roseTree :=
+| node (xs: listRoseTree)
+where listRoseTree :=
+| nil
+| cons (r: roseTree) (tl: listRoseTree).
+\end{minted}
+  \caption{Non-nested inductive definition of rose trees.}
+  \label{lst:def-sf-nn}
+\end{listing}
+
+The reason why we prefer to use readily-available abstractions such as lists is
+that one can then rely on facts that are proven already on the polymorphic
+lists, and properties on their operations such as \verb|map| and \verb|fold|.
+Therefore, the operation here is twofold:
+
+\begin{enumerate}
+  \item generate induction principle for the non-nested formulation and remember
+  both the induction principle (a type in Coq, due to Curry-Howard
+  correspondence) and the term that inhabits it.
+  \item now redefine the type in a nested inductive manner, then manually define
+  the induction principle and prove it. The corresponding action in Coq is to
+  define the type corresponding to the inductive principle (which is similar to
+  the one extracted above) while replacing the explicitly inductive parts with
+  its relevant counterparts. For example, replace the explicit weakening
+  described in (REFME) with the \verb|Coq.Lists.List.Forall| inductive
+  (higher-order) predicate. Finally, prove this newly defined induction
+  principle correct by supplying the term we obtained in the previous step with
+  suitable amendments.
+\end{enumerate}
+
+We illustrate this with an actual implementation of the strengthened induction
+principle on structure fields. First, we define the fixpoint \verb|F1| that
+switch cases on the constructor of a typical list, \verb|nil| and \verb|cons|:
+
+\begin{listing}[H]
+\tcc{360}{367}{Environment.v}
+  \caption{Manually proving IH for the nested list.}
+  \label{lst:def-nn-ih}
+\end{listing}
+
+Then, we can integrate \verb|F1| into the induction principle terms for
+structure fields (including its mutually inductive counterpart, module
+implementation), therefore forming the proofs for the individual strengthened
+induction principles:
+
+\begin{listing}[H]
+\tcc{369}{386}{Environment.v}
+  \caption{Induction principles with explicit names.}
+  \label{lst:def-nn-ih-plus}
+\end{listing}
+
+Finally, the last 3 lines give suggestive names to the fixpoints corresponding
+to the induction hypothesis for the respective structures. Their types are
+already inductive hypotheses about only one particular branch of the mutually
+inductive definition, and we combine them into a huge induction principle:
+
+\begin{listing}[H]
+\tcc{389}{407}{Environment.v}
+  \caption{The strengthened mutual induction principle.}
+  \label{lst:def-nn-ihs}
+\end{listing}
+
+To define a type, one has to show that the type is inhabited, and the purpose of
+the proof is exactly to construct such a term for the type. Till here, we have
+seen a non-trivial example of how to define an induction principle for a nested
+(and in addition, mutually) inductive type.
+
+There has been some metaprogramming effort to generate nested induction
+hypotheses in Coq automatically using the MetaCoq platform
+(\cite{liesnikov2020generating}), however, the tool was not mature enough and
+has not been updated since some previous versions.
+
+\section{Well-founded recursion}
+
+Recursion with a single recursive constructor and one (or more) base cases are
+well-known, such as that of factorial or Fibonacci numbers. One can naturally
+extend the definition to structural recursions, such as that on an abstract
+syntax tree when writing programming language implementations. However, when the
+recursive case is not a strict "predecessor" of the current case, we need a
+stronger form of recursion. For the case of linearly ordered datatypes such as
+natural numbers, we can argue using strong induction; however, for other
+datatypes where there isn't a canonical linear order, such as, again, rose
+trees (\ref{lst:def-rosetree}). 
+
+Recursing on the items in the list of rose trees is essential, but to Coq they
+are not direct subterms of the tree while the argument \verb|xs| is. We are left
+with the difficult choice of convincing the positivity check for fixpoints in
+Coq that our recursion terminates.
+
+Fortunately, this can be solved by well-founded recursion, a more general form
+of recursion that determines termination by the following:
+\begin{enumerate}
+  \item defining a linear order on the recursive term, called a \emph{measure}.
+  \item showing that this measure is lower-bounded.
+\end{enumerate}
+
+Then the recursion is well-founded and will terminate. The use case of this in
+the project is to recurse through a module and resolve the fully qualified name
+(e.g. \verb|M.N.a|) from the nested module structure and their identifier names
+(e.g. \verb|M, N, a|). For tree-like structures, a typical measure is the
+\emph{height} of the tree:
+
+\begin{listing}[H]
+\tcc{415}{425}{Environment.v}
+  \caption{Height defined on structure body.}
+  \label{lst:def-sb-height}
+\end{listing}
+
+Then we show this measure is lower-bounded:
+
+\begin{listing}[H]
+\tcc{427}{430}{Environment.v}
+  \caption{Proof of lower bound of the height measure.}
+  \label{lst:def-height-lb}
+\end{listing}
+
+Therefore, we can define a well-founded recursion using this measure,
+specifically mentioned on line 433: 
+
+\begin{listing}[H]
+\tcc{432}{434}{Environment.v}
+...
+\tcc{446}{448}{Environment.v}
+\tcc{466}{469}{Environment.v}
+  \caption{Defining a well-founded recursive function using the new measure.}
+  \label{lst:def-wf}
+\end{listing}
+
+
+\section{Strengthening the induction hypothesis}
+\label{sec:str-ih}
+
+Sometimes, the induction hypothesis of a statement is too weak and entirely
+useless. For example, suppose we wish to show the following:
+
+\begin{theorem}
+  Fix a natural number $x$. Then for all natural numbers $n\ge1$, $x+n\ne x$.
+\end{theorem}
+\begin{proof}[Wrong proof.]
+Let us attempt a direct induction.
+
+Base case: suppose $n=1$, $x+n=n+1=succ(x)\ne x$ by definition.
+
+Inductive case: suppose any $n\ge 1$, $x+n\ne x$. Then
+\begin{align*}
+  x + (n+1) = (x + n) + 1 = succ(x + n)
+\end{align*}
+
+Now, we wish to say
+\begin{align*}
+  x + n \ne x \implies succ(x + n) \ne x
+\end{align*}
+which is not true in general!
+\end{proof}
+
+The key here is that the induction hypothesis of "not equal" is too weak and
+does not help with proving the inductive case. Should it have been the strict
+inequality instead, $x+ n>x$ which implies $x+n\ne x$, we would have been fine!
+
+Put in context, we wanted to show that for every declaration with kername
+\verb|kn'| in a module named \verb|kn|, can not have the same name as the module
+after translation.
+
+\begin{listing}[H]
+\pcuic{502}{503}{TemplateToPCUIC.v}
+  \caption{A module cannot have the same kername as its contents.}
+  \label{lst:def-kn-neq}
+\end{listing}
+
+The direct induction proved to be a failure. However, we can prove instead a
+stronger statement:
+
+\begin{listing}[H]
+\pcuic{350}{352}{TemplateToPCUIC.v}
+  \caption{Every declaration within a module must have a kername extending that of the module.}
+  \label{lst:def-kn-ext}
+\end{listing}
+
+Since the binary relation on kernames, \verb|kn_extends kn kn'| decides whether
+\verb|kn'| is an extension of \verb|kn| and is a strict partial order, it would
+imply the inequality in \ref{lst:def-kn-neq}. Then, it remains to define it in
+Coq and show the asymmetry and transitivity of this relation. We omit the proof
+here.
+
+\begin{listing}[H]
+\pcuic{152}{154}{TemplateToPCUIC.v}
+\pcuic{190}{191}{TemplateToPCUIC.v}
+\pcuic{239}{239}{TemplateToPCUIC.v}
+  \caption{Definition, asymmetry and transitivity of the relation.}
+  \label{lst:kn-ext-po}
+\end{listing}

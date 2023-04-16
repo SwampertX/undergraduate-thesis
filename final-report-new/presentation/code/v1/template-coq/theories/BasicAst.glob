@@ -1,0 +1,2582 @@
+DIGEST 5c7df3a0a41eb76f447082d128d91eea
+FMetaCoq.Template.BasicAst
+R78:86 Coq.ssr.ssreflect <> <> lib
+R88:96 Coq.Classes.Morphisms <> <> lib
+R98:103 Coq.Structures.Orders <> <> lib
+R105:110 Coq.Setoids.Setoid <> <> lib
+R150:154 MetaCoq.Template.utils <> <> lib
+R194:201 MetaCoq.Template.Kernames <> <> lib
+R221:236 Coq.Floats.SpecFloat <> <> lib
+R269:277 Equations.Prop.Equations <> <> lib
+ind 374:377 <> name
+constr 390:394 <> nAnon
+constr 398:403 <> nNamed
+R410:414 MetaCoq.Template.Kernames <> ident def
+R447:450 MetaCoq.Template.BasicAst <> name ind
+ind 464:472 <> relevance
+constr 483:490 <> Relevant
+constr 494:503 <> Irrelevant
+R535:543 MetaCoq.Template.BasicAst <> relevance ind
+rec 594:605 <> binder_annot
+proj 633:643 <> binder_name
+proj 650:665 <> binder_relevance
+binder 608:608 <> A:5
+R647:647 MetaCoq.Template.BasicAst <> A:5 var
+R669:677 MetaCoq.Template.BasicAst <> relevance ind
+R693:701 MetaCoq.Template.BasicAst <> mkBindAnn constr
+R693:701 MetaCoq.Template.BasicAst <> mkBindAnn constr
+R718:728 MetaCoq.Template.BasicAst <> binder_name proj
+R718:728 MetaCoq.Template.BasicAst <> binder_name proj
+R745:760 MetaCoq.Template.BasicAst <> binder_relevance proj
+R745:760 MetaCoq.Template.BasicAst <> binder_relevance proj
+R791:802 MetaCoq.Template.BasicAst <> binder_annot rec
+inst 825:842 <> eqdec_binder_annot
+binder 845:845 <> A:9
+R860:872 Equations.Prop.Classes <> EqDec class
+R874:874 MetaCoq.Template.BasicAst <> A:9 var
+binder 856:856 <> e:10
+R879:891 Equations.Prop.Classes <> EqDec class
+R894:905 MetaCoq.Template.BasicAst <> binder_annot rec
+R907:907 MetaCoq.Template.BasicAst <> A:9 var
+def 978:993 <> map_binder_annot
+binder 996:996 <> A:11
+binder 998:998 <> B:12
+R1007:1010 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1006:1006 MetaCoq.Template.BasicAst <> A:11 var
+R1011:1011 MetaCoq.Template.BasicAst <> B:12 var
+binder 1002:1002 <> f:13
+R1019:1030 MetaCoq.Template.BasicAst <> binder_annot rec
+R1032:1032 MetaCoq.Template.BasicAst <> A:11 var
+binder 1015:1015 <> b:14
+R1037:1048 MetaCoq.Template.BasicAst <> binder_annot rec
+R1050:1050 MetaCoq.Template.BasicAst <> B:12 var
+R1060:1070 MetaCoq.Template.BasicAst <> binder_name proj
+R1060:1070 MetaCoq.Template.BasicAst <> binder_name proj
+R1060:1070 MetaCoq.Template.BasicAst <> binder_name proj
+R1094:1109 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1094:1109 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1075:1075 MetaCoq.Template.BasicAst <> f:13 var
+R1080:1090 MetaCoq.Template.BasicAst <> binder_name proj
+R1077:1077 MetaCoq.Template.BasicAst <> b:14 var
+R1117:1132 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1114:1114 MetaCoq.Template.BasicAst <> b:14 var
+def 1151:1165 <> eq_binder_annot
+binder 1168:1168 <> A:15
+binder 1170:1170 <> B:16
+R1178:1189 MetaCoq.Template.BasicAst <> binder_annot rec
+R1191:1191 MetaCoq.Template.BasicAst <> A:15 var
+binder 1174:1174 <> b:17
+R1200:1211 MetaCoq.Template.BasicAst <> binder_annot rec
+R1213:1213 MetaCoq.Template.BasicAst <> B:16 var
+binder 1195:1196 <> b':18
+R1248:1250 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1231:1246 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1228:1228 MetaCoq.Template.BasicAst <> b:17 var
+R1255:1270 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1251:1252 MetaCoq.Template.BasicAst <> b':18 var
+def 1317:1321 <> aname
+R1326:1337 MetaCoq.Template.BasicAst <> binder_annot rec
+R1339:1342 MetaCoq.Template.BasicAst <> name ind
+inst 1364:1374 <> anqme_eqdec
+R1378:1390 Equations.Prop.Classes <> EqDec class
+R1392:1396 MetaCoq.Template.BasicAst <> aname def
+def 1416:1431 <> eqb_binder_annot
+binder 1434:1434 <> A:19
+R1445:1456 MetaCoq.Template.BasicAst <> binder_annot rec
+R1458:1458 MetaCoq.Template.BasicAst <> A:19 var
+binder 1438:1438 <> b:20
+binder 1440:1441 <> b':21
+R1463:1466 Coq.Init.Datatypes <> bool ind
+R1479:1492 Equations.Prop.Classes <> eq_dec def
+R1519:1534 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1515:1516 MetaCoq.Template.BasicAst <> b':21 var
+R1497:1512 MetaCoq.Template.BasicAst <> binder_relevance proj
+R1494:1494 MetaCoq.Template.BasicAst <> b:20 var
+R1546:1549 Coq.Init.Specif <> left constr
+R1556:1559 Coq.Init.Datatypes <> true constr
+R1565:1569 Coq.Init.Specif <> right constr
+R1576:1580 Coq.Init.Datatypes <> false constr
+def 1601:1614 <> string_of_name
+R1622:1625 MetaCoq.Template.BasicAst <> name ind
+binder 1617:1618 <> na:22
+R1639:1640 MetaCoq.Template.BasicAst <> na:22 var
+R1651:1655 MetaCoq.Template.BasicAst <> nAnon constr
+R1668:1673 MetaCoq.Template.BasicAst <> nNamed constr
+def 1701:1719 <> string_of_relevance
+R1726:1734 MetaCoq.Template.BasicAst <> relevance ind
+binder 1722:1722 <> r:24
+R1748:1748 MetaCoq.Template.BasicAst <> r:24 var
+R1759:1766 MetaCoq.Template.BasicAst <> Relevant constr
+R1786:1795 MetaCoq.Template.BasicAst <> Irrelevant constr
+ind 1857:1865 <> cast_kind
+constr 1878:1883 <> VmCast
+constr 1887:1896 <> NativeCast
+constr 1900:1903 <> Cast
+R1935:1943 MetaCoq.Template.BasicAst <> cast_kind ind
+rec 1954:1962 <> case_info
+proj 1984:1989 <> ci_ind
+proj 2006:2012 <> ci_npar
+proj 2342:2353 <> ci_relevance
+R1993:2001 MetaCoq.Template.Kernames <> inductive rec
+R2016:2018 Coq.Init.Datatypes <> nat ind
+R2357:2365 MetaCoq.Template.BasicAst <> relevance ind
+R2399:2407 MetaCoq.Template.BasicAst <> case_info rec
+def 2422:2440 <> string_of_case_info
+binder 2442:2443 <> ci:32
+R2453:2455 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2487:2489 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2456:2474 MetaCoq.Template.Kernames <> string_of_inductive def
+R2480:2485 MetaCoq.Template.BasicAst <> ci_ind proj
+R2476:2477 MetaCoq.Template.BasicAst <> ci:32 var
+R2493:2497 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2524:2526 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2498:2510 MetaCoq.Template.utils.MCString <> string_of_nat def
+R2516:2522 MetaCoq.Template.BasicAst <> ci_npar proj
+R2512:2513 MetaCoq.Template.BasicAst <> ci:32 var
+R2530:2657 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2695:2697 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R2658:2676 MetaCoq.Template.BasicAst <> string_of_relevance def
+R2682:2693 MetaCoq.Template.BasicAst <> ci_relevance proj
+R2678:2679 MetaCoq.Template.BasicAst <> ci:32 var
+ind 2714:2729 <> recursivity_kind
+constr 2738:2743 <> Finite
+constr 2767:2774 <> CoFinite
+constr 2800:2807 <> BiFinite
+R2891:2906 MetaCoq.Template.BasicAst <> recursivity_kind ind
+ind 2959:2965 <> conv_pb
+constr 2974:2977 <> Conv
+constr 2983:2987 <> Cumul
+R3019:3025 MetaCoq.Template.BasicAst <> conv_pb ind
+def 3152:3164 <> fresh_evar_id
+R3168:3170 Coq.Init.Datatypes <> nat ind
+rec 3254:3256 <> def
+proj 3276:3280 <> dname
+proj 3335:3339 <> dtype
+proj 3351:3355 <> dbody
+proj 3454:3457 <> rarg
+binder 3258:3261 <> term:37
+R3284:3288 MetaCoq.Template.BasicAst <> aname def
+R3343:3346 MetaCoq.Template.BasicAst <> term:37 var
+R3359:3362 MetaCoq.Template.BasicAst <> term:37 var
+R3462:3464 Coq.Init.Datatypes <> nat ind
+R3543:3547 MetaCoq.Template.BasicAst <> dname proj
+R3543:3547 MetaCoq.Template.BasicAst <> dname proj
+R3569:3573 MetaCoq.Template.BasicAst <> dtype proj
+R3569:3573 MetaCoq.Template.BasicAst <> dtype proj
+R3595:3599 MetaCoq.Template.BasicAst <> dbody proj
+R3595:3599 MetaCoq.Template.BasicAst <> dbody proj
+R3621:3624 MetaCoq.Template.BasicAst <> rarg proj
+R3621:3624 MetaCoq.Template.BasicAst <> rarg proj
+R3660:3662 MetaCoq.Template.BasicAst <> def rec
+inst 3684:3693 <> def_eq_dec
+binder 3696:3696 <> A:43
+R3716:3719 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3701:3713 Equations.Prop.Classes <> EqDec class
+R3715:3715 MetaCoq.Template.BasicAst <> A:43 var
+R3720:3732 Equations.Prop.Classes <> EqDec class
+R3735:3737 MetaCoq.Template.BasicAst <> def rec
+R3739:3739 MetaCoq.Template.BasicAst <> A:43 var
+def 3810:3822 <> string_of_def
+binder 3825:3825 <> A:44
+R3834:3837 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3833:3833 MetaCoq.Template.BasicAst <> A:44 var
+R3838:3843 MetaCoq.Template.utils.bytestring <> string abbrev
+binder 3829:3829 <> f:45
+R3853:3855 MetaCoq.Template.BasicAst <> def rec
+R3857:3857 MetaCoq.Template.BasicAst <> A:44 var
+binder 3847:3849 <> def:46
+R3868:3870 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R3911:3919 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R3871:3884 MetaCoq.Template.BasicAst <> string_of_name def
+R3887:3897 MetaCoq.Template.BasicAst <> binder_name proj
+R3900:3904 MetaCoq.Template.BasicAst <> dname proj
+R3906:3908 MetaCoq.Template.BasicAst <> def:46 var
+R3923:3925 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R3976:3984 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R3926:3944 MetaCoq.Template.BasicAst <> string_of_relevance def
+R3947:3962 MetaCoq.Template.BasicAst <> binder_relevance proj
+R3965:3969 MetaCoq.Template.BasicAst <> dname proj
+R3971:3973 MetaCoq.Template.BasicAst <> def:46 var
+R3988:3990 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4004:4012 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R3991:3991 MetaCoq.Template.BasicAst <> f:45 var
+R3994:3998 MetaCoq.Template.BasicAst <> dtype proj
+R4000:4002 MetaCoq.Template.BasicAst <> def:46 var
+R4016:4018 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4032:4040 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4019:4019 MetaCoq.Template.BasicAst <> f:45 var
+R4022:4026 MetaCoq.Template.BasicAst <> dbody proj
+R4028:4030 MetaCoq.Template.BasicAst <> def:46 var
+R4044:4046 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4071:4073 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4047:4059 MetaCoq.Template.utils.MCString <> string_of_nat def
+R4062:4065 MetaCoq.Template.BasicAst <> rarg proj
+R4067:4069 MetaCoq.Template.BasicAst <> def:46 var
+def 4091:4099 <> print_def
+binder 4102:4102 <> A:47
+R4111:4114 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4110:4110 MetaCoq.Template.BasicAst <> A:47 var
+R4115:4120 MetaCoq.Template.utils.bytestring <> string abbrev
+binder 4106:4106 <> f:48
+R4129:4132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4128:4128 MetaCoq.Template.BasicAst <> A:47 var
+R4133:4138 MetaCoq.Template.utils.bytestring <> string abbrev
+binder 4124:4124 <> g:49
+R4148:4150 MetaCoq.Template.BasicAst <> def rec
+R4152:4152 MetaCoq.Template.BasicAst <> A:47 var
+binder 4142:4144 <> def:50
+R4200:4202 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4160:4173 MetaCoq.Template.BasicAst <> string_of_name def
+R4176:4186 MetaCoq.Template.BasicAst <> binder_name proj
+R4189:4193 MetaCoq.Template.BasicAst <> dname proj
+R4195:4197 MetaCoq.Template.BasicAst <> def:50 var
+R4215:4217 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4242:4244 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4218:4230 MetaCoq.Template.utils.MCString <> string_of_nat def
+R4233:4236 MetaCoq.Template.BasicAst <> rarg proj
+R4238:4240 MetaCoq.Template.BasicAst <> def:50 var
+R4249:4268 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4274:4276 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4290:4292 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4277:4277 MetaCoq.Template.BasicAst <> f:48 var
+R4280:4284 MetaCoq.Template.BasicAst <> dtype proj
+R4286:4288 MetaCoq.Template.BasicAst <> def:50 var
+R4299:4301 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4304:4306 MetaCoq.Template.utils <> ::string_scope2:x_'^'_x not
+R4302:4303 MetaCoq.Template.utils.MCString <> nl def
+R4307:4307 MetaCoq.Template.BasicAst <> g:49 var
+R4310:4314 MetaCoq.Template.BasicAst <> dbody proj
+R4316:4318 MetaCoq.Template.BasicAst <> def:50 var
+def 4335:4341 <> map_def
+binder 4344:4344 <> A:51
+binder 4346:4346 <> B:52
+R4363:4366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4362:4362 MetaCoq.Template.BasicAst <> A:51 var
+R4367:4367 MetaCoq.Template.BasicAst <> B:52 var
+binder 4350:4352 <> tyf:53
+binder 4354:4358 <> bodyf:54
+R4375:4377 MetaCoq.Template.BasicAst <> def rec
+R4379:4379 MetaCoq.Template.BasicAst <> A:51 var
+binder 4371:4371 <> d:55
+R4390:4394 MetaCoq.Template.BasicAst <> dname proj
+R4390:4394 MetaCoq.Template.BasicAst <> dname proj
+R4390:4394 MetaCoq.Template.BasicAst <> dname proj
+R4410:4414 MetaCoq.Template.BasicAst <> dtype proj
+R4410:4414 MetaCoq.Template.BasicAst <> dtype proj
+R4434:4438 MetaCoq.Template.BasicAst <> dbody proj
+R4434:4438 MetaCoq.Template.BasicAst <> dbody proj
+R4460:4463 MetaCoq.Template.BasicAst <> rarg proj
+R4460:4463 MetaCoq.Template.BasicAst <> rarg proj
+R4402:4406 MetaCoq.Template.BasicAst <> dname proj
+R4399:4399 MetaCoq.Template.BasicAst <> d:55 var
+R4419:4421 MetaCoq.Template.BasicAst <> tyf:53 var
+R4426:4430 MetaCoq.Template.BasicAst <> dtype proj
+R4423:4423 MetaCoq.Template.BasicAst <> d:55 var
+R4443:4447 MetaCoq.Template.BasicAst <> bodyf:54 var
+R4452:4456 MetaCoq.Template.BasicAst <> dbody proj
+R4449:4449 MetaCoq.Template.BasicAst <> d:55 var
+R4471:4474 MetaCoq.Template.BasicAst <> rarg proj
+R4468:4468 MetaCoq.Template.BasicAst <> d:55 var
+prf 4488:4496 <> map_dtype
+binder 4499:4499 <> A:56
+binder 4501:4501 <> B:57
+R4510:4513 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4509:4509 MetaCoq.Template.BasicAst <> A:56 var
+R4514:4514 MetaCoq.Template.BasicAst <> B:57 var
+binder 4505:4505 <> f:58
+R4523:4526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4522:4522 MetaCoq.Template.BasicAst <> A:56 var
+R4527:4527 MetaCoq.Template.BasicAst <> B:57 var
+binder 4518:4518 <> g:59
+R4535:4537 MetaCoq.Template.BasicAst <> def rec
+R4539:4539 MetaCoq.Template.BasicAst <> A:56 var
+binder 4531:4531 <> d:60
+R4557:4559 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4546:4546 MetaCoq.Template.BasicAst <> f:58 var
+R4549:4553 MetaCoq.Template.BasicAst <> dtype proj
+R4555:4555 MetaCoq.Template.BasicAst <> d:60 var
+R4560:4564 MetaCoq.Template.BasicAst <> dtype proj
+R4567:4573 MetaCoq.Template.BasicAst <> map_def def
+R4579:4579 MetaCoq.Template.BasicAst <> d:60 var
+R4577:4577 MetaCoq.Template.BasicAst <> g:59 var
+R4575:4575 MetaCoq.Template.BasicAst <> f:58 var
+prf 4627:4635 <> map_dbody
+binder 4638:4638 <> A:61
+binder 4640:4640 <> B:62
+R4649:4652 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4648:4648 MetaCoq.Template.BasicAst <> A:61 var
+R4653:4653 MetaCoq.Template.BasicAst <> B:62 var
+binder 4644:4644 <> f:63
+R4662:4665 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4661:4661 MetaCoq.Template.BasicAst <> A:61 var
+R4666:4666 MetaCoq.Template.BasicAst <> B:62 var
+binder 4657:4657 <> g:64
+R4674:4676 MetaCoq.Template.BasicAst <> def rec
+R4678:4678 MetaCoq.Template.BasicAst <> A:61 var
+binder 4670:4670 <> d:65
+R4696:4698 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4685:4685 MetaCoq.Template.BasicAst <> g:64 var
+R4688:4692 MetaCoq.Template.BasicAst <> dbody proj
+R4694:4694 MetaCoq.Template.BasicAst <> d:65 var
+R4699:4703 MetaCoq.Template.BasicAst <> dbody proj
+R4706:4712 MetaCoq.Template.BasicAst <> map_def def
+R4718:4718 MetaCoq.Template.BasicAst <> d:65 var
+R4716:4716 MetaCoq.Template.BasicAst <> g:64 var
+R4714:4714 MetaCoq.Template.BasicAst <> f:63 var
+def 4771:4779 <> mfixpoint
+binder 4781:4784 <> term:66
+R4789:4792 Coq.Init.Datatypes <> list ind
+R4795:4797 MetaCoq.Template.BasicAst <> def rec
+R4799:4802 MetaCoq.Template.BasicAst <> term:66 var
+def 4818:4825 <> test_def
+binder 4828:4828 <> A:67
+R4845:4848 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4844:4844 MetaCoq.Template.BasicAst <> A:67 var
+R4849:4852 Coq.Init.Datatypes <> bool ind
+binder 4832:4834 <> tyf:68
+binder 4836:4840 <> bodyf:69
+R4860:4862 MetaCoq.Template.BasicAst <> def rec
+R4864:4864 MetaCoq.Template.BasicAst <> A:67 var
+binder 4856:4856 <> d:70
+R4885:4888 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R4872:4874 MetaCoq.Template.BasicAst <> tyf:68 var
+R4879:4883 MetaCoq.Template.BasicAst <> dtype proj
+R4876:4876 MetaCoq.Template.BasicAst <> d:70 var
+R4889:4893 MetaCoq.Template.BasicAst <> bodyf:69 var
+R4898:4902 MetaCoq.Template.BasicAst <> dbody proj
+R4895:4895 MetaCoq.Template.BasicAst <> d:70 var
+def 4918:4925 <> tFixProp
+binder 4928:4928 <> A:71
+R4940:4943 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4939:4939 MetaCoq.Template.BasicAst <> A:71 var
+binder 4932:4932 <> P:72
+binder 4934:4935 <> P':73
+R4955:4963 MetaCoq.Template.BasicAst <> mfixpoint def
+R4965:4965 MetaCoq.Template.BasicAst <> A:71 var
+binder 4951:4951 <> m:74
+R4973:4975 MetaCoq.Template.utils.All_Forall <> All ind
+R5028:5028 MetaCoq.Template.BasicAst <> m:74 var
+R4986:4988 MetaCoq.Template.BasicAst <> def rec
+R4990:4990 MetaCoq.Template.BasicAst <> A:71 var
+binder 4982:4982 <> x:75
+R5006:5008 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4995:4995 MetaCoq.Template.BasicAst <> P:72 var
+R5000:5004 MetaCoq.Template.BasicAst <> dtype proj
+R4997:4997 MetaCoq.Template.BasicAst <> x:75 var
+R5009:5010 MetaCoq.Template.BasicAst <> P':73 var
+R5015:5019 MetaCoq.Template.BasicAst <> dbody proj
+R5012:5012 MetaCoq.Template.BasicAst <> x:75 var
+prf 5038:5052 <> map_def_map_def
+binder 5055:5055 <> A:76
+binder 5057:5057 <> B:77
+binder 5059:5059 <> C:78
+R5071:5074 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5070:5070 MetaCoq.Template.BasicAst <> B:77 var
+R5075:5075 MetaCoq.Template.BasicAst <> C:78 var
+binder 5063:5063 <> f:79
+binder 5065:5066 <> f':80
+R5087:5090 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5086:5086 MetaCoq.Template.BasicAst <> A:76 var
+R5091:5091 MetaCoq.Template.BasicAst <> B:77 var
+binder 5079:5079 <> g:81
+binder 5081:5082 <> g':82
+R5099:5101 MetaCoq.Template.BasicAst <> def rec
+R5103:5103 MetaCoq.Template.BasicAst <> A:76 var
+binder 5095:5095 <> d:83
+R5139:5141 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5110:5116 MetaCoq.Template.BasicAst <> map_def def
+R5124:5130 MetaCoq.Template.BasicAst <> map_def def
+R5137:5137 MetaCoq.Template.BasicAst <> d:83 var
+R5134:5135 MetaCoq.Template.BasicAst <> g':82 var
+R5132:5132 MetaCoq.Template.BasicAst <> g:81 var
+R5120:5121 MetaCoq.Template.BasicAst <> f':80 var
+R5118:5118 MetaCoq.Template.BasicAst <> f:79 var
+R5142:5148 MetaCoq.Template.BasicAst <> map_def def
+R5172:5172 MetaCoq.Template.BasicAst <> d:83 var
+R5163:5167 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5161:5162 MetaCoq.Template.BasicAst <> f':80 var
+R5168:5169 MetaCoq.Template.BasicAst <> g':82 var
+R5152:5156 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5151:5151 MetaCoq.Template.BasicAst <> f:79 var
+R5157:5157 MetaCoq.Template.BasicAst <> g:81 var
+prf 5221:5235 <> compose_map_def
+binder 5238:5238 <> A:84
+binder 5240:5240 <> B:85
+binder 5242:5242 <> C:86
+R5254:5257 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5253:5253 MetaCoq.Template.BasicAst <> B:85 var
+R5258:5258 MetaCoq.Template.BasicAst <> C:86 var
+binder 5246:5246 <> f:87
+binder 5248:5249 <> f':88
+R5270:5273 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5269:5269 MetaCoq.Template.BasicAst <> A:84 var
+R5274:5274 MetaCoq.Template.BasicAst <> B:85 var
+binder 5262:5262 <> g:89
+binder 5264:5265 <> g':90
+R5314:5316 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5281:5281 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5294:5300 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5313:5313 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5282:5288 MetaCoq.Template.BasicAst <> map_def def
+R5292:5293 MetaCoq.Template.BasicAst <> f':88 var
+R5290:5290 MetaCoq.Template.BasicAst <> f:87 var
+R5301:5307 MetaCoq.Template.BasicAst <> map_def def
+R5311:5312 MetaCoq.Template.BasicAst <> g':90 var
+R5309:5309 MetaCoq.Template.BasicAst <> g:89 var
+R5317:5323 MetaCoq.Template.BasicAst <> map_def def
+R5338:5342 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5336:5337 MetaCoq.Template.BasicAst <> f':88 var
+R5343:5344 MetaCoq.Template.BasicAst <> g':90 var
+R5327:5331 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R5326:5326 MetaCoq.Template.BasicAst <> f:87 var
+R5332:5332 MetaCoq.Template.BasicAst <> g:89 var
+prf 5380:5389 <> map_def_id
+binder 5392:5392 <> t:91
+binder 5395:5395 <> x:92
+R5424:5426 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5399:5405 MetaCoq.Template.BasicAst <> map_def def
+R5423:5423 MetaCoq.Template.BasicAst <> x:92 var
+R5417:5418 Coq.Init.Datatypes <> id def
+R5420:5420 MetaCoq.Template.BasicAst <> t:91 var
+R5409:5410 Coq.Init.Datatypes <> id def
+R5412:5412 MetaCoq.Template.BasicAst <> t:91 var
+R5427:5428 Coq.Init.Datatypes <> id def
+R5430:5430 MetaCoq.Template.BasicAst <> x:92 var
+R5485:5494 MetaCoq.Template.BasicAst <> map_def_id thm
+R5497:5502 Coq.Lists.List <> map_id thm
+prf 5518:5529 <> map_def_spec
+binder 5532:5532 <> A:93
+binder 5534:5534 <> B:94
+R5546:5549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5545:5545 MetaCoq.Template.BasicAst <> A:93 var
+binder 5538:5538 <> P:95
+binder 5540:5541 <> P':96
+R5570:5573 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5569:5569 MetaCoq.Template.BasicAst <> A:93 var
+R5574:5574 MetaCoq.Template.BasicAst <> B:94 var
+binder 5557:5557 <> f:97
+binder 5559:5560 <> f':98
+binder 5562:5562 <> g:99
+binder 5564:5565 <> g':100
+R5582:5584 MetaCoq.Template.BasicAst <> def rec
+R5586:5586 MetaCoq.Template.BasicAst <> A:93 var
+binder 5578:5578 <> x:101
+R5605:5608 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5593:5594 MetaCoq.Template.BasicAst <> P':96 var
+R5599:5603 MetaCoq.Template.BasicAst <> dbody proj
+R5596:5596 MetaCoq.Template.BasicAst <> x:101 var
+R5620:5623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5609:5609 MetaCoq.Template.BasicAst <> P:95 var
+R5614:5618 MetaCoq.Template.BasicAst <> dtype proj
+R5611:5611 MetaCoq.Template.BasicAst <> x:101 var
+R5624:5624 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5651:5657 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5632:5632 <> x:102
+R5638:5641 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5635:5635 MetaCoq.Template.BasicAst <> P:95 var
+R5637:5637 MetaCoq.Template.BasicAst <> x:102 var
+R5645:5647 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5642:5642 MetaCoq.Template.BasicAst <> f:97 var
+R5644:5644 MetaCoq.Template.BasicAst <> x:102 var
+R5648:5648 MetaCoq.Template.BasicAst <> g:99 var
+R5650:5650 MetaCoq.Template.BasicAst <> x:102 var
+R5658:5658 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5688:5694 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5666:5666 <> x:103
+R5673:5676 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5669:5670 MetaCoq.Template.BasicAst <> P':96 var
+R5672:5672 MetaCoq.Template.BasicAst <> x:103 var
+R5681:5683 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5677:5678 MetaCoq.Template.BasicAst <> f':98 var
+R5680:5680 MetaCoq.Template.BasicAst <> x:103 var
+R5684:5685 MetaCoq.Template.BasicAst <> g':100 var
+R5687:5687 MetaCoq.Template.BasicAst <> x:103 var
+R5709:5711 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5695:5701 MetaCoq.Template.BasicAst <> map_def def
+R5708:5708 MetaCoq.Template.BasicAst <> x:101 var
+R5705:5706 MetaCoq.Template.BasicAst <> f':98 var
+R5703:5703 MetaCoq.Template.BasicAst <> f:97 var
+R5712:5718 MetaCoq.Template.BasicAst <> map_def def
+R5725:5725 MetaCoq.Template.BasicAst <> x:101 var
+R5722:5723 MetaCoq.Template.BasicAst <> g':100 var
+R5720:5720 MetaCoq.Template.BasicAst <> g:99 var
+R5764:5770 MetaCoq.Template.BasicAst <> map_def def
+R5838:5840 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5889:5892 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R5941:5942 Coq.Init.Logic <> eq ind
+R5944:5946 Coq.Init.Datatypes <> nat ind
+R5993:5995 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6048:6053 MetaCoq.Template.utils.MCProd <> on_snd def
+R6055:6057 Coq.Init.Datatypes <> snd def
+prf 6073:6089 <> on_snd_eq_id_spec
+binder 6092:6092 <> A:104
+binder 6094:6094 <> B:105
+R6103:6106 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6102:6102 MetaCoq.Template.BasicAst <> B:105 var
+R6107:6107 MetaCoq.Template.BasicAst <> B:105 var
+binder 6098:6098 <> f:106
+R6116:6118 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6115:6115 MetaCoq.Template.BasicAst <> A:104 var
+R6119:6119 MetaCoq.Template.BasicAst <> B:105 var
+binder 6111:6111 <> x:107
+R6143:6149 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6135:6137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6126:6126 MetaCoq.Template.BasicAst <> f:106 var
+R6129:6131 Coq.Init.Datatypes <> snd def
+R6133:6133 MetaCoq.Template.BasicAst <> x:107 var
+R6138:6140 Coq.Init.Datatypes <> snd def
+R6142:6142 MetaCoq.Template.BasicAst <> x:107 var
+R6160:6162 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6150:6155 MetaCoq.Template.utils.MCProd <> on_snd def
+R6159:6159 MetaCoq.Template.BasicAst <> x:107 var
+R6157:6157 MetaCoq.Template.BasicAst <> f:106 var
+R6163:6163 MetaCoq.Template.BasicAst <> x:107 var
+R6201:6206 MetaCoq.Template.utils.MCProd <> on_snd def
+prf 6346:6360 <> map_def_eq_spec
+binder 6363:6363 <> A:108
+binder 6365:6365 <> B:109
+R6382:6385 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6381:6381 MetaCoq.Template.BasicAst <> A:108 var
+R6386:6386 MetaCoq.Template.BasicAst <> B:109 var
+binder 6369:6369 <> f:110
+binder 6371:6372 <> f':111
+binder 6374:6374 <> g:112
+binder 6376:6377 <> g':113
+R6394:6396 MetaCoq.Template.BasicAst <> def rec
+R6398:6398 MetaCoq.Template.BasicAst <> A:108 var
+binder 6390:6390 <> x:114
+R6430:6435 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6416:6418 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6405:6405 MetaCoq.Template.BasicAst <> f:110 var
+R6408:6412 MetaCoq.Template.BasicAst <> dtype proj
+R6414:6414 MetaCoq.Template.BasicAst <> x:114 var
+R6419:6419 MetaCoq.Template.BasicAst <> g:112 var
+R6422:6426 MetaCoq.Template.BasicAst <> dtype proj
+R6428:6428 MetaCoq.Template.BasicAst <> x:114 var
+R6463:6468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6448:6450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6436:6437 MetaCoq.Template.BasicAst <> f':111 var
+R6440:6444 MetaCoq.Template.BasicAst <> dbody proj
+R6446:6446 MetaCoq.Template.BasicAst <> x:114 var
+R6451:6452 MetaCoq.Template.BasicAst <> g':113 var
+R6455:6459 MetaCoq.Template.BasicAst <> dbody proj
+R6461:6461 MetaCoq.Template.BasicAst <> x:114 var
+R6483:6485 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6469:6475 MetaCoq.Template.BasicAst <> map_def def
+R6482:6482 MetaCoq.Template.BasicAst <> x:114 var
+R6479:6480 MetaCoq.Template.BasicAst <> f':111 var
+R6477:6477 MetaCoq.Template.BasicAst <> f:110 var
+R6486:6492 MetaCoq.Template.BasicAst <> map_def def
+R6499:6499 MetaCoq.Template.BasicAst <> x:114 var
+R6496:6497 MetaCoq.Template.BasicAst <> g':113 var
+R6494:6494 MetaCoq.Template.BasicAst <> g:112 var
+R6526:6532 MetaCoq.Template.BasicAst <> map_def def
+prf 6608:6622 <> map_def_id_spec
+binder 6625:6625 <> A:115
+R6637:6640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6636:6636 MetaCoq.Template.BasicAst <> A:115 var
+R6641:6641 MetaCoq.Template.BasicAst <> A:115 var
+binder 6629:6629 <> f:116
+binder 6631:6632 <> f':117
+R6649:6651 MetaCoq.Template.BasicAst <> def rec
+R6653:6653 MetaCoq.Template.BasicAst <> A:115 var
+binder 6645:6645 <> x:118
+R6683:6688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6671:6674 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6682:6682 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6660:6660 MetaCoq.Template.BasicAst <> f:116 var
+R6663:6667 MetaCoq.Template.BasicAst <> dtype proj
+R6669:6669 MetaCoq.Template.BasicAst <> x:118 var
+R6675:6679 MetaCoq.Template.BasicAst <> dtype proj
+R6681:6681 MetaCoq.Template.BasicAst <> x:118 var
+R6713:6718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6701:6704 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6712:6712 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6689:6690 MetaCoq.Template.BasicAst <> f':117 var
+R6693:6697 MetaCoq.Template.BasicAst <> dbody proj
+R6699:6699 MetaCoq.Template.BasicAst <> x:118 var
+R6705:6709 MetaCoq.Template.BasicAst <> dbody proj
+R6711:6711 MetaCoq.Template.BasicAst <> x:118 var
+R6733:6735 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6719:6725 MetaCoq.Template.BasicAst <> map_def def
+R6732:6732 MetaCoq.Template.BasicAst <> x:118 var
+R6729:6730 MetaCoq.Template.BasicAst <> f':117 var
+R6727:6727 MetaCoq.Template.BasicAst <> f:116 var
+R6736:6736 MetaCoq.Template.BasicAst <> x:118 var
+R6765:6779 MetaCoq.Template.BasicAst <> map_def_eq_spec thm
+R6788:6789 Coq.Init.Datatypes <> id def
+R6785:6786 Coq.Init.Datatypes <> id def
+R6765:6779 MetaCoq.Template.BasicAst <> map_def_eq_spec thm
+R6788:6789 Coq.Init.Datatypes <> id def
+R6785:6786 Coq.Init.Datatypes <> id def
+R6765:6779 MetaCoq.Template.BasicAst <> map_def_eq_spec thm
+R6788:6789 Coq.Init.Datatypes <> id def
+R6785:6786 Coq.Init.Datatypes <> id def
+prf 6875:6887 <> tfix_map_spec
+binder 6890:6890 <> A:119
+binder 6892:6892 <> B:120
+R6904:6907 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6903:6903 MetaCoq.Template.BasicAst <> A:119 var
+binder 6896:6896 <> P:121
+binder 6898:6899 <> P':122
+binder 6915:6915 <> l:123
+R6932:6935 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6931:6931 MetaCoq.Template.BasicAst <> A:119 var
+R6936:6936 MetaCoq.Template.BasicAst <> B:120 var
+binder 6919:6919 <> f:124
+binder 6921:6922 <> f':125
+binder 6924:6924 <> g:126
+binder 6926:6927 <> g':127
+R6958:6961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6943:6950 MetaCoq.Template.BasicAst <> tFixProp def
+R6957:6957 MetaCoq.Template.BasicAst <> l:123 var
+R6954:6955 MetaCoq.Template.BasicAst <> P':122 var
+R6952:6952 MetaCoq.Template.BasicAst <> P:121 var
+R6962:6962 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6989:6995 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6970:6970 <> x:128
+R6976:6979 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6973:6973 MetaCoq.Template.BasicAst <> P:121 var
+R6975:6975 MetaCoq.Template.BasicAst <> x:128 var
+R6983:6985 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6980:6980 MetaCoq.Template.BasicAst <> f:124 var
+R6982:6982 MetaCoq.Template.BasicAst <> x:128 var
+R6986:6986 MetaCoq.Template.BasicAst <> g:126 var
+R6988:6988 MetaCoq.Template.BasicAst <> x:128 var
+R6996:6996 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7026:7032 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7004:7004 <> x:129
+R7011:7014 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7007:7008 MetaCoq.Template.BasicAst <> P':122 var
+R7010:7010 MetaCoq.Template.BasicAst <> x:129 var
+R7019:7021 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7015:7016 MetaCoq.Template.BasicAst <> f':125 var
+R7018:7018 MetaCoq.Template.BasicAst <> x:129 var
+R7022:7023 MetaCoq.Template.BasicAst <> g':127 var
+R7025:7025 MetaCoq.Template.BasicAst <> x:129 var
+R7053:7055 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7033:7035 Coq.Lists.List <> map def
+R7052:7052 MetaCoq.Template.BasicAst <> l:123 var
+R7038:7044 MetaCoq.Template.BasicAst <> map_def def
+R7048:7049 MetaCoq.Template.BasicAst <> f':125 var
+R7046:7046 MetaCoq.Template.BasicAst <> f:124 var
+R7056:7058 Coq.Lists.List <> map def
+R7075:7075 MetaCoq.Template.BasicAst <> l:123 var
+R7061:7067 MetaCoq.Template.BasicAst <> map_def def
+R7071:7072 MetaCoq.Template.BasicAst <> g':127 var
+R7069:7069 MetaCoq.Template.BasicAst <> g:126 var
+R7104:7113 MetaCoq.Template.utils.All_Forall <> All_map_eq thm
+R7104:7113 MetaCoq.Template.utils.All_Forall <> All_map_eq thm
+R7133:7140 MetaCoq.Template.utils.All_Forall <> All_impl thm
+R7133:7140 MetaCoq.Template.utils.All_Forall <> All_impl thm
+R7189:7200 MetaCoq.Template.BasicAst <> map_def_spec thm
+R7189:7200 MetaCoq.Template.BasicAst <> map_def_spec thm
+ind 7224:7235 <> typ_or_sort_
+constr 7247:7249 <> Typ
+constr 7264:7267 <> Sort
+binder 7238:7241 <> term:130
+R7256:7259 MetaCoq.Template.BasicAst <> term:130 var
+binder 7252:7252 <> T:133
+R7280:7291 MetaCoq.Template.BasicAst <> typ_or_sort_ variant
+R7280:7291 MetaCoq.Template.BasicAst <> typ_or_sort_ variant
+def 7324:7338 <> typ_or_sort_map
+binder 7341:7341 <> T:134
+binder 7343:7344 <> T':135
+R7352:7355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7351:7351 MetaCoq.Template.BasicAst <> T:134 var
+R7356:7357 MetaCoq.Template.BasicAst <> T':135 var
+binder 7348:7348 <> f:136
+binder 7360:7360 <> t:137
+R7373:7373 MetaCoq.Template.BasicAst <> t:137 var
+R7384:7386 MetaCoq.Template.BasicAst <> Typ constr
+R7393:7395 MetaCoq.Template.BasicAst <> Typ constr
+R7398:7398 MetaCoq.Template.BasicAst <> f:136 var
+R7400:7400 MetaCoq.Template.BasicAst <> T:134 var
+R7407:7410 MetaCoq.Template.BasicAst <> Sort constr
+R7415:7418 MetaCoq.Template.BasicAst <> Sort constr
+def 7439:7457 <> typ_or_sort_default
+binder 7460:7460 <> T:139
+binder 7462:7462 <> A:140
+R7470:7473 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7469:7469 MetaCoq.Template.BasicAst <> T:139 var
+R7474:7474 MetaCoq.Template.BasicAst <> A:140 var
+binder 7466:7466 <> f:141
+binder 7477:7477 <> t:142
+binder 7479:7479 <> d:143
+R7492:7492 MetaCoq.Template.BasicAst <> t:142 var
+R7503:7505 MetaCoq.Template.BasicAst <> Typ constr
+R7512:7512 MetaCoq.Template.BasicAst <> f:141 var
+R7514:7514 MetaCoq.Template.BasicAst <> T:139 var
+R7520:7523 MetaCoq.Template.BasicAst <> Sort constr
+R7528:7528 MetaCoq.Template.BasicAst <> d:143 var
+sec 7546:7553 <> Contexts
+binder 7567:7570 <> term:145
+rec 7637:7648 <> context_decl
+proj 7666:7674 <> decl_name
+proj 7690:7698 <> decl_body
+proj 7720:7728 <> decl_type
+R7678:7682 MetaCoq.Template.BasicAst <> aname def
+R7702:7707 Coq.Init.Datatypes <> option ind
+R7709:7712 MetaCoq.Template.BasicAst <> Contexts.term var
+R7732:7735 MetaCoq.Template.BasicAst <> Contexts.term var
+R7767:7778 MetaCoq.Template.BasicAst <> context_decl rec
+R7785:7792 MetaCoq.Template.BasicAst Contexts <> sec
+R7806:7817 MetaCoq.Template.BasicAst <> context_decl rec
+R7806:7817 MetaCoq.Template.BasicAst <> context_decl rec
+def 7850:7857 <> map_decl
+binder 7860:7863 <> term:150
+binder 7865:7869 <> term':151
+R7881:7884 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7877:7880 MetaCoq.Template.BasicAst <> term:150 var
+R7885:7889 MetaCoq.Template.BasicAst <> term':151 var
+binder 7873:7873 <> f:152
+R7897:7908 MetaCoq.Template.BasicAst <> context_decl rec
+R7910:7913 MetaCoq.Template.BasicAst <> term:150 var
+binder 7893:7893 <> d:153
+R7918:7929 MetaCoq.Template.BasicAst <> context_decl rec
+R7931:7935 MetaCoq.Template.BasicAst <> term':151 var
+R7945:7953 MetaCoq.Template.BasicAst <> decl_name proj
+R7945:7953 MetaCoq.Template.BasicAst <> decl_name proj
+R7945:7953 MetaCoq.Template.BasicAst <> decl_name proj
+R7978:7986 MetaCoq.Template.BasicAst <> decl_body proj
+R7978:7986 MetaCoq.Template.BasicAst <> decl_body proj
+R8024:8032 MetaCoq.Template.BasicAst <> decl_type proj
+R8024:8032 MetaCoq.Template.BasicAst <> decl_type proj
+R7961:7969 MetaCoq.Template.BasicAst <> decl_name proj
+R7958:7958 MetaCoq.Template.BasicAst <> d:153 var
+R7991:8000 Coq.Init.Datatypes <> option_map def
+R8007:8015 MetaCoq.Template.BasicAst <> decl_body proj
+R8004:8004 MetaCoq.Template.BasicAst <> d:153 var
+R8002:8002 MetaCoq.Template.BasicAst <> f:152 var
+R8037:8037 MetaCoq.Template.BasicAst <> f:152 var
+R8042:8050 MetaCoq.Template.BasicAst <> decl_type proj
+R8039:8039 MetaCoq.Template.BasicAst <> d:153 var
+prf 8064:8079 <> compose_map_decl
+binder 8082:8085 <> term:154
+binder 8087:8091 <> term':155
+binder 8093:8098 <> term'':156
+R8110:8113 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8106:8109 MetaCoq.Template.BasicAst <> term:154 var
+R8114:8118 MetaCoq.Template.BasicAst <> term':155 var
+binder 8102:8102 <> g:157
+R8131:8134 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8126:8130 MetaCoq.Template.BasicAst <> term':155 var
+R8135:8140 MetaCoq.Template.BasicAst <> term'':156 var
+binder 8122:8122 <> f:158
+binder 8143:8143 <> x:159
+R8174:8176 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8149:8156 MetaCoq.Template.BasicAst <> map_decl def
+R8161:8168 MetaCoq.Template.BasicAst <> map_decl def
+R8172:8172 MetaCoq.Template.BasicAst <> x:159 var
+R8170:8170 MetaCoq.Template.BasicAst <> g:157 var
+R8158:8158 MetaCoq.Template.BasicAst <> f:158 var
+R8177:8184 MetaCoq.Template.BasicAst <> map_decl def
+R8196:8196 MetaCoq.Template.BasicAst <> x:159 var
+R8188:8192 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R8187:8187 MetaCoq.Template.BasicAst <> f:158 var
+R8193:8193 MetaCoq.Template.BasicAst <> g:157 var
+prf 8259:8270 <> map_decl_ext
+binder 8273:8276 <> term:160
+binder 8278:8282 <> term':161
+R8296:8299 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8292:8295 MetaCoq.Template.BasicAst <> term:160 var
+R8300:8304 MetaCoq.Template.BasicAst <> term':161 var
+binder 8286:8286 <> f:162
+binder 8288:8288 <> g:163
+binder 8307:8307 <> x:164
+R8311:8311 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8331:8335 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8319:8319 <> x:165
+R8325:8327 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8322:8322 MetaCoq.Template.BasicAst <> f:162 var
+R8324:8324 MetaCoq.Template.BasicAst <> x:165 var
+R8328:8328 MetaCoq.Template.BasicAst <> g:163 var
+R8330:8330 MetaCoq.Template.BasicAst <> x:165 var
+R8348:8350 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8336:8343 MetaCoq.Template.BasicAst <> map_decl def
+R8347:8347 MetaCoq.Template.BasicAst <> x:164 var
+R8345:8345 MetaCoq.Template.BasicAst <> f:162 var
+R8351:8358 MetaCoq.Template.BasicAst <> map_decl def
+R8362:8362 MetaCoq.Template.BasicAst <> x:164 var
+R8360:8360 MetaCoq.Template.BasicAst <> g:163 var
+R8419:8426 MetaCoq.Template.BasicAst <> map_decl def
+R8419:8426 MetaCoq.Template.BasicAst <> map_decl def
+R8419:8426 MetaCoq.Template.BasicAst <> map_decl def
+R8419:8426 MetaCoq.Template.BasicAst <> map_decl def
+R8419:8426 MetaCoq.Template.BasicAst <> map_decl def
+inst 8493:8507 <> map_decl_proper
+binder 8510:8513 <> term:166
+binder 8515:8519 <> term':167
+R8524:8529 Coq.Classes.Morphisms <> Proper class
+R8566:8573 MetaCoq.Template.BasicAst <> map_decl def
+R8575:8578 MetaCoq.Template.BasicAst <> term:166 var
+R8580:8584 MetaCoq.Template.BasicAst <> term':167 var
+R8536:8540 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R8532:8535 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R8549:8553 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R8541:8548 Coq.Init.Logic <> eq ind
+R8554:8561 Coq.Init.Logic <> eq ind
+R8630:8641 MetaCoq.Template.BasicAst <> map_decl_ext thm
+R8630:8641 MetaCoq.Template.BasicAst <> map_decl_ext thm
+inst 8669:8686 <> map_decl_pointwise
+binder 8689:8692 <> term:168
+binder 8694:8698 <> term':169
+R8703:8708 Coq.Classes.Morphisms <> Proper class
+R8728:8735 MetaCoq.Template.BasicAst <> map_decl def
+R8737:8740 MetaCoq.Template.BasicAst <> term:168 var
+R8742:8746 MetaCoq.Template.BasicAst <> term':169 var
+R8715:8719 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R8711:8714 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R8720:8723 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R8784:8791 MetaCoq.Template.BasicAst <> map_decl def
+R8784:8791 MetaCoq.Template.BasicAst <> map_decl def
+R8784:8791 MetaCoq.Template.BasicAst <> map_decl def
+def 9226:9236 <> map_context
+binder 9239:9242 <> term:170
+binder 9244:9248 <> term':171
+R9260:9263 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9256:9259 MetaCoq.Template.BasicAst <> term:170 var
+R9264:9268 MetaCoq.Template.BasicAst <> term':171 var
+binder 9252:9252 <> f:172
+R9276:9279 Coq.Init.Datatypes <> list ind
+R9282:9293 MetaCoq.Template.BasicAst <> context_decl rec
+R9295:9298 MetaCoq.Template.BasicAst <> term:170 var
+binder 9272:9272 <> c:173
+R9307:9314 Coq.Lists.List <> map def
+R9329:9329 MetaCoq.Template.BasicAst <> c:173 var
+R9317:9324 MetaCoq.Template.BasicAst <> map_decl def
+R9326:9326 MetaCoq.Template.BasicAst <> f:172 var
+inst 9352:9369 <> map_context_proper
+binder 9372:9375 <> term:174
+binder 9377:9381 <> term':175
+R9386:9391 Coq.Classes.Morphisms <> Proper class
+R9428:9438 MetaCoq.Template.BasicAst <> map_context def
+R9440:9443 MetaCoq.Template.BasicAst <> term:174 var
+R9445:9449 MetaCoq.Template.BasicAst <> term':175 var
+R9398:9402 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R9394:9397 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R9411:9415 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R9403:9410 Coq.Init.Logic <> eq ind
+R9416:9423 Coq.Init.Logic <> eq ind
+R9500:9510 MetaCoq.Template.BasicAst <> map_context def
+R9500:9510 MetaCoq.Template.BasicAst <> map_context def
+R9500:9510 MetaCoq.Template.BasicAst <> map_context def
+prf 9529:9546 <> map_context_length
+binder 9549:9552 <> term:176
+binder 9554:9558 <> term':177
+R9570:9573 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9566:9569 MetaCoq.Template.BasicAst <> term:176 var
+R9574:9578 MetaCoq.Template.BasicAst <> term':177 var
+binder 9562:9562 <> f:178
+binder 9581:9581 <> l:179
+R9603:9605 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9585:9586 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R9602:9602 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R9587:9597 MetaCoq.Template.BasicAst <> map_context def
+R9601:9601 MetaCoq.Template.BasicAst <> l:179 var
+R9599:9599 MetaCoq.Template.BasicAst <> f:178 var
+R9606:9607 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R9609:9609 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R9608:9608 MetaCoq.Template.BasicAst <> l:179 var
+R9630:9640 MetaCoq.Template.BasicAst <> map_context def
+R9651:9660 Coq.Lists.List <> map_length thm
+R9651:9660 Coq.Lists.List <> map_length thm
+R9651:9660 Coq.Lists.List <> map_length thm
+R9692:9709 MetaCoq.Template.BasicAst <> map_context_length thm
+def 9730:9738 <> test_decl
+binder 9741:9744 <> term:180
+R9756:9759 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9752:9755 MetaCoq.Template.BasicAst <> term:180 var
+R9760:9763 Coq.Init.Datatypes <> bool ind
+binder 9748:9748 <> f:181
+R9771:9782 MetaCoq.Template.BasicAst <> context_decl rec
+R9784:9787 MetaCoq.Template.BasicAst <> term:180 var
+binder 9767:9767 <> d:182
+R9792:9795 Coq.Init.Datatypes <> bool ind
+R9837:9840 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R9802:9815 MetaCoq.Template.utils.MCOption <> option_default def
+R9833:9836 Coq.Init.Datatypes <> true constr
+R9822:9830 MetaCoq.Template.BasicAst <> decl_body proj
+R9819:9819 MetaCoq.Template.BasicAst <> d:182 var
+R9817:9817 MetaCoq.Template.BasicAst <> f:181 var
+R9841:9841 MetaCoq.Template.BasicAst <> f:181 var
+R9846:9854 MetaCoq.Template.BasicAst <> decl_type proj
+R9843:9843 MetaCoq.Template.BasicAst <> d:182 var
+inst 9878:9893 <> test_decl_proper
+binder 9896:9899 <> term:183
+R9904:9909 Coq.Classes.Morphisms <> Proper class
+R9946:9954 MetaCoq.Template.BasicAst <> test_decl def
+R9956:9959 MetaCoq.Template.BasicAst <> term:183 var
+R9916:9920 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R9912:9915 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R9929:9933 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R9921:9928 Coq.Init.Logic <> eq ind
+R9934:9941 Coq.Init.Logic <> eq ind
+R10021:10029 MetaCoq.Template.BasicAst <> test_decl def
+R10021:10029 MetaCoq.Template.BasicAst <> test_decl def
+R10021:10029 MetaCoq.Template.BasicAst <> test_decl def
+R10021:10029 MetaCoq.Template.BasicAst <> test_decl def
+R10021:10029 MetaCoq.Template.BasicAst <> test_decl def
+def 10071:10074 <> snoc
+binder 10077:10077 <> A:184
+R10086:10089 Coq.Init.Datatypes <> list ind
+R10091:10091 MetaCoq.Template.BasicAst <> A:184 var
+binder 10081:10082 <> Γ:185
+R10099:10099 MetaCoq.Template.BasicAst <> A:184 var
+binder 10095:10095 <> d:186
+R10106:10109 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10105:10105 MetaCoq.Template.BasicAst <> d:186 var
+R10110:10111 MetaCoq.Template.BasicAst <> Γ:185 var
+R10140:10143 MetaCoq.Template.BasicAst <> snoc def
+not 10124:10124 <> :::x_',,'_x
+def 10195:10200 <> ondecl
+binder 10203:10203 <> A:187
+R10212:10215 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10211:10211 MetaCoq.Template.BasicAst <> A:187 var
+binder 10207:10207 <> P:188
+R10227:10238 MetaCoq.Template.BasicAst <> context_decl rec
+R10240:10240 MetaCoq.Template.BasicAst <> A:187 var
+binder 10223:10223 <> d:189
+R10263:10266 MetaCoq.Template.utils.MCProd <> :::x_'×'_x not
+R10248:10248 MetaCoq.Template.BasicAst <> P:188 var
+R10253:10261 MetaCoq.Template.BasicAst <> decl_type proj
+R10250:10250 MetaCoq.Template.BasicAst <> d:189 var
+R10267:10280 MetaCoq.Template.utils.MCOption <> option_default def
+R10298:10301 Coq.Init.Datatypes <> unit ind
+R10287:10295 MetaCoq.Template.BasicAst <> decl_body proj
+R10284:10284 MetaCoq.Template.BasicAst <> d:189 var
+R10282:10282 MetaCoq.Template.BasicAst <> P:188 var
+abbrev 10314:10318 <> onctx
+R10326:10328 MetaCoq.Template.utils.All_Forall <> All ind
+R10331:10336 MetaCoq.Template.BasicAst <> ondecl def
+sec 10352:10361 <> ContextMap
+binder 10375:10378 <> term:190
+binder 10380:10384 <> term':191
+R10402:10405 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10399:10401 Coq.Init.Datatypes <> nat ind
+R10410:10413 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10406:10409 MetaCoq.Template.BasicAst <> term:190 var
+R10414:10418 MetaCoq.Template.BasicAst <> term':191 var
+binder 10395:10395 <> f:192
+def 10434:10445 <> mapi_context
+R10452:10455 Coq.Init.Datatypes <> list ind
+R10458:10469 MetaCoq.Template.BasicAst <> context_decl rec
+R10471:10474 MetaCoq.Template.BasicAst <> ContextMap.term var
+binder 10448:10448 <> c:193
+R10480:10483 Coq.Init.Datatypes <> list ind
+R10486:10497 MetaCoq.Template.BasicAst <> context_decl rec
+R10499:10503 MetaCoq.Template.BasicAst <> ContextMap.term' var
+R10519:10519 MetaCoq.Template.BasicAst <> c:193 var
+R10533:10536 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10563:10566 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10543:10550 MetaCoq.Template.BasicAst <> map_decl def
+R10553:10553 MetaCoq.Template.BasicAst <> ContextMap.f var
+R10555:10556 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R10559:10559 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R10567:10578 MetaCoq.Template.BasicAst <> mapi_context:194 def
+R10589:10590 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10595:10596 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10609:10618 MetaCoq.Template.BasicAst ContextMap <> sec
+inst 10641:10659 <> mapi_context_proper
+binder 10662:10665 <> term:196
+binder 10667:10671 <> term':197
+R10676:10681 Coq.Classes.Morphisms <> Proper class
+R10718:10729 MetaCoq.Template.BasicAst <> mapi_context def
+R10731:10734 MetaCoq.Template.BasicAst <> term:196 var
+R10736:10740 MetaCoq.Template.BasicAst <> term':197 var
+R10688:10692 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R10684:10687 MetaCoq.Template.utils.MCPrelude <> :::'`=2`' not
+R10701:10705 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R10693:10700 Coq.Init.Logic <> eq ind
+R10706:10713 Coq.Init.Logic <> eq ind
+prf 10872:10890 <> mapi_context_length
+binder 10893:10896 <> term:198
+R10907:10910 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10904:10906 Coq.Init.Datatypes <> nat ind
+R10915:10918 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10911:10914 MetaCoq.Template.BasicAst <> term:198 var
+R10919:10922 MetaCoq.Template.BasicAst <> term:198 var
+binder 10900:10900 <> f:199
+binder 10925:10925 <> l:200
+R10948:10950 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10929:10930 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R10947:10947 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R10931:10942 MetaCoq.Template.BasicAst <> mapi_context def
+R10946:10946 MetaCoq.Template.BasicAst <> l:200 var
+R10944:10944 MetaCoq.Template.BasicAst <> f:199 var
+R10951:10952 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R10954:10954 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R10953:10953 MetaCoq.Template.BasicAst <> l:200 var
+R11021:11039 MetaCoq.Template.BasicAst <> mapi_context_length thm
+sec 11057:11067 <> ContextTest
+binder 11081:11084 <> term:201
+R11103:11106 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11099:11102 MetaCoq.Template.BasicAst <> term:201 var
+R11107:11110 Coq.Init.Datatypes <> bool ind
+binder 11095:11095 <> f:202
+def 11126:11137 <> test_context
+R11144:11147 Coq.Init.Datatypes <> list ind
+R11150:11161 MetaCoq.Template.BasicAst <> context_decl rec
+R11163:11166 MetaCoq.Template.BasicAst <> ContextTest.term var
+binder 11140:11140 <> c:203
+R11172:11175 Coq.Init.Datatypes <> bool ind
+R11190:11190 MetaCoq.Template.BasicAst <> c:203 var
+R11204:11207 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11229:11232 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R11214:11225 MetaCoq.Template.BasicAst <> test_context:204 def
+R11233:11241 MetaCoq.Template.BasicAst <> test_decl def
+R11243:11243 MetaCoq.Template.BasicAst <> ContextTest.f var
+R11253:11254 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11259:11262 Coq.Init.Datatypes <> true constr
+R11277:11287 MetaCoq.Template.BasicAst ContextTest <> sec
+inst 11310:11328 <> test_context_proper
+binder 11331:11334 <> term:206
+R11339:11344 Coq.Classes.Morphisms <> Proper class
+R11381:11392 MetaCoq.Template.BasicAst <> test_context def
+R11394:11397 MetaCoq.Template.BasicAst <> term:206 var
+R11351:11355 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R11347:11350 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R11364:11368 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R11356:11363 Coq.Init.Logic <> eq ind
+R11369:11376 Coq.Init.Logic <> eq ind
+sec 11531:11542 <> ContextTestK
+binder 11556:11559 <> term:207
+R11577:11580 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11574:11576 Coq.Init.Datatypes <> nat ind
+R11585:11588 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11581:11584 MetaCoq.Template.BasicAst <> term:207 var
+R11589:11592 Coq.Init.Datatypes <> bool ind
+binder 11570:11570 <> f:208
+R11600:11602 Coq.Init.Datatypes <> nat ind
+binder 11596:11596 <> k:209
+def 11618:11631 <> test_context_k
+R11638:11641 Coq.Init.Datatypes <> list ind
+R11644:11655 MetaCoq.Template.BasicAst <> context_decl rec
+R11657:11660 MetaCoq.Template.BasicAst <> ContextTestK.term var
+binder 11634:11634 <> c:210
+R11666:11669 Coq.Init.Datatypes <> bool ind
+R11684:11684 MetaCoq.Template.BasicAst <> c:210 var
+R11698:11701 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11725:11728 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R11708:11721 MetaCoq.Template.BasicAst <> test_context_k:211 def
+R11729:11737 MetaCoq.Template.BasicAst <> test_decl def
+R11740:11740 MetaCoq.Template.BasicAst <> ContextTestK.f var
+R11748:11750 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R11743:11744 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R11747:11747 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R11751:11751 MetaCoq.Template.BasicAst <> ContextTestK.k var
+R11763:11764 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11769:11772 Coq.Init.Datatypes <> true constr
+R11787:11798 MetaCoq.Template.BasicAst ContextTestK <> sec
+inst 11821:11841 <> test_context_k_proper
+binder 11844:11847 <> term:213
+R11852:11857 Coq.Classes.Morphisms <> Proper class
+R11907:11920 MetaCoq.Template.BasicAst <> test_context_k def
+R11922:11925 MetaCoq.Template.BasicAst <> term:213 var
+R11864:11868 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R11860:11863 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R11877:11881 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R11869:11876 Coq.Init.Logic <> eq ind
+R11890:11894 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R11882:11889 Coq.Init.Logic <> eq ind
+R11895:11902 Coq.Init.Logic <> eq ind
+sec 12066:12073 <> Contexts
+binder 12087:12090 <> term:214
+binder 12092:12096 <> term':215
+binder 12098:12103 <> term'':216
+abbrev 12125:12131 <> context
+R12142:12145 Coq.Init.Datatypes <> list ind
+R12148:12159 MetaCoq.Template.BasicAst <> context_decl rec
+prf 12178:12191 <> test_decl_impl
+R12204:12207 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12200:12203 MetaCoq.Template.BasicAst <> Contexts.term var
+R12208:12211 Coq.Init.Datatypes <> bool ind
+binder 12194:12194 <> f:217
+binder 12196:12196 <> g:218
+binder 12214:12214 <> x:219
+R12218:12218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12239:12247 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 12226:12226 <> x:220
+R12232:12235 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12229:12229 MetaCoq.Template.BasicAst <> f:217 var
+R12231:12231 MetaCoq.Template.BasicAst <> x:220 var
+R12236:12236 MetaCoq.Template.BasicAst <> g:218 var
+R12238:12238 MetaCoq.Template.BasicAst <> x:220 var
+R12261:12264 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12248:12256 MetaCoq.Template.BasicAst <> test_decl def
+R12260:12260 MetaCoq.Template.BasicAst <> x:219 var
+R12258:12258 MetaCoq.Template.BasicAst <> f:217 var
+R12265:12273 MetaCoq.Template.BasicAst <> test_decl def
+R12277:12277 MetaCoq.Template.BasicAst <> x:219 var
+R12275:12275 MetaCoq.Template.BasicAst <> g:218 var
+R12324:12332 MetaCoq.Template.BasicAst <> test_decl def
+R12324:12332 MetaCoq.Template.BasicAst <> test_decl def
+R12324:12332 MetaCoq.Template.BasicAst <> test_decl def
+R12344:12351 MetaCoq.Template.utils.MCProd <> andb_and thm
+R12374:12381 MetaCoq.Template.utils.MCProd <> andb_and thm
+R12374:12381 MetaCoq.Template.utils.MCProd <> andb_and thm
+R12412:12420 MetaCoq.Template.BasicAst <> decl_body proj
+R12412:12420 MetaCoq.Template.BasicAst <> decl_body proj
+def 12466:12472 <> onctx_k
+R12482:12485 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12479:12481 Coq.Init.Datatypes <> nat ind
+R12490:12493 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12486:12489 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 12475:12475 <> P:221
+binder 12500:12500 <> k:222
+R12509:12515 MetaCoq.Template.BasicAst <> context abbrev
+R12517:12520 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 12503:12505 <> ctx:223
+R12530:12533 MetaCoq.Template.utils.All_Forall <> Alli ind
+R12589:12591 MetaCoq.Template.BasicAst <> ctx:223 var
+binder 12540:12540 <> i:224
+binder 12542:12542 <> d:225
+R12547:12552 MetaCoq.Template.BasicAst <> ondecl def
+R12584:12584 MetaCoq.Template.BasicAst <> d:225 var
+R12555:12555 MetaCoq.Template.BasicAst <> P:221 var
+R12577:12579 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R12573:12575 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R12558:12565 Coq.Arith.PeanoNat Nat pred def
+R12567:12568 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R12572:12572 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R12569:12571 MetaCoq.Template.BasicAst <> ctx:223 var
+R12576:12576 MetaCoq.Template.BasicAst <> i:224 var
+R12580:12580 MetaCoq.Template.BasicAst <> k:222 var
+prf 12603:12609 <> ondeclP
+R12620:12623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12616:12619 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 12612:12612 <> P:226
+R12639:12642 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12635:12638 MetaCoq.Template.BasicAst <> Contexts.term var
+R12643:12646 Coq.Init.Datatypes <> bool ind
+binder 12631:12631 <> p:227
+R12654:12665 MetaCoq.Template.BasicAst <> context_decl rec
+R12667:12670 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 12650:12650 <> d:228
+R12679:12679 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12710:12718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 12687:12687 <> x:229
+R12690:12697 MetaCoq.Template.utils.MCReflect <> reflectT ind
+R12700:12700 MetaCoq.Template.BasicAst <> P:226 var
+R12702:12702 MetaCoq.Template.BasicAst <> x:229 var
+R12706:12706 MetaCoq.Template.BasicAst <> p:227 var
+R12708:12708 MetaCoq.Template.BasicAst <> x:229 var
+R12719:12726 MetaCoq.Template.utils.MCReflect <> reflectT ind
+R12729:12734 MetaCoq.Template.BasicAst <> ondecl def
+R12738:12738 MetaCoq.Template.BasicAst <> d:228 var
+R12736:12736 MetaCoq.Template.BasicAst <> P:226 var
+R12742:12750 MetaCoq.Template.BasicAst <> test_decl def
+R12754:12754 MetaCoq.Template.BasicAst <> d:228 var
+R12752:12752 MetaCoq.Template.BasicAst <> p:227 var
+R12806:12811 MetaCoq.Template.BasicAst <> ondecl def
+R12814:12822 MetaCoq.Template.BasicAst <> test_decl def
+R12806:12811 MetaCoq.Template.BasicAst <> ondecl def
+R12806:12811 MetaCoq.Template.BasicAst <> ondecl def
+R12814:12822 MetaCoq.Template.BasicAst <> test_decl def
+R12814:12822 MetaCoq.Template.BasicAst <> test_decl def
+R12926:12947 MetaCoq.Template.utils.MCOption <> reflect_option_default thm
+R12926:12947 MetaCoq.Template.utils.MCOption <> reflect_option_default thm
+R12926:12947 MetaCoq.Template.utils.MCOption <> reflect_option_default thm
+prf 13006:13011 <> onctxP
+R13022:13025 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13018:13021 MetaCoq.Template.BasicAst <> Contexts.term var
+R13026:13029 Coq.Init.Datatypes <> bool ind
+binder 13014:13014 <> p:230
+R13039:13045 MetaCoq.Template.BasicAst <> context abbrev
+R13047:13050 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 13033:13035 <> ctx:231
+R13059:13066 MetaCoq.Template.utils.MCReflect <> reflectT ind
+R13069:13073 MetaCoq.Template.BasicAst <> onctx abbrev
+R13075:13075 MetaCoq.Template.BasicAst <> p:230 var
+R13077:13079 MetaCoq.Template.BasicAst <> ctx:231 var
+R13083:13094 MetaCoq.Template.BasicAst <> test_context def
+R13098:13100 MetaCoq.Template.BasicAst <> ctx:231 var
+R13096:13096 MetaCoq.Template.BasicAst <> p:230 var
+R13135:13148 MetaCoq.Template.utils.MCReflect <> equiv_reflectT thm
+R13135:13148 MetaCoq.Template.utils.MCReflect <> equiv_reflectT thm
+R13218:13224 MetaCoq.Template.BasicAst <> ondeclP thm
+R13226:13238 MetaCoq.Template.utils.MCReflect <> reflectT_pred thm
+R13308:13315 MetaCoq.Template.utils.MCProd <> andb_and thm
+R13366:13372 MetaCoq.Template.BasicAst <> ondeclP thm
+R13374:13386 MetaCoq.Template.utils.MCReflect <> reflectT_pred thm
+prf 13410:13422 <> map_decl_type
+R13433:13436 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13429:13432 MetaCoq.Template.BasicAst <> Contexts.term var
+R13437:13441 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 13425:13425 <> f:232
+binder 13444:13447 <> decl:233
+R13469:13471 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13451:13451 MetaCoq.Template.BasicAst <> f:232 var
+R13454:13462 MetaCoq.Template.BasicAst <> decl_type proj
+R13464:13467 MetaCoq.Template.BasicAst <> decl:233 var
+R13472:13480 MetaCoq.Template.BasicAst <> decl_type proj
+R13483:13490 MetaCoq.Template.BasicAst <> map_decl def
+R13494:13497 MetaCoq.Template.BasicAst <> decl:233 var
+R13492:13492 MetaCoq.Template.BasicAst <> f:232 var
+prf 13563:13575 <> map_decl_body
+R13586:13589 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13582:13585 MetaCoq.Template.BasicAst <> Contexts.term var
+R13590:13594 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 13578:13578 <> f:234
+binder 13597:13600 <> decl:235
+R13633:13635 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13604:13613 Coq.Init.Datatypes <> option_map def
+R13618:13626 MetaCoq.Template.BasicAst <> decl_body proj
+R13628:13631 MetaCoq.Template.BasicAst <> decl:235 var
+R13615:13615 MetaCoq.Template.BasicAst <> f:234 var
+R13636:13644 MetaCoq.Template.BasicAst <> decl_body proj
+R13647:13654 MetaCoq.Template.BasicAst <> map_decl def
+R13658:13661 MetaCoq.Template.BasicAst <> decl:235 var
+R13656:13656 MetaCoq.Template.BasicAst <> f:234 var
+prf 13727:13737 <> map_decl_id
+R13763:13766 MetaCoq.Template.utils.MCPrelude <> :::x_'=1'_x not
+R13742:13749 MetaCoq.Template.BasicAst <> map_decl def
+R13751:13754 MetaCoq.Template.BasicAst <> Contexts.term var
+R13756:13759 MetaCoq.Template.BasicAst <> Contexts.term var
+R13761:13762 Coq.Init.Datatypes <> id def
+R13767:13768 Coq.Init.Datatypes <> id def
+prf 13843:13871 <> option_map_decl_body_map_decl
+R13882:13885 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13878:13881 MetaCoq.Template.BasicAst <> Contexts.term var
+R13886:13890 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 13874:13874 <> f:236
+binder 13893:13893 <> x:237
+R13949:13955 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13901:13910 Coq.Init.Datatypes <> option_map def
+R13923:13932 Coq.Init.Datatypes <> option_map def
+R13947:13947 MetaCoq.Template.BasicAst <> x:237 var
+R13935:13942 MetaCoq.Template.BasicAst <> map_decl def
+R13944:13944 MetaCoq.Template.BasicAst <> f:236 var
+R13912:13920 MetaCoq.Template.BasicAst <> decl_body proj
+R13956:13965 Coq.Init.Datatypes <> option_map def
+R13983:13992 Coq.Init.Datatypes <> option_map def
+R14004:14004 MetaCoq.Template.BasicAst <> x:237 var
+R13994:14002 MetaCoq.Template.BasicAst <> decl_body proj
+R13968:13977 Coq.Init.Datatypes <> option_map def
+R13979:13979 MetaCoq.Template.BasicAst <> f:236 var
+prf 14067:14095 <> option_map_decl_type_map_decl
+R14106:14109 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14102:14105 MetaCoq.Template.BasicAst <> Contexts.term var
+R14110:14114 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 14098:14098 <> f:238
+binder 14117:14117 <> x:239
+R14173:14179 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14125:14134 Coq.Init.Datatypes <> option_map def
+R14147:14156 Coq.Init.Datatypes <> option_map def
+R14171:14171 MetaCoq.Template.BasicAst <> x:239 var
+R14159:14166 MetaCoq.Template.BasicAst <> map_decl def
+R14168:14168 MetaCoq.Template.BasicAst <> f:238 var
+R14136:14144 MetaCoq.Template.BasicAst <> decl_type proj
+R14180:14189 Coq.Init.Datatypes <> option_map def
+R14194:14203 Coq.Init.Datatypes <> option_map def
+R14215:14215 MetaCoq.Template.BasicAst <> x:239 var
+R14205:14213 MetaCoq.Template.BasicAst <> decl_type proj
+R14191:14191 MetaCoq.Template.BasicAst <> f:238 var
+def 14283:14296 <> fold_context_k
+R14306:14309 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14303:14305 Coq.Init.Datatypes <> nat ind
+R14314:14317 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14310:14313 MetaCoq.Template.BasicAst <> Contexts.term var
+R14318:14322 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 14299:14299 <> f:240
+binder 14325:14326 <> Γ:241
+R14335:14342 Coq.Lists.List <> rev def
+R14345:14348 MetaCoq.Template.utils.MCList <> mapi def
+R14389:14396 Coq.Lists.List <> rev def
+R14398:14399 MetaCoq.Template.BasicAst <> Γ:241 var
+binder 14355:14356 <> k':242
+binder 14358:14361 <> decl:243
+R14366:14373 MetaCoq.Template.BasicAst <> map_decl def
+R14382:14385 MetaCoq.Template.BasicAst <> decl:243 var
+R14376:14376 MetaCoq.Template.BasicAst <> f:240 var
+R14378:14379 MetaCoq.Template.BasicAst <> k':242 var
+R14417:14430 MetaCoq.Template.BasicAst <> fold_context_k def
+R14417:14430 MetaCoq.Template.BasicAst <> fold_context_k def
+prf 14458:14475 <> fold_context_k_alt
+binder 14477:14477 <> f:244
+binder 14479:14480 <> Γ:245
+R14507:14513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14488:14501 MetaCoq.Template.BasicAst <> fold_context_k def
+R14503:14503 MetaCoq.Template.BasicAst <> f:244 var
+R14505:14506 MetaCoq.Template.BasicAst <> Γ:245 var
+R14514:14517 MetaCoq.Template.utils.MCList <> mapi def
+R14576:14577 MetaCoq.Template.BasicAst <> Γ:245 var
+binder 14524:14525 <> k':246
+binder 14527:14527 <> d:247
+R14532:14539 MetaCoq.Template.BasicAst <> map_decl def
+R14573:14573 MetaCoq.Template.BasicAst <> d:247 var
+R14542:14542 MetaCoq.Template.BasicAst <> f:244 var
+R14565:14567 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R14545:14552 Coq.Arith.PeanoNat Nat pred def
+R14555:14560 Coq.Init.Datatypes <> length def
+R14562:14563 MetaCoq.Template.BasicAst <> Γ:245 var
+R14568:14569 MetaCoq.Template.BasicAst <> k':246 var
+R14611:14624 MetaCoq.Template.BasicAst <> fold_context_k def
+R14635:14642 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R14635:14642 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R14635:14642 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R14653:14671 Coq.Lists.List <> rev_involutive thm
+R14653:14671 Coq.Lists.List <> rev_involutive thm
+R14653:14671 Coq.Lists.List <> rev_involutive thm
+R14684:14691 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R14684:14691 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R14723:14737 Coq.Lists.List <> rev_length thm
+R14723:14737 Coq.Lists.List <> rev_length thm
+R14723:14737 Coq.Lists.List <> rev_length thm
+prf 14756:14772 <> mapi_context_fold
+binder 14774:14774 <> f:248
+binder 14776:14777 <> Γ:249
+R14802:14804 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14785:14796 MetaCoq.Template.BasicAst <> mapi_context def
+R14800:14801 MetaCoq.Template.BasicAst <> Γ:249 var
+R14798:14798 MetaCoq.Template.BasicAst <> f:248 var
+R14805:14818 MetaCoq.Template.BasicAst <> fold_context_k def
+R14820:14820 MetaCoq.Template.BasicAst <> f:248 var
+R14822:14823 MetaCoq.Template.BasicAst <> Γ:249 var
+binder 14877:14877 <> k:250
+R14886:14888 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R14885:14885 MetaCoq.Template.BasicAst <> k:250 var
+R14915:14932 Coq.Classes.Morphisms <> pointwise_relation def
+R14939:14956 Coq.Classes.Morphisms <> pointwise_relation def
+R14965:14972 Coq.Init.Logic <> eq ind
+R14974:14978 MetaCoq.Template.BasicAst <> Contexts.term' var
+R14958:14961 MetaCoq.Template.BasicAst <> Contexts.term var
+R14934:14936 Coq.Init.Datatypes <> nat ind
+binder 14877:14877 <> k:251
+R14886:14888 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R14885:14885 MetaCoq.Template.BasicAst <> k:251 var
+R14915:14932 Coq.Classes.Morphisms <> pointwise_relation def
+R14939:14956 Coq.Classes.Morphisms <> pointwise_relation def
+R14965:14972 Coq.Init.Logic <> eq ind
+R14974:14978 MetaCoq.Template.BasicAst <> Contexts.term' var
+R14958:14961 MetaCoq.Template.BasicAst <> Contexts.term var
+R14934:14936 Coq.Init.Datatypes <> nat ind
+R15011:15028 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R15011:15028 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R15011:15028 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R15038:15041 MetaCoq.Template.utils.MCList <> mapi def
+R15149:15159 MetaCoq.Template.utils.MCList <> mapi_rec_Sk thm
+R15149:15159 MetaCoq.Template.utils.MCList <> mapi_rec_Sk thm
+R15149:15159 MetaCoq.Template.utils.MCList <> mapi_rec_Sk thm
+R15172:15183 MetaCoq.Template.utils.MCList <> mapi_rec_ext thm
+R15172:15183 MetaCoq.Template.utils.MCList <> mapi_rec_ext thm
+R15211:15222 MetaCoq.Template.BasicAst <> map_decl_ext thm
+R15211:15222 MetaCoq.Template.BasicAst <> map_decl_ext thm
+R15269:15279 Coq.Arith.PeanoNat Nat sub_0_r thm
+R15269:15279 Coq.Arith.PeanoNat Nat sub_0_r thm
+R15269:15279 Coq.Arith.PeanoNat Nat sub_0_r thm
+prf 15298:15315 <> fold_context_k_tip
+binder 15317:15317 <> f:252
+binder 15319:15319 <> d:253
+R15343:15345 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15323:15336 MetaCoq.Template.BasicAst <> fold_context_k def
+R15338:15338 MetaCoq.Template.BasicAst <> f:252 var
+R15340:15340 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15342:15342 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15341:15341 MetaCoq.Template.BasicAst <> d:253 var
+R15346:15346 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15363:15363 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15347:15354 MetaCoq.Template.BasicAst <> map_decl def
+R15362:15362 MetaCoq.Template.BasicAst <> d:253 var
+R15357:15357 MetaCoq.Template.BasicAst <> f:252 var
+prf 15413:15433 <> fold_context_k_length
+binder 15435:15435 <> f:254
+binder 15437:15438 <> Γ:255
+R15470:15472 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15442:15447 Coq.Init.Datatypes <> length def
+R15450:15463 MetaCoq.Template.BasicAst <> fold_context_k def
+R15465:15465 MetaCoq.Template.BasicAst <> f:254 var
+R15467:15468 MetaCoq.Template.BasicAst <> Γ:255 var
+R15473:15478 Coq.Init.Datatypes <> length def
+R15480:15481 MetaCoq.Template.BasicAst <> Γ:255 var
+R15515:15528 MetaCoq.Template.BasicAst <> fold_context_k def
+R15544:15558 Coq.Lists.List <> rev_length thm
+R15560:15570 MetaCoq.Template.utils.MCList <> mapi_length thm
+R15572:15586 Coq.Lists.List <> rev_length thm
+R15544:15558 Coq.Lists.List <> rev_length thm
+R15544:15558 Coq.Lists.List <> rev_length thm
+R15544:15558 Coq.Lists.List <> rev_length thm
+R15560:15570 MetaCoq.Template.utils.MCList <> mapi_length thm
+R15560:15570 MetaCoq.Template.utils.MCList <> mapi_length thm
+R15572:15586 Coq.Lists.List <> rev_length thm
+R15572:15586 Coq.Lists.List <> rev_length thm
+prf 15605:15624 <> fold_context_k_snoc0
+binder 15626:15626 <> f:256
+binder 15628:15629 <> Γ:257
+binder 15631:15631 <> d:258
+R15665:15667 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15639:15652 MetaCoq.Template.BasicAst <> fold_context_k def
+R15654:15654 MetaCoq.Template.BasicAst <> f:256 var
+R15658:15661 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15657:15657 MetaCoq.Template.BasicAst <> d:258 var
+R15662:15663 MetaCoq.Template.BasicAst <> Γ:257 var
+R15687:15690 MetaCoq.Template.BasicAst <> :::x_',,'_x not
+R15668:15681 MetaCoq.Template.BasicAst <> fold_context_k def
+R15683:15683 MetaCoq.Template.BasicAst <> f:256 var
+R15685:15686 MetaCoq.Template.BasicAst <> Γ:257 var
+R15691:15698 MetaCoq.Template.BasicAst <> map_decl def
+R15716:15716 MetaCoq.Template.BasicAst <> d:258 var
+R15701:15701 MetaCoq.Template.BasicAst <> f:256 var
+R15704:15709 Coq.Init.Datatypes <> length def
+R15711:15712 MetaCoq.Template.BasicAst <> Γ:257 var
+R15750:15763 MetaCoq.Template.BasicAst <> fold_context_k def
+R15779:15786 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R15789:15802 Coq.Lists.List <> rev_involutive thm
+R15779:15786 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R15779:15786 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R15779:15786 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R15779:15786 MetaCoq.Template.utils.MCList <> rev_mapi thm
+R15789:15802 Coq.Lists.List <> rev_involutive thm
+R15789:15802 Coq.Lists.List <> rev_involutive thm
+R15789:15802 Coq.Lists.List <> rev_involutive thm
+R15789:15802 Coq.Lists.List <> rev_involutive thm
+R15812:15815 MetaCoq.Template.utils.MCList <> mapi def
+R15826:15837 MetaCoq.Template.utils.MCList <> mapi_rec_eqn thm
+R15826:15837 MetaCoq.Template.utils.MCList <> mapi_rec_eqn thm
+R15826:15837 MetaCoq.Template.utils.MCList <> mapi_rec_eqn thm
+R15851:15854 MetaCoq.Template.BasicAst <> snoc def
+R15878:15888 Coq.Arith.PeanoNat Nat sub_0_r thm
+R15890:15904 Coq.Lists.List <> rev_length thm
+R15878:15888 Coq.Arith.PeanoNat Nat sub_0_r thm
+R15878:15888 Coq.Arith.PeanoNat Nat sub_0_r thm
+R15890:15904 Coq.Lists.List <> rev_length thm
+R15890:15904 Coq.Lists.List <> rev_length thm
+R15919:15929 MetaCoq.Template.utils.MCList <> mapi_rec_Sk thm
+R15919:15929 MetaCoq.Template.utils.MCList <> mapi_rec_Sk thm
+R15919:15929 MetaCoq.Template.utils.MCList <> mapi_rec_Sk thm
+R15945:15956 MetaCoq.Template.utils.MCList <> mapi_rec_ext thm
+R15945:15956 MetaCoq.Template.utils.MCList <> mapi_rec_ext thm
+R15979:15988 Coq.Lists.List <> app_length thm
+R15991:16005 Coq.Lists.List <> rev_length thm
+R15979:15988 Coq.Lists.List <> app_length thm
+R15979:15988 Coq.Lists.List <> app_length thm
+R15991:16005 Coq.Lists.List <> rev_length thm
+R15991:16005 Coq.Lists.List <> rev_length thm
+R15991:16005 Coq.Lists.List <> rev_length thm
+prf 16054:16071 <> fold_context_k_app
+binder 16073:16073 <> f:259
+binder 16075:16076 <> Γ:260
+binder 16078:16079 <> Δ:261
+R16114:16120 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16087:16100 MetaCoq.Template.BasicAst <> fold_context_k def
+R16102:16102 MetaCoq.Template.BasicAst <> f:259 var
+R16107:16110 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R16105:16106 MetaCoq.Template.BasicAst <> Δ:261 var
+R16111:16112 MetaCoq.Template.BasicAst <> Γ:260 var
+R16167:16170 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R16121:16134 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 16141:16141 <> k:262
+R16146:16146 MetaCoq.Template.BasicAst <> f:259 var
+R16158:16160 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R16149:16154 Coq.Init.Datatypes <> length def
+R16156:16157 MetaCoq.Template.BasicAst <> Γ:260 var
+R16161:16161 MetaCoq.Template.BasicAst <> k:262 var
+R16165:16166 MetaCoq.Template.BasicAst <> Δ:261 var
+R16171:16184 MetaCoq.Template.BasicAst <> fold_context_k def
+R16186:16186 MetaCoq.Template.BasicAst <> f:259 var
+R16188:16189 MetaCoq.Template.BasicAst <> Γ:260 var
+R16223:16236 MetaCoq.Template.BasicAst <> fold_context_k def
+R16251:16268 Coq.Lists.List <> rev_app_distr thm
+R16251:16268 Coq.Lists.List <> rev_app_distr thm
+R16251:16268 Coq.Lists.List <> rev_app_distr thm
+R16283:16290 MetaCoq.Template.utils.MCList <> mapi_app thm
+R16283:16290 MetaCoq.Template.utils.MCList <> mapi_app thm
+R16283:16290 MetaCoq.Template.utils.MCList <> mapi_app thm
+R16304:16321 Coq.Lists.List <> rev_app_distr thm
+R16304:16321 Coq.Lists.List <> rev_app_distr thm
+R16304:16321 Coq.Lists.List <> rev_app_distr thm
+R16352:16359 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R16352:16359 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R16387:16401 Coq.Lists.List <> rev_length thm
+R16387:16401 Coq.Lists.List <> rev_length thm
+R16387:16401 Coq.Lists.List <> rev_length thm
+def 16465:16479 <> mapi_context_In
+R16488:16494 MetaCoq.Template.BasicAst <> context abbrev
+R16496:16499 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16482:16484 <> ctx:263
+R16510:16513 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16507:16509 Coq.Init.Datatypes <> nat ind
+R16526:16537 MetaCoq.Template.BasicAst <> context_decl rec
+R16539:16542 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16522:16522 <> x:264
+R16554:16557 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16546:16547 Coq.Lists.List <> In def
+R16551:16553 MetaCoq.Template.BasicAst <> ctx:263 var
+R16549:16549 MetaCoq.Template.BasicAst <> x:264 var
+R16558:16569 MetaCoq.Template.BasicAst <> context_decl rec
+R16571:16574 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16503:16503 <> f:265
+R16579:16585 MetaCoq.Template.BasicAst <> context abbrev
+R16587:16590 MetaCoq.Template.BasicAst <> Contexts.term var
+R16597:16611 MetaCoq.Template.BasicAst <> mapi_context_In:267 def
+R16613:16615 Coq.Init.Datatypes <> nil constr
+R16613:16615 Coq.Init.Datatypes <> nil constr
+R16629:16643 MetaCoq.Template.BasicAst <> mapi_context_In:271 def
+R16657:16657 MetaCoq.Template.BasicAst <> f:268 var
+R16646:16649 Coq.Init.Datatypes <> cons constr
+R16653:16654 MetaCoq.Template.BasicAst <> xs:270 var
+R16651:16651 MetaCoq.Template.BasicAst <> x:269 var
+R16646:16654 Coq.Init.Datatypes <> cons constr
+R16622:16624 Coq.Init.Datatypes <> nil constr
+R16662:16665 Coq.Init.Datatypes <> cons constr
+R16682:16696 MetaCoq.Template.BasicAst <> mapi_context_In:266 def
+binder 16706:16706 <> n:272
+binder 16708:16708 <> x:273
+binder 16710:16710 <> H:274
+R16717:16717 MetaCoq.Template.BasicAst <> n:272 var
+R16719:16719 MetaCoq.Template.BasicAst <> x:273 var
+R16670:16671 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R16674:16674 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+prf 16735:16754 <> mapi_context_In_spec
+R16764:16767 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16761:16763 Coq.Init.Datatypes <> nat ind
+R16772:16775 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16768:16771 MetaCoq.Template.BasicAst <> Contexts.term var
+R16776:16779 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16757:16757 <> f:275
+R16789:16795 MetaCoq.Template.BasicAst <> context abbrev
+R16797:16800 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16783:16785 <> ctx:276
+R16895:16901 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16809:16823 MetaCoq.Template.BasicAst <> mapi_context_In def
+binder 16834:16834 <> n:277
+R16841:16852 MetaCoq.Template.BasicAst <> context_decl rec
+R16854:16857 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16837:16837 <> x:278
+R16865:16866 Coq.Lists.List <> In def
+R16870:16872 MetaCoq.Template.BasicAst <> ctx:276 var
+R16868:16868 MetaCoq.Template.BasicAst <> x:278 var
+R16878:16885 MetaCoq.Template.BasicAst <> map_decl def
+R16893:16893 MetaCoq.Template.BasicAst <> x:278 var
+R16888:16888 MetaCoq.Template.BasicAst <> f:275 var
+R16890:16890 MetaCoq.Template.BasicAst <> n:277 var
+R16825:16827 MetaCoq.Template.BasicAst <> ctx:276 var
+R16902:16913 MetaCoq.Template.BasicAst <> mapi_context def
+R16917:16919 MetaCoq.Template.BasicAst <> ctx:276 var
+R16915:16915 MetaCoq.Template.BasicAst <> f:275 var
+binder 16960:16960 <> n:279
+R16967:16978 MetaCoq.Template.BasicAst <> context_decl rec
+R16980:16983 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16963:16963 <> x:280
+R16991:16992 Coq.Lists.List <> In def
+R16994:16994 MetaCoq.Template.BasicAst <> x:280 var
+R17004:17011 MetaCoq.Template.BasicAst <> map_decl def
+R17019:17019 MetaCoq.Template.BasicAst <> x:280 var
+R17016:17016 MetaCoq.Template.BasicAst <> n:279 var
+binder 16960:16960 <> n:281
+R16967:16978 MetaCoq.Template.BasicAst <> context_decl rec
+R16980:16983 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 16963:16963 <> x:282
+R16991:16992 Coq.Lists.List <> In def
+R16994:16994 MetaCoq.Template.BasicAst <> x:282 var
+R17004:17011 MetaCoq.Template.BasicAst <> map_decl def
+R17019:17019 MetaCoq.Template.BasicAst <> x:282 var
+R17016:17016 MetaCoq.Template.BasicAst <> n:281 var
+R17041:17055 MetaCoq.Template.BasicAst <> mapi_context_In def
+R17041:17055 MetaCoq.Template.BasicAst <> mapi_context_In def
+def 17118:17132 <> fold_context_In
+R17141:17147 MetaCoq.Template.BasicAst <> context abbrev
+R17149:17152 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17135:17137 <> ctx:283
+R17172:17175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17160:17166 MetaCoq.Template.BasicAst <> context abbrev
+R17168:17171 MetaCoq.Template.BasicAst <> Contexts.term var
+R17188:17199 MetaCoq.Template.BasicAst <> context_decl rec
+R17201:17204 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17184:17184 <> x:284
+R17216:17219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17208:17209 Coq.Lists.List <> In def
+R17213:17215 MetaCoq.Template.BasicAst <> ctx:283 var
+R17211:17211 MetaCoq.Template.BasicAst <> x:284 var
+R17220:17231 MetaCoq.Template.BasicAst <> context_decl rec
+R17233:17236 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17156:17156 <> f:285
+R17241:17247 MetaCoq.Template.BasicAst <> context abbrev
+R17249:17252 MetaCoq.Template.BasicAst <> Contexts.term var
+R17259:17273 MetaCoq.Template.BasicAst <> fold_context_In:287 def
+R17275:17277 Coq.Init.Datatypes <> nil constr
+R17275:17277 Coq.Init.Datatypes <> nil constr
+R17291:17305 MetaCoq.Template.BasicAst <> fold_context_In:291 def
+R17319:17319 MetaCoq.Template.BasicAst <> f:288 var
+R17308:17311 Coq.Init.Datatypes <> cons constr
+R17315:17316 MetaCoq.Template.BasicAst <> xs:290 var
+R17313:17313 MetaCoq.Template.BasicAst <> x:289 var
+R17308:17316 Coq.Init.Datatypes <> cons constr
+R17284:17286 Coq.Init.Datatypes <> nil constr
+R17339:17353 MetaCoq.Template.BasicAst <> fold_context_In:286 def
+binder 17363:17363 <> n:292
+binder 17365:17365 <> x:293
+binder 17367:17367 <> H:294
+R17374:17374 MetaCoq.Template.BasicAst <> n:292 var
+R17376:17376 MetaCoq.Template.BasicAst <> x:293 var
+binder 17332:17334 <> xs':295
+R17388:17391 Coq.Init.Datatypes <> cons constr
+R17405:17407 MetaCoq.Template.BasicAst <> xs':295 var
+R17396:17398 MetaCoq.Template.BasicAst <> xs':295 var
+def 17423:17434 <> fold_context
+R17453:17456 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17441:17447 MetaCoq.Template.BasicAst <> context abbrev
+R17449:17452 MetaCoq.Template.BasicAst <> Contexts.term var
+R17474:17477 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17457:17468 MetaCoq.Template.BasicAst <> context_decl rec
+R17470:17473 MetaCoq.Template.BasicAst <> Contexts.term var
+R17478:17489 MetaCoq.Template.BasicAst <> context_decl rec
+R17491:17494 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17437:17437 <> f:296
+R17504:17510 MetaCoq.Template.BasicAst <> context abbrev
+R17512:17515 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17498:17500 <> ctx:297
+R17520:17526 MetaCoq.Template.BasicAst <> context abbrev
+R17528:17531 MetaCoq.Template.BasicAst <> Contexts.term var
+R17540:17551 MetaCoq.Template.BasicAst <> fold_context:300 def
+R17555:17557 Coq.Init.Datatypes <> nil constr
+R17553:17553 MetaCoq.Template.BasicAst <> f:299 var
+R17555:17557 Coq.Init.Datatypes <> nil constr
+R17571:17582 MetaCoq.Template.BasicAst <> fold_context:304 def
+R17587:17590 Coq.Init.Datatypes <> cons constr
+R17594:17595 MetaCoq.Template.BasicAst <> xs:303 var
+R17592:17592 MetaCoq.Template.BasicAst <> x:302 var
+R17584:17584 MetaCoq.Template.BasicAst <> f:301 var
+R17587:17595 Coq.Init.Datatypes <> cons constr
+R17562:17564 Coq.Init.Datatypes <> nil constr
+R17618:17629 MetaCoq.Template.BasicAst <> fold_context:298 def
+binder 17611:17613 <> xs':305
+R17645:17648 Coq.Init.Datatypes <> cons constr
+R17661:17663 MetaCoq.Template.BasicAst <> xs':305 var
+R17653:17655 MetaCoq.Template.BasicAst <> xs':305 var
+prf 17675:17693 <> fold_context_length
+binder 17695:17695 <> f:306
+binder 17697:17698 <> Γ:307
+R17722:17724 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17702:17703 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R17721:17721 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R17704:17715 MetaCoq.Template.BasicAst <> fold_context def
+R17719:17720 MetaCoq.Template.BasicAst <> Γ:307 var
+R17717:17717 MetaCoq.Template.BasicAst <> f:306 var
+R17725:17726 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R17729:17729 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R17727:17728 MetaCoq.Template.BasicAst <> Γ:307 var
+R17775:17786 MetaCoq.Template.BasicAst <> fold_context def
+R17775:17786 MetaCoq.Template.BasicAst <> fold_context def
+prf 17842:17861 <> fold_context_In_spec
+R17880:17883 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17868:17874 MetaCoq.Template.BasicAst <> context abbrev
+R17876:17879 MetaCoq.Template.BasicAst <> Contexts.term var
+R17901:17904 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17884:17895 MetaCoq.Template.BasicAst <> context_decl rec
+R17897:17900 MetaCoq.Template.BasicAst <> Contexts.term var
+R17905:17916 MetaCoq.Template.BasicAst <> context_decl rec
+R17918:17921 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17864:17864 <> f:308
+R17931:17937 MetaCoq.Template.BasicAst <> context abbrev
+R17939:17942 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17925:17927 <> ctx:309
+R18026:18032 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17951:17965 MetaCoq.Template.BasicAst <> fold_context_In def
+binder 17976:17976 <> n:310
+R17983:17994 MetaCoq.Template.BasicAst <> context_decl rec
+R17996:17999 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 17979:17979 <> x:311
+R18007:18008 Coq.Lists.List <> In def
+R18012:18014 MetaCoq.Template.BasicAst <> ctx:309 var
+R18010:18010 MetaCoq.Template.BasicAst <> x:311 var
+R18020:18020 MetaCoq.Template.BasicAst <> f:308 var
+R18024:18024 MetaCoq.Template.BasicAst <> x:311 var
+R18022:18022 MetaCoq.Template.BasicAst <> n:310 var
+R17967:17969 MetaCoq.Template.BasicAst <> ctx:309 var
+R18033:18044 MetaCoq.Template.BasicAst <> fold_context def
+R18048:18050 MetaCoq.Template.BasicAst <> ctx:309 var
+R18046:18046 MetaCoq.Template.BasicAst <> f:308 var
+binder 18091:18091 <> n:312
+R18098:18109 MetaCoq.Template.BasicAst <> context_decl rec
+R18111:18114 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 18094:18094 <> x:313
+R18122:18123 Coq.Lists.List <> In def
+R18125:18125 MetaCoq.Template.BasicAst <> x:313 var
+R18137:18137 MetaCoq.Template.BasicAst <> n:312 var
+R18139:18139 MetaCoq.Template.BasicAst <> x:313 var
+binder 18091:18091 <> n:314
+R18098:18109 MetaCoq.Template.BasicAst <> context_decl rec
+R18111:18114 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 18094:18094 <> x:315
+R18122:18123 Coq.Lists.List <> In def
+R18125:18125 MetaCoq.Template.BasicAst <> x:315 var
+R18137:18137 MetaCoq.Template.BasicAst <> n:314 var
+R18139:18139 MetaCoq.Template.BasicAst <> x:315 var
+R18161:18175 MetaCoq.Template.BasicAst <> fold_context_In def
+R18161:18175 MetaCoq.Template.BasicAst <> fold_context_In def
+inst 18248:18266 <> fold_context_Proper
+R18270:18275 Coq.Classes.Morphisms <> Proper class
+R18293:18304 MetaCoq.Template.BasicAst <> fold_context def
+R18282:18286 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R18278:18281 MetaCoq.Template.utils.MCPrelude <> :::'`=2`' not
+R18287:18290 MetaCoq.Template.utils.MCPrelude <> :::'`=1`' not
+R18364:18375 MetaCoq.Template.BasicAst <> fold_context def
+R18364:18375 MetaCoq.Template.BasicAst <> fold_context def
+def 18663:18674 <> forget_types
+R18681:18684 Coq.Init.Datatypes <> list ind
+R18687:18707 MetaCoq.Template.BasicAst <> context_decl rec
+R18709:18712 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 18677:18677 <> c:316
+R18718:18721 Coq.Init.Datatypes <> list ind
+R18723:18727 MetaCoq.Template.BasicAst <> aname def
+R18736:18738 Coq.Lists.List <> map def
+R18750:18750 MetaCoq.Template.BasicAst <> c:316 var
+R18740:18748 MetaCoq.Template.BasicAst <> decl_name proj
+R18758:18765 MetaCoq.Template.BasicAst Contexts <> sec
+R18792:18810 MetaCoq.Template.BasicAst <> fold_context_length thm
+R18813:18833 MetaCoq.Template.BasicAst <> fold_context_k_length thm
+sec 18851:18858 <> Contexts
+binder 18872:18875 <> term:317
+binder 18877:18881 <> term':318
+binder 18883:18888 <> term'':319
+abbrev 18910:18916 <> context
+R18927:18930 Coq.Init.Datatypes <> list ind
+R18933:18944 MetaCoq.Template.BasicAst <> context_decl rec
+prf 18963:18979 <> fold_context_k_id
+R18986:18992 MetaCoq.Template.BasicAst <> context abbrev
+R18994:18997 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 18982:18982 <> x:320
+R19033:19035 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19002:19015 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 19022:19022 <> i:321
+binder 19024:19024 <> x:322
+R19029:19029 MetaCoq.Template.BasicAst <> x:322 var
+R19032:19032 MetaCoq.Template.BasicAst <> x:320 var
+R19036:19036 MetaCoq.Template.BasicAst <> x:320 var
+R19071:19088 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19071:19088 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19071:19088 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19104:19107 MetaCoq.Template.utils.MCList <> mapi def
+R19104:19107 MetaCoq.Template.utils.MCList <> mapi def
+R19104:19107 MetaCoq.Template.utils.MCList <> mapi def
+R19203:19213 MetaCoq.Template.BasicAst <> map_decl_id thm
+R19203:19213 MetaCoq.Template.BasicAst <> map_decl_id thm
+R19203:19213 MetaCoq.Template.BasicAst <> map_decl_id thm
+prf 19232:19253 <> fold_context_k_compose
+R19263:19266 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19260:19262 Coq.Init.Datatypes <> nat ind
+R19272:19275 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19267:19271 MetaCoq.Template.BasicAst <> Contexts.term' var
+R19276:19279 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 19256:19256 <> f:323
+R19290:19293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19287:19289 Coq.Init.Datatypes <> nat ind
+R19300:19303 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19294:19299 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R19304:19308 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 19283:19283 <> g:324
+binder 19311:19312 <> Γ:325
+R19358:19364 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19320:19333 MetaCoq.Template.BasicAst <> fold_context_k def
+R19335:19335 MetaCoq.Template.BasicAst <> f:323 var
+R19338:19351 MetaCoq.Template.BasicAst <> fold_context_k def
+R19353:19353 MetaCoq.Template.BasicAst <> g:324 var
+R19355:19356 MetaCoq.Template.BasicAst <> Γ:325 var
+R19365:19378 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 19385:19385 <> i:326
+R19393:19397 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R19390:19390 MetaCoq.Template.BasicAst <> f:323 var
+R19392:19392 MetaCoq.Template.BasicAst <> i:326 var
+R19398:19398 MetaCoq.Template.BasicAst <> g:324 var
+R19400:19400 MetaCoq.Template.BasicAst <> i:326 var
+R19403:19404 MetaCoq.Template.BasicAst <> Γ:325 var
+R19440:19457 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19459:19467 MetaCoq.Template.utils.MCList <> mapi_mapi thm
+R19440:19457 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19440:19457 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19440:19457 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19440:19457 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19440:19457 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R19459:19467 MetaCoq.Template.utils.MCList <> mapi_mapi thm
+R19459:19467 MetaCoq.Template.utils.MCList <> mapi_mapi thm
+R19480:19487 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R19480:19487 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R19509:19524 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R19509:19524 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R19509:19524 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R19533:19544 MetaCoq.Template.BasicAst <> map_decl_ext thm
+R19533:19544 MetaCoq.Template.BasicAst <> map_decl_ext thm
+prf 19581:19598 <> fold_context_k_ext
+R19610:19613 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19607:19609 Coq.Init.Datatypes <> nat ind
+R19619:19622 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19614:19618 MetaCoq.Template.BasicAst <> Contexts.term' var
+R19623:19626 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 19601:19601 <> f:327
+binder 19603:19603 <> g:328
+binder 19629:19630 <> Γ:329
+R19644:19651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19639:19642 MetaCoq.Template.utils.MCPrelude <> :::x_'=2'_x not
+R19638:19638 MetaCoq.Template.BasicAst <> f:327 var
+R19643:19643 MetaCoq.Template.BasicAst <> g:328 var
+R19671:19673 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19652:19665 MetaCoq.Template.BasicAst <> fold_context_k def
+R19667:19667 MetaCoq.Template.BasicAst <> f:327 var
+R19669:19670 MetaCoq.Template.BasicAst <> Γ:329 var
+R19674:19687 MetaCoq.Template.BasicAst <> fold_context_k def
+R19689:19689 MetaCoq.Template.BasicAst <> g:328 var
+R19691:19692 MetaCoq.Template.BasicAst <> Γ:329 var
+R19771:19790 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R19771:19790 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R19771:19790 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R19771:19790 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R19771:19790 MetaCoq.Template.BasicAst <> fold_context_k_snoc0 thm
+R19833:19844 MetaCoq.Template.BasicAst <> map_decl_ext thm
+R19833:19844 MetaCoq.Template.BasicAst <> map_decl_ext thm
+inst 19903:19923 <> fold_context_k_proper
+R19927:19932 Coq.Classes.Morphisms <> Proper class
+R20023:20036 MetaCoq.Template.BasicAst <> fold_context_k def
+R20038:20042 MetaCoq.Template.BasicAst <> Contexts.term' var
+R20044:20047 MetaCoq.Template.BasicAst <> Contexts.term var
+R19989:19993 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R19935:19952 Coq.Classes.Morphisms <> pointwise_relation def
+R19959:19976 Coq.Classes.Morphisms <> pointwise_relation def
+R19980:19987 Coq.Init.Logic <> eq ind
+R19954:19956 Coq.Init.Datatypes <> nat ind
+R20002:20006 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R19994:20001 Coq.Init.Logic <> eq ind
+R20007:20014 Coq.Init.Logic <> eq ind
+R20108:20125 MetaCoq.Template.BasicAst <> fold_context_k_ext thm
+R20108:20125 MetaCoq.Template.BasicAst <> fold_context_k_ext thm
+prf 20144:20167 <> alli_fold_context_k_prop
+R20177:20180 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20174:20176 Coq.Init.Datatypes <> nat ind
+R20198:20201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20181:20192 MetaCoq.Template.BasicAst <> context_decl rec
+R20194:20197 MetaCoq.Template.BasicAst <> Contexts.term var
+R20202:20205 Coq.Init.Datatypes <> bool ind
+binder 20170:20170 <> f:330
+R20216:20219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20213:20215 Coq.Init.Datatypes <> nat ind
+R20225:20228 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20220:20224 MetaCoq.Template.BasicAst <> Contexts.term' var
+R20229:20232 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 20209:20209 <> g:331
+binder 20235:20237 <> ctx:332
+R20276:20282 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20245:20248 MetaCoq.Template.utils.All_Forall <> alli def
+R20255:20268 MetaCoq.Template.BasicAst <> fold_context_k def
+R20270:20270 MetaCoq.Template.BasicAst <> g:331 var
+R20272:20274 MetaCoq.Template.BasicAst <> ctx:332 var
+R20250:20250 MetaCoq.Template.BasicAst <> f:330 var
+R20283:20286 MetaCoq.Template.utils.All_Forall <> alli def
+R20346:20348 MetaCoq.Template.BasicAst <> ctx:332 var
+binder 20293:20293 <> i:333
+binder 20295:20295 <> x:334
+R20300:20300 MetaCoq.Template.BasicAst <> f:330 var
+R20305:20312 MetaCoq.Template.BasicAst <> map_decl def
+R20340:20340 MetaCoq.Template.BasicAst <> x:334 var
+R20315:20315 MetaCoq.Template.BasicAst <> g:331 var
+R20333:20335 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R20318:20325 Coq.Arith.PeanoNat Nat pred def
+R20327:20328 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R20332:20332 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R20329:20331 MetaCoq.Template.BasicAst <> ctx:332 var
+R20336:20336 MetaCoq.Template.BasicAst <> i:333 var
+R20302:20302 MetaCoq.Template.BasicAst <> i:333 var
+R20387:20404 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20407:20410 MetaCoq.Template.utils.MCList <> mapi def
+R20412:20420 MetaCoq.Template.utils.All_Forall <> alli_mapi thm
+R20387:20404 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20387:20404 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20407:20410 MetaCoq.Template.utils.MCList <> mapi def
+R20407:20410 MetaCoq.Template.utils.MCList <> mapi def
+R20412:20420 MetaCoq.Template.utils.All_Forall <> alli_mapi thm
+R20412:20420 MetaCoq.Template.utils.All_Forall <> alli_mapi thm
+prf 20439:20456 <> test_decl_map_decl
+binder 20458:20458 <> f:335
+binder 20460:20460 <> g:336
+binder 20462:20462 <> x:337
+R20500:20502 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20468:20476 MetaCoq.Template.BasicAst <> test_decl def
+R20478:20481 MetaCoq.Template.BasicAst <> Contexts.term var
+R20484:20484 MetaCoq.Template.BasicAst <> f:335 var
+R20487:20494 MetaCoq.Template.BasicAst <> map_decl def
+R20498:20498 MetaCoq.Template.BasicAst <> x:337 var
+R20496:20496 MetaCoq.Template.BasicAst <> g:336 var
+R20504:20512 MetaCoq.Template.BasicAst <> test_decl def
+R20514:20517 MetaCoq.Template.BasicAst <> Contexts.term var
+R20521:20525 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R20520:20520 MetaCoq.Template.BasicAst <> f:335 var
+R20526:20526 MetaCoq.Template.BasicAst <> g:336 var
+R20529:20529 MetaCoq.Template.BasicAst <> x:337 var
+R20565:20573 MetaCoq.Template.BasicAst <> test_decl def
+R20576:20583 MetaCoq.Template.BasicAst <> map_decl def
+R20565:20573 MetaCoq.Template.BasicAst <> test_decl def
+R20565:20573 MetaCoq.Template.BasicAst <> test_decl def
+R20576:20583 MetaCoq.Template.BasicAst <> map_decl def
+R20576:20583 MetaCoq.Template.BasicAst <> map_decl def
+R20611:20624 MetaCoq.Template.utils.MCOption <> option_default def
+R20611:20624 MetaCoq.Template.utils.MCOption <> option_default def
+R20611:20624 MetaCoq.Template.utils.MCOption <> option_default def
+R20641:20649 MetaCoq.Template.BasicAst <> decl_body proj
+R20641:20649 MetaCoq.Template.BasicAst <> decl_body proj
+prf 20677:20694 <> map_fold_context_k
+R20706:20709 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20701:20705 MetaCoq.Template.BasicAst <> Contexts.term' var
+R20710:20713 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 20697:20697 <> f:338
+R20724:20727 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20721:20723 Coq.Init.Datatypes <> nat ind
+R20734:20737 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20728:20733 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R20738:20742 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 20717:20717 <> g:339
+binder 20745:20747 <> ctx:340
+R20794:20796 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20755:20757 Coq.Lists.List <> map def
+R20773:20786 MetaCoq.Template.BasicAst <> fold_context_k def
+R20788:20788 MetaCoq.Template.BasicAst <> g:339 var
+R20790:20792 MetaCoq.Template.BasicAst <> ctx:340 var
+R20760:20767 MetaCoq.Template.BasicAst <> map_decl def
+R20769:20769 MetaCoq.Template.BasicAst <> f:338 var
+R20797:20810 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 20817:20817 <> i:341
+R20823:20827 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R20822:20822 MetaCoq.Template.BasicAst <> f:338 var
+R20828:20828 MetaCoq.Template.BasicAst <> g:339 var
+R20830:20830 MetaCoq.Template.BasicAst <> i:341 var
+R20833:20835 MetaCoq.Template.BasicAst <> ctx:340 var
+R20871:20888 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20890:20897 MetaCoq.Template.utils.MCList <> map_mapi thm
+R20871:20888 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20871:20888 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20871:20888 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20871:20888 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R20890:20897 MetaCoq.Template.utils.MCList <> map_mapi thm
+R20890:20897 MetaCoq.Template.utils.MCList <> map_mapi thm
+R20910:20917 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R20910:20917 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R20939:20954 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R20939:20954 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R20939:20954 MetaCoq.Template.BasicAst <> compose_map_decl thm
+prf 20973:20996 <> map_context_mapi_context
+R21008:21011 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21003:21007 MetaCoq.Template.BasicAst <> Contexts.term' var
+R21012:21015 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 20999:20999 <> f:342
+R21026:21029 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21023:21025 Coq.Init.Datatypes <> nat ind
+R21036:21039 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21030:21035 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R21040:21044 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 21019:21019 <> g:343
+R21054:21057 Coq.Init.Datatypes <> list ind
+R21060:21080 MetaCoq.Template.BasicAst <> context_decl rec
+R21082:21087 MetaCoq.Template.BasicAst <> Contexts.term'' var
+binder 21048:21050 <> ctx:344
+R21131:21137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21097:21107 MetaCoq.Template.BasicAst <> map_context def
+R21112:21123 MetaCoq.Template.BasicAst <> mapi_context def
+R21127:21129 MetaCoq.Template.BasicAst <> ctx:344 var
+R21125:21125 MetaCoq.Template.BasicAst <> g:343 var
+R21109:21109 MetaCoq.Template.BasicAst <> f:342 var
+R21138:21149 MetaCoq.Template.BasicAst <> mapi_context def
+R21172:21174 MetaCoq.Template.BasicAst <> ctx:344 var
+binder 21156:21156 <> i:345
+R21162:21166 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R21161:21161 MetaCoq.Template.BasicAst <> f:342 var
+R21167:21167 MetaCoq.Template.BasicAst <> g:343 var
+R21169:21169 MetaCoq.Template.BasicAst <> i:345 var
+R21210:21226 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21210:21226 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21210:21226 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21210:21226 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21210:21226 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21240:21250 MetaCoq.Template.BasicAst <> map_context def
+R21261:21278 MetaCoq.Template.BasicAst <> map_fold_context_k thm
+R21261:21278 MetaCoq.Template.BasicAst <> map_fold_context_k thm
+R21261:21278 MetaCoq.Template.BasicAst <> map_fold_context_k thm
+prf 21297:21312 <> mapi_context_map
+R21322:21325 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21319:21321 Coq.Init.Datatypes <> nat ind
+R21331:21334 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21326:21330 MetaCoq.Template.BasicAst <> Contexts.term' var
+R21335:21338 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 21315:21315 <> f:346
+R21365:21368 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21346:21357 MetaCoq.Template.BasicAst <> context_decl rec
+R21359:21364 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R21369:21380 MetaCoq.Template.BasicAst <> context_decl rec
+R21382:21386 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 21342:21342 <> g:347
+binder 21389:21391 <> ctx:348
+R21425:21427 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21399:21410 MetaCoq.Template.BasicAst <> mapi_context def
+R21415:21417 Coq.Lists.List <> map def
+R21421:21423 MetaCoq.Template.BasicAst <> ctx:348 var
+R21419:21419 MetaCoq.Template.BasicAst <> g:347 var
+R21412:21412 MetaCoq.Template.BasicAst <> f:346 var
+R21428:21431 MetaCoq.Template.utils.MCList <> mapi def
+R21485:21487 MetaCoq.Template.BasicAst <> ctx:348 var
+binder 21438:21438 <> i:349
+R21477:21481 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R21443:21450 MetaCoq.Template.BasicAst <> map_decl def
+R21453:21453 MetaCoq.Template.BasicAst <> f:346 var
+R21471:21473 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R21456:21463 Coq.Arith.PeanoNat Nat pred def
+R21465:21466 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21470:21470 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R21467:21469 MetaCoq.Template.BasicAst <> ctx:348 var
+R21474:21474 MetaCoq.Template.BasicAst <> i:349 var
+R21482:21482 MetaCoq.Template.BasicAst <> g:347 var
+R21522:21538 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21540:21557 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R21559:21566 MetaCoq.Template.utils.MCList <> mapi_map thm
+R21522:21538 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21522:21538 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R21540:21557 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R21540:21557 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R21559:21566 MetaCoq.Template.utils.MCList <> mapi_map thm
+R21559:21566 MetaCoq.Template.utils.MCList <> mapi_map thm
+prf 21594:21608 <> map_context_map
+R21620:21623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21615:21619 MetaCoq.Template.BasicAst <> Contexts.term' var
+R21624:21627 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 21611:21611 <> f:350
+R21654:21657 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21635:21646 MetaCoq.Template.BasicAst <> context_decl rec
+R21648:21653 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R21658:21669 MetaCoq.Template.BasicAst <> context_decl rec
+R21671:21675 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 21631:21631 <> g:351
+binder 21678:21680 <> ctx:352
+R21713:21715 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21688:21698 MetaCoq.Template.BasicAst <> map_context def
+R21703:21705 Coq.Lists.List <> map def
+R21709:21711 MetaCoq.Template.BasicAst <> ctx:352 var
+R21707:21707 MetaCoq.Template.BasicAst <> g:351 var
+R21700:21700 MetaCoq.Template.BasicAst <> f:350 var
+R21716:21718 Coq.Lists.List <> map def
+R21739:21741 MetaCoq.Template.BasicAst <> ctx:352 var
+R21731:21735 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R21721:21728 MetaCoq.Template.BasicAst <> map_decl def
+R21730:21730 MetaCoq.Template.BasicAst <> f:350 var
+R21736:21736 MetaCoq.Template.BasicAst <> g:351 var
+prf 21821:21835 <> map_map_context
+R21860:21863 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21842:21853 MetaCoq.Template.BasicAst <> context_decl rec
+R21855:21859 MetaCoq.Template.BasicAst <> Contexts.term' var
+R21864:21867 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 21838:21838 <> f:353
+R21881:21884 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21875:21880 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R21885:21889 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 21871:21871 <> g:354
+binder 21892:21894 <> ctx:355
+R21927:21929 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21902:21904 Coq.Lists.List <> map def
+R21909:21919 MetaCoq.Template.BasicAst <> map_context def
+R21923:21925 MetaCoq.Template.BasicAst <> ctx:355 var
+R21921:21921 MetaCoq.Template.BasicAst <> g:354 var
+R21906:21906 MetaCoq.Template.BasicAst <> f:353 var
+R21930:21932 Coq.Lists.List <> map def
+R21953:21955 MetaCoq.Template.BasicAst <> ctx:355 var
+R21936:21940 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R21935:21935 MetaCoq.Template.BasicAst <> f:353 var
+R21941:21948 MetaCoq.Template.BasicAst <> map_decl def
+R21950:21950 MetaCoq.Template.BasicAst <> g:354 var
+R21995:22005 MetaCoq.Template.BasicAst <> map_context def
+R22007:22021 MetaCoq.Template.utils.MCList <> map_map_compose thm
+R21995:22005 MetaCoq.Template.BasicAst <> map_context def
+R21995:22005 MetaCoq.Template.BasicAst <> map_context def
+R22007:22021 MetaCoq.Template.utils.MCList <> map_map_compose thm
+R22007:22021 MetaCoq.Template.utils.MCList <> map_map_compose thm
+prf 22040:22057 <> fold_context_k_map
+R22067:22070 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22064:22066 Coq.Init.Datatypes <> nat ind
+R22076:22079 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22071:22075 MetaCoq.Template.BasicAst <> Contexts.term' var
+R22080:22083 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 22060:22060 <> f:356
+R22097:22100 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22091:22096 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R22101:22105 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 22087:22087 <> g:357
+binder 22108:22109 <> Γ:358
+R22152:22158 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22117:22130 MetaCoq.Template.BasicAst <> fold_context_k def
+R22132:22132 MetaCoq.Template.BasicAst <> f:356 var
+R22135:22145 MetaCoq.Template.BasicAst <> map_context def
+R22149:22150 MetaCoq.Template.BasicAst <> Γ:358 var
+R22147:22147 MetaCoq.Template.BasicAst <> g:357 var
+R22159:22172 MetaCoq.Template.BasicAst <> fold_context_k def
+binder 22179:22179 <> k:359
+R22187:22191 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R22184:22184 MetaCoq.Template.BasicAst <> f:356 var
+R22186:22186 MetaCoq.Template.BasicAst <> k:359 var
+R22192:22192 MetaCoq.Template.BasicAst <> g:357 var
+R22195:22196 MetaCoq.Template.BasicAst <> Γ:358 var
+R22232:22249 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22251:22258 MetaCoq.Template.utils.MCList <> mapi_map thm
+R22232:22249 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22232:22249 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22232:22249 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22232:22249 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22251:22258 MetaCoq.Template.utils.MCList <> mapi_map thm
+R22251:22258 MetaCoq.Template.utils.MCList <> mapi_map thm
+R22271:22278 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R22271:22278 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R22312:22327 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22312:22327 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22312:22327 MetaCoq.Template.BasicAst <> compose_map_decl thm
+prf 22346:22368 <> fold_context_k_map_comm
+R22378:22381 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22375:22377 Coq.Init.Datatypes <> nat ind
+R22386:22389 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22382:22385 MetaCoq.Template.BasicAst <> Contexts.term var
+R22390:22393 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 22371:22371 <> f:360
+R22405:22408 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22401:22404 MetaCoq.Template.BasicAst <> Contexts.term var
+R22409:22412 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 22397:22397 <> g:361
+binder 22415:22416 <> Γ:362
+R22424:22424 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22458:22466 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 22432:22432 <> i:363
+binder 22434:22434 <> x:364
+R22446:22448 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22437:22437 MetaCoq.Template.BasicAst <> f:360 var
+R22442:22442 MetaCoq.Template.BasicAst <> g:361 var
+R22444:22444 MetaCoq.Template.BasicAst <> x:364 var
+R22439:22439 MetaCoq.Template.BasicAst <> i:363 var
+R22449:22449 MetaCoq.Template.BasicAst <> g:361 var
+R22452:22452 MetaCoq.Template.BasicAst <> f:360 var
+R22456:22456 MetaCoq.Template.BasicAst <> x:364 var
+R22454:22454 MetaCoq.Template.BasicAst <> i:363 var
+R22502:22504 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22467:22480 MetaCoq.Template.BasicAst <> fold_context_k def
+R22482:22482 MetaCoq.Template.BasicAst <> f:360 var
+R22485:22495 MetaCoq.Template.BasicAst <> map_context def
+R22499:22500 MetaCoq.Template.BasicAst <> Γ:362 var
+R22497:22497 MetaCoq.Template.BasicAst <> g:361 var
+R22505:22515 MetaCoq.Template.BasicAst <> map_context def
+R22520:22533 MetaCoq.Template.BasicAst <> fold_context_k def
+R22535:22535 MetaCoq.Template.BasicAst <> f:360 var
+R22537:22538 MetaCoq.Template.BasicAst <> Γ:362 var
+R22517:22517 MetaCoq.Template.BasicAst <> g:361 var
+R22591:22608 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22610:22617 MetaCoq.Template.utils.MCList <> mapi_map thm
+R22591:22608 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22591:22608 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22591:22608 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22591:22608 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R22610:22617 MetaCoq.Template.utils.MCList <> mapi_map thm
+R22610:22617 MetaCoq.Template.utils.MCList <> mapi_map thm
+R22633:22643 MetaCoq.Template.BasicAst <> map_context def
+R22645:22652 MetaCoq.Template.utils.MCList <> map_mapi thm
+R22633:22643 MetaCoq.Template.BasicAst <> map_context def
+R22633:22643 MetaCoq.Template.BasicAst <> map_context def
+R22645:22652 MetaCoq.Template.utils.MCList <> map_mapi thm
+R22645:22652 MetaCoq.Template.utils.MCList <> map_mapi thm
+R22665:22672 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R22665:22672 MetaCoq.Template.utils.MCList <> mapi_ext thm
+R22695:22710 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22695:22710 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22695:22710 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22695:22710 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22695:22710 MetaCoq.Template.BasicAst <> compose_map_decl thm
+R22723:22734 MetaCoq.Template.BasicAst <> map_decl_ext thm
+R22723:22734 MetaCoq.Template.BasicAst <> map_decl_ext thm
+prf 22788:22811 <> mapi_context_map_context
+R22821:22824 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22818:22820 Coq.Init.Datatypes <> nat ind
+R22830:22833 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22825:22829 MetaCoq.Template.BasicAst <> Contexts.term' var
+R22834:22837 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 22814:22814 <> f:365
+R22851:22854 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22845:22850 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R22855:22859 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 22841:22841 <> g:366
+binder 22862:22864 <> ctx:367
+R22906:22912 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22872:22883 MetaCoq.Template.BasicAst <> mapi_context def
+R22888:22898 MetaCoq.Template.BasicAst <> map_context def
+R22902:22904 MetaCoq.Template.BasicAst <> ctx:367 var
+R22900:22900 MetaCoq.Template.BasicAst <> g:366 var
+R22885:22885 MetaCoq.Template.BasicAst <> f:365 var
+R22913:22924 MetaCoq.Template.BasicAst <> mapi_context def
+R22947:22949 MetaCoq.Template.BasicAst <> ctx:367 var
+binder 22931:22931 <> i:368
+R22939:22943 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R22936:22936 MetaCoq.Template.BasicAst <> f:365 var
+R22938:22938 MetaCoq.Template.BasicAst <> i:368 var
+R22944:22944 MetaCoq.Template.BasicAst <> g:366 var
+R22989:23005 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R23007:23024 MetaCoq.Template.BasicAst <> fold_context_k_map thm
+R22989:23005 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R22989:23005 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R22989:23005 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R22989:23005 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R23007:23024 MetaCoq.Template.BasicAst <> fold_context_k_map thm
+R23007:23024 MetaCoq.Template.BasicAst <> fold_context_k_map thm
+prf 23043:23058 <> map_mapi_context
+R23083:23086 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23065:23076 MetaCoq.Template.BasicAst <> context_decl rec
+R23078:23082 MetaCoq.Template.BasicAst <> Contexts.term' var
+R23087:23090 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 23061:23061 <> f:369
+R23101:23104 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23098:23100 Coq.Init.Datatypes <> nat ind
+R23111:23114 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23105:23110 MetaCoq.Template.BasicAst <> Contexts.term'' var
+R23115:23119 MetaCoq.Template.BasicAst <> Contexts.term' var
+binder 23094:23094 <> g:370
+binder 23122:23124 <> ctx:371
+R23158:23160 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23132:23134 Coq.Lists.List <> map def
+R23139:23150 MetaCoq.Template.BasicAst <> mapi_context def
+R23154:23156 MetaCoq.Template.BasicAst <> ctx:371 var
+R23152:23152 MetaCoq.Template.BasicAst <> g:370 var
+R23136:23136 MetaCoq.Template.BasicAst <> f:369 var
+R23161:23164 MetaCoq.Template.utils.MCList <> mapi def
+R23218:23220 MetaCoq.Template.BasicAst <> ctx:371 var
+binder 23171:23171 <> i:372
+R23177:23181 MetaCoq.Template.utils.MCPrelude <> :::x_'∘'_x not
+R23176:23176 MetaCoq.Template.BasicAst <> f:369 var
+R23182:23189 MetaCoq.Template.BasicAst <> map_decl def
+R23192:23192 MetaCoq.Template.BasicAst <> g:370 var
+R23210:23212 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R23195:23202 Coq.Arith.PeanoNat Nat pred def
+R23204:23205 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23209:23209 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23206:23208 MetaCoq.Template.BasicAst <> ctx:371 var
+R23213:23213 MetaCoq.Template.BasicAst <> i:372 var
+R23259:23275 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R23277:23294 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23296:23303 MetaCoq.Template.utils.MCList <> map_mapi thm
+R23259:23275 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R23259:23275 MetaCoq.Template.BasicAst <> mapi_context_fold thm
+R23277:23294 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23277:23294 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23296:23303 MetaCoq.Template.utils.MCList <> map_mapi thm
+R23296:23303 MetaCoq.Template.utils.MCList <> map_mapi thm
+prf 23322:23335 <> map_context_id
+R23344:23350 MetaCoq.Template.BasicAst <> context abbrev
+R23352:23355 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 23338:23340 <> ctx:373
+R23378:23380 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23360:23370 MetaCoq.Template.BasicAst <> map_context def
+R23375:23377 MetaCoq.Template.BasicAst <> ctx:373 var
+R23372:23373 Coq.Init.Datatypes <> id def
+R23381:23383 MetaCoq.Template.BasicAst <> ctx:373 var
+R23417:23427 MetaCoq.Template.BasicAst <> map_context def
+R23446:23456 MetaCoq.Template.BasicAst <> map_decl_id thm
+R23458:23463 Coq.Lists.List <> map_id thm
+R23446:23456 MetaCoq.Template.BasicAst <> map_decl_id thm
+R23446:23456 MetaCoq.Template.BasicAst <> map_decl_id thm
+R23458:23463 Coq.Lists.List <> map_id thm
+R23458:23463 Coq.Lists.List <> map_id thm
+prf 23482:23500 <> forget_types_length
+R23509:23512 Coq.Init.Datatypes <> list ind
+R23515:23526 MetaCoq.Template.BasicAst <> context_decl rec
+R23528:23531 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 23503:23505 <> ctx:374
+R23560:23562 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23541:23542 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23559:23559 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23543:23554 MetaCoq.Template.BasicAst <> forget_types def
+R23556:23558 MetaCoq.Template.BasicAst <> ctx:374 var
+R23563:23564 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23568:23568 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R23565:23567 MetaCoq.Template.BasicAst <> ctx:374 var
+R23608:23619 MetaCoq.Template.BasicAst <> forget_types def
+R23621:23630 Coq.Lists.List <> map_length thm
+R23608:23619 MetaCoq.Template.BasicAst <> forget_types def
+R23608:23619 MetaCoq.Template.BasicAst <> forget_types def
+R23621:23630 Coq.Lists.List <> map_length thm
+R23621:23630 Coq.Lists.List <> map_length thm
+prf 23649:23676 <> map_decl_name_fold_context_k
+R23686:23689 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23683:23685 Coq.Init.Datatypes <> nat ind
+R23695:23698 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23690:23694 MetaCoq.Template.BasicAst <> Contexts.term' var
+R23699:23702 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 23679:23679 <> f:375
+binder 23705:23707 <> ctx:376
+R23751:23753 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23715:23717 Coq.Lists.List <> map def
+R23730:23743 MetaCoq.Template.BasicAst <> fold_context_k def
+R23745:23745 MetaCoq.Template.BasicAst <> f:375 var
+R23747:23749 MetaCoq.Template.BasicAst <> ctx:376 var
+R23719:23727 MetaCoq.Template.BasicAst <> decl_name proj
+R23754:23756 Coq.Lists.List <> map def
+R23768:23770 MetaCoq.Template.BasicAst <> ctx:376 var
+R23758:23766 MetaCoq.Template.BasicAst <> decl_name proj
+R23809:23826 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23828:23835 MetaCoq.Template.utils.MCList <> map_mapi thm
+R23840:23851 MetaCoq.Template.utils.MCList <> mapi_cst_map thm
+R23809:23826 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23809:23826 MetaCoq.Template.BasicAst <> fold_context_k_alt thm
+R23828:23835 MetaCoq.Template.utils.MCList <> map_mapi thm
+R23828:23835 MetaCoq.Template.utils.MCList <> map_mapi thm
+R23840:23851 MetaCoq.Template.utils.MCList <> mapi_cst_map thm
+R23840:23851 MetaCoq.Template.utils.MCList <> mapi_cst_map thm
+prf 23870:23896 <> forget_types_fold_context_k
+R23906:23909 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23903:23905 Coq.Init.Datatypes <> nat ind
+R23915:23918 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23910:23914 MetaCoq.Template.BasicAst <> Contexts.term' var
+R23919:23922 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 23899:23899 <> f:377
+binder 23925:23927 <> ctx:378
+R23970:23972 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23935:23946 MetaCoq.Template.BasicAst <> forget_types def
+R23949:23962 MetaCoq.Template.BasicAst <> fold_context_k def
+R23964:23964 MetaCoq.Template.BasicAst <> f:377 var
+R23966:23968 MetaCoq.Template.BasicAst <> ctx:378 var
+R23973:23984 MetaCoq.Template.BasicAst <> forget_types def
+R23986:23988 MetaCoq.Template.BasicAst <> ctx:378 var
+R24028:24039 MetaCoq.Template.BasicAst <> forget_types def
+R24041:24068 MetaCoq.Template.BasicAst <> map_decl_name_fold_context_k thm
+R24028:24039 MetaCoq.Template.BasicAst <> forget_types def
+R24028:24039 MetaCoq.Template.BasicAst <> forget_types def
+R24041:24068 MetaCoq.Template.BasicAst <> map_decl_name_fold_context_k thm
+R24041:24068 MetaCoq.Template.BasicAst <> map_decl_name_fold_context_k thm
+prf 24087:24106 <> All2_fold_impl_onctx
+R24125:24128 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24113:24119 MetaCoq.Template.BasicAst <> context abbrev
+R24121:24124 MetaCoq.Template.BasicAst <> Contexts.term var
+R24141:24144 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24129:24135 MetaCoq.Template.BasicAst <> context abbrev
+R24137:24140 MetaCoq.Template.BasicAst <> Contexts.term var
+R24162:24165 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24145:24156 MetaCoq.Template.BasicAst <> context_decl rec
+R24158:24161 MetaCoq.Template.BasicAst <> Contexts.term var
+R24183:24186 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24166:24177 MetaCoq.Template.BasicAst <> context_decl rec
+R24179:24182 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 24109:24109 <> P:379
+binder 24193:24194 <> P':380
+binder 24196:24197 <> Γ:381
+binder 24199:24200 <> Δ:382
+binder 24202:24202 <> Q:383
+R24220:24227 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24210:24214 MetaCoq.Template.BasicAst <> onctx abbrev
+R24216:24216 MetaCoq.Template.BasicAst <> Q:383 var
+R24218:24219 MetaCoq.Template.BasicAst <> Γ:381 var
+R24245:24252 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24228:24236 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R24243:24244 MetaCoq.Template.BasicAst <> Δ:382 var
+R24240:24241 MetaCoq.Template.BasicAst <> Γ:381 var
+R24238:24238 MetaCoq.Template.BasicAst <> P:379 var
+R24253:24253 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24361:24369 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 24261:24262 <> Γ:384
+binder 24264:24265 <> Δ:385
+binder 24267:24267 <> d:386
+binder 24269:24270 <> d':387
+R24296:24305 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24279:24287 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R24294:24295 MetaCoq.Template.BasicAst <> Δ:385 var
+R24291:24292 MetaCoq.Template.BasicAst <> Γ:384 var
+R24289:24289 MetaCoq.Template.BasicAst <> P:379 var
+R24318:24327 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24306:24306 MetaCoq.Template.BasicAst <> P:379 var
+R24316:24317 MetaCoq.Template.BasicAst <> d':387 var
+R24314:24314 MetaCoq.Template.BasicAst <> d:386 var
+R24311:24312 MetaCoq.Template.BasicAst <> Δ:385 var
+R24308:24309 MetaCoq.Template.BasicAst <> Γ:384 var
+R24338:24347 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24328:24333 MetaCoq.Template.BasicAst <> ondecl def
+R24337:24337 MetaCoq.Template.BasicAst <> d:386 var
+R24335:24335 MetaCoq.Template.BasicAst <> Q:383 var
+R24348:24349 MetaCoq.Template.BasicAst <> P':380 var
+R24351:24352 MetaCoq.Template.BasicAst <> Γ:384 var
+R24354:24355 MetaCoq.Template.BasicAst <> Δ:385 var
+R24357:24357 MetaCoq.Template.BasicAst <> d:386 var
+R24359:24360 MetaCoq.Template.BasicAst <> d':387 var
+R24370:24378 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R24386:24387 MetaCoq.Template.BasicAst <> Δ:382 var
+R24383:24384 MetaCoq.Template.BasicAst <> Γ:381 var
+R24380:24381 MetaCoq.Template.BasicAst <> P':380 var
+prf 24510:24523 <> All2_fold_mapi
+R24542:24545 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24530:24536 MetaCoq.Template.BasicAst <> context abbrev
+R24538:24541 MetaCoq.Template.BasicAst <> Contexts.term var
+R24558:24561 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24546:24552 MetaCoq.Template.BasicAst <> context abbrev
+R24554:24557 MetaCoq.Template.BasicAst <> Contexts.term var
+R24579:24582 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24562:24573 MetaCoq.Template.BasicAst <> context_decl rec
+R24575:24578 MetaCoq.Template.BasicAst <> Contexts.term var
+R24600:24603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24583:24594 MetaCoq.Template.BasicAst <> context_decl rec
+R24596:24599 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 24526:24526 <> P:388
+R24619:24625 MetaCoq.Template.BasicAst <> context abbrev
+R24627:24630 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 24611:24612 <> Γ:389
+binder 24614:24615 <> Δ:390
+binder 24633:24633 <> f:391
+binder 24635:24635 <> g:392
+R24773:24781 MetaCoq.Template.utils.MCRelations <> :::x_'<~>'_x not
+R24643:24651 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R24771:24772 MetaCoq.Template.BasicAst <> Δ:390 var
+R24768:24769 MetaCoq.Template.BasicAst <> Γ:389 var
+binder 24658:24659 <> Γ:393
+binder 24661:24662 <> Δ:394
+binder 24664:24664 <> d:395
+binder 24666:24667 <> d':396
+R24678:24678 MetaCoq.Template.BasicAst <> P:388 var
+R24744:24751 MetaCoq.Template.BasicAst <> map_decl def
+R24763:24764 MetaCoq.Template.BasicAst <> d':396 var
+R24754:24754 MetaCoq.Template.BasicAst <> g:392 var
+R24756:24757 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R24760:24760 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R24758:24759 MetaCoq.Template.BasicAst <> Γ:393 var
+R24721:24728 MetaCoq.Template.BasicAst <> map_decl def
+R24740:24740 MetaCoq.Template.BasicAst <> d:395 var
+R24731:24731 MetaCoq.Template.BasicAst <> f:391 var
+R24733:24734 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R24737:24737 MetaCoq.Template.utils.MCList <> :::'#|'_x_'|' not
+R24735:24736 MetaCoq.Template.BasicAst <> Γ:393 var
+R24701:24712 MetaCoq.Template.BasicAst <> mapi_context def
+R24716:24717 MetaCoq.Template.BasicAst <> Δ:394 var
+R24714:24714 MetaCoq.Template.BasicAst <> g:392 var
+R24681:24692 MetaCoq.Template.BasicAst <> mapi_context def
+R24696:24697 MetaCoq.Template.BasicAst <> Γ:393 var
+R24694:24694 MetaCoq.Template.BasicAst <> f:391 var
+R24782:24790 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R24815:24826 MetaCoq.Template.BasicAst <> mapi_context def
+R24830:24831 MetaCoq.Template.BasicAst <> Δ:390 var
+R24828:24828 MetaCoq.Template.BasicAst <> g:392 var
+R24795:24806 MetaCoq.Template.BasicAst <> mapi_context def
+R24810:24811 MetaCoq.Template.BasicAst <> Γ:389 var
+R24808:24808 MetaCoq.Template.BasicAst <> f:391 var
+R24792:24792 MetaCoq.Template.BasicAst <> P:388 var
+R24942:24957 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+R24942:24957 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+R24942:24957 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+R25113:25128 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+R25113:25128 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+prf 25191:25203 <> All2_fold_map
+R25222:25225 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25210:25216 MetaCoq.Template.BasicAst <> context abbrev
+R25218:25221 MetaCoq.Template.BasicAst <> Contexts.term var
+R25238:25241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25226:25232 MetaCoq.Template.BasicAst <> context abbrev
+R25234:25237 MetaCoq.Template.BasicAst <> Contexts.term var
+R25259:25262 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25242:25253 MetaCoq.Template.BasicAst <> context_decl rec
+R25255:25258 MetaCoq.Template.BasicAst <> Contexts.term var
+R25280:25283 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25263:25274 MetaCoq.Template.BasicAst <> context_decl rec
+R25276:25279 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 25206:25206 <> P:397
+R25299:25305 MetaCoq.Template.BasicAst <> context abbrev
+R25307:25310 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 25291:25292 <> Γ:398
+binder 25294:25295 <> Δ:399
+binder 25313:25313 <> f:400
+binder 25315:25315 <> g:401
+R25435:25443 MetaCoq.Template.utils.MCRelations <> :::x_'<~>'_x not
+R25323:25331 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R25433:25434 MetaCoq.Template.BasicAst <> Δ:399 var
+R25430:25431 MetaCoq.Template.BasicAst <> Γ:398 var
+binder 25338:25339 <> Γ:402
+binder 25341:25342 <> Δ:403
+binder 25344:25344 <> d:404
+binder 25346:25347 <> d':405
+R25358:25358 MetaCoq.Template.BasicAst <> P:397 var
+R25414:25421 MetaCoq.Template.BasicAst <> map_decl def
+R25425:25426 MetaCoq.Template.BasicAst <> d':405 var
+R25423:25423 MetaCoq.Template.BasicAst <> g:401 var
+R25399:25406 MetaCoq.Template.BasicAst <> map_decl def
+R25410:25410 MetaCoq.Template.BasicAst <> d:404 var
+R25408:25408 MetaCoq.Template.BasicAst <> f:400 var
+R25380:25390 MetaCoq.Template.BasicAst <> map_context def
+R25394:25395 MetaCoq.Template.BasicAst <> Δ:403 var
+R25392:25392 MetaCoq.Template.BasicAst <> g:401 var
+R25361:25371 MetaCoq.Template.BasicAst <> map_context def
+R25375:25376 MetaCoq.Template.BasicAst <> Γ:402 var
+R25373:25373 MetaCoq.Template.BasicAst <> f:400 var
+R25444:25452 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R25476:25486 MetaCoq.Template.BasicAst <> map_context def
+R25490:25491 MetaCoq.Template.BasicAst <> Δ:399 var
+R25488:25488 MetaCoq.Template.BasicAst <> g:401 var
+R25457:25467 MetaCoq.Template.BasicAst <> map_context def
+R25471:25472 MetaCoq.Template.BasicAst <> Γ:398 var
+R25469:25469 MetaCoq.Template.BasicAst <> f:400 var
+R25454:25454 MetaCoq.Template.BasicAst <> P:397 var
+R25602:25617 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+prf 25761:25777 <> All2_fold_cst_map
+R25801:25804 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25784:25795 MetaCoq.Template.BasicAst <> context_decl rec
+R25797:25800 MetaCoq.Template.BasicAst <> Contexts.term var
+R25822:25825 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25805:25816 MetaCoq.Template.BasicAst <> context_decl rec
+R25818:25821 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 25780:25780 <> P:406
+R25841:25847 MetaCoq.Template.BasicAst <> context abbrev
+R25849:25852 MetaCoq.Template.BasicAst <> Contexts.term var
+binder 25833:25834 <> Γ:407
+binder 25836:25837 <> Δ:408
+binder 25856:25856 <> f:409
+binder 25858:25858 <> g:410
+R25915:25923 MetaCoq.Template.utils.MCRelations <> :::x_'<~>'_x not
+R25867:25875 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R25913:25914 MetaCoq.Template.BasicAst <> Δ:408 var
+R25910:25911 MetaCoq.Template.BasicAst <> Γ:407 var
+binder 25886:25886 <> d:411
+binder 25888:25889 <> d':412
+R25894:25894 MetaCoq.Template.BasicAst <> P:406 var
+R25903:25903 MetaCoq.Template.BasicAst <> g:410 var
+R25905:25906 MetaCoq.Template.BasicAst <> d':412 var
+R25897:25897 MetaCoq.Template.BasicAst <> f:409 var
+R25899:25899 MetaCoq.Template.BasicAst <> d:411 var
+R25924:25932 MetaCoq.Template.utils.All_Forall <> All2_fold ind
+R25961:25963 Coq.Lists.List <> map def
+R25967:25968 MetaCoq.Template.BasicAst <> Δ:408 var
+R25965:25965 MetaCoq.Template.BasicAst <> g:410 var
+R25950:25952 Coq.Lists.List <> map def
+R25956:25957 MetaCoq.Template.BasicAst <> Γ:407 var
+R25954:25954 MetaCoq.Template.BasicAst <> f:409 var
+R25946:25946 MetaCoq.Template.BasicAst <> P:406 var
+R26079:26094 MetaCoq.Template.utils.All_Forall <> All2_fold_length thm
+R26235:26242 MetaCoq.Template.BasicAst Contexts <> sec
+R26270:26285 MetaCoq.Template.BasicAst <> map_mapi_context thm
+R26290:26307 MetaCoq.Template.BasicAst <> map_fold_context_k thm
+R26310:26325 MetaCoq.Template.BasicAst <> mapi_context_map thm
+R26328:26342 MetaCoq.Template.BasicAst <> map_context_map thm
+R26345:26359 MetaCoq.Template.BasicAst <> map_map_context thm
+R26364:26387 MetaCoq.Template.BasicAst <> mapi_context_map_context thm
+R26390:26413 MetaCoq.Template.BasicAst <> map_context_mapi_context thm
+R26446:26464 MetaCoq.Template.BasicAst <> forget_types_length thm
+def 26563:26571 <> uint_size
+def 26591:26597 <> uint_wB
+R26604:26607 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R26626:26626 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R26608:26615 Coq.ZArith.BinInt Z of_nat def
+R26617:26625 MetaCoq.Template.BasicAst <> uint_size def
+def 26643:26654 <> uint63_model
+R26659:26660 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R26662:26664 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R26666:26668 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R26700:26701 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R26665:26665 Coq.Numbers.BinNums <> Z ind
+binder 26661:26661 <> z:413
+R26670:26670 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R26678:26683 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R26696:26696 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R26672:26676 Coq.ZArith.BinInt <> ::Z_scope:x_'<=?'_x not
+R26677:26677 MetaCoq.Template.BasicAst <> z:413 var
+R26685:26688 Coq.ZArith.BinInt <> ::Z_scope:x_'<?'_x not
+R26684:26684 MetaCoq.Template.BasicAst <> z:413 var
+R26689:26695 MetaCoq.Template.BasicAst <> uint_wB def
+def 26716:26737 <> string_of_uint63_model
+R26744:26755 MetaCoq.Template.BasicAst <> uint63_model def
+binder 26740:26740 <> i:414
+R26761:26771 MetaCoq.Template.utils.MCString <> string_of_Z def
+R26774:26782 Coq.Init.Specif <> proj1_sig def
+R26784:26784 MetaCoq.Template.BasicAst <> i:414 var
+def 26823:26826 <> prec
+def 26848:26851 <> emax
+def 26941:26953 <> float64_model
+R26958:26960 Coq.Init.Specif <> sig ind
+R26963:26984 Coq.Floats.SpecFloat <> valid_binary def
+R26991:26994 MetaCoq.Template.BasicAst <> emax def
+R26986:26989 MetaCoq.Template.BasicAst <> prec def

@@ -1,49 +1,53 @@
 \chapter{A Modular Environment}
+\label{ch:impl2}
 
-After the completion of my implementation in the previous chapter, the process
-of verification the only remaining part, the TemplateCoq to PCUIC translation
-proved to be time consuming, resulting me in spending weeks without writing any
-\verb|QED|s. This is because in the process of verifying those properties, I
-faced many technical challenges in constructing their proofs. Fortunately, two
+After the completion of my implementation in the previous chapter, the last mile
+of verifying the TemplateCoq to PCUIC translation proved to be time-consuming,
+resulting in weeks without any \verb|QED|s. In the process of verifying those
+properties, many technical challenges surfaced in constructing formal proofs in
+Coq for concepts that are easily explained in natural language. Fortunately, two
 beneficial events ensued:
 \begin{enumerate}
-  \item After identifying the pain points in the proofs, I found out the
-  decision that led to this situation and in tackling it, gave rise to this more
-  natural solution which requires a complete rewrite. Although incomplete, I
-  have designed this rewrite and implemented a part of it as far as writing out
-  the environment typing rules. I will discuss this implementation in the firs
-  section.
-  \item In the process of rewrite, due to the design choices and its complexity,
-  some non-trivial proof machineries such as nested mutual inductive types with
-  their induction hypotheses, well-founded recursion, strengthening induction
-  hypothesis were required. Since a number of them are direct consequence of
-  this modular environment rewrite, I will include them as a section at the end
-  of this chapter as a summary.
+  \item After identifying the pain points in the proofs, I found out the design
+  decision that caused the trouble. In tackling it, a new, more natural solution
+  surfaced, but it requires a complete rewrite. As an experimental effort, I
+  detailed the rewrite in this chapter and up to the environment typing rules,
+  as a possible second take at the project. I will discuss this implementation
+  in the first section.
+  \item Due to the new design choices in the rewrite and their complexity, some
+  non-trivial proof machinery was required to complete the formal proofs, such
+  as nested inductive types with their induction hypotheses, well-founded
+  recursion, and strengthening of induction hypotheses. Since a number of them
+  are direct consequences of this modular environment rewrite, I will include
+  them in the next chapter (Chapter \ref{ch:machineries}) as a summary of my
+  learning.
 \end{enumerate}
 
 
 \section{Difficulties on the Global Declaration List}
 
-The proof for (TODO: link \verb|trans_lookup_env|) proved to be tedious due to
-the double fold. In each fold, one adds definitions to the environment using an
-(rightfully) opaque \verb|add_global_decl| function, which changes the
+The proof for \verb|trans_lookup_env| (\ref{lst:1-trans-lookup}) proved to be
+tedious due to the double fold. In each fold, one adds definitions to the
+environment using an opaque \verb|add_global_decl| function, which changes the
 accumulator $\Sigma$ during each fold. A nested fold makes this even more
 tedious with proof levels going up to four or five levels.
 
-\pcuic{238}{243}{TemplateToPCUICCorrectness.v}
+\begin{listing}[H]
+\pcuic{239}{241}{TemplateToPCUICCorrectness.v}
+\pcuic{307}{308}{TemplateToPCUICCorrectness.v}
+\pcuic{316}{318}{TemplateToPCUICCorrectness.v}
+\pcuic{326}{326}{TemplateToPCUICCorrectness.v}
 ...
-\pcuic{307}{309}{TemplateToPCUICCorrectness.v}
-...
-\pcuic{316}{319}{TemplateToPCUICCorrectness.v}
-...
-\pcuic{326}{328}{TemplateToPCUICCorrectness.v}
+  \caption{Tedious nested proofs.}
+  \label{lst:2-nested-proofs}
+\end{listing}
 
 After spending weeks trying different methods to make this work, including an
-elaborate argument defining a strict partial order on kernames (such as the
-result used on line 319), I decided to venture for a new solution. The
-source of the problem here is the double-fold, which obscures the meaning of
-expressions after repeated applications of \verb|add_global_decl| changing the
-accumulator environment. To break down the two folds:
+elaborate argument defining a strict partial order on kernames
+(\ref{sec:str-ih}), I decided to venture for a new solution. The source of the
+problem here is the double-fold (\ref{lst:1-trans-lookup}), which obscures the
+meaning of expressions after repeated applications of \verb|add_global_decl|
+changing the accumulator environment. To break down the two folds:
 
 \begin{itemize}
   \item The first fold is done over the \emph{list} of global declarations,
@@ -54,10 +58,13 @@ accumulator environment. To break down the two folds:
 and the definition for structure fields is identical to that of global
 declarations: 
 
+\begin{listing}[H]
 \tc{324}{328}{Environment.v}
 \tc{347}{351}{Environment.v}
+  \caption{Identical definitions of structures and declarations}
+  \label{lst:2-st-gd-id}
+\end{listing}
 
-it is thus natural to link both of them together.
 
 \section{The Modular Environment}
 \newcommand{\tcc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
@@ -65,56 +72,71 @@ it is thus natural to link both of them together.
 \newcommand{\pcuicc}[3]{\inputminted[firstline={#1},lastline={#2},linenos]{Coq}{
   code/v2/pcuic/theories/#3}}
 
-It would be beneficial to unify modules and environments into a single structure
-- modules. The list of global declarations itself can be seen as an anonymous,
+It would be natural to unify modules and environments into a single structure
+--- modules. The list of global declarations itself can be seen as an anonymous,
 ambient, top-level module, thus just a special case of a module. Under this
 generalization, any well-formedness properties or well-typedness properties
-about environments should be subsumed under that of modules, and thus giving us
-a good sense in defining the typing rules for modules.
+about environments should be subsumed under modules, thus giving us a good sense
+when defining the typing rules for modules.
 
 \subsection{Definition of the Data Structure}
-Let us begin by defining modules, then specialize into global declarations:
+Let us begin by defining modules, then specialize into global declarations.
 
+\begin{listing}[H]
 \tcc{325}{338}{Environment.v}
+  \caption{Definition of structure fields.}
+  \label{lst:2-def-sf}
+\end{listing}
 
-Structure field now subsumes global declaration, and we note that structure body
-is just a convenient name for the list of structure fields indexed by its name -
-an identifier. The possible nested structure body inside structure fields are
-what gives the tree structure of modules.
+Structure fields now subsume global declarations, and a structure body is
+associated list of structure fields and identifiers. Similar to the previous
+definition (\ref{lst:1-def-sf}), the possible nesting of structure bodies inside
+structure fields gives rise to the tree structure of modules.
 
-\tcc{409}{412}{Environment.v}
+\begin{listing}[H]
+  \tcc{409}{412}{Environment.v}
+  \caption{Definition of global declarations.}
+  \label{lst:2-def-gd}
+\end{listing}
 
 Similarly, we define module types to be structure bodies, and a module to be a
 module type with an implementation. Since global environments are anonymous
 modules, they do not have a possibility of reuse and thus signature is
-insignificant here - it is of the same structure of a structure body.
+insignificant here - it is of the same structure as a structure body.
 
-So, how do we tell apart a global environment? One way to do it is to
-differentiate it by the directory path to the file.
+So, how do we tell apart a global environment from a structure body? We
+differentiate it by an additional directory path to the current file.
 
-\tcc{478}{482}{Environment.v}
+\begin{listing}[H]
+  \tcc{478}{482}{Environment.v}
+  \caption{Definition of global declarations.}
+  \label{lst:2-def-env}
+\end{listing}
 
 \subsection{Definition of Typing Rules}
-This section of typing rules are not yet finalized, and are still experimental.
-However, they illustrate a possible set of rules that can implemented and then
-verified against various properties.
+The typing rules of this section are still experimental and not yet finalized.
+However, they illustrate a possible set of rules that can be implemented and
+then verified against various properties.
 
-\tcc{1271}{1282}{EnvironmentTyping.v}
-\tcc{1292}{1298}{EnvironmentTyping.v}
+\begin{listing}[H]
+  \tcc{1271}{1282}{EnvironmentTyping.v}
+  \caption{Typing rules for structure fields.}
+  \label{lst:2-typing-sf}
+\end{listing}
 
-Structure fields and module implementations are typed accordingly: constants and
-inductives are typed as-if, while modules and module types are typed
-recursively. Module implementation checks relevant definitions except for the
-case of an algebraic expression (in our case an alias to a defined module),
-requires a proof that such a aliased target exists.
-
-The interesting part that is different from the previous implementation is the
+The typing for structure fields are natural: constants and inductive types are
+typed as-if, while modules and module types are typed recursively. The
+interesting part that is different from the previous implementation is the
 combination of the information when typing a structure body:
 
-\tcc{1284}{1290}{EnvironmentTyping.v}
+\begin{listing}[H]
+\tcc{1284}{1291}{EnvironmentTyping.v}
+  \caption{Typing rules of structure body.}
+  \label{lst:2-typing-sb}
+\end{listing}
 
-This time, the typing rules for structure body includes typical checks as in the
-global environment. If we focus on the \verb|on_sb_cons| constructor for the
+This time, the typing rules for a structure body include typical checks as in
+the global environment. If we focus on the \verb|on_sb_cons| constructor for the
 inductive case, the checks include
 \begin{enumerate}
   \item the correctness of the prefix structure body against the environment,
@@ -126,15 +148,51 @@ inductive case, the checks include
 
 We define naturally the below:
 
+\begin{listing}[H]
 \tcc{1301}{1302}{EnvironmentTyping.v}
 \tcc{1312}{1312}{EnvironmentTyping.v}
+  \caption{Typing rules of modules, and this global declarations.}
+  \label{lst:2-typing-mod}
+\end{listing}
 
-\section{Tactics and Proof Machineries}
-\begin{itemize}
-  \item nested induction, mutual induction, (can always reduce to the case of a
-  simple inductive type, but...)
-  \item well-founded recursion and measures.
-  \item definition of a strict partial order and strengthening of induction
-  hypotheses 
-  \item tactics, reflection, proof management.
-\end{itemize}
+\subsection*{Properties to Verify}
+
+Here, we list some properties to modify and then verify, following the changes.
+We give the sketch in mathematical form only, with references to existing code
+where possible.
+
+The uniqueness of names in the environment is important - shadowing is not
+allowed in Coq. Therefore, it would be important to check that our freshness
+rule in \verb|on_structure_body| implies no duplication of names:
+
+\begin{lemma}
+  If a structure body $\Sigma$ is well-formed, then no two structure fields in
+  $\Sigma$ have the same kername.
+\end{lemma}
+
+We then have the following corollary:
+
+\begin{corollary}
+  If the global declarations $\Sigma$ are well-formed, then no two global
+  declarations in $\Sigma$ have the same kername.
+\end{corollary}
+
+The corresponding previous formulation is as follows:
+
+\begin{listing}[H]
+\tcc{1361}{1362}{EnvironmentTyping.v}
+  \caption{Well-formed implies no duplicated names.}
+  \label{lst:2-typing-nodup}
+\end{listing}
+
+Other than that, we can have the similar functoriality result on typing global
+environments, this time following directly from the case of a structure body:
+
+\begin{listing}[H]
+\tcc{1361}{1362}{EnvironmentTyping.v}
+  \caption{Functoriality of typing of global environments.}
+  \label{lst:2-typing-funct}
+\end{listing}
+
+For a possible extension of this approach, please refer to the chapter on future
+work: Section \ref{subsec:modular-env}.

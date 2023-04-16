@@ -1,0 +1,8 @@
+DIGEST 2743482b145cb10c94d0f26fda901a68
+FMetaCoq.Template.utils.MC_ExtrOCamlZPosInt
+R25:34 Coq.extraction.Extraction <> <> lib
+R36:41 Coq.NArith.NArith <> <> lib
+R43:48 Coq.ZArith.ZArith <> <> lib
+R386:393 Coq.Numbers.BinNums <> positive ind
+R561:561 Coq.Numbers.BinNums <> Z ind
+R683:683 Coq.Numbers.BinNums <> N ind

@@ -1,0 +1,51 @@
+\section{Introduction}
+\subsection{Summary}
+
+\begin{frame}
+  \frametitle{Motivation}
+  % \begin{itemize}
+  %   \item Coq is a proof assistant for formal verification.
+  %   \item Widely used for mathematical proofs and program verification.
+  %   \item Implementation of Coq has consistency-threatening bugs!
+  % \end{itemize}
+  Coq is a proof assistant for formal verification in Intuitionistic
+  (Constructive) Logic.\pause
+  
+  Widely used for mathematical proofs (such as the Four-Color Theorem and
+  Feit-Thompson Theorem) and program verification (CompCert C Compiler).
+  \pause
+
+  Implementation of Coq has consistency-threatening bugs! Who watches the
+  watchers?\pause
+
+  Or can Coq verify itself?
+\end{frame}
+
+\begin{frame}
+  \frametitle{The MetaCoq Project}
+  A metaprogramming platform for Coq (TemplateCoq), turned into a verified
+  implementation of Coq in Coq.\pause
+  
+  In 2020, Sozeau et. al. completed the formalization for a large subset of Coq
+  in the MetaCoq project: "Coq Coq Correct! Verification of Type Checking and
+  Erasure for Coq, in Coq".\pause
+
+  However, a few features such as Modules are missing from the project. Modules
+  are important for almost all large Coq projects!\pause
+
+  Therefore we are here!
+\end{frame}
+
+\begin{frame}
+  \frametitle{Contributions of This Project}
+  \begin{enumerate}
+    \item A Coq implementation of non-parametrized Coq modules within the
+    MetaCoq framework, at the TemplateCoq level.\pause
+    \item Verification of correctness properties related to modules,
+    environment, and typing.\pause
+    \item Translation of modules from TemplateCoq to PCUIC.\pause
+    \item A second implementation of Coq modules unifying Modules and the Global
+    Environment.\pause
+    \item A summary of three recursion-related formal proof techniques.\pause
+  \end{enumerate}
+\end{frame}

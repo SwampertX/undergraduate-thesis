@@ -1,165 +1,334 @@
-\chapter{The Module System of Coq}
+\chapter{MetaCoq, Coq, and the Module System}
+\label{ch:coq}
 
-This chapter aims to explain the syntax and semantics of the module system via
-a generic description. Since the module system is well extended to integrate
-with other extra-logical parts of Coq such as pretty printing, notation, and 
-hint databases, which are beyond the scope of this project, I will
-explain only a relevant subset of the module language in this section.
-For a more precise definition of modules and related structures, please refer to
+This chapter aims to provide sufficient background knowledge for explaining the
+implementations of Chapters \ref{ch:impl1} and \ref{ch:impl2}. We will explain
+the following in order:
+
+\begin{enumerate}
+    \item First, the organization of the MetaCoq project as a context of where
+    the implementation of modules will occur.
+    \item Then, the abstract syntax of the Coq Module system, some information
+    on the semantics of Coq, and the scope of the implementation of this
+    project;
+    \item Finally in simple terms, the semantics of the subset of Module System
+    that this project will implement, along with a brief list of some relevant
+    properties to verify.
+\end{enumerate}
+
+Note that this chapter does not intend to give a full description of modules in
+Coq, but to only explain the subset that is relevant to this project; the actual
+module system of Coq is well extended with the other extra-logical parts of Coq
+such as pretty printing, notation, and hint databases, which are beyond the
+scope of this project. For a more precise definition of modules and related
+structures, please refer to
 \href{https://coq.inria.fr/refman/language/core/modules.html}{Coq: Modules}.
 
+\section{Structure of the MetaCoq Project}
+\label{sec:metacoq}
+The MetaCoq project is a project that provides a toolchain for verified
+metaprogramming in Coq (\cite{sozeau2020metacoq}). With the ability to manipulate
+Coq terms in Coq, the MetaCoq is a perfect avenue to implement a verified
+implementation of Coq, in Coq, by writing verified Coq functions for the
+reduction of Coq terms, together with the proof of its correctness properties,
+such as the strong normalization of Coq terms (and therefore, decidable
+type-checking and evaluation), confluence on the rewriting of Coq terms, and so
+on. 
+
+To better formalize the semantics of Coq, the MetaCoq is split into a few main
+components. From the layer closest to the Coq language to the layer closest to
+machine code, we have: TemplateCoq (Section \ref{sec:mc-template}), PCUIC
+(Section \ref{sec:mc-pcuic}), followed by Safe Checker, Erasure and
+beyond(Section \ref{sec:mc-beyond}). Each of the translations from one component
+(or type theory) to another is verified to preserve the correctness of reduction
+and conversion. The effort was completed for a large part of the core language
+of Coq (\cite{coqcoqcorrect}), with only a few missing pieces :
+
+\begin{itemize}
+    \item Eta-conversion
+    \item Template Polymorphism
+    \item Proof-irrelevant propositions (SProps)
+    \item Modules
+\end{itemize}
+
+I will be tackling the last.
+
+Let us remind ourselves of the task of MetaCoq project: we would like to have an
+implementation of Coq that is verified the desired properties of the underlying
+theory. For a better user experience, the terms of Coq are much more complex
+than its underlying, ``Platonic'' type-theoretical form, with many
+user-friendly, extra-logical features such as hint databases, pretty printing
+and more. Therefore, MetaCoq has several stages for a Coq term to go through,
+first stripping the internal representation (TemplateCoq) down to a form simple
+enough for proving correctness properties (PCUIC), then through a few stages,
+compiling the Coq terms to machine code.
+
+\subsection{TemplateCoq}
+\label{sec:mc-template}
+
+TemplateCoq is a quoting library for Coq: a Coq program that takes a Coq term,
+and constructs its kernel representation as a new TemplateCoq term. This is the
+first layer of the stripping of a Coq term, where the structures associated with
+a term such as the global environment are quoted and represented faithfully as
+in the kernel, except that there are no Coq Modules present in the global
+environment of TemplateCoq (and the rest of the MetaCoq project).
+
+% TODO: Insert example
+
+This allows one to turn a Coq program into a Coq internal representation along
+with its associated environment structures, such as the definitions and
+declarations in the environment. Then, typing, reduction, and conversion rules
+can be defined, and its properties verified. Since this faithful representation
+of Coq terms might not yet be the easiest to prove things on, because of reasons
+such as n-ary parallel application terms instead of the unary, curried form, the
+important properties will be proved at the next level of PCUIC, and the
+definition of typing, reduction, and conversion rules defined here are shown to
+be preserved under translation to PCUIC.
+
+\subsection{PCUIC}
+\label{sec:mc-pcuic}
+
+PCUIC is the Polymorphic Cumulative Calculus of Inductive Constructions. It is a
+"cleaned up version of the term language of Coq and its associated type system,
+shown equivalent to the one in Coq"(\cite{metacoq}). In other words, it is a type
+theory that is as powerful as Coq can express, having good properties such as
+weakening, confluence, principality (that every term has a principal type) etc.
+(\cite{coqcoqcorrect}).
+
+A term generated in TemplateCoq can be converted into a PCUIC term via a
+verified process. Since the theory of PCUIC is then proven to have all the
+``nice'' properties in Coq, by the equivalence, the verified translation of
+TemplateCoq terms into PCUIC terms propagates these properties to the language
+of Coq.
+
+
+\subsection{Safe Checker, Erasure and Beyond}
+\label{sec:mc-beyond}
+The core semantic operation of type theories is their reductions. The
+safechecker is a verified "reduction machine, conversion checker and type
+checker" for PCUIC terms. At this point, we already have the tools to start with
+a Coq term, first quoting into TemplateCoq, then converting into a PCUIC term,
+and eventually having its type checked in the Safe Checker via a fully verified
+process. As far as correctness is concerned, this has already formed a verified
+end-to-end process of Coq's correctness.
+
+The MetaCoq has further provided a verified Type and Proof erasure process from
+PCUIC to untyped Lambda Calculus. This erased language is can be evaluated in
+\emph{C-light} semantics, the subset of C accepted by the CompCert verified
+compiler, which completes a maximally safe evaluation toolchain for the language
+of Coq, all the way to machine code (\cite{coqcoqcorrect}).
+
+\subsection{Implementing Modules}
+\label{sec:metacoq-myimpl}
+
+The implementation of modules is easiest done at the level of TemplateCoq, since
+it has a faithful representation of the global environment of Coq, which can be
+extended with Modules. However, it is a choice on what to do with the modules
+upon translation to the next level of PCUIC. In this project, the modules in the
+global environment will not be added to PCUIC, instead modules will be
+elaborated away to the pre-existing, module-less implementation of Global
+Environment upon translation to PCUIC. The benefits of doing so include:
+
+\begin{enumerate}
+    \item We can enjoy the nice properties of PCUIC listed above automatically,
+    via a verified translation process, and
+    \item Avoid extending the proof-theoretic strength of PCUIC calculus
+    accidentally and possibly violating the niceness properties of PCUIC, or
+    requiring more work necessary to re-establish the properties of PCUIC.
+\end{enumerate}
+
+% In the below two sections, we will see an abstract definition subset of Coq
+% modules to be formalized in this project, as well as some properties to be
+% verified - the concrete details will be discussed in Chapters
+% \ref{ch:impl1}-\ref{ch:impl2}. 
+
 \section{Abstract Syntax of Coq Modules}
+\label{sec:abstract-syntax}
+
+Now that we know the plan of implementing Coq Modules within the MetaCoq
+project, let us understand more about Coq modules before diving into their
+implementation.
+
 The module system in Coq can be defined abstractly below, via a mutually
 recursive definition:
 \begin{itemize}
-\item A \textbf{structure} is an anonymous collection of definitions, and is the 
-    underlying construct of modules. They contain \textbf{structure elements},
-    which can be
-    \begin{itemize}
-    \item an assumption,
+\item A \textbf{structure} is an anonymous collection of definitions, and is the
+underlying construct of modules. They contain \textbf{structure elements},
+which can be
+\begin{itemize}
+    \item A \textbf{constant definition} of a Coq term, including lambda term,
+    application term, etc..
+
     \begin{minted}{coq}
-    Definition a: bool.
+Definition b: bool := true.
     \end{minted}
-    \item a constant definition,
+
+    \item An \textbf{inductive definition} of a type.
+
     \begin{minted}{coq}
-    Definition b: bool := true.
+Inductive nat :=
+| O
+| S (n: nat).
     \end{minted}
-    \item an inductive definition,
-    \begin{minted}{coq}
-    Inductive nat :=
-    | O
-    | S (n: nat).
-    \end{minted}
+
     \item or a \textbf{module}, a \textbf{module type}, or a \textbf{functor}, recursively.
     \end{itemize}
 
-\item
-    A \textbf{module type} is a structure given a name.
-    A \textbf{module} is also structure given a name, but all assumptions must
-      be proven valid; that is, an element of the declared type is inhabited.
-    When declaring a \textbf{module}, one can explicitly give a \textbf{module type}.
-\item A \textbf{module alias} is the association of a short name to an existing
-    module.
-\item A \textbf{functor} is a module defined with a parameter with a binder and
-    a required type for the module supplied as an argument.
+\item A \textbf{module} is a structure given a name.
+\item A \textbf{module type}, which is also a structure given a name, is a
+    signature for modules. Within a module type, not all definitions must be
+    concrete (e.g. just declaring
+\begin{minted}{Coq}
+Definition b: bool.
+\end{minted}
+    is sufficient).
+    % Concretely, modules and module types are just collection of definitions that
+    % can contain modules and module types, recursively, with the base cases being
+    % constant and inductive definitions.
+\item A \textbf{functor} can be thought of as a function that accepts modules as
+    arguments (and possibly functors as well) and returns modules. Additionally,
+    a functor, like a function in functional programming languages, can return
+    functions as well; functors that return functors are thus known as
+    higher-order functors.
+\item A \textbf{module alias} is the association of a new name to an existing
+    module. It can be thought of as a special case of functor application -- one
+    can think of it as assigning a name to the result of a nullary functor
+    application.
 \end{itemize}
 
+For the remaining of the project, we call non-functor modules \emph{plain
+modules}, or sometimes by its more proper name, \emph{non-parametrized modules}.
 
 
+\section{Semantics of Modules}
+\label{sec:semantics-of-modules}
 \subsection{Conversion of Coq Terms}
 
-To understand Coq Modules, we need to first understand the basic structure of
-Coq. The core object in the language of Coq are terms. Terms of a type
-correspond to a proof for a theorem as in the Curry-Howard correspondence.  The
-syntax and semantics of Coq terms are as explained by the syntax,
+To understand the semantics of Coq Modules, we need to first understand the
+basic semantics of Coq. Since in its core, Coq is an extension of Calculus of
+Construction, a kind of typed lambda calculus, the core objects of Coq are
+simply its (lambda-calculus) terms. Every term is strongly typed; a term being
+well-typed is equivalent to saying that it is valid. Terms of a type correspond
+to proofs for a theorem as in the Curry-Howard correspondence; if a type is
+inhabited, the corresponding theorem thus has a proof, and that is how proof
+assistants work. 
+
+The syntax and semantics of Coq terms are as explained by the syntax,
 \footnote{\href{https://coq.inria.fr/refman/language/core/basic.html\#essential-vocabulary}
 {Coq: Essential Vocabulary}} conversion (including reduction and expansion)
 \footnote{\href{https://coq.inria.fr/refman/language/core/conversion.html} {Coq:
 Conversion}} and typing
 \footnote{\href{https://coq.inria.fr/refman/language/cic.html} {Coq: Typing}}
-rules respectively. The evaluation of Coq terms are done under a Global Environment
-$\Sigma$ containing definitions, and a local context $\Gamma$ containing
-assumptions. Evaluation in Coq is known as conversion, the reflexive, transitive
-closure of the various reduction rules that is defined, including the famous
-$\beta$-reduction (function application).
+rules respectively in the Coq documentation. One should note that in Coq, types
+are terms as well and therefore have types of their own, which in turn have
+types, and so on. To avoid Girard's Paradox, the analog of Russell's Paradox in
+Type Theory induced by this typing hierarchy, the type of all types lives in
+another \textbf{universe}, which is not required to understand in this project.
+
+Every Coq term comes with a global environment $\Sigma$ containing definitions,
+and a local context $\Gamma$ containing assumptions during a proof. The
+operational semantics of Coq is given by its \textbf{reduction} relations
+between terms ($\beta, \delta,\zeta,\eta,\iota$ to name a few); of which
+includes the most well-known $\beta$-reduction (function application). The
+denotational semantics of Coq is then given by the \textbf{conversion}
+relations, which are the reflexive, transitive closure of the reduction
+relations.
+
+The typing relation, that declares a term $t$ is well-typed with a term $T$ is
+written as
+
+\[\Sigma;;\Gamma\vdash t: T.\]
 
 \subsection{Modules as second-class objects}
-However, Coq modules are not first class objects of the language; meaning that
-they are on another axis of the language and interacting with the core language
-(consisting of terms) in limited ways only. This means that .
-Plain modules in Coq can be treated as a named container of constant
-and inductive definitions, including possibly nested modules; namespaced by a 
-dot-separated string called a "path". This abstraction allows users to reuse
-definitions, essentially importing another "global environment" into the current
-one.
 
-To further expand this possibility, module functors exist to be interfaces which
-users can provide definitions for, by supplying a module definition. Functors
-are therefore opaque second-class objects which is only useful when a module is
+Coq modules are \emph{not} first-class objects of the language; they are on
+another axis of the language and interact with the core language (of terms) in
+limited ways only, and have their separate semantics. These semantics include
+their own $\beta$-reduction, such as during functor application.
+
+Non-parametrized modules in Coq can be treated as a named container of constant
+and inductive definitions, including possibly nested modules. The names of terms
+and types defined within the module are implicitly prefaced by the sequence of
+modules containing it (which create separate namespaces). This abstraction
+allows users to reuse definitions from another file without name conflicts. To
+further expand this possibility, functors define a whole family of modules that
+are instantiated and specialized by supplying module arguments to them. Functors
+are therefore opaque second-class objects which are only useful when a module is
 generated.
 
-In this chapter, we formalize the semantics of the current implementation of Coq
-Modules and formalize them at the level of TemplateCoq. Section
-\ref{sec:semantics-of-modules} describes the semantics behind plain modules and
-aliased modules, without functors.
-
-\section{Semantics of Modules}
-\label{sec:semantics-of-modules}
-From now onwards, we consider only non-parametrized modules.
-
-There are two operations involving modules: how to define a module and how to
-use a module. We will specify the behavior, implementation and proof
-obligations below.
-
-Modules are containers for definitions that allow reuse. Definitions in Coq are
-stored in a Global Environment. We first look at the structure of Global Environment:
+\subsection{The exclusion of functors in this project}
+Functors, and especially higher-order functors, are powerful in massive
+generalizations. However, the semantics of functors is complex. In Coq, the
+functors are generative, that is, if we do a functor application twice with the
+exact same arguments, the two resulting modules are deemed distinct. However,
+that is not the case for the function application of lambda calculus terms, thus
+deemed by some as not natural, as seen in the debate between applicative and
+generative functors within the literature of ML module implementations (Section
+\ref{sec:ml-dialects}). Furthermore, it is not entirely clear if the project's
+planned approach of elaborating Modules away as described in Section
+\ref{sec:metacoq-myimpl} will trivially extend to the case of functors, if at
+all. For the advantages listed in Section \ref{sec:metacoq-myimpl}, it is wise
+to first try the "elaborating away" approach for modules, and leave the
+extension to functors for future work.
 
 \subsection{Global Environment}
-The Global Environment in Coq can be understood as a table or a map. There are
-three columns in the map: first is a canonical kername, second a pathname, and
-finally, the definition object. Canonical kernames can be though of as unique
-labels, and for the ease of understanding, as natural numbers 1, 2, 3 etc.
-The pathname is a name which the user gives to the definition; it is of the form
-of a dot-separated string, such as $M.N.a$. Finally, the definition object can
-be:
+The global environment in Coq can be understood as a table or a map. There are
+three columns in the map: first is a canonical kernel name (kername for short)
+second a pathname, and finally, the definition object. 
+
+% TODO: add a table
+
+A pathname is a name given to a definition by the user, including the ambient
+path (created by possibly nested modules) to that definition, in a dot-separated
+string such as $M.N.a$. Canonical kernames are the pathnames modulo aliasing,
+and can be thought of as unique labels.
+
+Finally, the definition object can be:
 \begin{itemize}
-
-\item A \textbf{constant definition} to a Coq term, such as a lambda term,
-application term, etc..
-
+\item A \textbf{constant definition} to a Coq term.
 \item An \textbf{inductive definition} of a type.
-
-\item A \textbf{module definition}. We consider a module to be inductively
-defined as a list of constant, inductive, module or module signature
-definitions. Alternatively, it can also be an alias to a previously defined
-module (which may be an alias).
-
-\item A \textbf{module signature definition} has the same structure as a module
-definition, but instead of concrete definitions, it only specifies a name and a
-type for each entry. It can be also an alias to a previously defined module
-signature (which may be an alias).
-
+\item A \textbf{module definition}, or 
+\item A \textbf{module type definition}.
 \end{itemize}
-The terms ``module type'' and ``module signature'' are used interchangeably.
+
+\subsubsection{Implementation}
+
+The implementation of the global environment in TemplateCoq is merely a list of
+definitions (Listing \ref{lst:1-def-env}), while the looking up of names is via
+a linear search function through the list of declarations. Although this is less
+efficient than the map implementation in PCUIC, this does not affect the speed
+of the MetaCoq implementation, since the checker of MetaCoq operates at the
+level of PCUIC.
 
 \subsection{Plain Modules}
 \label{sec:plainmodules}
 
 \subsubsection{Behavior and Implementation}
 
-Modules can be thought of as a named global environment where the definitions
-within it are namespaced by the module name. Therefore, its contents are not
-modified during conversion/reduction.  In Coq, modules are second-class objects;
-in other words, a module is not a term.  Its definition is stored and referred
-to by a pathname and a kername.
+To implement this, we need to design a data structure to represent modules, such
+as an inductive datatype that directly encodes the structure-based definition in
+section \ref{sec:abstract-syntax}.
 
-Therefore, implementation wise, one need to ensure the correctness of "referring
-to definition"; that is, when a definition within a module is referred to by its
-pathname $M.N.a$, it will be fetched correctly from the table.
-
-\subsubsection{Proof obligation}
+\subsubsection{Properties}
 
 We say the implementation of such a module is correct if the meta-theory of the
-original system are unchanged and remains correct; that is the proofs go through
+original system is unchanged and remains correct; that is the proofs go through
 when terms can be defined within modules. Since the MetaCoq project has proven
 various nice properties about conversion in Coq, our project on plain modules is
 two-fold:
 
 \begin{enumerate}
-\item Ensure the correctness of the static semantics of Coq Modules
-(well-typedness) during its definition.
-\item Define the behavior of access of definitions within Modules.
+\item Define the data structure associated with modules and give modules typing
+rules to determine what it means for modules to be correct.
+\item Show that the module interacts with the environment well by proving
+theorems about Environment Typing.
+\item Since modules change the structure of environments, and environments are
+essential in the typing of Coq terms, verify the typing properties of Coq under
+the addition of modules.
 \end{enumerate}
 
-Once these two are done, we can be sure that a Coq program with Modules
-has all its terms well-defined (by (1)) and enjoys the nice properties of
-conversion, since the additional terms defined in Modules fulfill (2).
-This follows as our definition of Modules on the TemplateCoq level, is
-eventually elaborated down into the PCUIC calculus the idea of modules and
-aliasing do not exist anymore, they are flattened into the corresponding global
-environment. The details of (2) are described in Section \ref{sec:using-modules}.
 
-Concretely, if a module as below is defined while the Global Environment, which
+Concretely, if a module as below is defined while the global environment, which
 stores definitions is denoted as $\Sigma$:
 \begin{minted}{coq}
 Module M.
@@ -174,45 +343,58 @@ So when $M.a$ is called, it must refer to the definition in the Global
 Environment correctly.
 
 \subsection{Aliased Modules}
-Aliased modules are just a renaming of existing modules, which can be seen as
-syntactic sugar for modules. Therefore, the correctness depends only on
-implementing this internal referencing correctly.
+Aliasing modules can be treated as a special case of functor application of
+nullary functors (plain modules). Alternatively and more intuitively, aliased
+modules are just a renaming of existing modules, which can be seen as syntactic
+sugar for modules with alternative names. Therefore, the correctness depends
+only on implementing this internal referencing correctly.
 
 \subsubsection{Behavior and Implementation}
-Suppose we have
+We implement aliased modules with only one piece of data -- the kername it is
+referencing to. Then, by the typing rule of modules that enforce that such a
+declared kername must already be defined in the environment, we prevent creating
+forward references and therefore cyclic aliasing. The lookup operation in the
+environment will then traverse this tree of aliasing back to the root to find
+its concrete definition, thus reducing the problem to a simple lookup
+correctness problem (Listing \ref{lst:1-mod-lookup}).
 
 \begin{minted}{coq}
 Module N := M.
 \end{minted}
 
-Aliasing $N$ to $M$ and $M$ is a previously defined module (or an alias),
-then any access path $N.X$ should be resolved similarly to
-$M.X$ (note that since $M$ is possibly an alias as well, we do not require $N.X$
-to resolve \emph{to} $M.X$). In the OCaml implementation, all definitions in $M$
-can now be referred to by the pathnames $N.X$ in addition to $M.X$, while still
-having the same kername.
+Aliasing $N$ to $M$ and $M$ is a previously defined module (or an alias), then
+any access path $N.X$ should be resolved similarly to $M.X$ (note that since $M$
+is possibly an alias as well, we do not require $N.X$ to resolve \emph{to}
+$M.X$). 
 
 \subsubsection{Proof Obligations}
 \begin{enumerate}
 \item Well-definedness: aliasing can only occur for well-defined modules. There
-    cannot be self-alias and forward aliasing (aliasing something not yet defined).
+    cannot be self-aliasing and forward aliasing (to something not yet defined).
 \item The resolution of aliased modules is done at definition. If $N$ is aliased
     to $M$, then $N$ will immediately inherit the same kername as $M$. We will
     show this resolution is decidable and results in correct aliasing.
 \end{enumerate}
 
-\subsection{Using Modules}
-\label{sec:using-modules}
-As mentioned, the only way modules are used is during reduction or conversion
-of a Coq term. In Coq, reduction and conversion are made up of smaller reduction
-rules, such as $\beta, \delta,\zeta,\eta,\iota$ reductions. In particular, 
-Modules are related only to $\delta$ reductions, which "replaces a defined
-variable with its definition" 
-\footnote{\href{https://coq.inria.fr/refman/language/core/conversion.html} {Coq:
-Conversion}}.
+These properties depend on the correctness of a lookup function to determine if
+the aliasing is valid (already existing in the environment, and of the correct type).
 
-The correctness of $\delta$-reduction and conversion is a meta-theoretic
-property, which is already shown to be correct and have properties such as 
-normalization, confluence etc. in PCUIC \cite{coqcoqcorrect}. I will
-contribute by expanding the definition of delta-conversion and expand the
-existing proofs in the MetaCoq project that such properties continue to hold.
+\subsection{Translation to PCUIC}
+Once the above is done, we can be sure that a Coq program with Modules has all
+its terms are well-defined, and it enjoys the nice properties of conversion, at
+the level of TemplateCoq. Then, as our definition of Modules is eventually
+elaborated away into PCUIC calculus and the definitions in modules ``flattened''
+into the corresponding global environment, we will have to show the correctness
+of this translation.
+
+\subsubsection*{Behavior and Implementation}
+The translation of modules, since it is implemented inductively, amounts to
+translating the base cases of the induction, which are the constant and
+inductive definitions are given with unique translated kernames. This is via a
+straightforward recursive function using the sub-procedures of translating
+constant and inductive procedures.
+
+\subsubsection*{Proof Obligations}
+Once that is done, it suffices to check that this extended translation procedure
+still preserves typing, reduction, and conversion, then the niceness properties
+will follow.

@@ -1,0 +1,5 @@
+- [ ] What is the MathComp tactic `->`?
+- [ ] What is `Pcmp`?
+- [ ] What is functoriality?
+- [ ] Explain PCUIC when it comes out.
+- [ ] combine
