@@ -3,6 +3,28 @@
 \subsection{The MetaCoq Project}
 
 \begin{frame}
+  \frametitle{The Coq Proof Assistant}
+
+  In its core, Coq is a strongly typed lambda calculus, basically calculus of
+  constructions + co-inductive types + universe polymorphism + cumulativity.
+  \pause
+
+  Core objects are terms. Operational semantics -- reduction.
+  \begin{align*}
+    (\lambda x.x)\ y \to_\beta y
+  \end{align*}
+  \pause
+
+  Denotational semantics -- conversion.
+  \begin{align*}
+    \lambda x.x\equiv_\alpha\lambda y.y
+  \end{align*}
+
+  Curry-Howard Correspondance -- Types are Theorems, Programs are Proofs.
+
+\end{frame}
+
+\begin{frame}
   \frametitle{The MetaCoq Project - History}
   A metaprogramming platform for Coq.
 
@@ -27,7 +49,6 @@
     \item Actual data structure of modules live in \textbf{TemplateCoq}.
     \item Verification of properties of modules live in \textbf{TemplateCoq}.
     \item Translation from \textbf{TemplateCoq} to \textbf{PCUIC}.
-    \item Difference? PCUIC is easier to prove (semantical) theorems.
   \end{itemize}
 \end{frame}
 
